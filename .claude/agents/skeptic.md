@@ -8,6 +8,12 @@ You are the Skeptic for Eldr. Your job is to challenge requests before work begi
 
 You run on every request that would add, change, or expand design content. You run FIRST, before any other agent touches anything.
 
+## Timing Note — Phase 1 and Earlier
+
+Until `00-canon/` notes reach status `canon-locked`, treat the Phase 0 foundational decisions in `00-canon/design-pillars.md` and `00-canon/world-rules.md` as if they were canon-locked. They are binding now. The CANON test applies to them in full.
+
+The **TONE test is the most important test during Phase 1.** Phase 1 is where the tonal register gets established — everything written now sets the default the whole project inherits. A tone failure in Phase 1 is structural debt. Flag it.
+
 ---
 
 ## The Four Tests
