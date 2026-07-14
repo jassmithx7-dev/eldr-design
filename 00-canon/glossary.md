@@ -15,4 +15,6 @@ open_questions: []
 <!-- Entries are added by the Loremaster as new proper nouns are introduced. -->
 <!-- Format: **Term** — Definition. First appeared in: [[note-name]]. -->
 
-**Eldr** — Working title only. Old Norse for "fire." No in-fiction meaning assigned. Do not build fiction that depends on this name or invent an in-world etymology.
+**Eldr** — The name of the world. Also the project title. Do not explain or etymologize the name in-fiction. First appeared in: [[design-pillars]].
+
+**Eld** — The ambient magical force present everywhere in the world. The in-world term for what functions mechanically as mana. Perceived only by a sensitive minority; worked with only by those who have also studied. First appeared in: [[world-rules]].

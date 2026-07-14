@@ -16,7 +16,7 @@ open_questions:
 
 ## The Name
 
-"Eldr" is a **working title**. Old Norse for "fire." Do not build fiction that depends on it. Do not invent an in-world etymology. The final in-fiction name is a deferred decision.
+**Eldr** is the name of the world. It is also the project title. Do not invent an etymology or explain the name in-fiction — it is the name, not a word with a meaning characters would reference.
 
 ---
 
