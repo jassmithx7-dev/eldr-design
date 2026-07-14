@@ -15,4 +15,4 @@ open_questions: []
 <!-- Entries are added by the Loremaster as new proper nouns are introduced. -->
 <!-- Format: **Term** — Definition. First appeared in: [[note-name]]. -->
 
-**Eldr** — Working title of the project. In-fiction meaning to be determined. <!-- ASSUMPTION: treating as working title until human decides -->
+**Eldr** — Working title only. Old Norse for "fire." No in-fiction meaning assigned. Do not build fiction that depends on this name or invent an in-world etymology.

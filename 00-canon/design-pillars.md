@@ -1,0 +1,64 @@
+---
+type: canon
+status: draft
+depends_on: ["[[world-rules]]"]
+ue5_scope: S
+open_questions:
+  - "Full-game companion count — deferred until after vertical slice"
+  - "In-fiction name — 'Eldr' is working title only; do not build fiction that depends on it"
+---
+
+# Design Pillars
+
+*Foundational human decisions that constrain all agents. These are the decisions before the decisions — they shape what is possible in every downstream note.*
+
+---
+
+## The Name
+
+"Eldr" is a **working title**. Old Norse for "fire." Do not build fiction that depends on it. Do not invent an in-world etymology. The final in-fiction name is a deferred decision.
+
+---
+
+## The Differentiator
+
+A grim, adult CRPG about a company of long-time friends — people who have worked together for approximately two decades — doing dangerous work while aware they are aging. The party bond is **inherited, not earned in-game**.
+
+This is achievable solo because it is carried by writing, not by assets, scope, or spectacle. It is difficult for a studio because it denies players the recruit-and-befriend fantasy that testing rewards.
+
+---
+
+## Protagonist
+
+- **Age:** 30s or older.
+- **Competence:** earned through years of work, not innate talent or bloodline.
+- **Character creation:** fully player-authored — class, stats, build. Classic CRPG character creation in the Baldur's Gate / Icewind Dale lineage.
+
+---
+
+## Party Structure
+
+- **Party size:** 4 controllable characters (protagonist + 3 companions). Revisit after vertical slice.
+- **Combat paradigm:** turn-based. Locked.
+
+---
+
+## Companions
+
+- **Vertical slice:** one companion, fully built end-to-end.
+- **Full game:** companion count deferred until after the slice.
+- **Classes:** fixed. Companions are pre-authored people with histories. Their class is characterization, not a build slot.
+- **Relationship to protagonist:** the party has known each other for approximately 20 years. The friendship predates the game. There is shorthand, old debts, arguments nobody reopens, affection that is already load-bearing.
+- **Shared history in dialogue:** must remain class-agnostic. References the relationship, never the protagonist's build.
+
+---
+
+## Systems Posture
+
+Not a hardcore sim.
+
+- Downed at 0 HP, revivable.
+- No permadeath.
+- No persistent injury system.
+
+Classic CRPG resolution. The grimness is tonal and narrative — it lives in the writing. Mechanical punishment is not the register.
