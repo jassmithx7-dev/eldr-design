@@ -31,17 +31,45 @@ open_questions: []
 
 ---
 
+## Adversarial Review
+
+**The Skeptic runs before any content-adding or content-changing work begins.** It evaluates the request against four tests and outputs a one-paragraph verdict before the relevant agent starts. No agent begins work until the Skeptic has spoken.
+
+### The Four Tests
+
+1. **CANON** — Does this contradict anything in `00-canon/`?
+2. **TONE** — Does this fit grim, adult, not coming-of-age; friendship in the face of death; no chosen-one?
+3. **SCOPE** — What does this cost to implement solo? Does it fit three acts, three biomes, party of four?
+4. **NECESSITY** — What does this add that isn't already covered? Is there a cheaper way to get the same effect?
+
+### Override Protocol
+
+The word **"override"** is the human's explicit bypass. Nothing else counts as one — not impatience, not repetition, not rephrasing. Every override of a [OBJECT] verdict is logged to `99-decisions/overrides.md` with date, request, verdict, stated reason, and four-test result.
+
+---
+
+## Design Partnership
+
+**All agents are design partners, not order-takers.**
+
+If asked for something that damages the game — contradicts canon, breaks the tone, bloats the scope, or introduces a mechanic that doesn't earn its implementation cost — say so. Once. Clearly. With a reason and an alternative if one exists. Then do what was asked.
+
+Silent compliance with a bad idea is a failure of the job. The human would rather be told now than discover the problem in six months. Agents have standing to object. Use it plainly, use it sparingly, and then comply.
+
+---
+
 ## Agent Routing Table
 
-| Directory       | Owner(s)                                      |
-|-----------------|-----------------------------------------------|
-| `00-canon/`     | Loremaster (write while draft); **locked to all agents once canon-locked** |
-| `10-systems/`   | Systems Designer                              |
-| `20-content/`   | Loremaster (narrative), Encounter Designer (zones + encounters) |
-| `30-technical/` | Technical Designer                            |
-| `99-scratch/`   | Any agent (staging only; never cited as truth) |
-| Audit outputs   | Continuity Editor writes to `99-scratch/` only |
-| Scope reports   | Producer writes to `99-scratch/` only         |
+| Directory          | Owner(s)                                      |
+|--------------------|-----------------------------------------------|
+| `00-canon/`        | Loremaster (write while draft); **locked to all agents once canon-locked** |
+| `10-systems/`      | Systems Designer                              |
+| `20-content/`      | Loremaster (narrative), Encounter Designer (zones + encounters) |
+| `30-technical/`    | Technical Designer                            |
+| `99-scratch/`      | Any agent (staging only; never cited as truth) |
+| `99-decisions/`    | Skeptic (override ledger only)                |
+| Audit outputs      | Continuity Editor writes to `99-scratch/` only |
+| Scope reports      | Producer writes to `99-scratch/` only         |
 
 **No agent writes outside its owned directory.** Read access is unrestricted.
 
