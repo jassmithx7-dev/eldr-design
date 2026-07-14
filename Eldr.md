@@ -6,7 +6,7 @@
 
 ```dataview
 TABLE type, status, ue5_scope
-FROM "10-systems" OR "20-content" OR "30-technical"
+FROM "00-canon" OR "10-systems" OR "20-content" OR "30-technical"
 WHERE file.name != ".gitkeep"
 SORT status ASC, file.name ASC
 GROUP BY status

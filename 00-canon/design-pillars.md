@@ -5,7 +5,6 @@ depends_on: ["[[world-rules]]"]
 ue5_scope: S
 open_questions:
   - "Full-game companion count — deferred until after vertical slice"
-  - "In-fiction name — 'Eldr' is working title only; do not build fiction that depends on it"
 ---
 
 # Design Pillars
