@@ -79,6 +79,27 @@ Commits are the audit trail of who generated what. The Continuity Editor uses `g
 
 ---
 
+## External Sources
+
+### Source Tiers
+
+| Tier | Source | Authority |
+|------|--------|-----------|
+| **Tier 1** | `00-canon/` at status `canon-locked` | Authoritative. Binding on all agents. |
+| **Tier 2** | `10-systems/`, `20-content/`, `30-technical/` at status `reviewed` | Provisionally true. |
+| **Tier 3** | Second Brain (`C:\Users\jason\OneDrive\Second Brain`) | Inspiration only. Never authority. |
+
+### Second Brain Rules (binding on every agent)
+
+1. **READ-ONLY.** No agent writes to the Second Brain, ever, under any circumstances.
+2. **NEVER CANON.** Nothing in it is true about Eldr merely because it is written there. It cannot be cited to resolve a canon question, settle a contradiction, or justify a design decision.
+3. **NEVER COPIED.** Do not reproduce its content into the Eldr vault verbatim. Read it, metabolize it, produce something new. It contains personal and work material that must never enter this repo.
+4. **ATTRIBUTED WHEN USED.** If a design note draws on it, record the source in frontmatter as `inspired_by: [note-name]`.
+5. **THE CONTINUITY EDITOR IGNORES IT.** It is not part of the canon audit surface. A conflict between Eldr canon and Second Brain is not a contradiction — Eldr wins, silently.
+6. **PULL, NOT PUSH.** Agents consult it only when the human explicitly asks, or when genuinely stuck. It is not background context swept into every task.
+
+---
+
 ## Standing Instruction
 
 Never invent an answer to a design question the human has not decided. Log it to `open_questions` in frontmatter and flag it inline. Volume is not the goal. Buildability is.
