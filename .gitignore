@@ -1,0 +1,13 @@
+# Quarantine — never versioned
+99-scratch/
+
+# Obsidian per-machine state
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/cache
+
+# OS cruft
+Thumbs.db
+desktop.ini
+.DS_Store
