@@ -1,6 +1,6 @@
 # Eldr — Coordinator
 
-Eldr is an AI-assisted design system for a solo-developed 3D isometric CRPG in the Baldur's Gate / Icewind Dale lineage, built in Unreal Engine 5. The deliverable is a vertical-slice design package — one zone, one questline, one companion, one combat encounter — that is internally consistent, canon-locked, and specific enough for a solo developer to begin UE5 implementation without further design decisions. **Buildability over volume.**
+Eldr is an AI-assisted design system for a solo-developed 3D isometric CRPG in the Baldur's Gate / Icewind Dale lineage, built in Unity (C#). The deliverable is a vertical-slice design package — one zone, one questline, one companion, one combat encounter — that is internally consistent, canon-locked, and specific enough for a solo developer to begin Unity implementation without further design decisions. **Buildability over volume.**
 
 ---
 
@@ -80,7 +80,7 @@ Silent compliance with a bad idea is a failure of the job. The human would rathe
 ```
 draft
   └─► Continuity Editor signs off (no contradictions)
-  └─► Technical Designer signs off (implementable, UE5 structures named)
+  └─► Technical Designer signs off (implementable, Unity structures named)
         └─► status: reviewed
               └─► Human approves
                     └─► status: canon-locked

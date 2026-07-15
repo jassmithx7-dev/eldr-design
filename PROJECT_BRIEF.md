@@ -6,11 +6,11 @@
 
 ## Objective
 
-Build a **role-based AI design system inside Obsidian + Claude Code** that produces a coherent, implementable game bible for a solo-developed 3D isometric CRPG (Baldur's Gate / Icewind Dale lineage, Unreal Engine 5).
+Build a **role-based AI design system inside Obsidian + Claude Code** that produces a coherent, implementable game bible for a solo-developed 3D isometric CRPG (Baldur's Gate / Icewind Dale lineage, Unity).
 
 The deliverable is **game design content**, not a software platform. There is no orchestration server, no web UI, no custom API layer. The tooling is Claude Code's native subagent system operating on a Markdown vault.
 
-**Definition of done:** a vertical-slice design package (one zone, one questline, one companion, one combat encounter) that is internally consistent, canon-locked, and specific enough that a solo developer can begin UE5 implementation without further design decisions.
+**Definition of done:** a vertical-slice design package (one zone, one questline, one companion, one combat encounter) that is internally consistent, canon-locked, and specific enough that a solo developer can begin Unity implementation without further design decisions.
 
 ---
 
@@ -52,7 +52,7 @@ crpg-vault/
 │   └── glossary.md              # Every proper noun, defined once
 ├── 10-systems/                  # Mechanics, stats, progression
 ├── 20-content/                  # Zones, quests, companions, encounters
-├── 30-technical/                # UE5 implementation mapping
+├── 30-technical/                # Unity implementation mapping
 └── 99-scratch/                  # Unvetted output. Never referenced as truth.
 ```
 
@@ -64,7 +64,7 @@ crpg-vault/
 type: quest | zone | companion | system | encounter | canon
 status: draft | reviewed | canon-locked
 depends_on: [[world-rules]], [[faction-name]]
-ue5_scope: <estimated implementation weight: S | M | L | XL>
+ue5_scope: <estimated implementation weight in Unity: S | M | L | XL>
 open_questions: []
 ---
 ```
@@ -101,12 +101,12 @@ Each role is a Claude Code subagent with an isolated context. Define each in `.c
 
 ### 4. Technical Designer
 **Owns:** `30-technical/`
-**Produces:** the mapping from design → UE5 structures
+**Produces:** the mapping from design → Unity structures
 **Hard constraints:**
 - **No design note is `reviewed` until this agent has signed off on implementability.** This is the gate that prevents an unbuildable bible.
-- Output names actual UE5 constructs: Data Assets, Gameplay Ability System (attributes, effects, abilities, tags), Behavior Trees, Data Tables, Blueprint vs. C++ boundary, save-state serialization.
-- Flags anything requiring engine-level work, custom tooling, or third-party plugins.
-- Maintains a running **complexity ledger**: implementation weight per feature, so the Producer can see cost.
+- Output names actual Unity constructs: ScriptableObjects (stats, items, abilities, classes, factions), Prefabs, C# class boundaries, Pixel Crushers Dialogue System (conversations, conditions, events), Pixel Crushers Quest Machine (quest assets, quest state), save-state serialization via Dialogue System's built-in save/load. Flags any design that implicitly assumes real-time combat — this is turn-based.
+- Flags anything requiring engine-level work, custom editor tooling, or paid assets beyond the core Pixel Crushers stack. When a paid asset would save significant time, says so explicitly.
+- Maintains a running **complexity ledger**: implementation weight per feature (estimated in Unity effort), so the Producer can see cost.
 
 ### 5. Continuity Editor
 **Owns:** cross-cutting audits. Owns nothing exclusively; reads everything.
@@ -147,13 +147,13 @@ Create the vault structure, `CLAUDE.md`, and the six agent definition files. Pop
 Loremaster drafts world rules, 2–3 factions, glossary. Continuity Editor audits. Human locks. **Nothing else starts until canon is locked.**
 
 ### Phase 2 — Systems Spine
-Systems Designer produces combat core + progression + skill-check resolution. Technical Designer maps to GAS and produces first complexity ledger entry. Producer audits.
+Systems Designer produces combat core + progression + skill-check resolution. Technical Designer maps to Unity/C#/ScriptableObjects and produces first complexity ledger entry. Producer audits.
 
 ### Phase 3 — Vertical Slice
 One zone. One questline (3–5 beats). One companion (with arc + reactivity hooks). One signature combat encounter. All roles in pipeline. Full two-gate promotion on every note.
 
 ### Phase 4 — Validation
-Continuity Editor runs full-vault `/canon-check`. Producer runs `/scope-audit` and reports total implementation weight. Technical Designer produces a UE5 implementation order-of-work.
+Continuity Editor runs full-vault `/canon-check`. Producer runs `/scope-audit` and reports total implementation weight. Technical Designer produces a Unity implementation order-of-work.
 
 ---
 
@@ -162,9 +162,9 @@ Continuity Editor runs full-vault `/canon-check`. Producer runs `/scope-audit` a
 The system works if:
 
 - [ ] A `/canon-check` across the full vault returns **zero unresolved contradictions**.
-- [ ] Every `reviewed` note has a Technical Designer sign-off naming its UE5 structures.
+- [ ] Every `reviewed` note has a Technical Designer sign-off naming its Unity structures.
 - [ ] The vertical slice's total implementation weight is **known and stated as a number**, not a vibe.
-- [ ] The developer can open UE5 and start building without asking a single "but what does X do?" question.
+- [ ] The developer can open Unity and start building without asking a single "but what does X do?" question.
 - [ ] The Producer has cut at least one thing. If it hasn't, it isn't working.
 
 It fails if it produces a large volume of beautiful, unimplementable, mutually contradictory lore. **Volume is not the goal. Buildability is.**
