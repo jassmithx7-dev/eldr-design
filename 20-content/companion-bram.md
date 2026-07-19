@@ -29,11 +29,13 @@ He has seen the same things the rest of the party has seen. He is not sheltered 
 
 This is not announced. It is not a speech. It is visible in behavior: he shows up, he does not abandon people, and when he encounters someone who has built walls — Voryn specifically — he does not push through the walls. He simply does not acknowledge that they are meant to keep him out.
 
-## The Caramon Note
+## Characterization Anchors — Caramon and Sturm
 
-The Caramon archetype works here because Caramon's goodness was not stupidity or naivety. It was a form of stubbornness. He would not stop loving people. That stubbornness, in a world like this one — adults, aging, doing dangerous work, aware of the cost — reads as something harder and more interesting than heroism. It reads as the thing that is most difficult to maintain.
+Bram is a synthesis of two Dragonlance archetypes, held together.
 
-Bram is that. The warmth that Voryn cannot deflect is not warmth that ignores what Voryn is. It is warmth that has decided Voryn is worth it anyway, without saying so.
+**From Caramon Majere:** The warmth that is not naivety but stubbornness. He will not stop loving people. He reaches people who have built walls not by pushing through them but by declining to acknowledge they were meant to keep him out. The warmth that Voryn cannot deflect is not warmth that ignores what Voryn is — it is warmth that has decided Voryn is worth it anyway, without saying so.
+
+**From Sturm Brightblade:** The sworn oath that holds even when the world it was sworn into no longer makes sense. Sturm kept a Solamnic code in a world that had abandoned the Solamnic Knights. Bram swore to something specific — Mountain-Hold compact, a position, a people — and holds it regardless of whether the holding is recognized, rewarded, or even rational. The oath is not a performance. It is load-bearing. When the party's interests and the oath's demands diverge, the audience will see what it costs him.
 
 ## What He Is Not
 
