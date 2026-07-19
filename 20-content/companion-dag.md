@@ -5,7 +5,7 @@ depends_on: ["[[game-premise]]", "[[design-pillars]]"]
 ue5_scope: S
 open_questions:
   - "Gear-modification system (Cromwell analogue) — what does this actually do mechanically? Deferred to Systems Designer."
-  - "Who did Dag lose before Fen? Does the player ever learn, or is it permanently unspoken?"
+  - "If Dag's loss is alluded to later, what form does that take — dialogue, environmental detail, NPC reference?"
 ---
 
 # Dag
@@ -14,7 +14,7 @@ open_questions:
 
 ## Role in the Story
 
-Dag has been with the protagonist for approximately twenty years. He is the oldest fighting member of the company in temperament if not in years. He does not talk about what he was before, or who he lost. The party has stopped asking.
+Dag has been with the protagonist for approximately twenty years. He is the oldest fighting member of the company in temperament if not in years. He does not talk about what he was before, or who he lost. The party has never asked. They already know the answer would not come.
 
 ## Character Hook
 

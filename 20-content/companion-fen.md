@@ -4,7 +4,7 @@ status: draft
 depends_on: ["[[game-premise]]", "[[design-pillars]]", "[[world-rules]]"]
 ue5_scope: S
 open_questions:
-  - "Is Fen's sensitivity ever plot-relevant, or is it characterization only? If plot-relevant, which moment?"
+  - "Are there specific scenes where Fen's sensitivity should be surfaced in dialogue or behavior?"
   - "How does Fen's unconditional loyalty interact with a protagonist decision he finds wrong? Does he comply, protest, or is that a scene?"
 ---
 
@@ -26,7 +26,7 @@ This is not naivety — Fen is a thief, he reads people, he is not easily fooled
 
 Fen has standard binary Eld-sensitivity. He is not a caster and has never studied. Because he has no formal training, he has never learned to tune out ambient Eld. He perceives disturbances in the field raw and unfiltered — before trained practitioners who have built habits of selective attention. He registers wrongness before he can name it. He does not consider this remarkable.
 
-This is characterization and occasionally functional — it is not a combat ability or a magic system.
+This is characterization only — not a combat ability, not a magic system, not a plot trigger.
 
 ## Locked Pair with Dag
 
