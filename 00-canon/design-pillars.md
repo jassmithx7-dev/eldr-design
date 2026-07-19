@@ -52,6 +52,22 @@ This is achievable solo because it is carried by writing, not by assets, scope, 
 
 ---
 
+## Social System
+
+No Charisma stat. CHA does not exist as a player-assigned attribute in Eldr.
+
+Social resolution draws on three levers instead:
+
+- **Size** — physical presence as leverage. A Goliath commands a room without speaking. A Small character in the same scene does not.
+- **Perceived power** — reputation, demonstrated ability, faction standing, visible combat capability. What people *think* you can do shapes what they will agree to.
+- **Raw INT** — the smart read. Reading the room, finding the angle, knowing what someone needs to hear. Intelligence as social tool.
+
+The intent: every character build has a social mode. A high-INT caster negotiates differently than a physically imposing Fighter, but neither is locked out of the story. No player should feel they needed a "face" character to experience the game fully.
+
+Social mechanics are deferred to `10-systems/social-core.md` (stub — pending full design).
+
+---
+
 ## Systems Posture
 
 Not a hardcore sim.
