@@ -6,7 +6,7 @@ ue5_scope: S
 open_questions:
   - "Tyra's healing domain — does this inform whether healing magic exists in the player system? Deferred to Phase 2 systems work. Do not conflate divine healing with player-accessible mechanics."
   - "How present are the gods as active forces vs. distant presences? Do any of them appear directly, or only through effects and intermediaries?"
-  - "The Long Fade — what is it? Named as the threat to Tyra's domain specifically. Needs its own canon entry."
+
 ---
 
 # Pantheon
@@ -28,7 +28,7 @@ The lesser gods do not take sides for reasons of love or duty. They take sides �
 ### Aligned with Forn
 
 **Tyra of the Drawn Breath** — Healing, home, community.
-The most beloved of the six. The most directly threatened by the Long Fade. Her domain is the fabric of ordinary life — what war erodes and what Vela's dominion would hollow out permanently. She is with Forn not out of theology but because Vela's world has no room for what Tyra is.
+The most beloved of the six. Her domain is the fabric of ordinary life — what war erodes and what Vela's dominion would hollow out permanently. She is with Forn not out of theology but because Vela's world has no room for what Tyra is.
 
 **Skorra of the Everwood** — Nature, forest, survival.
 With Forn, but on her own terms. She is not anyone's soldier. The Everwood does not take commands. She opposes Vela because dominion requires domestication — a world under one will is a world with its wild places managed, bounded, used. Skorra will not negotiate that.
@@ -52,12 +52,6 @@ Runs on contracts. Not loyalty, not philosophy — exact agreements, honored exa
 
 **Theldorn the Mindwarden** — Wisdom, secrets, prophecy.
 Sold information to Vela. Owes her something — the nature of the debt is not yet known. He cannot act against her until it is resolved. His domain includes prophecy, but this is an attribute of the god, not a narrative device aimed at the protagonist. Nothing Theldorn knows will be handed to the player as destiny.
-
----
-
-## The Long Fade
-
-Referenced as the primary threat to Tyra's domain. Definition deferred — needs its own canon entry before Tyra's role in the story can be fully grounded.
 
 ---
 
