@@ -5,7 +5,6 @@ depends_on: ["[[game-premise]]", "[[design-pillars]]", "[[goliath]]"]
 ue5_scope: S
 open_questions:
   - "At what point in Acts 2–3 does Bram join the party? What is the specific circumstance?"
-  - "Is Bram formally Mountain-Hold oath-bound, or is the disposition innate rather than sworn?"
 ---
 
 # Bram
@@ -19,6 +18,8 @@ Bram joins the party in Acts 2–3. He has known the protagonist for approximate
 ## Race
 
 Goliath. Large. The narrow-door animation applies. He is physically imposing in the way that the Mountain-Hold tradition produces: not aggressive, but immovable. The warmth is not despite his size. It is carried by it.
+
+His Mountain-Hold allegiance is a **sworn oath**, not temperament alone. He made a specific commitment to something specific. What he swore to holds even when — especially when — the Mountain-Hold's interests and the party's interests diverge.
 
 ## Character Hook
 
