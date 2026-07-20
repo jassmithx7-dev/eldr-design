@@ -1,0 +1,65 @@
+---
+type: companion
+status: draft
+depends_on: ["[[game-premise]]", "[[design-pillars]]", "[[world-rules]]", "[[eld-magic]]", "[[pantheon]]"]
+ue5_scope: M
+open_questions:
+  - "When does Voryn join the party? What is the circumstance that brings him in?"
+  - "What specifically did he do in the Pale Circle that he went too far? Needs a scene or reference."
+  - "Does the player ever see the marked hand before the end? If so, when and how?"
+  - "The private meeting between Forn and Voryn — does the player ever learn what was said, or is it permanently offscreen?"
+---
+
+# Voryn
+
+*The one who agreed to stop being himself.*
+
+## Role in the Story
+
+Voryn is a full-game character, not in the vertical slice. He is an Eld-Weaver — a practitioner whose study went further into Vela's pole than he intended, and further than anyone who knew him expected. He carries that permanently on his casting hand, which he keeps covered. The party does not ask about it directly. They have all been around long enough to know when something is not their question to ask.
+
+He is the Calculating One. Not cold — precise. He thinks before he speaks, always, and when he speaks it is because he has already considered whether speaking is worth it.
+
+## The Pale Circle
+
+Voryn trained with the Pale Circle, the institution that categorizes and teaches Eld practice. He left — or was asked to leave, or the distinction stopped mattering — after going too far into Vela's pole. The specifics of what he did are not yet written. What is written: he knows that domain from the inside. He has the kind of knowledge that can only come from having been somewhere you should not have gone.
+
+## The Drift
+
+Voryn's drift toward Vela's pole is authored. It is not driven by what the player casts — it advances on a scripted schedule, one act at a time. The player who is paying attention will read the environmental cues before the story names what is happening to him.
+
+He is not unaware. He has been watching himself drift for years and has not been able to stop it. What he has been able to do is refuse to let it all the way in. There is still a person in there resisting. That resistance is what makes him the right candidate for what comes at the end.
+
+## The Ending
+
+Forn meets with Voryn privately. The player does not see this conversation. What was said between them belongs to those two alone.
+
+Voryn agrees to take Vela's place — to step into her domain and hold it, restoring the balance that her removal would otherwise shatter. He understands exactly what this means. He will become evil. Not a god who has dark powers — the embodiment of domination itself, necessarily and completely, with no remainder of the person he was.
+
+He agrees anyway.
+
+Not for power. Not for heroism. Because he has been walking toward this domain for years, half-resisting and half-not, and the situation requires someone who knows that territory from the inside and has enough of themselves left to agree to finish the walk on purpose rather than stumble into it.
+
+His last act as a person is agreeing to stop being one.
+
+**What he misses:** Being the mortal Voryn. The specific, ordinary, damaged person he was — the precision, the covered hand, the party around a fire at the end of a bad day. That is what gets consumed. Not his life. Himself.
+
+**The thread:** Something of him goes with him into the domain. Not enough to make him good. Not enough to be called Voryn anymore. But enough that somewhere in what he becomes, something remembers having been human. Vela never had that. He does. It is not a safeguard. It is a scar.
+
+## What Keeps Him from Becoming Vela
+
+Three things:
+
+1. **Forn is back.** Vela could do what she did because the balance was broken — Forn absent, the dark pole unopposed. Voryn holds the domain under a restored balance. The structural check exists again.
+
+2. **He never wanted what she wanted.** Vela wanted total dominion — gods, world, existence settled under her will. Voryn's wants have always been finite. Dark, but bounded. You cannot follow someone's footsteps if you never wanted to go where they were going.
+
+3. **The thread.** He knows what it costs the people on the other end. She never did.
+
+## Characterization
+
+Voryn is not the party's villain in waiting. He is the party's cost — what the story eventually requires of someone who has been in it from the beginning. The player should not see his ending coming and should feel, when it arrives, that it was inevitable in retrospect.
+
+He is also, before the end, one of the most useful people in the party. The Calculating One. The person who has the information nobody else wants to have, who will say the thing nobody else will say, who keeps the marked hand covered and does his job.
+
+The covered hand is the tell. The player who notices it and thinks about it is reading the story correctly.

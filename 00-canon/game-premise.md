@@ -40,6 +40,22 @@ The first slice should feel focused and contained:
 - one major companion relationship,
 - and one late revelation that reframes the entire conflict.
 
+## The Ending
+
+Vela is removed. The balance is not restored by victory — it is restored by replacement.
+
+Forn meets with Voryn privately, without the player knowing. He tells him what must be done. Voryn agrees — eyes open, understanding that he will become evil, necessarily and completely, with no remainder of the person he was. His last act as a person is agreeing to stop being one.
+
+Voryn steps into Vela's domain. The player loses two friends in the same story: Arn when Forn returned, Voryn when the ending required him.
+
+The party walks out with Dag, Fen, and Bram. Smaller. The world is not saved — it is held. The balance is restored at personal cost and without triumph.
+
+**What keeps Voryn from following Vela's path:** Forn is back (the structural balance exists again), Voryn never wanted what Vela wanted (finite ambition, not totalizing), and something of the mortal Voryn goes with him — not enough to make him good, enough to mean he knows what he holds.
+
+**Drift-colored ending:** The Arn goodbye scene varies based on the player caster's Drift position. The structure is the same. The last words Arn says to the protagonist before Forn emerges reflect who the player has been becoming. This is the only point where the single ending branches — one exchange, three variants.
+
+---
+
 ## Tone
 
 The game should feel worn, intimate, and desperate. It is not a bright hero fantasy. It is a story about leadership, loss, and the cost of continuing when the world is already falling apart.
