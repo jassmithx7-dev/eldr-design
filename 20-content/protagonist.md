@@ -39,27 +39,29 @@ These are the character creation decisions. Classic CRPG structure.
 
 ## The Three Classes — What They Mean for the Story
 
-All three classes are valid. The story works with any of them. But they produce different relationships to the game's systems.
+All three classes experience Drift. The Drift Counter, the thresholds, the environmental cues, Arn's last words at the end — all of it applies regardless of class. The class changes what form the declaration takes.
+
+The world is saturated with Eld. Everyone has some sensitivity to it. Fighters and Thieves cannot cast spells, but they can channel Eld into a small set of class-specific combat abilities. Each ability is pole-flavored — using it moves the Drift Counter. See [[combat-core]] for the full ability lists.
 
 ### Fighter
 
-The combat specialist. The Captain who held the line through physical discipline and tactical competence. He has earned his position by being the most dangerous person in a fight and knowing how to put other dangerous people in the right places.
+The Captain who held the line through physical discipline and tactical competence. Twenty years of leading dangerous people through dangerous situations. He has earned his position by being the most effective person in a fight and knowing how to put others in the right places.
 
-He does not use Eld. He watches the Drift mechanic play out in Voryn from the outside — aware that something is happening, unable to measure it, reading the world's cues alongside the player.
+His Eld pool is small (6, flat). His abilities are not spells — they are instinctive Eld use, the kind that a veteran develops without studying it. Holding a position so an ally doesn't take the hit (Forn). Finishing a wounded enemy before they can recover (Vela). Every use is a declaration.
 
 ### Thief
 
-The shadow operator. The Captain who survived twenty years by knowing how to move unseen and how to read a room before anyone else. The resistance has needed this as much as it has needed fighters.
+The Captain who survived twenty years by knowing how to move unseen and how to read a room before anyone else. The resistance has needed this as much as it has needed fighters.
 
-He does not use Eld, but the Illusion school's out-of-combat tools (Minor Illusion, Blur) overlap with what a Thief does naturally. Fen's Eld sensitivity creates a specific dynamic — two people who move through the same dark spaces, one of whom feels the Eld and one of whom doesn't.
+His Eld pool is small (6, flat). His abilities are about positioning and exploitation — disappearing from an enemy's attention (Forn) or finding the crack in someone's guard (Vela). Fen's Eld sensitivity creates a specific dynamic: two people who move through the same dark spaces, one of whom feels the Eld consciously and one of whom uses it without quite naming it.
 
 ### Caster
 
-The Eld practitioner. The Captain who studied and paid the physical cost for it. His casting hand may show it, depending on how long he has been at this.
+The Eld practitioner. The Captain who studied and paid the physical cost for it. His casting hand may show it.
 
-This is the richest protagonist experience for the Drift mechanic. A Caster protagonist does not just observe what is happening to Voryn — he experiences the same pressure from a different starting position. Every school he reaches for is a choice about what he is becoming, running in parallel with Voryn's authored descent. The ending lands differently when the player has been making the same kind of decisions the whole way through.
+His pool is large and scales with INT and level. He has access to all nine schools and the full spell list. He also experiences Drift most immediately — every school he reaches for is a choice about what he is becoming, and the choices come faster and more consequentially than they do for a Fighter or Thief. His Drift runs alongside Voryn's authored descent. The ending lands with particular weight when the player has been making the same kind of decisions the whole way through.
 
-<!-- ASSUMPTION: Caster protagonist and Voryn are not in competition for "the caster role." The party has room for two Eld practitioners. Their affinities and drift positions are independent. -->
+<!-- ASSUMPTION: Caster protagonist and Voryn are not in competition for "the caster role." The party has room for two Eld practitioners. Their affinities and Drift positions are independent. -->
 
 ---
 

@@ -496,7 +496,7 @@ At character creation, a caster picks one of three affinities: **Forn**, **Vela*
 
 ### What Drift Is
 
-Drift is the accumulation of pole-aligned casting choices. It is not a morality score. It is not a reputation. It is what the caster is becoming, expressed through how the world around them reads them before they understand it themselves.
+Drift is the accumulation of pole-aligned Eld choices. It applies to all classes — Casters through spell school selection, Fighters and Thieves through their class-specific Eld abilities. It is not a morality score. It is not a reputation. It is what the character is becoming, expressed through how the world around them reads them before they understand it themselves.
 
 **There is no UI meter. There is no alignment track the player watches.** The Drift Counter is an internal integer. The player learns where they are from the world's behavior — not from a display.
 
@@ -509,11 +509,13 @@ Drift is the accumulation of pole-aligned casting choices. It is not a morality 
   - Neutral affinity: 0 (true center)
   - Vela affinity: +10 (already anchored toward Vela)
 
-- **Per-cast changes:**
-  - Cast from a Forn school: −1
-  - Cast from a Vela school: +1
-  - Cast from a Neutral school: no change
-  - Neutral-affinity caster: each Forn/Vela cast contributes ±0.5 (round to nearest integer at encounter end)
+- **Per-use changes:**
+  - Caster casts from a Forn school: −1
+  - Caster casts from a Vela school: +1
+  - Caster casts from a Neutral school: no change
+  - Fighter/Thief uses a Forn-pole ability: −1
+  - Fighter/Thief uses a Vela-pole ability: +1
+  - Neutral-affinity caster: each Forn/Vela cast contributes ±0.5 (round to nearest integer at encounter end). Fighter/Thief are not affected by affinity — they have no affinity selection; their counter moves at full rate.
 
 - **Threshold events:** environmental cue fires when the counter **crosses** one of the following thresholds. Each threshold fires once in each direction.
 
@@ -587,13 +589,17 @@ The long-term bodily degradation of Eld use is a **narrative fact**, not a mecha
 
 ---
 
-## Eld Sensitivity in Non-Casters
+## Eld in Non-Caster Companions
 
-**Fen (Thief):** Has Eld sensitivity and does not cast. This is characterization only — no mechanical system attached. Sensitivity means Fen perceives Eld the way a person with perfect pitch perceives musical notes: he notices it, it is part of his world, he has never learned what to do with it. No detection bonus, no magical resistance, no passive trap-sensing. If his sensitivity is used narratively (recognizing a caster's recent presence, noticing an active warding), that is a scripted dialogue moment in the encounter or narrative design, not a passive roll.
+All characters have some Eld sensitivity — it is a property of the world, not of study. The mechanical expression differs:
 
-<!-- ASSUMPTION: No mechanical effect for Fen's sensitivity. If the companion note decides otherwise, that note overrides this ruling. -->
+**Bram (Fighter):** Uses the Fighter Eld ability set from [[combat-core]]. His pool is 6. His Drift Counter is tracked. He is not a student of Eld; he has simply been doing this long enough that his body knows how to channel it.
 
-**Bram and Arn:** No sensitivity, no casting. Arn's divine nature is not Eld-based — see [[world-rules]].
+**Fen (Thief):** Has heightened Eld sensitivity — he perceives it the way a person with perfect pitch perceives musical notes. His sensitivity goes beyond the standard Thief baseline, but this is **characterization only**, not a mechanical advantage. He uses the Thief Eld ability set from [[combat-core]]; his pool and Drift Counter work identically to any other Thief. If his sensitivity is used narratively (recognizing a caster's recent presence, noticing an active warding), that is a scripted dialogue moment, not a passive roll.
+
+<!-- ASSUMPTION: No additional mechanical effect for Fen's sensitivity beyond standard Thief baseline. Companion note may override. -->
+
+**Arn:** No Eld pool, no Drift Counter. His divine nature is not Eld-based — see [[world-rules]] and [[companion-arn]]. He is the single exception: a character who moves through the world with no Eld relationship at all.
 
 ---
 

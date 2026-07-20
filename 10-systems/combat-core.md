@@ -249,25 +249,61 @@ Potions are consumed via React (Quick Item). A standard healing potion restores 
 
 ---
 
-## 6. Eld and Magic Resource
+## 6. Eld and Class Abilities
 
-Spell domain is deferred to Phase 2 per [[world-rules]]. The following establishes the resource skeleton only.
+The world is saturated with Eld. All classes have some sensitivity to it. What differs is how developed that sensitivity is and what the character does with it.
 
-**Eld Pool = Class Base + (INT modifier × character level)**
+**Eld Pools:**
 
-| Class | Base Eld at Level 1 |
-|-------|---------------------|
-| Caster | 10 |
-| Thief | 0 |
-| Fighter | 0 |
+| Class | Eld Pool | Formula |
+|-------|----------|---------|
+| Caster | Large, scales with INT | 10 + (INT modifier × character level) |
+| Fighter | Small, flat | 6 |
+| Thief | Small, flat | 6 |
 
-Non-casters with 0 Eld cannot cast. Eld does not regenerate mid-combat. Full restoration occurs at rest (camp/rest point).
+Eld does not regenerate mid-combat. Full restoration occurs at rest (camp/rest point).
 
-**Casting past 0 Eld:** A caster who is at 0 Eld may still attempt to cast. Each Eld point short of the spell's cost deals **1d4 HP damage to the caster** (the bodily cost made acute). This is a hard choice, not an automatic failure.
+**Casters:** Access to the full spell list across all nine schools. See [[eld-magic]] for casting rules, Spell Check, and school detail.
 
-**This system creates the decision:** Do I push through empty and take damage to land the spell, or hold and let the party fight without magical support? This maps directly to the lore: magic costs the body. Sensible people don't rely on it.
+**Casting past 0 Eld (Casters only):** A caster who is at 0 Eld may still attempt to cast. Each Eld point short of the spell's cost deals **1d4 HP damage to the caster**. This is a hard choice, not an automatic failure.
 
-Fen does not use Eld. Bram does not use Eld. Arn does not use Eld (his divinity is not Eld-based — see [[companion-arn]]). Voryn is the party's primary Eld-Weaver.
+**Fighters and Thieves:** Cannot cast spells. Their small Eld pool powers a set of class-specific combat abilities — instinctive Eld use developed through years of fieldwork rather than study. These abilities do not require a Spell Check. Eld is spent and the effect activates. Subsequent attack rolls still apply normally where relevant.
+
+**All classes experience Drift.** Every Eld ability is pole-flavored. Using it moves the Drift Counter by +1 (Vela-pole) or −1 (Forn-pole), identical to spellcasting. The same thresholds, the same environmental cues, the same ending. See [[eld-magic]] — Drift mechanic.
+
+---
+
+### Fighter Eld Abilities
+
+*Physical and instinctive. These are not spells — they are what a veteran learns to do with Eld without ever studying it.*
+
+| Ability | Pole | Eld | Trigger | Effect |
+|---------|------|-----|---------|--------|
+| **Bulwark** | Forn | 2 | Your turn (Act) | An adjacent ally gains +3 Defense until the start of your next turn. You put yourself between them and the threat. |
+| **Stand Firm** | Forn | 3 | Your turn (React) | Until the start of your next turn, you cannot be moved, knocked back, or knocked prone. You hold the position regardless of what hits you. |
+| **Break** | Vela | 2 | Your turn; resolves on next melee hit | Your next melee hit reduces the target's Defense by 2 for 2 rounds. Something in their guard, their armor, or their footing gives. |
+| **Execute** | Vela | 3 | Your turn; resolves on next melee hit | If the target is below half HP, your next attack this turn deals double weapon damage dice. You find the opening when they're already losing. |
+
+*Decision created:* A Fighter's 6 Eld covers 2–3 ability uses per encounter. Bulwark and Stand Firm keep allies alive and positions held — Forn decisions, the work of someone who protects. Break and Execute end fights faster — Vela decisions, the work of someone who finishes things. Which you reach for more often is who you are becoming.
+
+---
+
+### Thief Eld Abilities
+
+*About movement and exploitation. The Thief uses Eld without naming it — it is just what their body learned to do after long enough in the dark.*
+
+| Ability | Pole | Eld | Trigger | Effect |
+|---------|------|-----|---------|--------|
+| **Fade** | Forn | 2 | Your turn (Move or React) | Move up to your Speed without provoking attacks of opportunity. You slip from the enemy's immediate awareness. They must spend their Act on their next turn to reacquire you; until then, they cannot target you. |
+| **Mark** | Forn | 3 | Your turn (Act) | You read the target carefully. Until end of combat, your attacks against this target gain +1 to hit without requiring Veteran's Read. You have learned them. |
+| **Expose** | Vela | 2 | Your turn (React) | You demonstrate a weakness in the target's position. Until the end of the target's next turn, all party members gain +1 to hit against them. |
+| **Exploit** | Vela | 3 | Your turn; resolves on next attack | Your next attack this turn bypasses the target's armor damage reduction and any Defense bonus from a Shield. You find the crack and use it. |
+
+*Decision created:* Fade and Mark are about patience — learning, preserving options, protecting the ability to act (Forn). Expose and Exploit are about taking — extracting advantage, using what you found against someone (Vela). A Thief who consistently Exploits is declaring something different from one who consistently Marks.
+
+---
+
+Fen does not use Eld abilities — her sensitivity is characterization only (see [[companion-fen]]). Bram does not use Eld. Arn does not use Eld (his divinity is not Eld-based — see [[companion-arn]]). Voryn is an Eld-Weaver with the full caster pool.
 
 ---
 
