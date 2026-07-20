@@ -7,7 +7,7 @@ open_questions:
   - "When does Voryn join the party? What is the circumstance that brings him in?"
   - "What specifically did he do in the Pale Circle that he went too far? Needs a scene or reference."
   - "Does the player ever see the marked hand before the end? If so, when and how?"
-  - "The private meeting between Forn and Voryn — does the player ever learn what was said, or is it permanently offscreen?"
+  - "When does the flashback land — just before the ascension, during it, or after? The timing determines whether the player watches knowing, or understands only when it's already done."
 ---
 
 # Voryn
@@ -32,7 +32,9 @@ He is not unaware. He has been watching himself drift for years and has not been
 
 ## The Ending
 
-Forn meets with Voryn privately. The player does not see this conversation. What was said between them belongs to those two alone.
+Forn meets with Voryn privately. The player does not witness this conversation when it happens. At some point — before, during, or immediately after the ascension — the player sees it as a flashback. The exact timing is an open question for the writing layer, but the intent is clear: the player understands what Voryn agreed to and why, and they understand it in proximity to watching it happen. They cannot stop it. They already know it was chosen.
+
+The ascension itself is witnessed. The player is present for the moment Voryn steps into the domain and the mortal Voryn ends. This is the second gut-punch of the ending — different in character from the Arn scene, but equal in weight.
 
 Voryn agrees to take Vela's place — to step into her domain and hold it, restoring the balance that her removal would otherwise shatter. He understands exactly what this means. He will become evil. Not a god who has dark powers — the embodiment of domination itself, necessarily and completely, with no remainder of the person he was.
 
