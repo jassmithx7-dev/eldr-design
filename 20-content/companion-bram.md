@@ -4,7 +4,7 @@ status: draft
 depends_on: ["[[game-premise]]", "[[design-pillars]]", "[[goliath]]"]
 ue5_scope: S
 open_questions:
-  - "At what point in Acts 2–3 does Bram join the party? What is the specific circumstance?"
+  - "What specifically was the circumstance of Bram's arrival at the start of Act 1? Is he already with the party or does he join in the opening sequence?"
 ---
 
 # Bram
@@ -13,7 +13,7 @@ open_questions:
 
 ## Role in the Story
 
-Bram joins the party in Acts 2–3. He has known the protagonist for approximately twenty years. He is not new — he is someone who has been present in the background of the party's history and steps into the active story when the story requires what he is.
+Bram is in the party from Act 1. He has known the protagonist for approximately twenty years. He is not new — he is someone who has been present in the background of the party's history and is fully present in the active story from the start.
 
 ## Race
 
@@ -45,4 +45,4 @@ Bram is not the party's comic relief. He is not simple. He does not provide levi
 
 ## Slice Presence
 
-Bram is not in the vertical slice. He is established here as a foundation for Acts 2–3. No further design work on him until the slice is complete.
+Bram is in the vertical slice from Act 1. He is not the slice's focal companion — that is Arn — but he requires a full combat kit (Fighter/Blade class). His full arc is deferred; what the slice needs is his presence, his voice, and his combat function.

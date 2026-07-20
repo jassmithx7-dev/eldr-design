@@ -3,8 +3,7 @@ type: canon
 status: draft
 depends_on: ["[[world-rules]]"]
 ue5_scope: S
-open_questions:
-  - "Full-game companion count — deferred until after vertical slice"
+open_questions: []
 ---
 
 # Design Pillars
@@ -37,18 +36,34 @@ This is achievable solo because it is carried by writing, not by assets, scope, 
 
 ## Party Structure
 
-- **Party size:** 4 controllable characters (protagonist + 3 companions). Revisit after vertical slice.
+- **Party size:** 5 controllable characters (protagonist + 4 companions).
 - **Combat paradigm:** turn-based. Locked.
 
 ---
 
 ## Companions
 
-- **Vertical slice:** one companion, fully built end-to-end.
-- **Full game:** companion count deferred until after the slice.
+**Active party (playable, full combat kits, full arcs):**
+
+| Character | Class | Acts |
+|-----------|-------|------|
+| Arn | Paladin-type (divine, non-Eld) | Act 1 only — replaced by Solen at Act 2 |
+| Fen | Shadow (Thief) | Acts 1–3 |
+| Bram | Blade (Fighter, Goliath) | Acts 1–3 |
+| Voryn | Eld-Weaver | Acts 1–3 — ascends at ending |
+| Solen | Devotee (Healer) | Acts 2–3 |
+
+**Story NPCs (no combat kit required):**
+
+| Character | Role |
+|-----------|------|
+| Dag | Camp craftsman — gear modification, upgrades. Present throughout. |
+| Forn | Brief NPC presence after Arn's mask slips. Not playable. |
+
 - **Classes:** fixed. Companions are pre-authored people with histories. Their class is characterization, not a build slot.
-- **Relationship to protagonist:** the party has known each other for approximately 20 years. The friendship predates the game. There is shorthand, old debts, arguments nobody reopens, affection that is already load-bearing.
+- **Relationship to protagonist:** the party has known each other for approximately 20 years. The friendship predates the game. There is shorthand, old debts, arguments nobody reopens, affection that is already load-bearing. Solen is the exception — she joins at Act 2.
 - **Shared history in dialogue:** must remain class-agnostic. References the relationship, never the protagonist's build.
+- **Vertical slice focal companion:** Arn. Other party members are present but his arc is the one built end-to-end in the slice.
 
 ---
 

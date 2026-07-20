@@ -26,12 +26,14 @@ His loyalty is total and proven by repetition, not declaration. He shows up. He 
 
 Dag and Fen come as a unit. The player gets both or neither. Fen arrived in Dag's life after the loss that made him what he is — and something in Fen reached past the armor before Dag could stop it. He would not say this out loud. He does not need to.
 
-## Mechanical Role
+## Role in the Party
 
-Dag is the party's craftsman. He handles gear maintenance, modification, and fabrication. The specifics of what this system allows — what can be modified, at what cost, with what materials — are deferred to the Systems Designer.
+Dag is **not a playable party member.** He is a **story NPC** — the camp craftsman. He handles gear maintenance, modification, and fabrication. The player returns to him between missions to upgrade weapons and armor. He is present throughout the entire game.
+
+The specifics of what his system allows — what can be modified, at what cost, with what materials — are deferred to the Systems Designer.
 
 <!-- ASSUMPTION: "Cromwell gear-modification system" means a meaningful in-party crafting and gear-upgrade function, not a minor flavor ability. Scope and implementation TBD. -->
 
 ## Slice Presence
 
-Dag is present in the vertical slice as a party member with established history. He is not the slice's focal companion — that remains Arn. His character note here establishes the foundation; his full arc belongs to the complete game.
+Dag is present in the vertical slice as the camp craftsman NPC. He does not require a combat kit or full arc for the slice. His character note here establishes the foundation; his full arc belongs to the complete game.

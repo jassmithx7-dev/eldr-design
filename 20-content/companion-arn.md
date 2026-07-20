@@ -28,9 +28,19 @@ Arn serves three purposes at once:
 
 Arn is Forn, the forgotten god of good, but he does not know this. He carries the old order of the world without understanding what he is, and that makes him both powerful and fragile.
 
+## Class
+
+Arn is a **paladin-type**: a divine fighter with healing capability. His class archetype combines melee combat with a secondary healing function. This is not Eld-based — his healing is divine leakage from the suppressed Forn within him. He does not know this. The party does not find it remarkable; they have always known him as someone whose wounds close faster and whose presence holds people together.
+
+He is the party's healer in Act 1. When he leaves at the end of Act 1 and Solen joins in Act 2, Solen covers the healing role through different means.
+
 ## Eld and Magic
 
 Arn is outside the Eld system entirely. He does not have Eld sensitivity in any conventional sense, and he does not cast. His suppressed divinity is not Eld-based — it operates by different rules that are not the player's to observe or measure. This should never be called out mechanically. It is simply true that Arn does not cast, and the party does not find this remarkable.
+
+## Party Tenure
+
+Arn is in the party from Act 1. At the end of Act 1, the mask slips — Forn emerges, Arn is displaced, and the player loses their oldest friend. Solen joins at the start of Act 2. The gap between losing Arn and gaining Solen should be felt.
 
 ## Story Use
 

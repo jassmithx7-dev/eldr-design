@@ -16,7 +16,7 @@ open_questions:
 
 ## Role in the Story
 
-Voryn is a full-game character, not in the vertical slice. He is an Eld-Weaver — a practitioner whose study went further into Vela's pole than he intended, and further than anyone who knew him expected. He carries that permanently on his casting hand, which he keeps covered. The party does not ask about it directly. They have all been around long enough to know when something is not their question to ask.
+Voryn is in the party from Act 1. He is an Eld-Weaver — a practitioner whose study went further into Vela's pole than he intended, and further than anyone who knew him expected. He carries that permanently on his casting hand, which he keeps covered. The party does not ask about it directly. They have all been around long enough to know when something is not their question to ask.
 
 He is the Calculating One. Not cold — precise. He thinks before he speaks, always, and when he speaks it is because he has already considered whether speaking is worth it.
 
