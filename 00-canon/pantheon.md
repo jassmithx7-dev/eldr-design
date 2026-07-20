@@ -6,6 +6,7 @@ ue5_scope: S
 open_questions:
   - "Tyra's healing domain — does this inform whether healing magic exists in the player system? Deferred to Phase 2 systems work. Do not conflate divine healing with player-accessible mechanics."
   - "How present are the gods as active forces vs. distant presences? Do any of them appear directly, or only through effects and intermediaries?"
+  - "What specifically was the ancient thing Theldorn sold? Named and defined when the story layer requires it."
 
 ---
 
@@ -17,7 +18,15 @@ open_questions:
 
 ## Vela and Forn
 
-The dominant conflict. Vela is the rising goddess of domination. Forn is the forgotten god of good, constrained and masked — present in the world as Arn without knowing what he is.
+The dominant conflict, thirty years in the making.
+
+**Vela** is the goddess of domination. Patient, incorporating, working through leverage and desire rather than force. Her goal is not conquest in the military sense — it is settlement. A world that has stopped, fully under her will, with nothing passing through that she has not sanctioned. She extends this ambition beyond the mortal world: she intends dominion over the gods themselves. The war is the visible surface of a plan that began three decades ago.
+
+**Forn** is the god of good. Thirty years ago, Vela used something ancient — purchased from Theldorn — to force him into mortal birth. He was born as Arn, a human male, with no memory of what he is and no access to his power. The mortal life is real. The thirty-year friendship with the protagonist is real. The god is the same person as the man. Forn cannot be killed. Arn cannot be killed by conventional means.
+
+Only Vela and Theldorn know where Forn is. Tyra and Skorra know he is gone — they can feel his absence — but do not know he is alive as a mortal, walking in the world. The neutral gods know neither. If any of them knew that Vela had forced a god into mortal birth, they would be moved by the violation of divine balance. That information is what the story may eventually place in the player's hands.
+
+**When the unmasking completes:** Forn emerges. Arn is gone — displaced, not transformed. Forn is weakened by thirty years of suppression, diminished from what he was before. He is not a solution. He is a fragile god who needs protecting, arriving in the place where the player's friend used to be.
 
 ---
 
@@ -51,7 +60,7 @@ Runs on contracts. Not loyalty, not philosophy — exact agreements, honored exa
 ### Compromised
 
 **Theldorn the Mindwarden** — Wisdom, secrets, prophecy.
-Sold information to Vela. Owes her something — the nature of the debt is not yet known. He cannot act against her until it is resolved. His domain includes prophecy, but this is an attribute of the god, not a narrative device aimed at the protagonist. Nothing Theldorn knows will be handed to the player as destiny.
+Enthralled with Vela. He wants her. What he sold her — the ancient knowledge that enabled Forn's mortal suppression — was not extracted under duress. He gave it willingly, for desire. The god of wisdom made foolish by wanting the goddess of domination. He cannot act against her not because of obligation but because of what he still feels, and because reckoning with what he chose while feeling it is something he has not yet been able to do. His domain includes prophecy, but this is an attribute of the god, not a narrative device aimed at the protagonist. Nothing Theldorn knows will be handed to the player as destiny.
 
 ---
 
