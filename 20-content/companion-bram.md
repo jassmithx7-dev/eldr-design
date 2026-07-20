@@ -35,7 +35,9 @@ Bram is a synthesis of two Dragonlance archetypes, held together.
 
 **From Caramon Majere:** The warmth that is not naivety but stubbornness. He will not stop loving people. He reaches people who have built walls not by pushing through them but by declining to acknowledge they were meant to keep him out. The warmth that Voryn cannot deflect is not warmth that ignores what Voryn is — it is warmth that has decided Voryn is worth it anyway, without saying so.
 
-**From Sturm Brightblade:** The sworn oath that holds even when the world it was sworn into no longer makes sense. Sturm kept a Solamnic code in a world that had abandoned the Solamnic Knights. Bram swore to something specific — Mountain-Hold compact, a position, a people — and holds it regardless of whether the holding is recognized, rewarded, or even rational. The oath is not a performance. It is load-bearing. When the party's interests and the oath's demands diverge, the audience will see what it costs him.
+**From Sturm Brightblade:** The sworn oath that holds even when the world it was sworn into is being actively destroyed. Bram swore to something specific — Mountain-Hold compact, a position, a people — and the war is taking that thing apart. Ironhold is falling or has fallen. The people he swore to protect are dying or gone. The oath has no institution left to return it. He holds it anyway. Not because holding it changes anything. Because he swore.
+
+This is his central dramatic tension: the oath is load-bearing to his identity, and the thing he swore to is being erased. When the party's interests and the oath's demands diverge, the audience will see what it costs him to honor both — or to choose.
 
 ## What He Is Not
 

@@ -4,7 +4,7 @@ status: draft
 depends_on: ["[[world-rules]]", "[[design-pillars]]", "[[combat-core]]"]
 ue5_scope: M
 open_questions:
-  - "Ironhold — what is it? Mentioned as the Mountain-Hold alliance anchor. Needs a faction/location entry before this note can be promoted to reviewed."
+  - "Ironhold — established as falling or fallen by the time of the story. Needs a faction/location entry defining what it was and what its loss means for Mountain-Hold Goliaths still alive."
   - "Half-Orc shares the Large size tier. They have no canon note yet. Flag for consistency when that note is written."
   - "Specific HP bonus and reach values for Large characters — deferred to attributes-core note (not yet written)."
   - "Animation budget for Large characters: the narrow-door crouch/squeeze animation is confirmed as intended. Solo dev cost assessment needed before implementation commitment."
