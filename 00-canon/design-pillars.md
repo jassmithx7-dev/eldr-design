@@ -79,7 +79,9 @@ Social resolution draws on three levers instead:
 
 The intent: every character build has a social mode. A high-INT caster negotiates differently than a physically imposing Fighter, but neither is locked out of the story. No player should feel they needed a "face" character to experience the game fully.
 
-Social mechanics are deferred to `10-systems/social-core.md` (stub — pending full design).
+**Dialogue is authored and linear — Final Fantasy style, not CRPG branching.** The player does not select from dialogue menus. Social gates appear at specific beats (interrogations, negotiations, information gathering) where the player's build creates leverage. Passing a gate gives the clean path; failing costs something (time, a resource, a harder route) but never locks content. Emotional scenes — the Arn reveal, Voryn's ascension — play straight with no gates.
+
+Full mechanics in `10-systems/social-core.md`.
 
 ---
 

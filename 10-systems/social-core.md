@@ -2,66 +2,93 @@
 type: system
 status: draft
 depends_on: ["[[design-pillars]]", "[[world-rules]]"]
-ue5_scope: M
+ue5_scope: S
 open_questions:
-  - "What is the full resolution mechanic? (roll-based vs. threshold-based vs. scripted pass/fail with stat modifier)"
-  - "How does perceived power update? (passive from combat outcomes, active from quest resolution, both?)"
-  - "Does size create automatic pass conditions on certain checks, or just a bonus?"
-  - "How does this interact with Fen's small size and Dag's dwarf stature — are they penalized on presence checks, and if so how?"
-  - "Faction standing as a social lever — how is it tracked and displayed (or not displayed)?"
+  - "How does Perceived Power update — passive from combat outcomes observed by NPCs, active from quest resolution, or both? Needs trigger-point list when first social scene is written."
+  - "Faction standing as a distinct sub-tracker of Perceived Power — worth separating, or does one score per NPC/group cover it?"
 ---
 
 # Social Core
 
-*The social resolution system for Eldr. No Charisma stat. Social outcomes are determined by three levers: Size, Perceived Power, and Raw INT.*
+*The social resolution system for Eldr. No Charisma stat. Dialogue is authored and linear — Final Fantasy style, not CRPG branching. Social gates appear at specific beats where the player's build creates leverage.*
 
 ---
 
 ## Design Principle
 
-Every character build has a social mode. No player should reach a story beat and feel they needed a dedicated "face" character to access it. A Goliath Fighter and a small-framed caster with high INT both have leverage — different kinds, equally real.
+Dialogue is written as scenes, not trees. The player watches and reads; they do not select from dialogue menus. This keeps writing quality high, scope manageable, and emotional scenes free from mechanical interruption.
 
-The intent is the opposite of Baldur's Gate 3's CHA model, where social content is gated behind a single stat that must be prioritized at character creation. Here, your class and build determine *how* you navigate social scenes, not *whether* you can.
+At specific beats — interrogations, negotiations, information gathering — the player's build creates a gate. Passing the gate gives the clean path. Failing the gate gives the same destination through a harder route: a resource spent, a side errand, more time. **No gate locks content. Failure costs something; it does not stop the story.**
+
+Gates never appear at emotional scenes. Arn's reveal, Voryn's ascension, goodbyes — those play straight. No stat check modifies what matters most.
+
+Every character build has a social mode. No player should reach a story beat and feel they needed a dedicated "face" character to access it.
 
 ---
 
 ## The Three Levers
 
-### 1. Size
+### 1. Size — Binary Flag
 
-Physical presence is leverage before a word is spoken.
+Physical presence creates leverage before a word is spoken.
 
-A Large character (Goliath, Half-Orc) commands different assumptions than a Medium or Small character entering the same room. This is not universal advantage — a Goliath in a space where they are perceived as a threat may close doors that a smaller character would find open. Size creates leverage; it does not guarantee outcomes.
+Size is a property of race. The check is yes/no: does the player meet the size requirement? A Goliath protagonist physically blocking a doorway is not a roll — the informant looks at the exit and makes a practical decision.
 
-**Implementation:** Size tier is a property of the character's race. Its social weight is expressed through authored scene beats and modifier values on presence-type checks, not through a separate "intimidation stat."
+Size gates appear in scenes where physical presence is the operative fact: a character who cannot leave, a room that communicates danger by what entered it, a situation where the wrong answer has obvious physical consequences.
 
-### 2. Perceived Power
+**This is not universal advantage.** In spaces where power is unwelcome, Large size closes doors a smaller character would find open. Size creates leverage; it does not guarantee outcomes. Both directions are authored at the scene level.
+
+### 2. Perceived Power — Threshold Check
 
 What people believe you are capable of shapes what they will agree to.
 
-Perceived power is not a number the player assigns at creation. It is built through play: enemies who have seen the party fight, NPCs who have witnessed a specific action, faction representatives who know the party's reputation in their territory. It is asymmetric — the same party reads differently to a Pale Circle archivist than to a Vela-aligned warlord.
+Perceived Power is not assigned at creation. It builds through play: enemies who have seen the party fight, NPCs who witnessed a specific action, faction representatives who know the party's reputation in their territory. It is asymmetric — the same party reads differently to a Pale Circle archivist than to a Vela-aligned warlord.
 
-**Implementation:** Tracked per-NPC or per-faction as a hidden modifier. Updated by authored trigger points (quest resolutions, combat outcomes observed by specific characters, faction-relevant actions). The player never sees the number — they see its effects in how NPCs respond.
+A threshold check is pass/fail with no roll: is the player's Perceived Power score (per NPC or per faction) above the gate's requirement? Either the reputation is there or it is not.
 
-### 3. Raw INT
+**The player never sees the score.** They see its effects — an NPC who skips the preamble, a door that opens without resistance, a meeting that starts with respect rather than suspicion.
 
-The smart read. Finding the angle, knowing what someone needs to hear, recognizing a lie, threading an argument through someone's actual interests rather than their stated position.
+Perceived Power updates at authored trigger points: quest resolutions, combat outcomes observed by specific NPCs, faction-relevant actions. The trigger list is authored per scene, not generated automatically.
 
-INT is the only social lever the player can directly invest in at character creation. A high-INT character may not be large or feared, but they can read a room and find the pressure point.
+### 3. Raw INT — Skill Roll
 
-**Implementation:** INT modifier applies to social checks where comprehension, argument construction, or deception-detection is the operative skill. The same modifier used for Eld pools and spell checks.
+Reading the room. Finding the angle. Knowing what someone needs to hear.
+
+INT is the one social lever the player can directly invest in at character creation. A high-INT character may not be physically imposing or feared, but they can identify the pressure point — name the fear correctly, thread an argument through someone's actual interests, recognize the lie inside the agreement.
+
+**Roll: 1d20 + INT modifier vs. DC**
+
+The DC is set per scene (typical range: 12–16). On a pass, the player names the right thing and the NPC responds to being understood. On a fail, the scene plays through its default path.
+
+The same INT modifier that governs Eld pools and spell checks governs this. No separate social skill investment.
+
+---
+
+## The Resolution Table
+
+| Lever | Mechanic | Roll? | Failure consequence |
+|-------|----------|-------|---------------------|
+| Size | Binary flag — meet the requirement or not | No | Default scene path |
+| Perceived Power | Threshold — score above gate or not | No | Default scene path; may require side approach |
+| Raw INT | 1d20 + INT modifier vs. DC | Yes | Default scene path |
+
+---
+
+## Worked Example
+
+*An occupied-territory informant. Won't talk.*
+
+- **INT gate (DC 13):** Player reads that the informant is afraid of being identified as a collaborator. Names it correctly. The informant cooperates — gives the location in exchange for acknowledgment that they helped.
+- **Size gate:** Goliath protagonist. The informant looks at the doorway. Makes a practical decision.
+- **Perceived Power gate:** The informant already knows who you are. The "won't talk" beat is skipped — they were waiting for someone worth talking to.
+- **No gate met:** The informant refuses. The party finds the location another way — costs a camp rest, or burns a faction favor with a different contact. Same destination, higher cost.
 
 ---
 
 ## What This System Does Not Have
 
 - No Charisma stat or modifier.
-- No Persuasion / Deception / Intimidation skill tracks separate from the three levers above.
-- No "face character" requirement. Party composition should not gate story content.
-- No charm or social bypass through magic. See [[eld-magic]] — Enchantment prohibition is absolute.
-
----
-
-## Full Design
-
-Deferred. This stub establishes the three-lever direction and the no-CHA commitment. The full system (resolution mechanics, how checks are called, how perceived power updates, how faction standing integrates) is Phase 2 design work.
+- No Persuasion / Deception / Intimidation skill tracks separate from the three levers.
+- No "face character" requirement. Party composition does not gate story content.
+- No charm or social bypass through magic. See [[eld-magic]] — Enchantment is combat-only.
+- No branching dialogue trees. The player does not select dialogue lines.
