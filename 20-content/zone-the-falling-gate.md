@@ -4,7 +4,8 @@ status: draft
 depends_on: ["[[game-premise]]", "[[enemy-roster-ashfall]]"]
 ue5_scope: M
 open_questions:
-  - "Should Ashfall Keep read as a ruined frontier keep, a shrine-city, or a collapsed border fortress?"
+  - "Scene structure: how many Unity scenes, where do EncounterTrigger components sit, and what colliders handle zone transitions? Required before level design begins."
+  - "Elevation carries a mechanical modifier — specific values to be specified in combat-core by Systems Designer before implementation."
 ---
 
 # The Falling Gate
@@ -13,7 +14,7 @@ open_questions:
 
 ## Overview
 
-The Falling Gate is the outer gate of **Ashfall Keep**, a frontier stronghold on the edge of the blighted lands. The keep is half-ruined, half-defended, and already showing the strain of the war. Vela's forces have pushed close enough that this gate is now the last line of defense between the living settlements and the advancing darkness.
+The Falling Gate is the outer gate of **Ashfall Keep**, a ruined frontier keep on the edge of the blighted lands — stone walls, collapsed sections, military construction with no pretension to grandeur. Half-ruined, half-defended, and already showing the strain of the war. Vela's forces have pushed close enough that this gate is now the last line of defense between the living settlements and the advancing darkness.
 
 ## Purpose in the Story
 

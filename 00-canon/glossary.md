@@ -37,6 +37,10 @@ open_questions: []
 
 **Gatebreaker** — Living siege warbeast used by the Settled Host at Ashfall's gate. Large; no morale. First appeared in: [[enemy-roster-ashfall]].
 
+**Voryn** — Eld-Weaver; party member Acts 1–3. Ascends at the game's ending. Has a prior history with the Pale Circle that he went too far in. First appeared in: [[design-pillars]].
+
+**Drift** — The accumulation of pole-aligned Eld choices, tracked as an internal integer [−30, +30]. Not a morality score or visible meter — the player reads their position from the world's behavior. Applies to all classes. Full definition: [[eld-magic]]. First appeared in: [[eld-magic]].
+
 **Vela** — Goddess of domination. Patient, incorporating; works through leverage rather than force. Her goal is total settlement — a world stopped under her will, including dominion over the gods themselves. The war is the visible surface of a thirty-year plan. Full entry: [[pantheon]]. First appeared in: [[game-premise]].
 
 **Theldorn the Mindwarden** — Lesser god of wisdom, secrets, and prophecy. Enthralled with Vela. Sold her the ancient knowledge that enabled Forn's mortal suppression — willingly, for desire. Compromised; cannot act against her. Full entry: [[pantheon]]. First appeared in: [[pantheon]].

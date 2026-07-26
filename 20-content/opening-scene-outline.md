@@ -4,7 +4,6 @@ status: draft
 depends_on: ["[[game-premise]]", "[[zone-the-falling-gate]]"]
 ue5_scope: S
 open_questions:
-  - "Should the opening scene begin with a battle, a retreat, or a council?"
 ---
 
 # Opening Scene Outline
@@ -21,7 +20,7 @@ The opening should establish three things immediately:
 
 ## Scene Summary
 
-The player arrives at the Falling Gate as the final evacuation of **Varnstead** is underway. The outer walls are damaged, the streets are crowded with frightened civilians, and the resistance is already falling back. The party must move through the settlement, secure the gatehouse, and make sure the retreat does not collapse into panic.
+The player arrives at the Falling Gate mid-retreat. The resistance is already falling back, covering the final evacuation of **Varnstead**. The outer walls are damaged, the streets crowded with frightened civilians. The party's job is not to win — it is to hold long enough for the retreat not to collapse into panic.
 
 ## Key Beats
 
