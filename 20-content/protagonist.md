@@ -4,8 +4,7 @@ status: draft
 depends_on: ["[[design-pillars]]", "[[game-premise]]", "[[eld-magic]]"]
 ue5_scope: S
 open_questions:
-  - "Canon default name — needed for internal reference in any note that must name him specifically. Placeholder: 'The Captain' until a name is chosen."
-  - "Class list for protagonist — three archetypes (Fighter, Thief, Caster) are established in combat-core. Protagonist class-progression note needed before implementation."
+  - "Class-progression note needed before implementation."
 ---
 
 # Protagonist
@@ -30,7 +29,7 @@ These are not player choices. They are the character before the character creati
 
 These are the character creation decisions. Classic CRPG structure.
 
-- **Name** — player-editable. The game uses this name in text throughout. A canon default exists for internal reference ("The Captain") but the player's chosen name is used in all shipped content. Voiced dialogue from companions uses the title "Captain" — this is how people address him in the world, and it allows VO to remain name-agnostic without sounding evasive.
+- **Name** — player-editable. Canon default for internal reference: **Havn**. The player's chosen name is used in all shipped content. Voiced dialogue from companions uses the title "Captain" — this is how people address him in the world, and it allows VO to remain name-agnostic without sounding evasive.
 - **Class** — three choices: Fighter, Thief, or Caster. See [[combat-core]] and [[eld-magic]] for full mechanical detail. The class is fixed at creation — the protagonist's competence is pre-established and specific, not a generalist background that could have gone any direction.
 - **Stats** — distributed from standard array at creation. Class determines HP dice and attack bonus progression.
 - **Build** — within class, the player makes choices at level-up. What those choices are depends on the class-progression note (not yet written).
@@ -71,7 +70,7 @@ The protagonist has known Arn since birth. Thirty years. The friendship predates
 
 This is the emotional spine of the game and it is **not player-authored.** The player cannot choose how the protagonist feels about Arn. The relationship is pre-established and load-bearing. Dialogue options, where they exist, vary in register — warmer, drier, more direct — but they do not vary in the fundamental fact of the bond.
 
-When Arn is displaced and Forn emerges, the protagonist loses his oldest friend. The game does not let the player opt out of that loss. It is authored.
+When Forn takes the body and Arn's soul passes to **Lumen**, the protagonist loses his oldest friend. The game does not let the player opt out of that loss. It is authored. See [[game-premise]].
 
 ---
 

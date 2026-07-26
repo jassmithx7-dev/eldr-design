@@ -124,7 +124,7 @@ Commits are the audit trail of who generated what. The Continuity Editor uses `g
 3. **NEVER COPIED.** Do not reproduce its content into the Eldr vault verbatim. Read it, metabolize it, produce something new. It contains personal and work material that must never enter this repo.
 4. **ATTRIBUTED WHEN USED.** If a design note draws on it, record the source in frontmatter as `inspired_by: [note-name]`.
 5. **THE CONTINUITY EDITOR IGNORES IT.** It is not part of the canon audit surface. A conflict between Eldr canon and Second Brain is not a contradiction — Eldr wins, silently.
-6. **PULL, NOT PUSH.** Agents consult it only when the human explicitly asks, or when genuinely stuck. It is not background context swept into every task.
+6. **DESIGN-FIRST CONSULTATION.** Before beginning any story or technical design work — relics, characters, mechanics, quests, zones, encounters — agents must consult the Second Brain for inspiration before drawing on general knowledge or training. This is the default, not the exception. It is not swept into every task (Q&A, edits, gate checks do not require it), but any generative design decision starts here.
 
 ---
 

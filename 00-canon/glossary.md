@@ -43,6 +43,8 @@ open_questions: []
 
 **Mordrek of the Final Dark** — Lesser god of death and passage. Neutral; opposes soul-trapping specifically because it steals what is his domain. His neutrality has one crack: evidence that Vela is stealing souls rather than allowing passage. Full entry: [[pantheon]]. First appeared in: [[pantheon]].
 
+**Havn** — The protagonist's canon default name. Human male, 30s+, veteran resistance leader. Player-editable at character creation; companions address him as "Captain" in VO. First appeared in: [[protagonist]].
+
 **Bram** — Goliath; Blade (Fighter). Party member Acts 1–3. Friend of the player. First appeared in: [[design-pillars]].
 
 **Fen** — Halfling; Shadow (Thief). Party member Acts 1–3. Friend of the player; closest to Dag. First appeared in: [[design-pillars]].
