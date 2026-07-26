@@ -10,6 +10,8 @@ open_questions:
   - "Enemy stat tables (HP ranges, Defense, Attack Bonus by tier) — belongs in encounter-design note, not here"
   - "Spell domain and Eld cost per spell — deferred to Phase 2 per world-rules"
   - "Does the Stabilization DC scale with enemy level or stay flat? Currently flat DC 10 — flag for playtesting"
+  - "Can a Caster use a spell as a Reaction (counterspell equivalent)? Excluded in Phase 1 — the targeting and Eld-cost edge cases require spell school rules that do not exist yet. Reserved for Phase 2 spell-interrupt design."
+  - "Does a Reaction Window open if the telegraphed cast targets a non-party entity (e.g., an enemy buffing another enemy)? Currently assumed no window opens if no party member appears in the ability's target pool. Needs confirmation once enemy ability targeting types are fully specified."
 ---
 
 # Combat Core
@@ -398,7 +400,8 @@ Core components and rough Unity task breakdown:
 | Morale checks (HP threshold, WIS roll) | Low | Triggered on damage; exit behavior is flee pathfinding |
 | Eld pool + casting-past-zero | Low | Resource bar; damage on overdraw |
 | Dag's gear offline on downed | Low | Boolean flag per modified item |
-| Enemy AI (action selection, target priority) | High | Largest unknow; basic priority AI is achievable; tactical AI is not |
+| Enemy AI (action selection, target priority) | High | Largest unknown; basic priority AI is achievable; tactical AI is not |
+| Reactions — `REACTION_WINDOW` FSM state | Medium | One new TurnManager state; on/off React tracking per character per round; sequential party prompt loop with event callbacks; cast ring decal + CASTING banner VFX + initiative strip highlight; no new resource, draws on existing React bool |
 
 **The enemy AI is the risk.** Everything else is bounded. A basic priority-based AI (attack nearest target, use abilities at threshold HP, morale check on low HP) is implementable in 1–2 weeks. A sophisticated tactical AI is not. **Recommendation:** ship with deterministic priority AI for the vertical slice; post-launch behavior tree if the game ships.
 
@@ -410,4 +413,143 @@ Core components and rough Unity task breakdown:
 - **Phase 1A (2 weeks):** Grid manager, initiative, action economy, attack resolution, HP/downed. Playable skeleton — two fighters punching each other. No abilities, no spells, no morale.
 - **Phase 1B (1 week):** Flanking, Veteran's Read, Rally Shout, morale checks, Dag's gear flag. Full party bond mechanics.
 - **Phase 1C (1 week):** Eld pool, potion React, basic enemy AI. Encounter-complete.
-- **Phase 2:** Spell domain, enemy ability set, encounter-specific overlays.
+- **Phase 1D (1 week):** Reaction Window (`REACTION_WINDOW` FSM state, cast ring VFX, initiative strip highlight, off-turn React expenditure). Requires Phase 1A FSM as prerequisite. Soulwright tutorial encounter gates this phase.
+- **Phase 2:** Spell domain, enemy ability set, encounter-specific overlays, caster spell-as-Reaction (counterspell design).
+
+---
+
+## 12. Reactions
+
+*An off-turn interruption system. Narrow by design. One trigger. Binary choice. The Soulwright teaches it.*
+
+**This system creates the decision:** When an enemy begins casting, do you spend your React now — disrupting, damaging, or shielding — and forfeit the React you would use on your own turn? Or do you hold it and let the cast land?
+
+---
+
+### 12.1 Trigger — Telegraphed Cast
+
+A **telegraphed cast** is an enemy ability whose data asset (`EnemyAbilityDataSO`) carries the designer-set flag `bTelegraphsCast = true`. This flag is authored at design time, not computed at runtime. The same ability asset shared across multiple enemy types propagates the flag to all of them.
+
+Only abilities with `bTelegraphsCast = true` pause the enemy turn and open the Reaction Window. The following are explicitly excluded:
+
+| Action type | Telegraph? | Reason |
+|---|---|---|
+| Standard melee attack | No | Intent is legible; no design value in pausing |
+| Ranged attack (non-cast) | No | Same as above |
+| Movement | No | Pausing for movement creates too many repositioning edge cases |
+| Passive aura activation | No | Not a discrete action; no decision point |
+| Telegraphed cast (`bTelegraphsCast = true`) | **Yes** | Opens Reaction Window |
+
+**Isometric UI — three simultaneous layers:**
+
+1. **Cast Ring.** A pulsing circular ground decal appears around the casting enemy. Color: amber (#E8A020). Radius: equal to the ability's effect area for AoE; 1 tile for single-target abilities. Pulse: 1 full pulse per 0.6 seconds. If the ability is targeted (single-target or directed AoE), a directional arrow indicator extends from the caster toward the intended target. The ring persists for the entire Reaction Window and disappears when the window closes.
+
+2. **CASTING banner.** A floating text label reading "CASTING" appears above the casting enemy's model and on their initiative strip portrait. Uses the same font and scale as the combat log. Duration: entire Reaction Window.
+
+3. **Initiative strip highlight.** All party member portraits with `bReactionAvailable == true` gain a 2 px yellow border (#FFD700). Portraits with `bReactionAvailable == false` drop to 50% opacity. This communicates at a glance who can still act.
+
+---
+
+### 12.2 Window — Duration, Order, and Closure
+
+The Reaction Window is a **complete pause** of the enemy's turn. Real-world time is unlimited — this is a turn-based CRPG and the player may deliberate freely.
+
+**Sequencing within the window:**
+
+Party members are prompted in **initiative order, highest to lowest**, but only if `bReactionAvailable == true`. Each prompted character makes a single binary choice:
+
+- **Spend Reaction** → select a valid Reaction action from §12.3 and resolve it immediately before the next character is prompted.
+- **Pass** → no action taken; `bReactionAvailable` is not consumed (the player chose not to spend it, not that they couldn't).
+
+Characters with `bReactionAvailable == false` are skipped automatically with no prompt.
+
+**Closure:** When every eligible party member has responded (Spend or Pass), the window closes. The `bInReactionWindow` flag on `TurnManager` clears to `false`. The enemy's telegraphed cast then resolves in full, applying its normal effect.
+
+**If no party members have `bReactionAvailable == true`:** The window does not open. The cast ring and banner appear for 0.4 seconds as visual feedback, then the cast resolves immediately. No pause occurs.
+
+**No Reaction-on-Reaction:** If any Reaction action triggers an effect that would itself carry `bTelegraphsCast = true`, that inner telegraph is suppressed for the duration of the window. The `TurnManager` checks `bInReactionWindow` before evaluating any cast telegraph flag. This check costs one boolean read. No Reaction Window can nest inside another Reaction Window.
+
+---
+
+### 12.3 Valid Reaction Actions
+
+Conservative list. Complexity is the enemy of a solo dev shipping anything.
+
+| Reaction action | Details | Range constraint |
+|---|---|---|
+| **Standard Attack** | One weapon attack (melee or ranged) against any valid target within the equipped weapon's current range band. Normal to-hit and damage resolution. No flanking bonus — flanking requires a Move action, and Move is not available as a Reaction. | Equipped weapon range band |
+| **Eld Ability (React-typed only)** | Any class Eld ability whose Trigger column in §6 lists "React." Current qualifying abilities: Fighter — **Stand Firm**; Thief — **Fade**, **Expose**. Casters have no React-typed Eld abilities in the current list. Eld cost applies normally. Drift counter moves normally. | Per ability definition |
+| **Quick Item** | Use a potion or throwable on self or an adjacent ally (1 tile adjacent). Identical rules to Quick Item on own turn. | Self or 1-tile adjacent |
+
+**Not valid as a Reaction:**
+
+| Action | Excluded reason |
+|---|---|
+| Move | Repositioning before a cast resolves requires re-evaluating AoE targeting geometry mid-window — a disproportionate FSM complexity cost for Phase 1 |
+| Act-typed Eld abilities (Bulwark, Break, Execute, Mark, Exploit) | These are Act actions; their economy belongs on the character's own turn |
+| Spell (full cast list) | Casters spend Act to cast; Phase 2 will design a caster interrupt (counterspell equivalent) once spell school targeting rules exist |
+| Revive Ally | Requires adjacency check, HP restoration, and FSM interaction with the downed state — too many edge cases for off-turn execution |
+| Interact (lever, lock, chest) | Not combat-relevant in this context |
+
+<!-- ASSUMPTION: Casters are excluded from using their spell list as a Reaction. This is the highest-value exclusion — a counterspell/interrupt-cast ability is the natural Phase 2 extension, but it requires spell school targeting rules that do not yet exist. Logged to open_questions. -->
+
+---
+
+### 12.4 Economy — Reactions Draw on the Existing React Resource
+
+The Reaction is **not a new resource.** There is no separate Reaction token, counter, or pool. The existing `React` resource (§2) is the sole economy.
+
+**Core rule:** Each character has 1 React per round. That single React covers both their off-turn Reaction Window use and their on-turn React actions. They are the same resource.
+
+**Consumption rules:**
+
+| Situation | Result |
+|---|---|
+| You spend your React on your own turn (potion, weapon draw, Dash, Rally Shout, Stand Firm via own turn) | `bReactionAvailable == false`. You cannot respond if a Reaction Window opens later this round. |
+| You spend your Reaction in a cast window | React is consumed. When your own turn arrives this round, you have no React. |
+| You Pass in a cast window | React is preserved. You may still spend it on your own turn. |
+| You have not taken your turn yet and a window opens | You may spend your Reaction in the window, consuming your React before your turn arrives. |
+
+**Refresh:** React restores at the start of each new round, when the initiative tracker loops. It does not restore mid-round when a character's individual tick completes.
+
+**Interaction with Wait:** A character who has used Wait (held Act, dropped to end of round) retains their Reaction independently. Spending their Reaction in a cast window does not cancel or consume their held Act. The held Act resolves normally on their deferred initiative tick.
+
+**No double-spend:** A character may spend their Reaction only once per Reaction Window. A window contains exactly one telegraphed cast (the condition that opened it), so there is no scenario where two Reaction spends would be solicited from the same character in one window.
+
+---
+
+### 12.5 Enemy Participation
+
+An enemy entity participates in the Reaction system if and only if at least one entry in its `EnemyAbilityDataSO` array has `bTelegraphsCast = true`. The flag lives on the **ability asset**, not on the enemy entity. One ability asset with the flag propagates it to every enemy that holds a reference to that asset. No runtime computation determines participation.
+
+**Enemy types and the flag:**
+
+- **Cast-capable humanoids** (mages, channelers, summoners, ritual specialists): All abilities that are magical in nature receive `bTelegraphsCast = true`. Standard melee or ranged attacks on the same enemy do not.
+- **Beasts:** No abilities expected to carry the flag in Act 1. Flag remains available for future creature design.
+- **Standard soldiers / mercenaries:** No casting; flag not applicable.
+- **Bosses:** At least one ability per boss encounter that carries `bTelegraphsCast = true` — the Reaction system must be exercised in every boss fight.
+
+**Soulwright (Act 1 Boss):** The Soulwright is the designed tutorial for this system. At minimum two of the Soulwright's abilities carry `bTelegraphsCast = true`. The encounter is authored to guarantee a Reaction Window fires within the first two rounds of combat, allowing the player to learn the mechanic before it delivers full damage. Tutorial scripting — including first-time UI callouts and the guaranteed early window — is deferred to [[encounter-soulwright]]. This note specifies the mechanic; the encounter note specifies the pedagogy.
+
+---
+
+### 12.6 TurnManager FSM — State: REACTION_WINDOW
+
+The `TurnManager` finite state machine gains one new state: **`REACTION_WINDOW`**.
+
+**Branch description:** While in `ENEMY_ACTING`, if the enemy's selected ability resolves `bTelegraphsCast == true` and `bInReactionWindow == false`, `TurnManager` transitions to `REACTION_WINDOW` before executing the ability. On entry, it sets `bInReactionWindow = true` and iterates over all `CombatantController` entries in descending initiative order. For each entry where `bReactionAvailable == true` and `IsPlayerControlled == true`, the manager raises `OnReactionWindowPrompt(CombatantController)` and suspends the iterator, awaiting `OnReactionResponseReceived(CombatantController, ReactionChoice)`. `ReactionChoice` is a two-variant discriminated union: `Spend(ActionData)` or `Pass`. On `Spend`, the manager immediately invokes the normal action resolution pipeline for the chosen `ActionData`, then advances the iterator. On `Pass`, the iterator advances without consuming React. When the iterator is exhausted, `TurnManager` sets `bInReactionWindow = false`, transitions back to `ENEMY_ACTING`, and the telegraphed ability executes. The `bInReactionWindow` guard prevents any nested `REACTION_WINDOW` entry for the duration. The Technical Designer owns all implementation details; this paragraph names the architecture.
+
+---
+
+### 12.7 Relationship to Wait
+
+Wait (§2) and Reactions are independent systems that share the React resource but do not otherwise interact.
+
+| Axis | Wait | Reaction |
+|---|---|---|
+| What it holds | Act (primary action) | React (secondary action) |
+| When it triggers | Player-initiated, own turn | System-initiated, enemy's turn |
+| Condition | Player chooses to delay | Enemy uses `bTelegraphsCast` ability |
+| Interaction | A character on Wait still has their Reaction unless already spent | Spending a Reaction does not cancel a held Act |
+
+The §2 note "This is not a full reaction system — it is a tactical delay, not an interrupt" remains accurate. Wait is a turn-delay. Reactions are off-turn interrupts. They are not the same thing and do not conflict.
