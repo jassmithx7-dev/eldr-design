@@ -43,4 +43,8 @@ open_questions: []
 
 **Mordrek of the Final Dark** — Lesser god of death and passage. Neutral; opposes soul-trapping specifically because it steals what is his domain. His neutrality has one crack: evidence that Vela is stealing souls rather than allowing passage. Full entry: [[pantheon]]. First appeared in: [[pantheon]].
 
+**Bram** — Goliath; Blade (Fighter). Party member Acts 1–3. Friend of the player. First appeared in: [[design-pillars]].
+
+**Fen** — Halfling; Shadow (Thief). Party member Acts 1–3. Friend of the player; closest to Dag. First appeared in: [[design-pillars]].
+
 **Anchor** — The sealed vessel holding Forn's severed divine self-knowledge; the mechanism that sustains his mortal suppression beneath Arn. Maintained by the Soulwright's soul-trap ritual beneath Ashfall Keep. Shatters when Forn emerges at the Act 1 climax. Not loot; not player-interactable. Full entry: [[relic-the-anchor]]. First appeared in: [[relic-the-anchor]].

@@ -1,7 +1,7 @@
 ---
 type: canon
-status: draft
-depends_on: ["[[pantheon]]", "[[game-premise]]", "[[quest-the-last-line]]", "[[enemy-roster-ashfall]]"]
+status: reviewed
+depends_on: ["[[pantheon]]", "[[game-premise]]", "[[enemy-roster-ashfall]]"]
 ue5_scope: S
 inspired_by: [screwtape-letters — authentic-self-as-divine-gift, concentric-circles-will, faith-as-means-trap]
 open_questions: []

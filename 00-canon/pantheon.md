@@ -6,7 +6,7 @@ ue5_scope: S
 open_questions:
   - "Tyra's healing domain — does this inform whether healing magic exists in the player system? Deferred to Phase 2 systems work. Do not conflate divine healing with player-accessible mechanics."
   - "How present are the gods as active forces vs. distant presences? Do any of them appear directly, or only through effects and intermediaries?"
-  - "What specifically was the ancient thing Theldorn sold? Named and defined when the story layer requires it."
+  - "What specifically was the ancient thing Theldorn sold? Answered in [[relic-the-anchor]]: the inversion of the divine willing-incarnation mechanism — a forced version with the god's self-knowledge extracted and sealed externally. Approved by human 2026-07-25."
 
 ---
 
@@ -22,11 +22,13 @@ The dominant conflict, thirty years in the making.
 
 **Vela** is the goddess of domination. Patient, incorporating, working through leverage and desire rather than force. Her goal is not conquest in the military sense — it is settlement. A world that has stopped, fully under her will, with nothing passing through that she has not sanctioned. She extends this ambition beyond the mortal world: she intends dominion over the gods themselves. The war is the visible surface of a plan that began three decades ago.
 
-**Forn** is the god of good. Thirty years ago, Vela used something ancient — purchased from Theldorn — to force him into mortal birth. He was born as Arn, a human male, with no memory of what he is and no access to his power. The mortal life is real. The thirty-year friendship with the protagonist is real. The god is the same person as the man. Forn cannot be killed. Arn cannot be killed by conventional means.
+**Forn** is the god of good. Thirty years ago, Vela used something ancient — purchased from Theldorn — to force him into mortal birth and suppress him beneath a real human life: **Arn**. Arn is not Forn-with-amnesia. Arn is a real soul who has never been aware of Forn. Forn is a separate divine presence buried under that life (Johnny/V model — see [[game-premise]]). The friendship is real. Forn cannot be killed by conventional means.
 
-Only Vela and Theldorn know where Forn is. Tyra and Skorra know he is gone — they can feel his absence — but do not know he is alive as a mortal, walking in the world. The neutral gods know neither. If any of them knew that Vela had forced a god into mortal birth, they would be moved by the violation of divine balance. That information is what the story may eventually place in the player's hands.
+Only Vela and Theldorn know where Forn is. Tyra and Skorra know he is gone — they can feel his absence — but do not know he is bound under a mortal walking in the world. The neutral gods know neither. If any of them knew that Vela had forced a god into mortal suppression, they would be moved by the violation of divine balance. That information is what the story may eventually place in the player's hands.
 
-**When the unmasking completes:** Forn emerges. Arn is gone — displaced, not transformed. Forn is weakened by thirty years of suppression, diminished from what he was before. He is not a solution. He is a fragile god who needs protecting, arriving in the place where the player's friend used to be.
+**When the unmasking completes:** Under mortal stress at the slice climax, Forn breaks through long enough to shatter a Vela-grade soul-trap once. Arn then speaks a final goodbye to the player as Arn. Arn's soul passes to **Lumen**. Forn holds the body — weakened by thirty years of suppression, diminished from what he was. He is not a solution. He is a fragile god who needs protecting, arriving in the place where the player's friend used to be.
+
+**Mordrek note:** Vela's soul-trap at the climax is exactly the kind of theft Mordrek opposes. The beat may later serve as evidence when courting his neutrality crack — do not over-explain it to the player in Act 1.
 
 ---
 
