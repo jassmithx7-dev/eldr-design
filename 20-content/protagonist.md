@@ -29,7 +29,7 @@ These are not player choices. They are the character before the character creati
 
 These are the character creation decisions. Classic CRPG structure.
 
-- **Name** — player-editable. Canon default for internal reference: **Havn**. The player's chosen name is used in all shipped content. Voiced dialogue from companions uses the title "Captain" — this is how people address him in the world, and it allows VO to remain name-agnostic without sounding evasive.
+- **Name** — player-editable. Canon default for internal reference: **Ravn**. The player's chosen name is used in all shipped content. Voiced dialogue from companions uses the title "Captain" — this is how people address him in the world, and it allows VO to remain name-agnostic without sounding evasive.
 - **Class** — three choices: Fighter, Thief, or Caster. See [[combat-core]] and [[eld-magic]] for full mechanical detail. The class is fixed at creation — the protagonist's competence is pre-established and specific, not a generalist background that could have gone any direction.
 - **Stats** — distributed from standard array at creation. Class determines HP dice and attack bonus progression.
 - **Build** — within class, the player makes choices at level-up. What those choices are depends on the class-progression note (not yet written).
