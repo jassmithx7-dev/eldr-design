@@ -17,13 +17,17 @@ open_questions:
 
 ## Setting
 
-Three-act structure across three coherent biomes:
+**Structure: three acts only.** Not BG2-style chapters. No parallel sandbox chapter layer. Quest pacing lives inside acts; the player-facing structure is Act 1 → Act 2 → Act 3.
 
-- **Act 1** — Mountains
+Three acts across three coherent biomes:
+
+- **Act 1** — Mountains (vertical slice: Ashfall Keep)
 - **Act 2** — Forest
 - **Act 3** — Coast
 
-Each act is one biome. No sprawl. Asset discipline is a hard constraint.
+Each act is one biome. No sprawl. Asset discipline is a hard constraint. Side content is capped per biome — not an Athkatla-scale hub that postpones the main story indefinitely.
+
+**Playtime budget:** vertical slice 3–5 hours; full game 15–20 hours main path (≤25 with side content). See [[design-pillars]].
 
 ---
 
@@ -36,12 +40,9 @@ Adults who are aware they are aging, doing dangerous work together. The grimness
 **Explicitly rejected:**
 - Chosen-one narratives
 - Prophecy or bloodline destiny
-- Latent power that "awakens"
+- Latent power that "awakens" — protagonists do not discover hidden gifts that grow over time. (Exception: Forn under Arn is *suppression and takeover*, not Arn growing divine gifts. Arn never gains awareness or power; Forn breaks through under stress. See [[game-premise]].)
 - Recruit-and-befriend companion loops
 - Teenage protagonists
-- Saving the world
-- Apocalyptic stakes
-
 Stakes are proportionate and human-scale. The protagonist is competent because they worked, not because they were chosen.
 
 ---

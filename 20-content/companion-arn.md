@@ -3,9 +3,7 @@ type: companion
 status: draft
 depends_on: ["[[game-premise]]"]
 ue5_scope: S
-open_questions:
-  - "How much should the player know about Arn before the reveal?"
-  - "What specific behavior or habit should hint at his hidden nature without making it obvious?"
+open_questions: []
 ---
 
 # Arn
@@ -26,11 +24,11 @@ Arn serves three purposes at once:
 
 ## Hidden Truth
 
-Arn is Forn, the forgotten god of good, but he does not know this. He carries the old order of the world without understanding what he is, and that makes him both powerful and fragile.
+Forn, the forgotten god of good, is suppressed beneath Arn's life. Arn is a real soul and has never been aware of Forn (Johnny/V model — see [[game-premise]]). Do not drip divine hints. The player should be surprised at the unmasking beat.
 
 ## Class
 
-Arn is a **paladin-type**: a divine fighter with healing capability. His class archetype combines melee combat with a secondary healing function. This is not Eld-based — his healing is divine leakage from the suppressed Forn within him. He does not know this. The party does not find it remarkable; they have always known him as someone whose wounds close faster and whose presence holds people together.
+Arn is a **paladin-type**: a fighter with a secondary healing function. Designer truth: the healing is leakage from suppressed Forn, not Eld. Player-facing: he is simply the party's steadier healer — never framed as uncanny, miraculous, or "he should be dead." No survival tells.
 
 He is the party's healer in Act 1. When he leaves at the end of Act 1 and Solen joins in Act 2, Solen covers the healing role through different means.
 
@@ -40,8 +38,8 @@ Arn is outside the Eld system entirely. He does not have Eld sensitivity in any 
 
 ## Party Tenure
 
-Arn is in the party from Act 1. At the end of Act 1, the mask slips — Forn emerges, Arn is displaced, and the player loses their oldest friend. Solen joins at the start of Act 2. The gap between losing Arn and gaining Solen should be felt.
+Arn is in the party from Act 1. At the **end of Act 1** boss, the unmasking beat plays (Bram/Fen soul-trap; Voryn still fighting; Forn breaks the trap once → Arn's final conversation with the player → Arn's soul passes; Forn holds the body). Solen joins at the start of Act 2. The gap between losing Arn and gaining Solen should be felt. Act 1 content must make Arn load-bearing so the loss hurts.
 
 ## Story Use
 
-Arn should remain present through the entire slice. The player should feel his importance long before the reveal, even if the full truth is not yet visible.
+Arn should remain present through the entire slice. The player should feel his importance as a friend long before the reveal — through loyalty and history, not through mysterious power tells.

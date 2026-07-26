@@ -26,6 +26,55 @@ This is achievable solo because it is carried by writing, not by assets, scope, 
 
 ---
 
+## Structure
+
+- **Three acts only.** Locked. See [[world-rules]].
+- **No chapter system** (reject BG2's 7-chapter / dual-sandbox model). Acts are the only structural spine.
+- Lineage inspiration (BG / IWD) does not mean matching their content volume or chapter count.
+
+## Target Playtime
+
+Locked solo-scope budgets (main path unless noted):
+
+| Deliverable | Hours | Notes |
+|-------------|-------|--------|
+| **Vertical slice** | **3–5** | Ashfall Keep / The Last Line / Soulwright / Arn unmasking. Proof of combat + writing + loss beat. |
+| **Full game** | **15–20** | ~5–7 hours per act. Dense, not wide. |
+| **Ceiling with side content** | **≤25** | Cap biome side content; no Athkatla-scale hubs. |
+
+Reject BG2-length (50–100+ hr) as a target. If a design pushes past the ceiling, cut content — do not expand the budget.
+
+## Enemy Variety Budget
+
+Locked solo-scope limits (unique combat **kits**, not palette swaps):
+
+| Scope | Count |
+|-------|--------|
+| **Act 1 / vertical slice** | **7 + Soulwright** (see [[enemy-roster-ashfall]]) — do not expand without cutting something |
+| **Acts 2 and 3 each** | **+4–6 new kits** + 1 act boss |
+| **Full game** | **~18–22** typical; **hard ceiling ≤25** including bosses |
+
+Rules:
+- Reskins / one-stat variants of an existing kit do **not** count as new types.
+- Large (2×2) enemies are expensive — prefer ≤1 new Large kit per act.
+- If a note needs a new mesh **and** new AI, it consumes budget; cut elsewhere or reject.
+
+## Quest Budget
+
+Locked solo-scope limits:
+
+| Scope | Main | Side | Total |
+|-------|------|------|-------|
+| **Vertical slice** | **1** — [[quest-the-last-line]] | **0–1** keep-local (optional) | **1–2** |
+| **Full game** | **3** (one continuous spine, one major questline per act) | **6–9** | **9–12** |
+| **Per act (full)** | 1 main (~4–6 hr) | **2–3** sides (~30–75 min each) | — |
+
+**Side content ceiling:** ≤ ~5 hours of the full playtime budget.
+
+**No fetch quests.** Reject “go get item / walk back” loops with no meaningful decision. Preferred side types: hold/under-fire, investigation with cost, moral/tactical choice with lasting consequence, companion pressure, social gates, clear-with-consequence.
+
+**Spine rule:** Side quests feed the main war/friendship story (party, locals, faction leverage, evidence). They do not open an Athkatla-scale second sandbox. If a side quest has no important function in the overall story, cut it.
+
 ## Protagonist
 
 - **Age:** 30s or older.

@@ -26,3 +26,11 @@ This is not a record of shame. It is a decision audit trail. When something goes
 **Type:** Not a Skeptic override — a foundational planning decision made with research. Logged here because it invalidates prior UE5-specific content and the paper trail matters.
 **Four-test result:** N/A — this was not a content request; it was an engine selection.
 **Reasoning:** Full rationale in [[engine]]. Summary: Unity's Pixel Crushers stack (Dialogue System + Quest Machine) is genre-proven for writing-driven CRPGs; UE5's strengths (rendering, GAS, C++) are mismatched to a text-and-tactics game. Systems tooling was the deciding factor, not environment tooling.
+
+---
+
+## Override — 2026-07-21
+**Request:** Arn/Forn metaphysics and vertical-slice unmasking beat — Johnny/V model (Forn suppressed under Arn; Arn never aware); soul-trap false wipe (option 5) triggers Forn to break the trap once under stress; Arn gets a final conversation with the player; Arn's soul passes to a named rest-place (name TBD); Forn keeps the body as a stranger. Possible Arn return at game end left open.
+**Skeptic verdict:** [OBJECT] CANON — prior lock "Arn is Forn / same person" forbids Arn's soul in heaven while Forn remains in the world.
+**Human reason:** Explicit `override`. Model is Cyberpunk-like (Johnny taking V): Arn is a real unaware soul; Forn taking over sends Arn to the world's heaven; surprise for the player; no slow divine drip.
+**Four-test result:** CANON [override — metaphysics rewritten] | TONE [pass — loss, not upgrade] | SCOPE [pass — one authored climax beat] | NECESSITY [pass — defines the slice hinge]
