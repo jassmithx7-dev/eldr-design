@@ -1,12 +1,11 @@
 ---
 type: encounter
 status: draft
-depends_on: ["[[game-premise]]", "[[zone-the-falling-gate]]", "[[combat-core]]", "[[pantheon]]"]
+depends_on: ["[[game-premise]]", "[[zone-the-falling-gate]]", "[[combat-core]]", "[[pantheon]]", "[[enemy-tiers-ashfall]]"]
 ue5_scope: M
 inspired_by: ["challenge-skill-balance", "eight-elements-of-enjoyment", "paradox-of-control-flow"]
 open_questions:
-  - "Exact HP / Defense / Attack numbers — Systems Designer fill after tier tables exist"
-  - "Ritual meter: how many successful interrupt windows (N) before the trap fires? Tune in playtest."
+  - "Playtest retune only — baseline numbers live in [[enemy-tiers-ashfall]] (Ritual N = 6 starting assumption)"
 ---
 
 # Enemy Roster — Ashfall Keep (Act 1 Slice)
@@ -16,6 +15,8 @@ open_questions:
 **Design rule:** Gate fights feel like a war. Shrine fights feel like the world being overwritten. Boss bridges both and runs the soul-trap (see [[game-premise]]).
 
 **Morale reminder ([[combat-core]]):** Humanoid Settled Host check morale. Bound and beasts do not.
+
+**Combat numbers:** [[enemy-tiers-ashfall]] (HP / Defense / Attack / damage / Ritual N). Do not duplicate stats here — retune in the systems note.
 
 ---
 

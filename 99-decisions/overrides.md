@@ -34,3 +34,11 @@ This is not a record of shame. It is a decision audit trail. When something goes
 **Skeptic verdict:** [OBJECT] CANON — prior lock "Arn is Forn / same person" forbids Arn's soul in heaven while Forn remains in the world.
 **Human reason:** Explicit `override`. Model is Cyberpunk-like (Johnny taking V): Arn is a real unaware soul; Forn taking over sends Arn to the world's heaven; surprise for the player; no slow divine drip.
 **Four-test result:** CANON [override — metaphysics rewritten] | TONE [pass — loss, not upgrade] | SCOPE [pass — one authored climax beat] | NECESSITY [pass — defines the slice hinge]
+
+---
+
+## Override — 2026-07-27
+**Request:** Replace Fen's Eld-silence tell with spider-sense style Eld-wrongness alert (body language + instinct bark + portrait pulse). Triggers remain gatehouse shrine + Soulwright rite start.
+**Skeptic verdict:** [CONCERN] NECESSITY (soft TONE) — silence-as-alarm was the individuating war-adult twist on Tas chatter; full spider-sense bark + pulse risks generic scout-tingle. Cheaper alt: keep silence identity, pulse + body language, optional one-word "Wait."
+**Human reason:** Explicit `override`. Silence did not feel right; wants spider-sense readability (A+D package).
+**Four-test result:** CANON [pass] | TONE [concern — override] | SCOPE [pass — retitle existing HUD work] | NECESSITY [concern — override]

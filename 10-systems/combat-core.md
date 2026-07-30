@@ -7,11 +7,13 @@ open_questions:
   - "Protagonist class list and associated HP dice — depends on class-progression note (not yet written)"
   - "Full attribute stat block (STR/DEX/CON/INT/WIS/CHA modifiers, racial ceilings) — deserves its own attributes-core note; referenced here as needed"
   - "Arn is outside the Eld system entirely — his divinity is not Eld-based. He does not cast. Resolved."
-  - "Enemy stat tables (HP ranges, Defense, Attack Bonus by tier) — belongs in encounter-design note, not here"
+  - "Enemy stat tables (HP ranges, Defense, Attack Bonus by tier) — resolved for Ashfall slice via [[enemy-tiers-ashfall]]"
   - "Spell domain and Eld cost per spell — deferred to Phase 2 per world-rules"
   - "Does the Stabilization DC scale with enemy level or stay flat? Currently flat DC 10 — flag for playtesting"
   - "Can a Caster use a spell as a Reaction (counterspell equivalent)? Excluded in Phase 1 — the targeting and Eld-cost edge cases require spell school rules that do not exist yet. Reserved for Phase 2 spell-interrupt design."
   - "Does a Reaction Window open if the telegraphed cast targets a non-party entity (e.g., an enemy buffing another enemy)? Currently assumed no window opens if no party member appears in the ability's target pool. Needs confirmation once enemy ability targeting types are fully specified."
+  - "Terrain tag modifiers (elevated / choke / hazard / difficult) — numbers TBD; identity soft-locked under Combat Identity §2"
+  - "Boss-only heavy-melee Brace/Dodge tell — deferred; not in soft-lock"
 ---
 
 # Combat Core
@@ -29,6 +31,26 @@ The grimness is tonal, not punishing. Combat must feel dangerous without being a
 1. **Positioning:** Where do I stand? Flanking, range bands, and AoE exposure all depend on placement. Moving costs your React if you spend it to attack.
 2. **Action allocation:** Do I attack (deal damage now), use an ability (deal damage later or enable the party), or revive a downed ally (forfeit offense for survivability)?
 3. **Threat prioritization:** Who do I hit? The Veteran's Read bonus rewards disciplined target focus. Enemies have morale thresholds. Killing the leader before morale breaks ends the fight faster.
+
+---
+
+## Combat Identity (soft-locked 2026-07-29)
+
+Three layers. Do not replace the spine with a second combat fantasy mid-slice.
+
+### 1. Spine — Company Doctrine
+This note’s existing frame: turn-based grid, Act / React / Move, flanking, Veteran’s Read, morale, Rally Shout, Reaction Windows on telegraphed casts. Friendship reads as **coordination**, not combo cutscenes.
+
+### 2. Ashfall taste — Hold the Line
+Slice encounters should often feel like **buying time**, not only kill-all: dual-win Gate (clear wave **and** evac meter — already locked in quest/zone), choke points, reinforcement pressure. **Terrain tags** (elevated / choke / hazard / difficult) are an encounter layer on the grid — exact modifiers TBD; not a new action economy. **Momentum Track** (fight-wide win/lose dial) is **out** — HP, morale, and objectives already signal pressure.
+
+### 3. Intent layer — casters + bosses
+Steal full “see it coming” Intent only where magic / bosses demand an answer:
+- **Soft-locked:** Cast telegraphs + Reaction Windows on **meaningful enemy casters** and **all bosses**. Ashfall minimum: **Binder Acolyte** + **Soulwright**.
+- **Not soft-locked yet:** Heavy-melee Brace/Dodge tells (boss-only Intent spice — decide later).
+- **Player casters:** Stay equal via Eld pool, Act-to-cast, Spell Check risk, Drift — enemy telegraphs do **not** buff player mages. Phase 1: no spell-as-Reaction (Counterspell reserved Phase 2).
+
+**Balance intent:** Enemy magic is powerful but **answerable**. Fighters’ React matters as much as a Binder’s cast. Player casters match fighters on a good round; they do not clear packs alone for free.
 
 ---
 

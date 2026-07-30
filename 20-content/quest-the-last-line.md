@@ -17,7 +17,13 @@ The resistance has one final chance to hold the Falling Gate at Ashfall Keep lon
 ## Quest Structure
 
 1. **Hold the Gate**  
-   The party fights to keep the outer defenses from collapsing while civilians evacuate.
+   The party fights to keep the outer defenses from collapsing while civilians evacuate from **Varnstead**.
+
+   **Completion (locked — hybrid):** both must be true:
+   - **Gate wave clear** — the authored Hold-the-Gate encounter(s) are won (enemies eliminated / routed per [[combat-core]]).
+   - **Evac meter full** — enough civilians reach the safe staging / exit count (Quest Machine counter; tune in playtest).
+
+   Either alone does **not** advance. Clearing waves without evac = you held ground but people didn't get out. Evac without a real hold = soft-fail of combat proof. When both complete → objective **Reach the Shrine** activates; keep interior opens.
 
 2. **Reach the Shrine**  
    The player pushes through the keep and learns that Vela's influence is not only military; it is ritual and spiritual. The shrine beneath the gate has been used to maintain the [[relic-the-anchor]] — a sealed vessel that is the true mechanism of Forn's thirty-year suppression. The shrine is not a discovery to be solved; it is evidence of something the player does not yet have the context to read.

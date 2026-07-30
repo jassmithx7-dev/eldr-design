@@ -25,8 +25,8 @@ open_questions: []
 |--------|-----------|------------|
 | **Protagonist** | Decision center | Who backs, refuses, argues, sidesteps |
 | **Arn** | Emotional anchor / healer | Practical calm; rare refuse; oldest friend |
-| **Fen** | Alive company / Eld tell | Frequent talk → silence on Eld-wrong; sidesteps bad orders |
-| **Bram** | Warm formal fighter | Caramon-first + Sturm underlayer; oath refuse; Voryn-as-already-in |
+| **Fen** | Alive company / Eld tell | Frequent talk → EldSense (spider-sense alert) on Eld-wrong; sidesteps bad orders |
+| **Bram** | Warm formal fighter | Caramon-first + Sturm underlayer; oath refuse; Voryn-as-already-in. **Joins mid-fight at Gate — not starting roster** |
 | **Voryn** | Quiet danger / Eld brain | Dry when safe; predicts + briefs; argues the board |
 | **Dag** | Camp craftsman (NPC) | Hard shell; Fen duo; protective craft; Arn grief beat |
 
@@ -35,7 +35,7 @@ open_questions: []
 ### Fen ↔ Dag (locked unit)
 Equal weird duo. Fen fills space; Dag **grumbles and plays along**. Outsiders see Dag’s shell; Fen (and the company) read the care. Player gets both or neither.
 
-**Spark:** Chatter vs complaint-that-is-participation. Fen silence (Eld-wrong) should make Dag’s grumble stop or sharpen — readable without exposition.
+**Spark:** Chatter vs complaint-that-is-participation. Fen EldSense should make Dag’s grumble stop or sharpen — readable without exposition.
 
 ### Protagonist ↔ Arn
 Oldest-friend shorthand. Arn defaults to backing; **rare refuse** for civilians/company, then stays in the mess. No divine tells.
@@ -53,9 +53,9 @@ Voryn **argues the board** (options/costs) until a better call or shut-down. Hig
 **Spark:** Decision friction that feels adult — debate the plan, not the friendship.
 
 ### Fen ↔ Bram
-Fen climbs Bram’s size with talk, not awe. Bram takes chatter without condescension; notices Fen’s silence.
+Fen climbs Bram’s size with talk, not awe. Bram takes chatter without condescension; notices when Fen goes coiled/alert.
 
-**Spark:** Noise vs composed warmth; silence from Fen is a shared alarm.
+**Spark:** Noise vs composed warmth; EldSense from Fen is a shared alarm.
 
 ### Arn ↔ Bram
 Shared language of holding positions. Respect without ceremony.
@@ -94,7 +94,7 @@ Do not steal the goodbye with a party huddle. Dag’s grief lands **at camp**, n
 
 | Who | Default volume |
 |-----|----------------|
-| Fen | High (until Eld-silence) |
+| Fen | High (until EldSense fires — then tight/alert, not mute) |
 | Bram | Medium-high (warm jokes; formal edge always on) |
 | Arn | Low-medium (short when bad; dry rare) |
 | Voryn | Low in crisis; dry commentary when **safe** |
@@ -111,9 +111,10 @@ Do not steal the goodbye with a party huddle. Dag’s grief lands **at camp**, n
 
 ## Slice checklist (minimum web coverage)
 
+0. **Bram mid-fight join** at Falling Gate — delayed from the Ironhold line (reunion; not session-start party) — see [[opening-scene-outline]].
 1. One Fen↔Dag camp beat (grumble-play).
 2. One Bram includes Voryn / Voryn soft return.
 3. One Voryn board-argue or early prediction on a Gate/Keep problem.
-4. One Fen Eld-silence tell (shrine/Bound-adjacent).
+4. Fen EldSense — Ashfall’s **2 of 3–4 game-total**: gatehouse shrine + Soulwright rite start (pose + bark + portrait pulse). See [[companion-fen]].
 5. Arn load-bearing practical beat with protagonist before Soulwright.
 6. Dag post-Arn solemn “never forget” at camp.

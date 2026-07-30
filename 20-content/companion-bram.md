@@ -4,8 +4,7 @@ status: draft
 depends_on: ["[[game-premise]]", "[[design-pillars]]", "[[goliath]]"]
 ue5_scope: S
 inspired_by: ["character-web", "individuating-characters-through-theme"]
-open_questions:
-  - "What specifically was the circumstance of Bram's arrival at the start of Act 1? Is he already with the party or does he join in the opening sequence?"
+open_questions: []
 ---
 
 # Bram
@@ -32,7 +31,7 @@ open_questions:
 - **Protagonist:** Loyal friend of ~twenty years. Default backs the call. **Can refuse** when the order fights his oath or costs civilians / Hold people unforgivably — rare, weighty, never ego. After a refuse he stays in the problem; he does not sulk or lecture.
 - **Voryn:** Steady inclusion. Treats Voryn as already in. No special campaign to “fix” or crack the walls; he simply does not perform exclusion.
 - **Arn:** Shared language of holding positions; respect without ceremony.
-- **Fen:** Easy warmth; takes Fen’s chatter without condescension; notices when Fen goes quiet.
+- **Fen:** Easy warmth; takes Fen’s chatter without condescension; notices when Fen goes coiled/alert (EldSense).
 - **Dag:** Steady peer energy; no need to manage him.
 
 **Hard edges (will / won't):**
@@ -46,7 +45,7 @@ open_questions:
 
 ## Role in the Story
 
-Bram is in the party from Act 1. He has known the protagonist for approximately twenty years. He is not new — he is someone who has been present in the background of the party's history and is fully present in the active story from the start.
+Bram is in the party from Act 1, but **not on the starting roster**. The slice opens without him in the active party. He **joins during the opening Falling Gate fight** — present in the battle, not waiting at camp as a recruit. He was **delayed from the Ironhold line** (his Hold/oath front — separate place from Ashfall). He has known the protagonist for approximately twenty years. This is a late reunion into the fight, not a stranger join.
 
 ## Race
 
@@ -78,4 +77,4 @@ Bram is not the party's comic relief. He is not simple. He does not provide levi
 
 ## Slice Presence
 
-Bram is in the vertical slice from Act 1. He is not the slice's focal companion — that is Arn — but he requires a full combat kit (Fighter/Blade class). His full arc is deferred; what the slice needs is his presence, his voice, and his combat function. He is one of the two companions caught in the Soulwright soul-trap (with Fen).
+Bram is in the vertical slice from Act 1. **Arrival lock:** not immediately with the party at session start; joins mid-fight at the Falling Gate after being **delayed from the Ironhold line** (see [[opening-scene-outline]]). He is not the slice's focal companion — that is Arn — but he requires a full combat kit (Fighter/Blade class). His full arc is deferred; what the slice needs is his presence, his voice, and his combat function. He is one of the two companions caught in the Soulwright soul-trap (with Fen).

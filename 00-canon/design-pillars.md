@@ -26,6 +26,18 @@ This is achievable solo because it is carried by writing, not by assets, scope, 
 
 ---
 
+## Rarity and Missability
+
+**Rare and missable content is intentional and welcome.**
+
+- Authored events that fire **few times** (or once) are preferred over always-on reminders.
+- Players **may miss** optional color, tells, environmental reads, and some side beats. That is a feature — replay and attention are rewarded; the game does not have to guarantee every observation.
+- Agents must **not** “fix” rarity into unmissable tutorials, constant UI chips, or spam triggers unless the human explicitly asks for guaranteed readability on that beat.
+- **Exception:** critical story hinges stay unmissable (e.g. Arn unmasking / Soulwright climax, Voryn ascension). Emotional spine ≠ optional Easter egg.
+- Example already in force: Fen EldSense is **3–4 beats game-wide** — sparse on purpose ([[companion-fen]]).
+
+---
+
 ## Structure
 
 - **Three acts only.** Locked. See [[world-rules]].
