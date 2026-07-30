@@ -1,0 +1,33 @@
+---
+description: Always consult Atlas before answering game design/code questions
+alwaysApply: true
+---
+
+# Atlas First (Eldr)
+
+Jason’s knowledge wiki is **Atlas**.
+Path: `C:\Users\jason\OneDrive\Second Brain\second brain\`
+
+## Hard order of operations (every relevant turn)
+
+Before inventing advice, brainstorming from scratch, or proposing design/systems:
+
+1. Read `C:\Users\jason\OneDrive\Second Brain\second brain\wiki\index.md`
+2. Prefer `for: [game]` + `wiki/synthesis/`
+3. Read 2–5 relevant wiki pages (max ~3 hops from index)
+4. Answer using those pages; cite wiki paths/titles
+5. Pulse what you used:
+   `py -3 "C:\Users\jason\OneDrive\Second Brain\scripts\pulse_wiki.py" <slugs> --label "Eldr · Atlas" --hold 90`
+
+## Scope
+
+Do this for: design, narrative, systems, UX/feel, balance, player motivation, lore, architecture informed by ingested patterns.
+
+Skip Atlas only for: pure local repo chores with no design/knowledge angle (typo fix, rename symbol, git status).
+
+## Rules
+
+- Call it **Atlas** in replies
+- Do **not** read `raw/` PDFs unless the wiki is thin
+- If Atlas has nothing useful, say so, then proceed
+- Don’t wait for Jason to say “use Atlas”
