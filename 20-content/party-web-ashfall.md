@@ -111,7 +111,9 @@ Do not steal the goodbye with a party huddle. Dag’s grief lands **at camp**, n
 
 ## Slice checklist (minimum web coverage)
 
-0. **Bram mid-fight join** at Falling Gate — delayed from the Ironhold line (reunion; not session-start party) — see [[opening-scene-outline]].
+Stubs authored in [[quest-the-last-line]] § Party-web scene stubs (0–6). Opening detail for 0 / 4a also in [[opening-scene-outline]].
+
+0. **Bram mid-fight join** at Falling Gate — delayed from the Ironhold line (reunion; not session-start party).
 1. One Fen↔Dag camp beat (grumble-play).
 2. One Bram includes Voryn / Voryn soft return.
 3. One Voryn board-argue or early prediction on a Gate/Keep problem.
