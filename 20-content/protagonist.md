@@ -17,6 +17,7 @@ open_questions:
 
 These are not player choices. They are the character before the character creation screen.
 
+- **Name: Ravn.** Not player-editable. This is the PC's personal name in all written content. Voiced dialogue from companions uses the title **Captain** — this is how people address him in the world, and it allows VO to remain name-agnostic without sounding evasive.
 - **Human.** Not negotiable. The story turns on a thirty-year friendship with Arn — a human man born the same generation. The protagonist's humanity is load-bearing.
 - **Male.** Fixed. The only female in the party is Solen.
 - **Age: 30s or older.** The player does not choose age. The protagonist has been doing this work long enough that the competence is legible and the fatigue is real. He is not young.
@@ -27,9 +28,8 @@ These are not player choices. They are the character before the character creati
 
 ## What the Player Builds
 
-These are the character creation decisions. Classic CRPG structure.
+These are the character creation decisions. Classic CRPG structure. Name is not among them.
 
-- **Name** — player-editable. Canon default for internal reference: **Ravn**. The player's chosen name is used in all shipped content. Voiced dialogue from companions uses the title "Captain" — this is how people address him in the world, and it allows VO to remain name-agnostic without sounding evasive.
 - **Class** — three choices: Fighter, Thief, or Caster. See [[combat-core]] and [[eld-magic]] for full mechanical detail. The class is fixed at creation — the protagonist's competence is pre-established and specific, not a generalist background that could have gone any direction.
 - **Stats** — distributed from standard array at creation. Class determines HP dice and attack bonus progression.
 - **Build** — within class, the player makes choices at level-up. What those choices are depends on the class-progression note (not yet written).
