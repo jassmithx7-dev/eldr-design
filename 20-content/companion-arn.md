@@ -3,7 +3,7 @@ type: companion
 status: draft
 depends_on: ["[[game-premise]]", "[[design-pillars]]"]
 ue5_scope: S
-inspired_by: ["character-web", "great-hero-requirements"]
+inspired_by: ["character-web", "great-hero-requirements", "anatomy-of-story", "moral-argument"]
 open_questions: []
 ---
 
@@ -76,3 +76,37 @@ Arn is in the party from Act 1. At the **end of Act 1** boss, the unmasking beat
 ## Story Use
 
 Arn should remain present through the entire slice. The player should feel his importance as a friend long before the reveal — through loyalty and history, not through mysterious power tells.
+
+---
+
+## Ashfall spoken beats (draft)
+
+Linear only. No menu. No CHA. Address **Captain**. No divine drip. Not stub 5. Not the goodbye.
+
+### Opening — on the line (`Conv_AshfallOpening`)
+
+Full scene: [[opening-scene-outline]]. Arn’s cards from that conversation:
+
+| # | Speaker | Line |
+|---|---------|------|
+| 4 | ARN | Then we make it one long enough. |
+| 7 | ARN | You take the line. I'll watch who's still outside. |
+| 8 | CAPTAIN | Same as last time. |
+| 9 | ARN | Same as every time. People first. |
+| 11 | ARN | He'll walk in when he can. |
+
+Oldest-friend shorthand. Civilians first. He does not perform hope.
+
+### After-hold — `Bark_ArnAfterHold`
+
+**When:** Hold the Gate **hybrid complete** (waves **and** evac). Before Keep. One short practical line.  
+**Asset:** `Bark_ArnAfterHold` (Dialogue System one-shot bark).  
+**Hook:** `HoldTheGate` complete / encounter victory. Do not wait on Reach the Shrine rooms.
+
+<!-- ASSUMPTION: Fires on hybrid complete whether or not Volume_GatehouseShrine has been entered yet. -->
+
+| # | Speaker | Line |
+|---|---------|------|
+| 1 | ARN | They're through. I'll cover who is still out. You say when we go in. |
+
+**Do not write this pass:** stub 5 (pre-Soulwright threshold), Drift-colored goodbye, Forn, Lumen.
