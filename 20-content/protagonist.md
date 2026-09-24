@@ -9,7 +9,7 @@ open_questions:
 
 # Protagonist
 
-*The person the player builds. The Captain the party already knows.*
+*The person the player builds. Ravn — the party already knows him.*
 
 ---
 
@@ -19,8 +19,9 @@ These are not player choices. They are the character before the character creati
 
 - **Human.** Not negotiable. The story turns on a thirty-year friendship with Arn — a human man born the same generation. The protagonist's humanity is load-bearing.
 - **Male.** Fixed. The only female in the party is Solen.
+- **Name: Ravn.** Not player-editable. Companions address him as **Ravn** in written and voiced lines.
 - **Age: 30s or older.** The player does not choose age. The protagonist has been doing this work long enough that the competence is legible and the fatigue is real. He is not young.
-- **Veteran resistance leader.** He has led this company for approximately twenty years. He did not inherit the role. He earned it through the kind of repeated decisions that leave marks. The party calls him Captain.
+- **Veteran resistance leader.** He has led this company for approximately twenty years. He did not inherit the role. He earned it through the kind of repeated decisions that leave marks. The party knows him as Ravn. He still leads; they say his name.
 - **No bloodline. No prophecy. No chosen-one.** His significance to the story is the friendship with Arn and the position he holds in the resistance. Not origin. Not destiny.
 
 ---
@@ -29,7 +30,6 @@ These are not player choices. They are the character before the character creati
 
 These are the character creation decisions. Classic CRPG structure.
 
-- **Name** — player-editable. Canon default for internal reference: **Ravn**. The player's chosen name is used in all shipped content. Voiced dialogue from companions uses the title "Captain" — this is how people address him in the world, and it allows VO to remain name-agnostic without sounding evasive.
 - **Class** — three choices: Fighter, Thief, or Caster. See [[combat-core]] and [[eld-magic]] for full mechanical detail. The class is fixed at creation — the protagonist's competence is pre-established and specific, not a generalist background that could have gone any direction.
 - **Stats** — distributed from standard array at creation. Class determines HP dice and attack bonus progression.
 - **Build** — within class, the player makes choices at level-up. What those choices are depends on the class-progression note (not yet written).
