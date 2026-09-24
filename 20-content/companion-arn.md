@@ -81,7 +81,7 @@ Arn should remain present through the entire slice. The player should feel his i
 
 ## Ashfall spoken beats (draft)
 
-Linear only. No menu. No CHA. Address **Captain**. No divine drip. Not stub 5. Not the goodbye.
+Linear only. No menu. No CHA. Address **Ravn**. No divine drip. Not stub 5. Not the goodbye.
 
 ### Opening — on the line (`Conv_AshfallOpening`)
 
@@ -96,7 +96,7 @@ Full scene: [[opening-scene-outline]]. Arn’s cards from that conversation:
 | 10 | ARN | Same as every time. People first. |
 | 12 | ARN | He'll walk in when he can. |
 
-Oldest-friend shorthand. Company already known. Civilians first. He does not perform hope. He does not sermon that the Captain is not chosen.
+Oldest-friend shorthand. Company already known. Civilians first. He does not perform hope. He does not sermon that Ravn is not chosen.
 
 ### After-hold — `Bark_ArnAfterHold`
 
