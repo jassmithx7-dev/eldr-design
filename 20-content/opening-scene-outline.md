@@ -55,20 +55,23 @@ The player arrives at the Falling Gate mid-retreat. The resistance is already fa
 
 STAGE lines are director text (camera / blocking). They are not spoken.
 
+**Spoken orientation (not STAGE):** Captain; company already present; **Varnstead** evacuating through the **Falling Gate**; hold so the retreat does not become a panic. Writer constraint only: do not sermon “you are not chosen.” No new history. No roll-call. No Vela briefing.
+
 | # | Beat | Speaker | Line |
 |---|------|---------|------|
 | 1 | 1 | STAGE | Smoke on the north approach. Broken barricades. People from **Varnstead** crossing the south apron with what they can carry. The company is already in the courtyard. Bram is not among them. |
-| 2 | 1 | FEN | They're still coming through. |
+| 2 | 1 | FEN | Varnstead's still coming through the Falling Gate. |
 | 3 | 1 | VORYN | Withdrawal. Not a stand they asked for. |
 | 4 | 1 | ARN | Then we make it one long enough. |
-| 5 | 2 | FEN | They're waiting on you. |
-| 6 | 2 | CAPTAIN | Mouth first. We don't let this become a run. |
-| 7 | 3 | ARN | You take the line. I'll watch who's still outside. |
-| 8 | 3 | CAPTAIN | Same as last time. |
-| 9 | 3 | ARN | Same as every time. People first. |
-| 10 | 3 | FEN | Bram's late. |
-| 11 | 3 | ARN | He'll walk in when he can. |
-| 12 | 3 | CAPTAIN | Work. |
+| 5 | 2 | FEN | They're waiting on you, Captain. |
+| 6 | 2 | ARN | Company's already here. Call it. |
+| 7 | 2 | CAPTAIN | Mouth first. We don't let the retreat become a panic. |
+| 8 | 3 | ARN | You take the line. I'll watch who's still outside. |
+| 9 | 3 | CAPTAIN | Same as last time. |
+| 10 | 3 | ARN | Same as every time. People first. |
+| 11 | 3 | FEN | Bram's late. |
+| 12 | 3 | ARN | He'll walk in when he can. |
+| 13 | 3 | CAPTAIN | Work. |
 
 **Do not add here:** shrine / Eld lecture (stub 4a), Ironhold dump (stub 0), postern board-argue (stub 3), after-hold Arn, Reach the Shrine, Soulwright, goodbye.
 
