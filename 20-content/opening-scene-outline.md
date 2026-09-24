@@ -49,13 +49,13 @@ The player arrives at the Falling Gate mid-retreat. The resistance is already fa
 
 **Asset:** `Conv_AshfallOpening` (Dialogue System). Already named in [[slice-ashfall-unity-map]].  
 **When:** Gate bootstrap / load, **before Wave 1**. Play once.  
-**Form:** Linear cards. No player menu. No CHA. No social gate. No class callout. Companions address **Captain** — never a personal name.  
+**Form:** Linear cards. No player menu. No CHA. No social gate. No class callout. Companions address **Ravn**.  
 **Speakers on stage:** CAPTAIN (`PC_Protagonist`), ARN (`PC_Arn`), FEN (`PC_Fen`), VORYN (`PC_Voryn`). **Bram absent.**  
 **On end:** hand the Gate to Hold-the-Gate combat. Do not start Wave 1 under this conversation.
 
 STAGE lines are director text (camera / blocking). They are not spoken.
 
-**Spoken orientation (not STAGE):** Captain; company already present; **Varnstead** evacuating through the **Falling Gate**; hold so the retreat does not become a panic. Writer constraint only: do not sermon “you are not chosen.” No new history. No roll-call. No Vela briefing.
+**Spoken orientation (not STAGE):** Ravn; company already present; **Varnstead** evacuating through the **Falling Gate**; hold so the retreat does not become a panic. Writer constraint only: do not sermon “you are not chosen.” No new history. No roll-call. No Vela briefing.
 
 | # | Beat | Speaker | Line |
 |---|------|---------|------|
@@ -63,7 +63,7 @@ STAGE lines are director text (camera / blocking). They are not spoken.
 | 2 | 1 | FEN | Varnstead's still coming through the Falling Gate. |
 | 3 | 1 | VORYN | Withdrawal. Not a stand they asked for. |
 | 4 | 1 | ARN | Then we make it one long enough. |
-| 5 | 2 | FEN | They're waiting on you, Captain. |
+| 5 | 2 | FEN | They're waiting on you, Ravn. |
 | 6 | 2 | ARN | Company's already here. Call it. |
 | 7 | 2 | CAPTAIN | Mouth first. We don't let the retreat become a panic. |
 | 8 | 3 | ARN | You take the line. I'll watch who's still outside. |
