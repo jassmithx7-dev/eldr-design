@@ -58,7 +58,7 @@ This quest should feel like a final stand that turns into sudden personal loss. 
 
 | # | Speaker | Line |
 |---|---------|------|
-| 1 | BRAM | Ironhold held me. I'm on your line, Captain. |
+| 1 | BRAM | Ironhold held me. I'm on your line, Ravn. |
 
 ### Stub 1 — Fen ↔ Dag camp (grumble-play)
 **When:** First camp / rest between Gate hold and Keep push (or immediately after Gate hybrid complete).  
