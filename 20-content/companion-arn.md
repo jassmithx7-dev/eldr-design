@@ -89,14 +89,11 @@ Full scene: [[opening-scene-outline]]. Arn’s cards from that conversation:
 
 | # | Speaker | Line |
 |---|---------|------|
-| 4 | ARN | Then we make it one long enough. |
-| 6 | ARN | Company's already here. Call it. |
-| 8 | ARN | You take the line. I'll watch who's still outside. |
-| 9 | CAPTAIN | Same as last time. |
-| 10 | ARN | Same as every time. People first. |
-| 12 | ARN | He'll walk in when he can. |
+| 6 | ARN | Company's already here. This one can't run, Ravn. |
+| 7 | CAPTAIN | Mouth first. We don't let the retreat become a panic. |
+| 9 | ARN | Hold on. We walk it through. |
 
-Oldest-friend shorthand. Company already known. Civilians first. He does not perform hope. He does not sermon that Ravn is not chosen.
+He does not debate the minute. He puts the person who cannot run in front of Ravn, then goes back to them. Last spoken beat is his, practical. Oldest-friend shorthand. Company already known. He does not perform hope. He does not sermon that Ravn is not chosen.
 
 ### After-hold — `Bark_ArnAfterHold`
 

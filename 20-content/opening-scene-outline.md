@@ -3,8 +3,9 @@ type: quest
 status: draft
 depends_on: ["[[game-premise]]", "[[zone-the-falling-gate]]"]
 ue5_scope: S
-inspired_by: ["anatomy-of-story", "moral-argument"]
-open_questions: []
+inspired_by: ["anatomy-of-story", "moral-argument", "game-second-brain-prompt", "opening-scene", "character-web", "character-story-functions", "scene-construction-process", "story-arena", "values-in-conflict-scene", "dialogue-key-words-and-taglines", "ghost-in-story"]
+open_questions:
+  - "Ravn's call is written mouth-first, so Fen's extra minute loses and Fen stays. If the minute is spent instead, only who lost changes; the last spoken beat stays Arn's."
 ---
 
 # Opening Scene Outline
@@ -55,25 +56,31 @@ The player arrives at the Falling Gate mid-retreat. The resistance is already fa
 
 STAGE lines are director text (camera / blocking). They are not spoken.
 
-**Spoken orientation (not STAGE):** Ravn; company already present; **Varnstead** evacuating through the **Falling Gate**; hold so the retreat does not become a panic. Writer constraint only: do not sermon “you are not chosen.” No new history. No roll-call. No Vela briefing.
+**One conversation.** The four facts are spoken once, inside the argument: **Ravn**; the company already here; **Varnstead** through the **Falling Gate**; hold so the retreat does not become a panic. What used to restate that hold — agreement, “people first,” Bram late — is now the three pulls, then steel. Not a second scene. Not a walkable minute.
+
+**Argument:** Fen wants the extra minute for the people still outside the mouth. He says it by talking about them. Voryn prices the wait once. Arn does not debate; he puts the person who cannot run in front of Ravn. Ravn calls it. Whoever lost stays. Last spoken beat is Arn’s, practical. Then steel.
+
+The person who cannot run is already in the evacuation this STAGE shows. No name. No new companion.
+
+Writer constraint only: do not sermon “you are not chosen.” No new history. No roll-call. No Vela briefing. Fen is he.
+
+<!-- ASSUMPTION: Ravn's call keeps the existing hold — mouth first — so Fen's minute loses. Fen stays. Voryn is already on the mouth either way. -->
 
 | # | Beat | Speaker | Line |
 |---|------|---------|------|
-| 1 | 1 | STAGE | Smoke on the north approach. Broken barricades. People from **Varnstead** crossing the south apron with what they can carry. The company is already in the courtyard. Bram is not among them. |
+| 1 | 1 | STAGE | Smoke on the north approach. Broken barricades. People from **Varnstead** in the mouth of the **Falling Gate**, carrying what they have. A last knot is still outside that mouth. Near Arn, one person who cannot run. The company is already in the courtyard. Bram is not among them. |
 | 2 | 1 | FEN | Varnstead's still coming through the Falling Gate. |
-| 3 | 1 | VORYN | Withdrawal. Not a stand they asked for. |
-| 4 | 1 | ARN | Then we make it one long enough. |
-| 5 | 2 | FEN | They're waiting on you, Ravn. |
-| 6 | 2 | ARN | Company's already here. Call it. |
+| 3 | 2 | FEN | Ravn. They're still outside. One more minute. |
+| 4 | 2 | VORYN | Wait, and the mouth closes on the ones already in it. |
+| 5 | 2 | STAGE | Arn does not take either side. He turns the person who cannot run to face Ravn and keeps a hand on them. |
+| 6 | 2 | ARN | Company's already here. This one can't run, Ravn. |
 | 7 | 2 | CAPTAIN | Mouth first. We don't let the retreat become a panic. |
-| 8 | 3 | ARN | You take the line. I'll watch who's still outside. |
-| 9 | 3 | CAPTAIN | Same as last time. |
-| 10 | 3 | ARN | Same as every time. People first. |
-| 11 | 3 | FEN | Bram's late. |
-| 12 | 3 | ARN | He'll walk in when he can. |
-| 13 | 3 | CAPTAIN | Work. |
+| 8 | 3 | STAGE | Fen stops talking and moves to the mouth. He stays. Voryn is already watching it. Arn turns back to the person who cannot run. |
+| 9 | 3 | ARN | Hold on. We walk it through. |
 
-**Do not add here:** shrine / Eld lecture (stub 4a), Ironhold dump (stub 0), postern board-argue (stub 3), after-hold Arn, Reach the Shrine, Soulwright, goodbye.
+**Then steel.** On end, hand the Gate to Hold-the-Gate. Do not start Wave 1 under this conversation. No menu. No CHA.
+
+**Do not add here:** a second talk, a street, a Warm Room, shrine / Eld lecture (stub 4a), Ironhold dump (stub 0), postern board-argue (stub 3), after-hold Arn, Reach the Shrine, Soulwright, goodbye.
 
 ## Tone
 
