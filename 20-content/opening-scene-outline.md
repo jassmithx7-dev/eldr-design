@@ -3,9 +3,10 @@ type: quest
 status: draft
 depends_on: ["[[game-premise]]", "[[zone-the-falling-gate]]"]
 ue5_scope: S
-inspired_by: ["opening-scene", "scene-construction-process", "symphonic-dialogue", "story-dialogue", "moral-dialogue", "values-in-conflict-scene"]
+inspired_by: ["opening-scene", "scene-construction-process", "symphonic-dialogue", "story-dialogue", "moral-dialogue", "values-in-conflict-scene", "crpg-genre-origins", "white-education-through-transformation"]
 open_questions:
   - "Yard call: Ravn sends the cart through, then they close the gate. Fen wanted longer. Voryn wanted the gate shut now. Confirm or replace before this leaves draft."
+  - "Name is Ravn, with no rename, for now. Jason may circle back to a name field and to companions saying Captain."
 ---
 
 # Opening Scene Outline
@@ -43,6 +44,16 @@ The player is already in the Falling Gate courtyard, mid-retreat. The resistance
 
 6. **The scene ends with urgency, not clarity.**  
    The gate holds for now, but the party realizes that the enemy is not merely advancing; it is changing the world itself.
+
+## From the title to the yard
+
+The title is the word Eldr and a way to begin. Beginning does not open a character sheet. It puts Ravn in the courtyard, and the yard plays. Arn, Fen, and Voryn are with him. Bram is not there. Dag is not there.
+
+Ravn is his name. The player does not choose it.
+
+When the yard's last line is done, and before any steel, one screen: class (Fighter, Thief, or Caster) and stats. Then Hold the Gate. The class screen does not come after that fight. The fight is where the class is used. The yard does not use it.
+
+<!-- ASSUMPTION: Name stays Ravn until Jason circles back. Class and stats sit between the yard and the first fight. If that screen feels like a break, the fallback is title, then class and stats, then the yard. -->
 
 ## How a conversation is built
 
