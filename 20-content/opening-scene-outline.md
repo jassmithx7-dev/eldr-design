@@ -7,7 +7,7 @@ inspired_by: ["opening-scene", "scene-construction-process", "symphonic-dialogue
 open_questions:
   - "Yard call: Ravn sends the cart through, then they close the gate. Fen wanted longer. Voryn wanted the gate shut now. Confirm or replace before this leaves draft."
   - "Name is Ravn, with no rename, for now. Jason may circle back to a name field and to companions saying Captain."
-  - "Within-class choice after the gear pick is unwritten. The three classes may be reworked. Stats still need a place on that second step or beside it."
+  - "Protagonist classes are still the three placeholders in combat-core. No subclass list exists. The gear pick names Fighter, Thief, or Caster and stops. A within-class choice, if any, waits on the class pass. Stats still need a home."
 ---
 
 # Opening Scene Outline
@@ -52,13 +52,13 @@ The title is the word Eldr and a way to begin. Beginning does not open a charact
 
 Ravn is his name. The player does not choose it.
 
-When the yard's last line is done, and before any steel, Ravn gets his gear. It is already in the courtyard, in different parts of it. No labels on it. A sword, a knife, and a staff.
+When the yard's last line is done, and before any steel, Ravn gets his gear. Three tables stand in different parts of the courtyard. No labels. A sword on one, a knife on one, a staff on one.
 
 > **Arn:** "Ravn. Your gear is in the yard. Go get it."
 
-He walks to one and takes it. The game then says the class in plain words. A sword: "That's a fighter." A knife: "That's a thief." A staff: "That's a caster." Then it asks what kind, inside that class. Those kinds are not written yet. Then Hold the Gate. This does not happen after the fight.
+He walks to a table and takes what is on it. The game then says the class in plain words. A sword: "That's a fighter." A knife: "That's a thief." A staff: "That's a caster." It stops there. There is no subclass list yet. Then Hold the Gate. This does not happen after the fight.
 
-<!-- ASSUMPTION: Name stays Ravn until Jason circles back. Gear in the yard is the class pick. The second step, what kind inside the class, waits on a class pass. Stats still need a home on that second step. -->
+<!-- ASSUMPTION: Name stays Ravn until Jason circles back. The tables are the class pick. A within-class choice, if any, waits until the classes are revisited. Stats still need a home. -->
 
 ## How a conversation is built
 
