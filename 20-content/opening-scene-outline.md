@@ -46,33 +46,33 @@ The player is already in the Falling Gate courtyard, mid-retreat. The resistance
 
 ## The yard (draft)
 
-*Before any steel. The first scene. They disagree, Ravn calls it, they stay. Bram is not here. Dag is not here. No dialogue menu.*
+*Before any steel. The first scene. They disagree, Ravn calls it, they stay. Bram is not here. Dag is not here. No dialogue menu. Speech is plain. People say what they mean.*
 
 Smoke. Broken timber. **Varnstead** is still coming through the gate with whatever they could carry. The last knot of them is still outside. Fen is talking, because the quiet makes this worse. Those people are already his.
 
-> **Fen:** "Ravn. They're still outside. Give them the minute."
+> **Fen:** "Ravn. They're still outside. Give them a moment."
 
-> **Voryn:** "Wait, and the gate shuts on the ones already coming through."
+> **Voryn:** "If we wait, we close the gate on the people already coming through."
 
 Arn is with the person nearest him who cannot run. He does not take a side. He says what that person needs, and he looks at Ravn.
 
-> **Arn:** "This one can't run. They go on the cart."
+> **Arn:** "They can't run. Get them on the cart."
 
 <!-- ASSUMPTION: Ravn sends the cart through, then the gate closes. He does not leave it open. The call is authored. The player is not offered a menu. -->
 
-> **Ravn:** "The cart goes through. Fen, move it. Then we close the gate."
+> **Ravn:** "Get the cart through the gate. Fen, go with it. Then we close the gate."
 
 Fen shuts up and moves. Voryn stays. He is already watching the gate. Arn goes back to the person on the ground.
 
-> **Arn:** "Bram's still on the Ironhold line."
+> **Arn:** "Bram is still on the Ironhold line."
 
-> **Voryn:** "Dag's packing the line. He isn't in this yard."
+> **Voryn:** "Dag is still packing the gear. He's not in the yard."
 
 Nothing else about either of them. You do not hear how anyone met.
 
 The yard can be walked while this is still true. A cart. A bundle someone turned around for. A face looks at Ravn, because he has survived long enough to be the one who answers.
 
-> **Ravn:** "Through the gate. Stay with the cart."
+> **Ravn:** "Go through the gate. Stay with the cart."
 
 That is the last line. No steel. The hold has not started.
 
