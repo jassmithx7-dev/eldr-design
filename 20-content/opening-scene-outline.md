@@ -56,7 +56,7 @@ When the yard's last line is done, and before any steel, Ravn gets his gear. Thr
 
 > **Arn:** "Ravn. Your gear is in the yard. Go get it."
 
-He walks to a table and takes what is on it. The game then says the class in plain words. A sword: "That's a fighter." A knife: "That's a thief." A staff: "That's a caster." It stops there. There is no subclass list yet. Then Hold the Gate. This does not happen after the fight.
+He walks to a table and takes what is on it. The game then says the class in plain words. A sword: "That's a fighter." A knife: "That's a thief." A staff: "That's a caster." It stops there. The talent trees come later, one point per level from level 2 ([[class-progression]]). Then Hold the Gate. This does not happen after the fight.
 
 <!-- ASSUMPTION: Name stays Ravn until Jason circles back. The tables are the class pick. A within-class choice, if any, waits until the classes are revisited. Stats still need a home. -->
 

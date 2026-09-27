@@ -6,7 +6,7 @@ ue5_scope: M
 inspired_by: ["crpg-design-patterns-1985-1989", "crpg-genre-origins"]
 open_questions:
   - "Stats: where the array is chosen is still open. It is not the weapon table."
-  - "Level-up choices inside a class are still unwritten. They are not a subclass picked in the yard."
+  - "Talent numbers are playtest values. Evoker Fireball in the tree is 3d6 to a group; the spell list's Fireball is 2d6 to one target. Those two need one number before balance is real."
 ---
 
 # Class List
@@ -15,7 +15,7 @@ open_questions:
 
 ## The list
 
-Three classes. No fourth. No subclass at the table.
+Three classes. No fourth. The weapon table picks the class only.
 
 | Table | Class | In a fight |
 |-------|--------|------------|
@@ -26,6 +26,16 @@ Three classes. No fourth. No subclass at the table.
 The names on the companions are those people. Bram is a Blade. Fen is a Shadow. Voryn is an Eld-Weaver. Arn is not an Eld caster. Solen is later. None of those are a class Ravn chooses.
 
 Ravn takes one weapon off one table. The game says the class in plain words and stops. Hold the Gate comes after that.
+
+The choices inside a class are the talent trees in [[class-progression]]. Three trees per class, the same names as the playstyles. From level 2, one point per level, spendable in any of that class's trees. Not a second question at the table. The game suggests one tree. A free change sits at the first camp.
+
+| Class | Trees |
+|-------|--------|
+| Fighter | Guardian, Champion, Warlord |
+| Thief | Thief, Assassin, Shadowdancer |
+| Caster | Controller, Evoker, Abjurer |
+
+Level 1 is only the basic hit (or Eld Bolt for a caster). The first real button is the first point. A slice character has 4 points. A capstone takes 6 points in one tree, so it is not in the slice.
 
 ## How a fight works
 
@@ -50,4 +60,4 @@ The numbers, the grid, initiative, morale, and the downed state stay in [[combat
 
 Still open, and not decided here: the stat array, level-up choices inside a class, the full spell list, knockback numbers, and how a wipe is counted beyond what combat-core already says (back to the last rest, no permadeath, death is a story event).
 
-No subclass screen until a later pass writes something real to put on it. Until then, the second question does not appear.
+The trees are already written. This note does not replace them. The number to watch for "powerful, not ridiculous" is Evoker's Fireball: 3d6 to everyone in the blast. A Settled Levy has 20 HP. One of those casts can erase a group. The other Fireball, in the spell list, is 2d6 to one person. Pick one before calling the caster tuned.
