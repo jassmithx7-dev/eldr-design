@@ -6,6 +6,7 @@ ue5_scope: M
 inspired_by: ["crpg-design-patterns-1985-1989", "crpg-genre-origins"]
 open_questions:
   - "Stats: where the array is chosen is still open. It is not the weapon table."
+  - "Which trees get a full turn-skip, and which get a jump-the-line, is not assigned yet. Not every tree."
   - "Talent numbers are playtest values. Evoker Fireball in the tree is 3d6 to a group; the spell list's Fireball is 2d6 to one target. Those two need one number before balance is real."
 ---
 
@@ -42,6 +43,10 @@ Level 1 is only the basic hit (or Eld Bolt for a caster). The first real button 
 The feel is Chrono Trigger and classic Final Fantasy: the fight is there so the story can keep going, and it should be fun without becoming the whole game. It stays turn-based. You get a few steps, then you act. There is no tile grid and no flanking puzzle.
 
 The order is a fixed list, rolled once. No bars filling up in real time. That clock was set aside on purpose. The fuller on-the-map version, with bars on the body and no separate battle screen, is parked and is not the combat note.
+
+Who is next is a row of icons, in order. It stays on screen. When someone is stunned, their icon stays in the row and reads as frozen. Their turn comes and passes. They do not act. It lasts that one turn unless the ability says longer. Stuns work on enemies and on the party.
+
+Jumping the line is a rare ability, on a cooldown. It moves your icon to next, or pushes someone to the end of this round. It is not part of a basic hit. If every tree can do it, the row stops being a promise. Wait already lets you choose to drop to the end of the round. Controller's Command already takes away someone's main action for a round. A full skip is the stronger version of that, not a second copy on every class.
 
 On a turn, a person can move, do one main thing, and one smaller thing.
 
