@@ -7,7 +7,7 @@ inspired_by: ["opening-scene", "scene-construction-process", "symphonic-dialogue
 open_questions:
   - "Yard call: Ravn sends the cart through, then they close the gate. Fen wanted longer. Voryn wanted the gate shut now. Confirm or replace before this leaves draft."
   - "Name is Ravn, with no rename, for now. Jason may circle back to a name field and to companions saying Captain."
-  - "Protagonist classes are still the three placeholders in combat-core. No subclass list exists. The gear pick names Fighter, Thief, or Caster and stops. A within-class choice, if any, waits on the class pass. Stats still need a home."
+  - "Stats still need a home. They are not chosen at the weapon table. See [[class-list]]."
 ---
 
 # Opening Scene Outline

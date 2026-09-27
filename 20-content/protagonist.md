@@ -31,9 +31,9 @@ These are not player choices. They are the character before the character creati
 These are the character creation decisions. Classic CRPG structure.
 
 - **Name** — **Ravn.** Not chosen at the start. Companions say Ravn. A rename field, and companions saying Captain so a custom name still fits, is parked until Jason circles back.
-- **Class** — three choices: Fighter, Thief, or Caster. See [[combat-core]] and [[eld-magic]] for full mechanical detail. The class is fixed at creation — the protagonist's competence is pre-established and specific, not a generalist background that could have gone any direction. After the yard, and before Hold the Gate, he takes gear off one of three tables in the courtyard: sword, knife, or staff. The game names the class from that and stops. No subclass list yet ([[opening-scene-outline]]).
+- **Class** — three choices: Fighter, Thief, or Caster. See [[combat-core]] and [[eld-magic]] for full mechanical detail. The class is fixed at creation — the protagonist's competence is pre-established and specific, not a generalist background that could have gone any direction. After the yard, and before Hold the Gate, he takes gear off one of three tables in the courtyard: sword, knife, or staff. The game names the class from that and stops. What the three classes do in a fight is [[class-list]]. No subclass at the table.
 - **Stats** — distributed from standard array at creation. Class determines HP dice and attack bonus progression.
-- **Build** — within class, the player makes choices at level-up. What those choices are depends on the class-progression note (not yet written).
+- **Build** — within class, the player makes choices at level-up. Those choices are still unwritten ([[class-list]]). They are not a subclass picked in the yard.
 
 ---
 
