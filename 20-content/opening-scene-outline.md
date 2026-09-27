@@ -3,7 +3,7 @@ type: quest
 status: draft
 depends_on: ["[[game-premise]]", "[[zone-the-falling-gate]]"]
 ue5_scope: S
-inspired_by: ["opening-scene", "scene-construction-process", "subtext-scenes", "inverted-triangle-scene"]
+inspired_by: ["opening-scene", "scene-construction-process", "symphonic-dialogue", "story-dialogue", "moral-dialogue", "values-in-conflict-scene"]
 open_questions:
   - "Yard call: Ravn sends the cart through, then they close the gate. Fen wanted longer. Voryn wanted the gate shut now. Confirm or replace before this leaves draft."
 ---
@@ -43,6 +43,10 @@ The player is already in the Falling Gate courtyard, mid-retreat. The resistance
 
 6. **The scene ends with urgency, not clarity.**  
    The gate holds for now, but the party realizes that the enemy is not merely advancing; it is changing the world itself.
+
+## How a conversation is built
+
+Write what people do before you write what they say. Each person wants one thing from the talk. A line asks for that, or answers an ask, in ordinary words. The talk ends when someone does the thing. They sound different because they want different things. Fen asks for the people outside. Voryn names what waiting costs. Arn names the person in front of him. Ravn gives the order. No slogan. No line that means something other than what it says.
 
 ## The yard (draft)
 
