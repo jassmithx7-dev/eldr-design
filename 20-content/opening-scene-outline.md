@@ -3,10 +3,11 @@ type: quest
 status: draft
 depends_on: ["[[game-premise]]", "[[zone-the-falling-gate]]"]
 ue5_scope: S
-inspired_by: ["opening-scene", "scene-construction-process", "symphonic-dialogue", "story-dialogue", "moral-dialogue", "values-in-conflict-scene", "crpg-genre-origins", "white-education-through-transformation"]
+inspired_by: ["opening-scene", "scene-construction-process", "symphonic-dialogue", "story-dialogue", "moral-dialogue", "values-in-conflict-scene", "crpg-genre-origins", "white-education-through-transformation", "signifiers-don-norman"]
 open_questions:
   - "Yard call: Ravn sends the cart through, then they close the gate. Fen wanted longer. Voryn wanted the gate shut now. Confirm or replace before this leaves draft."
   - "Name is Ravn, with no rename, for now. Jason may circle back to a name field and to companions saying Captain."
+  - "Within-class choice after the gear pick is unwritten. The three classes may be reworked. Stats still need a place on that second step or beside it."
 ---
 
 # Opening Scene Outline
@@ -51,9 +52,13 @@ The title is the word Eldr and a way to begin. Beginning does not open a charact
 
 Ravn is his name. The player does not choose it.
 
-When the yard's last line is done, and before any steel, one screen: class (Fighter, Thief, or Caster) and stats. Then Hold the Gate. The class screen does not come after that fight. The fight is where the class is used. The yard does not use it.
+When the yard's last line is done, and before any steel, Ravn gets his gear. It is already in the courtyard, in different parts of it. No labels on it. A sword, a knife, and a staff.
 
-<!-- ASSUMPTION: Name stays Ravn until Jason circles back. Class and stats sit between the yard and the first fight. If that screen feels like a break, the fallback is title, then class and stats, then the yard. -->
+> **Arn:** "Ravn. Your gear is in the yard. Go get it."
+
+He walks to one and takes it. The game then says the class in plain words. A sword: "That's a fighter." A knife: "That's a thief." A staff: "That's a caster." Then it asks what kind, inside that class. Those kinds are not written yet. Then Hold the Gate. This does not happen after the fight.
+
+<!-- ASSUMPTION: Name stays Ravn until Jason circles back. Gear in the yard is the class pick. The second step, what kind inside the class, waits on a class pass. Stats still need a home on that second step. -->
 
 ## How a conversation is built
 
