@@ -3,7 +3,7 @@ type: quest
 status: draft
 depends_on: ["[[zone-the-falling-gate]]", "[[companion-arn]]", "[[game-premise]]", "[[enemy-roster-ashfall]]", "[[relic-the-anchor]]", "[[party-web-ashfall]]", "[[opening-scene-outline]]"]
 ue5_scope: M
-inspired_by: ["scene-construction-process", "subtext-scenes", "inverted-triangle-scene", "man-made-spaces-in-story"]
+inspired_by: ["scene-construction-process", "man-made-spaces-in-story", "symphonic-dialogue", "story-dialogue", "moral-dialogue", "values-in-conflict-scene"]
 open_questions: []
 ---
 
@@ -60,7 +60,7 @@ The room: a fire, Dag's bench, bedrolls, the wounded along one wall, a table som
 
 <!-- ASSUMPTION: The one worry Arn does not finish is Fen still up from the gate. Civilians still moving is not this rest. -->
 
-Speech is plain. People say what they mean.
+Speech is plain. People say what they mean. Same build as the yard: what they do first, one want each, and the talk stops when someone does it.
 
 Fen is by the bench, still talking.
 
