@@ -60,33 +60,35 @@ The room: a fire, Dag's bench, bedrolls, the wounded along one wall, a table som
 
 <!-- ASSUMPTION: The one worry Arn does not finish is Fen still up from the gate. Civilians still moving is not this rest. -->
 
+Speech is plain. People say what they mean.
+
 Fen is by the bench, still talking.
 
-> **Fen:** "Ravn. Your strap sang the whole way off the gate. I'm still hearing it."
+> **Fen:** "Ravn. The strap on your kit was loose the whole way back."
 
-Dag has that strap on the bench. He does not look up. The complaint is him staying in it.
+Dag has that strap on the bench. He does not look up. He complains, and he is already fixing it.
 
-> **Dag:** "Then sit down and hold it. It's leather. It isn't a story."
+> **Dag:** "Sit down and hold it. I'll fix it."
 
 Fen sits. He takes the loose end.
 
-> **Fen:** "I'm sitting. I've got the end."
+> **Fen:** "I'm sitting. I've got it."
 
-Dag sets one rivet. The strap goes quiet. He does not say it will hold.
+Dag sets one rivet. The strap is fixed. He does not make a speech about it.
 
-> **Dag:** "Hold still. There. Now leave it. Ravn heard it already."
+> **Dag:** "Hold still."
 
-Arn is a step off, close enough that only Ravn is meant to hear. He was going to say more. Fen is in the seat, the strap in his hands.
+Arn is a step off, close enough that only Ravn is meant to hear. He was going to say what to do about it. Fen is in the seat, holding the strap.
 
-> **Arn:** "Ravn. He was still on the gate."
+> **Arn:** "Ravn. Fen still hasn't settled down."
 
 Arn stops. He does not add a plan.
 
 Bram is at the table. A bowl is already at the empty end. This is Stub 2, the same sitting-down.
 
-> **Bram:** "Voryn. I put yours down when I sat. End of the table."
+> **Bram:** "Voryn. There's a bowl for you at the end of the table."
 
-> **Voryn:** "Then it was never a question."
+> **Voryn:** "I'll sit."
 
 Voryn sits. He does not move the bowl, and he does not thank Bram. That is the last line. Dag is still at the bench. The room keeps going. No one asks Ravn what comes next.
 
