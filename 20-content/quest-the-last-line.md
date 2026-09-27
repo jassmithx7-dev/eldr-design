@@ -48,7 +48,7 @@ This quest should feel like a final stand that turns into sudden personal loss. 
 **Also:** [[opening-scene-outline]] beat 4.
 
 ### Stub 1 — Fen ↔ Dag camp (grumble-play)
-**When:** The first rest after Hold the Gate is complete (gate wave clear and evac meter full), before the keep push. The keep's back room. No separate zone note.  
+**When:** After [[opening-scene-outline]] (the yard, before any steel) and after Hold the Gate, the first short fight. The keep's back room. No separate zone note. This is not the start of the act, and it is not the Soulwright.  
 **What:** One linear scene. Fen fills the quiet. Dag complains and plays along at the bench. Arn takes Ravn aside for one unfinished worry, then stops. Stub 2 plays in this same downtime, after Arn.  
 **Job:** Make the rest feel inhabited before the keep gets worse. The player can stand, listen, and watch Dag finish one small piece of work.
 
