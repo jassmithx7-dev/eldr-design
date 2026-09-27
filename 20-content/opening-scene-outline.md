@@ -3,7 +3,9 @@ type: quest
 status: draft
 depends_on: ["[[game-premise]]", "[[zone-the-falling-gate]]"]
 ue5_scope: S
-open_questions: []
+inspired_by: ["opening-scene", "scene-construction-process", "subtext-scenes", "inverted-triangle-scene"]
+open_questions:
+  - "Yard call: Ravn gives the cart's minute, then the mouth of the gate closes. Fen wanted longer. Voryn wanted it shut now. Confirm or replace before this leaves draft."
 ---
 
 # Opening Scene Outline
@@ -20,7 +22,7 @@ The opening should establish three things immediately:
 
 ## Scene Summary
 
-The player arrives at the Falling Gate mid-retreat. The resistance is already falling back, covering the final evacuation of **Varnstead**. The outer walls are damaged, the streets crowded with frightened civilians. The party's job is not to win — it is to hold long enough for the retreat not to collapse into panic.
+The player is already in the Falling Gate courtyard, mid-retreat. The resistance is already falling back, covering the final evacuation of **Varnstead**. The outer walls are damaged, the yard crowded with frightened civilians. The party's job is not to win — it is to hold long enough for the retreat not to collapse into panic. The first thing heard is the yard, below. Steel has not started.
 
 ## Key Beats
 
@@ -41,6 +43,38 @@ The player arrives at the Falling Gate mid-retreat. The resistance is already fa
 
 6. **The scene ends with urgency, not clarity.**  
    The gate holds for now, but the party realizes that the enemy is not merely advancing; it is changing the world itself.
+
+## The yard (draft)
+
+*Before any steel. The first scene. They disagree, Ravn calls it, they stay. Bram is not here. Dag is not here. No dialogue menu.*
+
+Smoke. Broken timber. **Varnstead** is still coming through the mouth of the gate with whatever they could carry. The last knot of them is still outside. Fen is talking, because the quiet makes this worse. Those people are already his.
+
+> **Fen:** "Ravn. They're still outside. Give them the minute."
+
+> **Voryn:** "Wait, and the mouth closes on the ones already in it."
+
+Arn is with the person nearest him who cannot run. He does not take a side. He says what that person needs, and he looks at Ravn.
+
+> **Arn:** "This one can't run. The cart is the minute."
+
+<!-- ASSUMPTION: Ravn gives that minute and no more. The call is authored. The player is not offered a menu. -->
+
+> **Ravn:** "Then it's that minute. Fen, move. After the cart, the mouth closes."
+
+Fen shuts up and moves. Voryn stays. He is already watching the mouth. Arn goes back to the person on the ground.
+
+> **Arn:** "Bram's still on the Ironhold line."
+
+> **Voryn:** "Dag's packing the line. He isn't in this yard."
+
+Nothing else about either of them. You do not hear how anyone met.
+
+The yard can be walked while this is still true. A cart. A bundle someone turned around for. A face looks at Ravn, because he has survived long enough to be the one who answers.
+
+> **Ravn:** "Through the gate. Stay with the cart."
+
+That is the last line. No steel. The hold has not started.
 
 ## Tone
 
