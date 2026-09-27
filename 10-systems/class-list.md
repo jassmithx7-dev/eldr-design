@@ -39,7 +39,9 @@ Level 1 is only the basic hit (or Eld Bolt for a caster). The first real button 
 
 ## How a fight works
 
-Combat stays a turn-based grid. That is the Baldur's Gate line this game already picked: a separate tactical map, where standing still or stepping aside is the decision. Not a real-time brawl.
+The feel is Chrono Trigger and classic Final Fantasy: the fight is there so the story can keep going, and it should be fun without becoming the whole game. It stays turn-based. You get a few steps, then you act. There is no tile grid and no flanking puzzle.
+
+The order is a fixed list, rolled once. No bars filling up in real time. That clock was set aside on purpose. The fuller on-the-map version, with bars on the body and no separate battle screen, is parked and is not the combat note.
 
 On a turn, a person can move, do one main thing, and one smaller thing.
 
@@ -56,7 +58,7 @@ Eld does not come back during the fight. It comes back at rest. Fighter and Thie
 
 ## What this pass leaves alone
 
-The numbers, the grid, initiative, morale, and the downed state stay in [[combat-core]]. This note does not retune them.
+The numbers, initiative, morale, and the downed state stay in [[combat-core]]. This note does not retune them.
 
 Still open, and not decided here: the stat array, level-up choices inside a class, the full spell list, knockback numbers, and how a wipe is counted beyond what combat-core already says (back to the last rest, no permadeath, death is a story event).
 
