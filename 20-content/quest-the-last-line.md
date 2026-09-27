@@ -54,40 +54,47 @@ This quest should feel like a final stand that turns into sudden personal loss. 
 
 #### Dag's fire
 
-The back room is already going. A fire. Dag's bench. Bedrolls. The wounded along one wall. A table someone eats at. Crowded, and the war is off. Not a tavern. Not a war room. No one is taking reports. Ravn can stand in it. Nothing asks him to choose.
+**What the player is watching:** The gate is over. In the back room, the company is sitting down. Fen is the one still on his feet, talking about a strap on Ravn's kit that squeaked the whole way in. Dag is already fixing that strap, and he makes Fen sit and hold it. Arn starts to say Fen has not come off the gate, sees him sit, and stops. At the table, Bram has already set a bowl for Voryn. Voryn treats that as the fact that he was included.
 
-Outsiders get the noise. The company gets the gap Fen talks into. Dag's lines stay inside his shell: short, practical, and already doing the work.
+The room: a fire, Dag's bench, bedrolls, the wounded along one wall, a table someone eats at. Crowded. The war is off. A back room, not a tavern and not a war room. Ravn stands in it. Nothing asks him to choose.
 
 <!-- ASSUMPTION: The one worry Arn does not finish is Fen still up from the gate. Civilians still moving is not this rest. -->
 
-1. **Fen.** He fills the gap. He has been watching Dag's hands.
-   > "That strap talked the whole way in. Ravn, I could pick it out over the yard. You hear a thing that long, you start answering it."
+Fen is by the bench, still talking.
 
-2. **Dag.** He does not look up. The strap is already on the bench. The complaint is him playing along.
-   > "It's leather. It doesn't talk, and it doesn't need you to. Sit down before you name the rest of Ravn's kit."
+> **Fen:** "Ravn. Your strap sang the whole way off the gate. I'm still hearing it."
 
-3. **Fen.** He sits, and he stays in it. He takes the loose end.
-   > "I'm down. I'm also holding the end you were going to drop."
+Dag has that strap on the bench. He does not look up. The complaint is him staying in it.
 
-4. **Dag.** The loose end stays in Fen's hand. Dag sets one rivet and keeps complaining. The strap will hold. He does not say so.
-   > "Hold it still. And stop reporting. Ravn's got ears. The buckle doesn't."
+> **Dag:** "Then sit down and hold it. It's leather. It isn't a story."
 
-5. **Arn.** A step aside, under the bench noise, not into their bit. One glance at the bench: Dag is already on the strap. Arn says nothing about the work. He speaks to Ravn and does not finish.
-   > "Ravn. He's still on the gate. Talking, and he didn't come down. I was going to—"
+Fen sits. He takes the loose end.
 
-6. **Bram.** At the table, to Voryn. He sets a bowl at the end as he speaks. Counted, not recruited. This is Stub 2.
-   > "Voryn. End of the table. I put yours down with mine."
+> **Fen:** "I'm sitting. I've got the end."
 
-7. **Voryn.** One dry line. He does not thank Bram. He does not move the bowl.
-   > "Then it was never a question."
+Dag sets one rivet. The strap goes quiet. He does not say it will hold.
 
-That is the last line they hear. Dag is still at the bench. The room keeps going. No one asks Ravn what comes next.
+> **Dag:** "Hold still. There. Now leave it. Ravn heard it already."
+
+Arn is a step off, close enough that only Ravn is meant to hear. He was going to say more. Fen is in the seat, the strap in his hands.
+
+> **Arn:** "Ravn. He was still on the gate."
+
+Arn stops. He does not add a plan.
+
+Bram is at the table. A bowl is already at the empty end. This is Stub 2, the same sitting-down.
+
+> **Bram:** "Voryn. I put yours down when I sat. End of the table."
+
+> **Voryn:** "Then it was never a question."
+
+Voryn sits. He does not move the bowl, and he does not thank Bram. That is the last line. Dag is still at the bench. The room keeps going. No one asks Ravn what comes next.
 
 No fight. No Charisma gate. No dialogue menu. No EldSense. Companions say Ravn. Fen is he.
 
 ### Stub 2 — Bram includes Voryn
 **When:** The same downtime as Stub 1, after Arn stops. Not a separate corridor scene.  
-**What:** Bram treats Voryn as already in (heard order 6). Voryn's return is one dry line (heard order 7). No fix campaign. No nod staged on top of the line.  
+**What:** Bram treats Voryn as already in — the bowl was set when Bram sat. Voryn's return is the one dry line in Dag's fire, and then he sits. No fix campaign. No nod staged on top of the line.  
 **Job:** Plant inclusion before the Soulwright three-up (player + Arn + Voryn).
 
 ### Stub 3 — Voryn argues the board
