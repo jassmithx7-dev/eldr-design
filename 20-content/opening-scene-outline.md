@@ -5,7 +5,7 @@ depends_on: ["[[game-premise]]", "[[zone-the-falling-gate]]"]
 ue5_scope: S
 inspired_by: ["opening-scene", "scene-construction-process", "subtext-scenes", "inverted-triangle-scene"]
 open_questions:
-  - "Yard call: Ravn gives the cart's minute, then the mouth of the gate closes. Fen wanted longer. Voryn wanted it shut now. Confirm or replace before this leaves draft."
+  - "Yard call: Ravn sends the cart through, then they close the gate. Fen wanted longer. Voryn wanted the gate shut now. Confirm or replace before this leaves draft."
 ---
 
 # Opening Scene Outline
@@ -48,21 +48,21 @@ The player is already in the Falling Gate courtyard, mid-retreat. The resistance
 
 *Before any steel. The first scene. They disagree, Ravn calls it, they stay. Bram is not here. Dag is not here. No dialogue menu.*
 
-Smoke. Broken timber. **Varnstead** is still coming through the mouth of the gate with whatever they could carry. The last knot of them is still outside. Fen is talking, because the quiet makes this worse. Those people are already his.
+Smoke. Broken timber. **Varnstead** is still coming through the gate with whatever they could carry. The last knot of them is still outside. Fen is talking, because the quiet makes this worse. Those people are already his.
 
 > **Fen:** "Ravn. They're still outside. Give them the minute."
 
-> **Voryn:** "Wait, and the mouth closes on the ones already in it."
+> **Voryn:** "Wait, and the gate shuts on the ones already coming through."
 
 Arn is with the person nearest him who cannot run. He does not take a side. He says what that person needs, and he looks at Ravn.
 
-> **Arn:** "This one can't run. The cart is the minute."
+> **Arn:** "This one can't run. They go on the cart."
 
-<!-- ASSUMPTION: Ravn gives that minute and no more. The call is authored. The player is not offered a menu. -->
+<!-- ASSUMPTION: Ravn sends the cart through, then the gate closes. He does not leave it open. The call is authored. The player is not offered a menu. -->
 
-> **Ravn:** "Then it's that minute. Fen, move. After the cart, the mouth closes."
+> **Ravn:** "The cart goes through. Fen, move it. Then we close the gate."
 
-Fen shuts up and moves. Voryn stays. He is already watching the mouth. Arn goes back to the person on the ground.
+Fen shuts up and moves. Voryn stays. He is already watching the gate. Arn goes back to the person on the ground.
 
 > **Arn:** "Bram's still on the Ironhold line."
 
