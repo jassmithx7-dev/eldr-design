@@ -7,7 +7,7 @@ inspired_by: ["crpg-design-patterns-1985-1989", "crpg-design-patterns-1990-1994"
 open_questions:
   - "Stats: where the array is chosen is still open. It is not the weapon table. Fighter hit chance stays open until Strength is chosen."
   - "Rogue: Shadowdancer has the stun and the rare self-jump. Fighter, Mage, and Cleric do not have one yet."
-  - "Rogue numbers still open: how much extra a held Mark pays, and how much bigger the Assassin's cooldown hit is."
+  - "Death Mark needs 6 points in the Assassin tree. A slice character has 4, so the button is real and not reachable in the slice."
   - "Talent numbers are playtest values. Evoker Fireball in the tree is 3d6 to a group; the spell list's Fireball is 2d6 to one target. Those two need one number before balance is real."
   - "Cleric subclasses besides Paladin are not named. Priest and Warden already exist on Solen. They are not assigned to Ravn."
   - "Mage subclass Illusion replaces the Controller name. Controller's buttons are command and fear. What the Illusion tree does is still open."
@@ -58,35 +58,58 @@ The target is one Settled Levy ([[enemy-tiers-ashfall]]): 20 HP, Defense 14. The
 
 Execute (Champion) doubles the weapon die only, and only while the target is under half health, on a cooldown. One hurt levy can die on that hit. The pack does not. Guardian takes a hit meant for someone else. Warlord sets up the company. Those three are the Fighter subclasses. Paladin is not one of them. It sits under Cleric. A stun or a jump-the-line stays off the Fighter. On the Rogue, both sit on Shadowdancer only.
 
+## What "powerful" means
+
+Each class should have one moment in a fight where it is the best tool on the field. A little extra strength in that moment is fine. None of them should erase a group on an ordinary turn.
+
+The measure is one Settled Levy: 20 HP, Defense 14. A normal hit takes several clean swings to drop one. The strong moment aims at one person, or at one job, and then it has to wait.
+
+- **Fighter.** Execute rolls the sword's damage die twice, only when that enemy is under half health, and then the button waits. One hurt levy can die. The others are still standing. Guardian's moment is taking a hit meant for someone else. Warlord's moment is making the company's next swing more likely to land.
+- **Rogue.** The three moments are below. Setup, one hard cut, or taking someone's turn away.
+- **Mage.** On a good round, one spell should hit about as hard as a fighter's swing. It should not delete the group. The two Fireball numbers are still unresolved, so this class is not tuned yet.
+- **Cleric.** The moment is keeping someone up. Paladin is named. The other two subclasses, and the numbers, are not written yet.
+
 ## The Rogue
 
-The knife is this class. Fen is already in the party. He is a Shadow, and his default lean is Assassin. If Ravn takes the knife, Fen is still Fen. They can share the work.
+The knife is this class. Fen is already in the party. He is a Shadow, which is the companion word for this work, and his usual lean is Assassin. If Ravn takes the knife, Fen is still Fen. They can do the same job.
 
-These three are the Rogue draft. The older tree writeup still talks in tiles. This fight is a few steps, then an action, on a turn.
+These three are the Rogue draft. The older tree page still describes movement in tiles. Here, a turn is a few steps and then one action.
 
-Points mix. A Rogue can dip one tree and deepen another. The slice has four points. How much extra the waited mark pays, and how much bigger the Assassin's cooldown hit is, are still numbers. The jobs are not.
+Points can mix across the three. In the slice a character has 4 points. A capstone still asks for 6 points in one tree, so Death Mark is part of the class and is not available in the first five levels.
 
 ### Thief
 
-This one sets up the hit. The company does the damage.
+This subclass sets up the hit. Someone else in the company does the damage.
 
-Mark puts a bonus on the next hit anyone lands on that enemy, once. That enemy shows on the icon row, so the setup is visible. If you hold your turn and act later in the round, the mark pays more. Fade steps you out of sight. Expose, when an ally connects, makes that enemy easier to hit. This tree is patience. It is not a second knife swing.
+**Mark.** You choose one enemy. Their portrait in the turn row gets a mark, so you can see who you set up. The next time anyone in the company hits that enemy, that one hit deals an extra 1d6 damage. That is about 4 extra points of damage. Then the mark is gone. You do not have to be the one who hits them. If nobody hits them, the mark sits for two rounds and then fades. This is the patience. You spend your action pointing at the right person, and someone else collects it.
+
+**Fade.** You step out of sight until you attack, or until your next turn ends.
+
+**Expose.** When an ally's hit connects, you can make that enemy easier to hit for one round. Attacks against them are at +2. This is the same as lowering their Defense by 2.
 
 ### Assassin
 
-This one takes the soft target. One person. Not the pack. Fen's default lean is this tree. If Ravn puts points here, it is the same job Fen has.
+This subclass takes one soft target. Not the pack. Fen's usual lean is this tree. If Ravn puts points here, it is the same job Fen has, not a bigger one.
 
-The first swing stays ordinary. Exploit is the cooldown hit. It ignores armor, and it is the bigger knife when the target is already under half health, or when the target is in the back and is not a shielded levy. If it lands, their next swing is worse. It is the cousin of the Fighter's Execute. It does not clear the group.
+A normal knife swing stays a normal knife swing. In the worked example, Fen's hit is 1d6+3. That averages about 6 or 7 damage. A Settled Levy has 20 HP, so one ordinary knife hit does not drop one.
+
+**Exploit.** This is the cooldown hit. It can be used once every three rounds. The hit ignores a shield, so a Settled Levy is attacked against Defense 12 instead of 14. If the target is already under half health, or the target is behind the front line and has no shield, the knife's damage die is rolled twice and the bonus is added once. Fen's 1d6+3 becomes 2d6+3, which averages about 10. A levy who is already at 10 HP often dies to that hit. A back-line archer at 14 HP often dies to it. A fresh shielded levy in front does not. If Exploit hits, that enemy's next attack roll is worse by 2.
+
+**Death Mark.** This is the capstone, and it stays. Once per combat, you choose one enemy. Death Mark itself does no damage. For the rest of the fight, that enemy cannot be healed. If they reach 0 HP, they cannot be stood back up. The company's work on that one person sticks. Your own companions can still be revived. The button asks for 6 points in this tree, so a slice character does not have it yet. It is still the button this subclass is building toward.
 
 ### Shadowdancer
 
-This one slips, and breaks their focus.
+This subclass slips past a swing, and can take a turn away.
 
-You step in, cut, and step back. If they miss you, you slide off them. One later button makes you untargetable for a round, and you cannot attack during it.
+You step in, cut with a normal knife hit, and step back. If an enemy misses you in melee, you slide away from them. A later button lets you be untargetable for one round. During that round you cannot attack. Vanishing is the whole turn.
 
-This is the Rogue tree that touches the turn row. One ability, on a cooldown, freezes an enemy's icon. The icon stays in the row. Their turn comes and passes. A second ability, rarer and also on a cooldown, moves your own icon to next. It is not part of the basic cut. Thief and Assassin do not get either one.
+**Stun.** Once every three rounds, you freeze one enemy's icon in the turn row. The icon stays there. When their turn comes, it passes, and they do not act. This does no damage. Thief and Assassin do not get it.
 
-The old Assassin capstone stops a target from being healed or revived. That is still the number to watch on this class, the way Evoker's Fireball is the number to watch on the Mage. Keeping the three jobs above did not keep that capstone.
+**Move up.** Once per combat, you move your own icon to the next place in the row. You act sooner. It is not attached to a basic cut. Thief and Assassin do not get it.
+
+### Side by side, on one levy
+
+A fresh Settled Levy has 20 HP. An ordinary sword or knife hit leaves them standing. The Fighter's Execute is how a hurt one falls. The Thief's Mark adds about 4 damage to one company hit, once. The Assassin's Exploit is a hit near 10 damage on one soft target, and then it cannot be used again for three rounds. Death Mark does not add damage. It makes that one person unable to be healed, and unable to get back up if they fall. The Shadowdancer does not add a big damage number. One enemy loses a turn, or the rogue acts sooner.
 
 ## How a fight works
 
