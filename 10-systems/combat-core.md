@@ -4,7 +4,7 @@ status: draft
 depends_on: ["[[world-rules]]", "[[design-pillars]]"]
 ue5_scope: L
 open_questions:
-  - "Slice class names are Fighter, Thief, and Caster ([[class-list]]). Trees are in [[class-progression]]."
+  - "Slice classes are four: Fighter, Thief, Caster, and a Cleric with no working name yet ([[class-list]]). Trees are in [[class-progression]]."
   - "Full attribute stat block (STR/DEX/CON/INT/WIS/CHA modifiers, racial ceilings) — deserves its own attributes-core note; referenced here as needed"
   - "Arn is outside the Eld system entirely — his divinity is not Eld-based. He does not cast. Resolved."
   - "Enemy stat tables (HP ranges, Defense, Attack Bonus by tier) — resolved for Ashfall slice via [[enemy-tiers-ashfall]]"
@@ -185,7 +185,7 @@ Ranged attacks into melee (targeting an enemy who is adjacent to an ally) incur 
 | 9 | +9 | +6 | +4 |
 | 10 | +10 | +7 | +5 |
 
-<!-- Slice class list is Fighter, Thief, Caster. See [[class-list]]. Trees: [[class-progression]]. -->
+<!-- Slice classes are four. See [[class-list]]. Trees: [[class-progression]]. -->
 
 ### Defense
 

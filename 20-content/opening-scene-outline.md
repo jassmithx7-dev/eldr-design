@@ -8,6 +8,7 @@ open_questions:
   - "Yard call: Ravn sends the cart through, then they close the gate. Fen wanted longer. Voryn wanted the gate shut now. Confirm or replace before this leaves draft."
   - "Name is Ravn, with no rename, for now. Jason may circle back to a name field and to companions saying Captain."
   - "Stats still need a home. They are not chosen at the weapon table. See [[class-list]]."
+  - "Four classes. The yard beat still shows three tables. The cleric's object is not chosen, so it is not in the scene."
 ---
 
 # Opening Scene Outline

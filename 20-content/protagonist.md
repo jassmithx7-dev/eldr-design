@@ -31,15 +31,15 @@ These are not player choices. They are the character before the character creati
 These are the character creation decisions. Classic CRPG structure.
 
 - **Name** — **Ravn.** Not chosen at the start. Companions say Ravn. A rename field, and companions saying Captain so a custom name still fits, is parked until Jason circles back.
-- **Class** — three choices: Fighter, Thief, or Caster. See [[combat-core]] and [[eld-magic]] for full mechanical detail. The class is fixed at creation — the protagonist's competence is pre-established and specific, not a generalist background that could have gone any direction. After the yard, and before Hold the Gate, he takes gear off one of three tables in the courtyard: sword, knife, or staff. The game names the class from that and stops. What the three classes do in a fight is [[class-list]]. No subclass at the table.
+- **Class** — four choices. The traditional names are Fighter, Rogue, Mage, and Cleric. The working names now are Fighter, Thief, and Caster. Cleric has no working name yet. See [[class-list]]. The class is fixed at creation — the protagonist's competence is pre-established and specific, not a generalist background that could have gone any direction. After the yard, and before Hold the Gate, he takes gear off a table in the courtyard. Sword, knife, and staff are written. The cleric's object is not. The game names the class from that and stops. No archetype lock at the table.
 - **Stats** — distributed from standard array at creation. Class determines HP dice and attack bonus progression.
-- **Build** — inside the class, three talent trees ([[class-progression]]). One point per level from level 2. Not chosen at the weapon table.
+- **Build** — inside the class, the talent trees ([[class-progression]]). One point per level from level 2, spent in any of that class's trees. A mix is allowed. Another class is not. Not chosen at the weapon table.
 
 ---
 
-## The Three Classes — What They Mean for the Story
+## The Classes — What They Mean for the Story
 
-All three classes experience Drift. The Drift Counter, the thresholds, the environmental cues, Arn's last words at the end — all of it applies regardless of class. The class changes what form the declaration takes.
+Every class experiences Drift. The Drift Counter, the thresholds, the environmental cues, Arn's last words at the end — all of it applies regardless of class. The class changes what form the declaration takes.
 
 The world is saturated with Eld. Everyone has some sensitivity to it. Fighters and Thieves cannot cast spells, but they can channel Eld into a small set of class-specific combat abilities. Each ability is pole-flavored — using it moves the Drift Counter. See [[combat-core]] for the full ability lists.
 
@@ -62,6 +62,10 @@ The Eld practitioner. The Captain who studied and paid the physical cost for it.
 His pool is large and scales with INT and level. He has access to all nine schools and the full spell list. He also experiences Drift most immediately — every school he reaches for is a choice about what he is becoming, and the choices come faster and more consequentially than they do for a Fighter or Thief. His Drift runs alongside Voryn's authored descent. The ending lands with particular weight when the player has been making the same kind of decisions the whole way through.
 
 <!-- ASSUMPTION: Caster protagonist and Voryn are not in competition for "the caster role." The party has room for two Eld practitioners. Their affinities and Drift positions are independent. -->
+
+### Cleric
+
+<!-- ASSUMPTION: A cleric is a veteran who mends and keeps people standing. He is not a chosen priest. Arn can still be the paladin-type. Solen can still be the Devotee. The working name, the two or three archetypes, the object on the table, and whether the pool is Eld or Devotion are open. See [[class-list]]. -->
 
 ---
 
