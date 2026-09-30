@@ -3,9 +3,9 @@ type: system
 status: draft
 depends_on: ["[[combat-core]]", "[[design-pillars]]", "[[eld-magic]]", "[[opening-scene-outline]]"]
 ue5_scope: M
-inspired_by: ["crpg-design-patterns-1985-1989", "crpg-genre-origins"]
+inspired_by: ["crpg-design-patterns-1985-1989", "crpg-genre-origins", "challenge-skill-balance", "flow-channel-schell", "white-education-through-transformation"]
 open_questions:
-  - "Stats: where the array is chosen is still open. It is not the weapon table."
+  - "Stats: where the array is chosen is still open. It is not the weapon table. Fighter hit chance stays open until Strength is chosen."
   - "Which trees get a full turn-skip, and which get a jump-the-line, is not assigned yet. Not every tree."
   - "Talent numbers are playtest values. Evoker Fireball in the tree is 3d6 to a group; the spell list's Fireball is 2d6 to one target. Those two need one number before balance is real."
 ---
@@ -37,6 +37,16 @@ The choices inside a class are the talent trees in [[class-progression]]. Three 
 | Caster | Controller, Evoker, Abjurer |
 
 Level 1 is only the basic hit (or Eld Bolt for a caster). The first real button is the first point. A slice character has 4 points. A capstone takes 6 points in one tree, so it is not in the slice.
+
+## The sword first
+
+Tune the Fighter before the Thief or the Caster. Hold the Gate is a line, and the sword is the body that stands in it. Bram is already that body. His default tree is Guardian. A thief makes the company's next hit easier. A caster, on a good round, matches a fighter. Both of those need the sword's number before they mean anything.
+
+The first fight should be learnable by standing in it. A few buttons, a clear target, pressure that matches a new sword. The knife asks for angles. The staff asks for a spell list. Those come after the swing is a promise.
+
+The target is one Settled Levy ([[enemy-tiers-ashfall]]): 20 HP, Defense 14. The plain sword in the weapon list is the longsword, 1d8 plus Strength ([[combat-core]]). Ravn's Strength is not chosen yet, so this note does not lock his hit chance. The ruler until then is Bram's existing swing: +4 against that Defense, which lands a little more than half the time, and a longsword at Strength 14, which is 1d8+2. Three of those clean hits drop one levy. That is the baseline. Powerful shows up on the finish, not on the first swing.
+
+Execute (Champion) doubles the weapon die only, and only while the target is under half health, on a cooldown. One hurt levy can die on that hit. The pack does not. Guardian takes a hit meant for someone else. Warlord sets up the company. Those three jobs are the class. A stun or a jump-the-line stays off the basic sword until one of those trees is chosen for it, and not all three.
 
 ## How a fight works
 
