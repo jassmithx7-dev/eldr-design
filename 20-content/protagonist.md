@@ -31,7 +31,7 @@ These are not player choices. They are the character before the character creati
 These are the character creation decisions. Classic CRPG structure.
 
 - **Name** — **Ravn.** Not chosen at the start. Companions say Ravn. A rename field, and companions saying Captain so a custom name still fits, is parked until Jason circles back.
-- **Class** — four choices: Fighter, Rogue, Mage, or Cleric. See [[class-list]]. Older combat notes still say Thief and Caster for Rogue and Mage. The class is fixed at creation. After the yard, and before Hold the Gate, he takes gear off a table in the courtyard. Sword, knife, and staff are written. The Cleric's object is not. The game names the class from that and stops. Subclass points come later, and they can mix inside the class. No subclass lock at the table.
+- **Class** — four choices: Fighter, Rogue, Mage, or Cleric. See [[class-list]]. Older combat notes still say Thief and Caster for Rogue and Mage. The class is fixed at creation. After the yard, and before Hold the Gate, he takes gear off a table in the courtyard. A sword, a knife, a staff, or a religious textbook. The game names the class from that and stops. Subclass points come later, and they can mix inside the class. No subclass lock at the table.
 - **Stats** — distributed from standard array at creation. Class determines HP dice and attack bonus progression.
 - **Build** — inside the class, the talent trees ([[class-progression]]). One point per level from level 2, spent in any of that class's trees. A mix is allowed. Another class is not. Not chosen at the weapon table.
 
@@ -71,7 +71,7 @@ His pool is large and scales with INT and level. He has access to all nine schoo
 
 The class name is Cleric. Paladin is the first subclass. The other two are not named.
 
-<!-- ASSUMPTION: A Cleric is a veteran who mends and keeps people standing. He is not a chosen priest. Arn can still be the paladin-type companion. Solen can still be the Devotee. The object on the table, and whether the pool is Eld or Devotion, are open. See [[class-list]]. -->
+<!-- ASSUMPTION: A Cleric is a veteran who mends and keeps people standing. He is not a chosen priest. Arn can still be the paladin-type companion. Solen can still be the Devotee. The textbook's faith is not named in the yard. Whether the pool is Eld or Devotion is open. See [[class-list]]. -->
 
 ---
 

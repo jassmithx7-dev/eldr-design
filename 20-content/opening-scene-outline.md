@@ -8,7 +8,7 @@ open_questions:
   - "Yard call: Ravn sends the cart through, then they close the gate. Fen wanted longer. Voryn wanted the gate shut now. Confirm or replace before this leaves draft."
   - "Name is Ravn, with no rename, for now. Jason may circle back to a name field and to companions saying Captain."
   - "Stats still need a home. They are not chosen at the weapon table. See [[class-list]]."
-  - "Four classes. The yard beat still shows three tables. The cleric's object is not chosen, so it is not in the scene."
+  - "The fourth table is a religious textbook. The game says cleric. Which faith the book belongs to is not said in the scene."
 ---
 
 # Opening Scene Outline
@@ -53,11 +53,11 @@ The title is the word Eldr and a way to begin. Beginning does not open a charact
 
 Ravn is his name. The player does not choose it.
 
-When the yard's last line is done, and before any steel, Ravn gets his gear. Three tables stand in different parts of the courtyard. No labels. A sword on one, a knife on one, a staff on one.
+When the yard's last line is done, and before any steel, Ravn gets his gear. Four tables stand in different parts of the courtyard. No labels. A sword on one, a knife on one, a staff on one, a religious textbook on one.
 
 > **Arn:** "Ravn. Your gear is in the yard. Go get it."
 
-He walks to a table and takes what is on it. The game then says the class in plain words. A sword: "That's a fighter." A knife: "That's a thief." A staff: "That's a caster." It stops there. The talent trees come later, one point per level from level 2 ([[class-progression]]). Then Hold the Gate. This does not happen after the fight.
+He walks to a table and takes what is on it. The game then says the class in plain words. A sword: "That's a fighter." A knife: "That's a rogue." A staff: "That's a mage." A religious textbook: "That's a cleric." It stops there. The talent trees come later, one point per level from level 2 ([[class-progression]]). Then Hold the Gate. This does not happen after the fight.
 
 <!-- ASSUMPTION: Name stays Ravn until Jason circles back. The tables are the class pick. A within-class choice, if any, waits until the classes are revisited. Stats still need a home. -->
 
