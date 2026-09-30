@@ -6,7 +6,8 @@ ue5_scope: M
 inspired_by: ["crpg-design-patterns-1985-1989", "crpg-design-patterns-1990-1994", "crpg-genre-origins", "challenge-skill-balance", "flow-channel-schell", "white-education-through-transformation"]
 open_questions:
   - "Stats: where the array is chosen is still open. It is not the weapon table. Fighter hit chance stays open until Strength is chosen."
-  - "Which trees get a full turn-skip, and which get a jump-the-line, is not assigned yet. Not every tree."
+  - "Rogue: Shadowdancer has the stun and the rare self-jump. Fighter, Mage, and Cleric do not have one yet."
+  - "Rogue numbers still open: how much extra a held Mark pays, and how much bigger the Assassin's cooldown hit is."
   - "Talent numbers are playtest values. Evoker Fireball in the tree is 3d6 to a group; the spell list's Fireball is 2d6 to one target. Those two need one number before balance is real."
   - "Cleric subclasses besides Paladin are not named. Priest and Warden already exist on Solen. They are not assigned to Ravn."
   - "Mage subclass Illusion replaces the Controller name. Controller's buttons are command and fear. What the Illusion tree does is still open."
@@ -55,50 +56,37 @@ The first fight should be learnable by standing in it. A few buttons, a clear ta
 
 The target is one Settled Levy ([[enemy-tiers-ashfall]]): 20 HP, Defense 14. The plain sword in the weapon list is the longsword, 1d8 plus Strength ([[combat-core]]). Ravn's Strength is not chosen yet, so this note does not lock his hit chance. The ruler until then is Bram's existing swing: +4 against that Defense, which lands a little more than half the time, and a longsword at Strength 14, which is 1d8+2. Three of those clean hits drop one levy. That is the baseline. Powerful shows up on the finish, not on the first swing.
 
-Execute (Champion) doubles the weapon die only, and only while the target is under half health, on a cooldown. One hurt levy can die on that hit. The pack does not. Guardian takes a hit meant for someone else. Warlord sets up the company. Those three are the Fighter subclasses. Paladin is not one of them. It sits under Cleric. A stun or a jump-the-line stays off the basic sword until one tree is chosen for it, and not every tree.
+Execute (Champion) doubles the weapon die only, and only while the target is under half health, on a cooldown. One hurt levy can die on that hit. The pack does not. Guardian takes a hit meant for someone else. Warlord sets up the company. Those three are the Fighter subclasses. Paladin is not one of them. It sits under Cleric. A stun or a jump-the-line stays off the Fighter. On the Rogue, both sit on Shadowdancer only.
 
 ## The Rogue
 
 The knife is this class. Fen is already in the party. He is a Shadow, and his default lean is Assassin. If Ravn takes the knife, Fen is still Fen. They can share the work.
 
-The three subclasses are already written in [[class-progression]]. The ideas under each one are not locked. The old writeup still talks in tiles. The fight we are keeping is a few steps, then an action, on a turn. Read the ideas that way.
+These three are the Rogue draft. The older tree writeup still talks in tiles. This fight is a few steps, then an action, on a turn.
 
-Points mix. A Rogue can dip one tree and deepen another. The slice has four points.
+Points mix. A Rogue can dip one tree and deepen another. The slice has four points. How much extra the waited mark pays, and how much bigger the Assassin's cooldown hit is, are still numbers. The jobs are not.
 
 ### Thief
 
 This one sets up the hit. The company does the damage.
 
-Already written: Mark puts a bonus on the next hit anyone lands on that enemy, once. Fade steps you out of sight. Expose, when an ally connects, makes that enemy easier to hit.
-
-Ideas, not locked:
-
-- The marked enemy shows on the icon row, so the setup is something you can see.
-- If you hold your turn and act later in the round, the mark pays a little more. Patience is the point of this tree. It is not a second knife swing.
+Mark puts a bonus on the next hit anyone lands on that enemy, once. That enemy shows on the icon row, so the setup is visible. If you hold your turn and act later in the round, the mark pays more. Fade steps you out of sight. Expose, when an ally connects, makes that enemy easier to hit. This tree is patience. It is not a second knife swing.
 
 ### Assassin
 
-This one takes the soft target. One person. Not the pack.
+This one takes the soft target. One person. Not the pack. Fen's default lean is this tree. If Ravn puts points here, it is the same job Fen has.
 
-Already written: Exploit is one hit that ignores armor. If it lands, their next swing is worse.
-
-Ideas, not locked:
-
-- The soft target is the one already under half health, or the one in the back who is not a shielded levy. One bigger knife hit, on a cooldown. It is the cousin of the Fighter's Execute. The first swing stays ordinary.
-- Fen's default is this tree. Ravn mixing into it should feel like the same job Fen already has, not a louder one.
+The first swing stays ordinary. Exploit is the cooldown hit. It ignores armor, and it is the bigger knife when the target is already under half health, or when the target is in the back and is not a shielded levy. If it lands, their next swing is worse. It is the cousin of the Fighter's Execute. It does not clear the group.
 
 ### Shadowdancer
 
 This one slips, and breaks their focus.
 
-Already written: you step in, cut, and step back. If they miss you, you slide off them. One later button makes you untargetable for a round, and you cannot attack during it.
+You step in, cut, and step back. If they miss you, you slide off them. One later button makes you untargetable for a round, and you cannot attack during it.
 
-Ideas, not locked:
+This is the Rogue tree that touches the turn row. One ability, on a cooldown, freezes an enemy's icon. The icon stays in the row. Their turn comes and passes. A second ability, rarer and also on a cooldown, moves your own icon to next. It is not part of the basic cut. Thief and Assassin do not get either one.
 
-- This is the Rogue tree that touches the turn row. One ability, on a cooldown, freezes an enemy's icon. The icon stays in the row. Their turn comes and passes.
-- A second ability, rarer, moves your own icon to next. It is not part of the basic cut. Thief and Assassin do not get it.
-
-The old Assassin capstone stops a target from being healed or revived. That is the number to watch on this class, the way Evoker's Fireball is the number to watch on the Mage. It is not part of this idea pass.
+The old Assassin capstone stops a target from being healed or revived. That is still the number to watch on this class, the way Evoker's Fireball is the number to watch on the Mage. Keeping the three jobs above did not keep that capstone.
 
 ## How a fight works
 
