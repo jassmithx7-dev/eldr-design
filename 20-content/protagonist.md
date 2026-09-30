@@ -31,7 +31,7 @@ These are not player choices. They are the character before the character creati
 These are the character creation decisions. Classic CRPG structure.
 
 - **Name** — **Ravn.** Not chosen at the start. Companions say Ravn. A rename field, and companions saying Captain so a custom name still fits, is parked until Jason circles back.
-- **Class** — four choices. The traditional names are Fighter, Rogue, Mage, and Cleric. The working names now are Fighter, Thief, and Caster. Cleric has no working name yet. See [[class-list]]. The class is fixed at creation — the protagonist's competence is pre-established and specific, not a generalist background that could have gone any direction. After the yard, and before Hold the Gate, he takes gear off a table in the courtyard. Sword, knife, and staff are written. The cleric's object is not. The game names the class from that and stops. No archetype lock at the table.
+- **Class** — four choices: Fighter, Rogue, Mage, or Cleric. See [[class-list]]. Older combat notes still say Thief and Caster for Rogue and Mage. The class is fixed at creation. After the yard, and before Hold the Gate, he takes gear off a table in the courtyard. Sword, knife, and staff are written. The Cleric's object is not. The game names the class from that and stops. Subclass points come later, and they can mix inside the class. No subclass lock at the table.
 - **Stats** — distributed from standard array at creation. Class determines HP dice and attack bonus progression.
 - **Build** — inside the class, the talent trees ([[class-progression]]). One point per level from level 2, spent in any of that class's trees. A mix is allowed. Another class is not. Not chosen at the weapon table.
 
@@ -49,13 +49,17 @@ The Captain who held the line through physical discipline and tactical competenc
 
 His Eld pool is small (6, flat). His abilities are not spells — they are instinctive Eld use, the kind that a veteran develops without studying it. Holding a position so an ally doesn't take the hit (Forn). Finishing a wounded enemy before they can recover (Vela). Every use is a declaration.
 
-### Thief
+### Rogue
+
+The class name is Rogue. Older notes call this Thief.
 
 The Captain who survived twenty years by knowing how to move unseen and how to read a room before anyone else. The resistance has needed this as much as it has needed fighters.
 
 His Eld pool is small (6, flat). His abilities are about positioning and exploitation — disappearing from an enemy's attention (Forn) or finding the crack in someone's guard (Vela). Fen's Eld sensitivity creates a specific dynamic: two people who move through the same dark spaces, one of whom feels the Eld consciously and one of whom uses it without quite naming it.
 
-### Caster
+### Mage
+
+The class name is Mage. Older notes call this Caster.
 
 The Eld practitioner. The Captain who studied and paid the physical cost for it. His casting hand may show it.
 
@@ -65,7 +69,9 @@ His pool is large and scales with INT and level. He has access to all nine schoo
 
 ### Cleric
 
-<!-- ASSUMPTION: A cleric is a veteran who mends and keeps people standing. He is not a chosen priest. Arn can still be the paladin-type. Solen can still be the Devotee. The working name, the two or three archetypes, the object on the table, and whether the pool is Eld or Devotion are open. See [[class-list]]. -->
+The class name is Cleric. Paladin is the first subclass. The other two are not named.
+
+<!-- ASSUMPTION: A Cleric is a veteran who mends and keeps people standing. He is not a chosen priest. Arn can still be the paladin-type companion. Solen can still be the Devotee. The object on the table, and whether the pool is Eld or Devotion, are open. See [[class-list]]. -->
 
 ---
 
