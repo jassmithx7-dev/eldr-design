@@ -3,7 +3,7 @@ type: system
 status: draft
 depends_on: ["[[combat-core]]", "[[design-pillars]]", "[[eld-magic]]", "[[opening-scene-outline]]"]
 ue5_scope: M
-inspired_by: ["crpg-design-patterns-1985-1989", "crpg-design-patterns-1990-1994", "crpg-genre-origins", "challenge-skill-balance", "flow-channel-schell", "white-education-through-transformation"]
+inspired_by: ["crpg-design-patterns-1985-1989", "crpg-design-patterns-1990-1994", "crpg-genre-origins", "challenge-skill-balance", "flow-channel-schell", "white-education-through-transformation", "design-doc-turn-based-combat", "turn-based-dead-air", "turn-economy-design", "hiding-the-grind"]
 open_questions:
   - "Stats: where the array is chosen is still open. It is not the weapon table. Fighter hit chance stays open until Strength is chosen."
   - "Rogue: Shadowdancer has the stun and the rare self-jump. Fighter, Mage, and Cleric do not have one yet."
@@ -132,7 +132,19 @@ The company shows up in two small rules already in [[combat-core]]. If someone e
 
 Hold the Gate is also about getting people out. Clearing the enemies is not the only win. That stay locked on the quest.
 
-Eld does not come back during the fight. It comes back at rest. Fighter and Thief spend a flat pool of 6. The Caster's pool is the large one. Which acts you spend it on, cover or finish, is the drift. That happens in the fight. It is not a second choice at the table.
+Eld does not come back during the fight. It comes back at rest. Fighter and Rogue spend a flat pool of 6. The Mage's pool is the large one. Older notes still say Thief and Caster for those two. Which acts you spend it on, cover or finish, is the drift. That happens in the fight. It is not a second choice at the table.
+
+## Checks we keep using
+
+These ride along with every new fight, button, and class moment. They came from the turn-based flavor in Atlas ([[design-doc-turn-based-combat]]). They do not replace the rules above.
+
+After you choose, the next thing you do is choose again. The gap in between is the animation of that choice, not a second showing of the same hit in text, a health bar crawling, or a menu you have to wait out. The icon row stays up so an enemy's turn is something you are reading. Filling bars stay off. A timed button press on a swing stays off. A minigame inside a turn stays off.
+
+Changing the turn row has to change the next decision. A stun or a jump is not extra damage. On the Rogue, only Shadowdancer has them. Fighter, Mage, and Cleric do not get one until a single tree is chosen for that job, and not every tree.
+
+A fight needs a reason besides emptying health bars. Hold the Gate's reason is getting people out. A later fight needs its own second goal, or a new decision in the next few minutes. A bigger number alone is not that reason.
+
+Each class keeps one strong moment, aimed at one person or one job. A little extra strength there is fine. An ordinary turn does not clear the group. The Rogue's moments are already numbered against one Settled Levy. The Mage and the Cleric still owe theirs.
 
 ## What this pass leaves alone
 
