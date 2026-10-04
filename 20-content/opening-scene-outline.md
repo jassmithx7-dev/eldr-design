@@ -49,7 +49,11 @@ The player is already in the Falling Gate courtyard, mid-retreat. The resistance
 
 ## From the title to the yard
 
-The title is the word Eldr and a way to begin. Beginning does not open a character sheet. It puts Ravn in the courtyard, and the yard plays. Arn, Fen, and Voryn are with him. Bram is not there. Dag is not there.
+The title is the word Eldr and a way to begin. Beginning does not open a character sheet. Start shows one short screen, then the yard.
+
+The war has gone against the free lands for years. Vela's armies keep taking ground. Varnstead has broken, and its people are falling back on Ashfall Keep. Ravn is already there with his company. The gate is still open.
+
+Then the courtyard scene begins. Arn, Fen, and Voryn are with him. Bram is not there. Dag is not there.
 
 Ravn is his name. The player does not choose it.
 
