@@ -5,6 +5,7 @@ depends_on: ["[[design-pillars]]", "[[game-premise]]", "[[eld-magic]]"]
 ue5_scope: S
 open_questions:
   - "Class-progression note needed before implementation."
+  - "Name is Ravn, with no rename, for now. Jason may circle back to a name field and to companions saying Captain. See [[opening-scene-outline]]."
 ---
 
 # Protagonist
@@ -20,7 +21,7 @@ These are not player choices. They are the character before the character creati
 - **Human.** Not negotiable. The story turns on a thirty-year friendship with Arn — a human man born the same generation. The protagonist's humanity is load-bearing.
 - **Male.** Fixed. The only female in the party is Solen.
 - **Age: 30s or older.** The player does not choose age. The protagonist has been doing this work long enough that the competence is legible and the fatigue is real. He is not young.
-- **Veteran resistance leader.** He has led this company for approximately twenty years. He did not inherit the role. He earned it through the kind of repeated decisions that leave marks. The party calls him Captain.
+- **Veteran resistance leader.** He has led this company for approximately twenty years. He did not inherit the role. He earned it through the kind of repeated decisions that leave marks. The party calls him Ravn.
 - **No bloodline. No prophecy. No chosen-one.** His significance to the story is the friendship with Arn and the position he holds in the resistance. Not origin. Not destiny.
 
 ---
@@ -29,16 +30,16 @@ These are not player choices. They are the character before the character creati
 
 These are the character creation decisions. Classic CRPG structure.
 
-- **Name** — player-editable. Canon default for internal reference: **Ravn**. The player's chosen name is used in all shipped content. Voiced dialogue from companions uses the title "Captain" — this is how people address him in the world, and it allows VO to remain name-agnostic without sounding evasive.
-- **Class** — three choices: Fighter, Thief, or Caster. See [[combat-core]] and [[eld-magic]] for full mechanical detail. The class is fixed at creation — the protagonist's competence is pre-established and specific, not a generalist background that could have gone any direction.
+- **Name** — **Ravn.** Not chosen at the start. Companions say Ravn. A rename field, and companions saying Captain so a custom name still fits, is parked until Jason circles back.
+- **Class** — four choices: Fighter, Rogue, Mage, or Cleric. See [[class-list]]. Older combat notes still say Thief and Caster for Rogue and Mage. The class is fixed at creation. After the yard, and before Hold the Gate, he takes gear off a table in the courtyard. A sword, a knife, a staff, or a religious textbook. The game names the class from that and stops. Subclass points come later, and they can mix inside the class. No subclass lock at the table.
 - **Stats** — distributed from standard array at creation. Class determines HP dice and attack bonus progression.
-- **Build** — within class, the player makes choices at level-up. What those choices are depends on the class-progression note (not yet written).
+- **Build** — inside the class, the talent trees ([[class-progression]]). One point per level from level 2, spent in any of that class's trees. A mix is allowed. Another class is not. Not chosen at the weapon table.
 
 ---
 
-## The Three Classes — What They Mean for the Story
+## The Classes — What They Mean for the Story
 
-All three classes experience Drift. The Drift Counter, the thresholds, the environmental cues, Arn's last words at the end — all of it applies regardless of class. The class changes what form the declaration takes.
+Every class experiences Drift. The Drift Counter, the thresholds, the environmental cues, Arn's last words at the end — all of it applies regardless of class. The class changes what form the declaration takes.
 
 The world is saturated with Eld. Everyone has some sensitivity to it. Fighters and Thieves cannot cast spells, but they can channel Eld into a small set of class-specific combat abilities. Each ability is pole-flavored — using it moves the Drift Counter. See [[combat-core]] for the full ability lists.
 
@@ -48,19 +49,29 @@ The Captain who held the line through physical discipline and tactical competenc
 
 His Eld pool is small (6, flat). His abilities are not spells — they are instinctive Eld use, the kind that a veteran develops without studying it. Holding a position so an ally doesn't take the hit (Forn). Finishing a wounded enemy before they can recover (Vela). Every use is a declaration.
 
-### Thief
+### Rogue
+
+The class name is Rogue. Older notes call this Thief.
 
 The Captain who survived twenty years by knowing how to move unseen and how to read a room before anyone else. The resistance has needed this as much as it has needed fighters.
 
 His Eld pool is small (6, flat). His abilities are about positioning and exploitation — disappearing from an enemy's attention (Forn) or finding the crack in someone's guard (Vela). Fen's Eld sensitivity creates a specific dynamic: two people who move through the same dark spaces, one of whom feels the Eld consciously and one of whom uses it without quite naming it.
 
-### Caster
+### Mage
+
+The class name is Mage. Older notes call this Caster.
 
 The Eld practitioner. The Captain who studied and paid the physical cost for it. His casting hand may show it.
 
 His pool is large and scales with INT and level. He has access to all nine schools and the full spell list. He also experiences Drift most immediately — every school he reaches for is a choice about what he is becoming, and the choices come faster and more consequentially than they do for a Fighter or Thief. His Drift runs alongside Voryn's authored descent. The ending lands with particular weight when the player has been making the same kind of decisions the whole way through.
 
 <!-- ASSUMPTION: Caster protagonist and Voryn are not in competition for "the caster role." The party has room for two Eld practitioners. Their affinities and Drift positions are independent. -->
+
+### Cleric
+
+The class name is Cleric. Paladin is the first subclass. The other two are not named.
+
+<!-- ASSUMPTION: A Cleric is a veteran who mends and keeps people standing. He is not a chosen priest. Arn can still be the paladin-type companion. Solen can still be the Devotee. The textbook's faith is not named in the yard. Whether the pool is Eld or Devotion is open. See [[class-list]]. -->
 
 ---
 

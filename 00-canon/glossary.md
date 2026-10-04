@@ -49,7 +49,7 @@ open_questions: []
 
 **Varnstead** — The civilian settlement adjacent to Ashfall Keep; the population being evacuated through the Falling Gate at the start of the vertical slice. First appeared in: [[opening-scene-outline]].
 
-**Ravn** — The protagonist's canon default name. Human male, 30s+, veteran resistance leader. Player-editable at character creation; companions address him as "Captain" in VO. First appeared in: [[protagonist]].
+**Ravn** — The protagonist. Human male, 30s+, veteran resistance leader. For now the name is Ravn and the player does not choose it; companions say Ravn. A rename, and "Captain" in voiced lines, is parked until Jason circles back. First appeared in: [[protagonist]].
 
 **Bram** — Goliath; Blade (Fighter). Party member Acts 1–3. Friend of the player. First appeared in: [[design-pillars]].
 
