@@ -62,9 +62,50 @@ This quest should feel like a final stand that turns into sudden personal loss. 
 **Job:** Decision friction that feels adult.
 
 ### Stub 4a — Fen EldSense (gatehouse shrine)
-**When:** Opening contaminated gatehouse shrine — [[opening-scene-outline]] beat 5.  
+**When:** Opening contaminated gatehouse shrine — [[opening-scene-outline]] beat 5. The gate fight is over.  
+**Who:** Ravn, Arn, Fen, Voryn, Bram. Dag is not in the gatehouse.  
 **What:** Pose + “Wait.” / “Something’s wrong.” + portrait pulse (`Fen_EldSense`). No Eld lecture. No Arn hint.  
-**Job:** First teach of the tell (1 of 2 Ashfall uses).
+**Job:** First teach of the tell (1 of 2 Ashfall uses).  
+**Not this room:** The old shrine under the keep (Reach the Shrine / the Anchor) is later. Passing this chapel does not complete that objective.
+
+#### Scene
+
+The gate fight is over. Ravn, Arn, Fen, Voryn, and Bram walk the gatehouse. Dag is not with them.
+
+The passage is narrow stone. A chapel door stands open off it. Inside: a bench, a lamp still burning, an altar slab.
+
+A soldier can see what is wrong. The lamp throws the slab’s shadow on the back wall, the way a lamp should. On the slab there is another dark — a film, thick, sitting against that light instead of with it. It is not soot. It does not flake. It is not a mark from the fight they just finished.
+
+Fen has been talking.
+
+**Fen:** Ravn, the bar on the door held. I said it would. Bram can—
+
+He stops. He scans the chapel: the door, the corners, the slab. His hand goes toward his weapon.
+
+**Fen:** Wait.
+
+`Fen_EldSense`: alert pose, that one line, portrait pulse. He does not explain. He does not add a second sentence on his own.
+
+Ravn can look at the slab. Ravn can look at Arn.
+
+If Ravn looks to Arn, Arn looks at the slab, then at Ravn. He does not name the film. He does not look to Fen for a meaning. He does not tell Ravn what to make of it.
+
+**Arn:** Ravn. We keep moving.
+
+If Ravn presses Fen:
+
+**Ravn:** Fen.
+**Fen:** Something’s wrong.
+
+That is the same beat, not a lecture. Nothing after it.
+
+Voryn looks at the film once. He does not brief. Bram sees Fen coiled. He does not ask the room to teach him.
+
+**Bram:** With you, Ravn.
+
+They go on. The chapel stays behind them.
+
+<!-- ASSUMPTION: The film on the slab is the visible contamination from [[opening-scene-outline]] beat 5 (shadow or residue a soldier can see). It is not named in dialogue. -->
 
 ### Stub 4b — Fen EldSense (Soulwright rite start)
 **When:** Soulwright Phase 1→2 (rite / meter about to fire trap).  
