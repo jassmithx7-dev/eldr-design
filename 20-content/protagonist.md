@@ -21,7 +21,9 @@ These are not player choices. They are the character before the character creati
 - **Male.** Fixed. The only female in the party is Solen.
 - **Age: 30s or older.** The player does not choose age. The protagonist has been doing this work long enough that the competence is legible and the fatigue is real. He is not young.
 - **Veteran resistance leader.** He has led this company for approximately twenty years. He did not inherit the role. He earned it through the kind of repeated decisions that leave marks. The party calls him Captain.
-- **No bloodline. No prophecy. No chosen-one.** His significance to the story is the friendship with Arn and the position he holds in the resistance. Not origin. Not destiny.
+- **What he is.** Ravn is what becomes now. The present runs through him because he is the one still standing and he acts. He does not become a god. The stakes stay the people in front of him. His significance is the friendship with Arn, the place he holds in the resistance, and the fact that he acts.
+- **He is not the next coming.** Do not define him by the phrase "he is not chosen."
+- **Still rejected:** prophecy, bloodline, and a hidden power waking up. Those plots stay out.
 
 ---
 
@@ -38,7 +40,9 @@ These are the character creation decisions. Classic CRPG structure.
 
 ## The Three Classes — What They Mean for the Story
 
-All three classes experience Drift. The Drift Counter, the thresholds, the environmental cues, Arn's last words at the end — all of it applies regardless of class. The class changes what form the declaration takes.
+All three classes experience Drift. The Drift Counter, the thresholds, and the environmental cues apply regardless of class. The class changes what form the declaration takes.
+
+Arn's goodbye does not change with class or Drift. The old rule that his last words change with the caster's Drift is replaced by this decision. The goodbye is one private line. It is the same line for every class. Do not write the line here.
 
 The world is saturated with Eld. Everyone has some sensitivity to it. Fighters and Thieves cannot cast spells, but they can channel Eld into a small set of class-specific combat abilities. Each ability is pole-flavored — using it moves the Drift Counter. See [[combat-core]] for the full ability lists.
 
@@ -66,11 +70,13 @@ His pool is large and scales with INT and level. He has access to all nine schoo
 
 ## The Friendship with Arn
 
+Ravn leads, as Aragorn and Tanis do. Arn stands beside him as a peer, as Legolas and Sturm do, because Arn chooses to. They can disagree. Arn stays and still helps. Humor is one spare line between equals, not a routine. Do not write the scene lines in this note.
+
 The protagonist has known Arn since birth. Thirty years. The friendship predates the war, predates the company, predates every decision either of them has made as an adult.
 
-This is the emotional spine of the game and it is **not player-authored.** The player cannot choose how the protagonist feels about Arn. The relationship is pre-established and load-bearing. Dialogue options, where they exist, vary in register — warmer, drier, more direct — but they do not vary in the fundamental fact of the bond.
+This is the emotional spine of the game and it is **not player-authored.** The player cannot choose how the protagonist feels about Arn. The relationship is pre-established and load-bearing. Where a line exists, it may be warmer, drier, or more direct. It does not change the bond.
 
-When Forn takes the body and Arn's soul passes to **Lumen**, the protagonist loses his oldest friend. The game does not let the player opt out of that loss. It is authored. See [[game-premise]].
+When Forn takes the body and Arn's soul passes to **Lumen**, the protagonist loses Arn for the rest of the played story. The player cannot opt out of that loss. It is authored. What happens after the credits is in [[game-premise]]. Do not hint at it in Act 1.
 
 ---
 

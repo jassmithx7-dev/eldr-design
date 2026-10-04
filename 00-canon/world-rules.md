@@ -43,7 +43,8 @@ Adults who are aware they are aging, doing dangerous work together. The grimness
 - Latent power that "awakens" — protagonists do not discover hidden gifts that grow over time. (Exception: Forn under Arn is *suppression and takeover*, not Arn growing divine gifts. Arn never gains awareness or power; Forn breaks through under stress. See [[game-premise]].)
 - Recruit-and-befriend companion loops
 - Teenage protagonists
-Stakes are proportionate and human-scale. The protagonist is competent because they worked, not because they were chosen.
+
+Stakes are proportionate and human-scale. They stay the people in front of him. Ravn is what becomes now: the present runs through him because he is the one still standing and he acts. He does not become a god. He is not the next coming. His competence is the work he has already done. Do not define him by the phrase "he is not chosen." The rejections listed above stay.
 
 ---
 
