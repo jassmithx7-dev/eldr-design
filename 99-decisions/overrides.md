@@ -42,3 +42,11 @@ This is not a record of shame. It is a decision audit trail. When something goes
 **Skeptic verdict:** [CONCERN] NECESSITY (soft TONE) — silence-as-alarm was the individuating war-adult twist on Tas chatter; full spider-sense bark + pulse risks generic scout-tingle. Cheaper alt: keep silence identity, pulse + body language, optional one-word "Wait."
 **Human reason:** Explicit `override`. Silence did not feel right; wants spider-sense readability (A+D package).
 **Four-test result:** CANON [pass] | TONE [concern — override] | SCOPE [pass — retitle existing HUD work] | NECESSITY [concern — override]
+
+---
+
+## Override — 2026-10-04
+**Request:** Companions say "Ravn" when they speak to him. Not "Captain."
+**Skeptic verdict:** [OBJECT] CANON — gatehouse scene. `00-canon/glossary.md` says companions address him as "Captain" in VO, and `20-content/protagonist.md` treats Ravn as the internal name while spoken address stays Captain.
+**Human reason:** Explicit `override`. The standing decision is that companions say Ravn. The yard and Dag's fire drafts already do.
+**Four-test result:** CANON [object — Captain line] | TONE [pass] | SCOPE [pass] | NECESSITY [pass]
