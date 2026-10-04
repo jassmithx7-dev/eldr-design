@@ -54,11 +54,11 @@ This quest should feel like a final stand that turns into sudden personal loss. 
 
 #### Dag's fire
 
-**What the player is watching:** The gate is over. In the back room, the company is sitting down. Fen is the one still on his feet, talking about a strap on Ravn's kit that squeaked the whole way in. Dag is already fixing that strap, and he makes Fen sit and hold it. Arn starts to say Fen has not come off the gate, sees him sit, and stops. At the table, Bram has already set a bowl for Voryn. Voryn treats that as the fact that he was included.
+**What the player is watching:** The gate is over. In the back room, the company is sitting down. Fen is the one still on his feet, talking about a strap on Ravn's kit that squeaked the whole way in. Dag is already fixing that strap, and he makes Fen sit and hold it. Arn starts to say Fen is still wound up, sees him sit, and stops. At the table, Bram has already set a bowl for Voryn. Voryn treats that as the fact that he was included.
 
 The room: a fire, Dag's bench, bedrolls, the wounded along one wall, a table someone eats at. Crowded. The war is off. A back room, not a tavern and not a war room. Ravn stands in it. Nothing asks him to choose.
 
-<!-- ASSUMPTION: The one worry Arn does not finish is Fen still up from the gate. Civilians still moving is not this rest. -->
+<!-- ASSUMPTION: The one worry Arn does not finish is that Fen is still wound up. Fen came inside. Civilians still moving is not this rest. -->
 
 Speech is plain. People say what they mean. Same build as the yard: what they do first, one want each, and the talk stops when someone does it.
 
