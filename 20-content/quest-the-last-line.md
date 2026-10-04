@@ -3,6 +3,7 @@ type: quest
 status: draft
 depends_on: ["[[zone-the-falling-gate]]", "[[companion-arn]]", "[[game-premise]]", "[[enemy-roster-ashfall]]", "[[relic-the-anchor]]", "[[party-web-ashfall]]", "[[opening-scene-outline]]"]
 ue5_scope: M
+inspired_by: ["scene-construction-process", "man-made-spaces-in-story", "symphonic-dialogue", "story-dialogue", "moral-dialogue", "values-in-conflict-scene"]
 open_questions: []
 ---
 
@@ -39,7 +40,7 @@ This quest should feel like a final stand that turns into sudden personal loss. 
 
 ## Party-web scene stubs
 
-*Short placement stubs for [[party-web-ashfall]] checklist. Not full dialogue. Implement as Conversation / encounter hooks in [[slice-ashfall-unity-map]].*
+*Placement stubs for [[party-web-ashfall]]. Stub 1 is drafted dialogue (Dag's fire). Stub 2 is the Bram/Voryn beat inside that same rest. Stubs 0 and 3–6 stay placement. Implement as Conversation / encounter hooks in [[slice-ashfall-unity-map]].*
 
 ### Stub 0 — Bram mid-fight join (Hold the Gate)
 **When:** During the opening Gate combat, after the fight has started (not session-start roster).  
@@ -47,13 +48,55 @@ This quest should feel like a final stand that turns into sudden personal loss. 
 **Also:** [[opening-scene-outline]] beat 4.
 
 ### Stub 1 — Fen ↔ Dag camp (grumble-play)
-**When:** First camp / rest between Gate hold and Keep push (or immediately after Gate hybrid complete).  
-**What:** Fen fills space; Dag complains while clearly playing along. Equal weird duo — neither in charge. Outsiders would only hear shell; company reads care.  
-**Job:** Make camp feel inhabited before the keep gets worse.
+**When:** After [[opening-scene-outline]] (the yard, before any steel) and after Hold the Gate, the first short fight. The keep's back room. No separate zone note. This is not the start of the act, and it is not the Soulwright.  
+**What:** One linear scene. Fen fills the quiet. Dag complains and plays along at the bench. Arn takes Ravn aside for one unfinished worry, then stops. Stub 2 plays in this same downtime, after Arn.  
+**Job:** Make the rest feel inhabited before the keep gets worse. The player can stand, listen, and watch Dag finish one small piece of work.
+
+#### Dag's fire
+
+**What the player is watching:** The gate is over. In the back room, the company is sitting down. Fen is the one still on his feet, talking about a strap on Ravn's kit that squeaked the whole way in. Dag is already fixing that strap, and he makes Fen sit and hold it. Arn starts to say Fen is still wound up, sees him sit, and stops. At the table, Bram has already set a bowl for Voryn. Voryn treats that as the fact that he was included.
+
+The room: a fire, Dag's bench, bedrolls, the wounded along one wall, a table someone eats at. Crowded. The war is off. A back room, not a tavern and not a war room. Ravn stands in it. Nothing asks him to choose.
+
+<!-- ASSUMPTION: The one worry Arn does not finish is that Fen is still wound up. Fen came inside. Civilians still moving is not this rest. -->
+
+Speech is plain. People say what they mean. Same build as the yard: what they do first, one want each, and the talk stops when someone does it.
+
+Fen is by the bench, still talking.
+
+> **Fen:** "Ravn. The strap on your kit was loose the whole way back."
+
+Dag has that strap on the bench. He does not look up. He complains, and he is already fixing it.
+
+> **Dag:** "Sit down and hold it. I'll fix it."
+
+Fen sits. He takes the loose end.
+
+> **Fen:** "I'm sitting. I've got it."
+
+Dag sets one rivet. The strap is fixed. He does not make a speech about it.
+
+> **Dag:** "Hold still."
+
+Arn is a step off, close enough that only Ravn is meant to hear. He was going to say what to do about it. Fen is in the seat, holding the strap.
+
+> **Arn:** "Ravn. Fen still hasn't settled down."
+
+Arn stops. He does not add a plan.
+
+Bram is at the table. A bowl is already at the empty end. This is Stub 2, the same sitting-down.
+
+> **Bram:** "Voryn. There's a bowl for you at the end of the table."
+
+> **Voryn:** "I'll sit."
+
+Voryn sits. He does not move the bowl, and he does not thank Bram. That is the last line. Dag is still at the bench. The room keeps going. No one asks Ravn what comes next.
+
+No fight. No Charisma gate. No dialogue menu. No EldSense. Companions say Ravn. Fen is he.
 
 ### Stub 2 — Bram includes Voryn
-**When:** Downtime after Gate or early Keep corridor (safe enough for a dry line).  
-**What:** Bram treats Voryn as already in (no fix campaign). Voryn soft return — nod or one dry line.  
+**When:** The same downtime as Stub 1, after Arn stops. Not a separate corridor scene.  
+**What:** Bram treats Voryn as already in — the bowl was set when Bram sat. Voryn's return is the one dry line in Dag's fire, and then he sits. No fix campaign. No nod staged on top of the line.  
 **Job:** Plant inclusion before the Soulwright three-up (player + Arn + Voryn).
 
 ### Stub 3 — Voryn argues the board
@@ -86,7 +129,8 @@ This quest should feel like a final stand that turns into sudden personal loss. 
 | Stub | Quest beat |
 |------|------------|
 | 0, 4a | Opening / Hold the Gate |
-| 1, 2, 3 | Between Gate and Shrine (camp / Keep) |
+| 1, 2 | First rest after the Gate — one scene, Dag's fire |
+| 3 | Between Gate and Shrine (camp / Keep) |
 | 5 | Reach the Shrine → before Confront |
 | 4b, (trap, goodbye) | Confront the Source |
 | 6 | After Confront — camp |
