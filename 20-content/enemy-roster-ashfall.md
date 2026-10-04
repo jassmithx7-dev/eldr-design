@@ -116,7 +116,7 @@ Do not introduce brand-new combat mechanics in the boss room. Remix: interrupt, 
 
 1. Arn’s stress breaks suppression → **Forn** shatters the trap / immediate threat **once**
 2. Bram and Fen return shaken
-3. **Arn ↔ player** final conversation (Drift-colored)
+3. **Arn ↔ player** one private line. The old Drift-colored last-words rule is replaced. The line does not change with Drift.
 4. Arn’s soul passes to **Lumen**; **Forn** holds the body
 5. Soulwright collapse / flee / death is **authored after** the Arn beat — not a free combat win that skips story
 

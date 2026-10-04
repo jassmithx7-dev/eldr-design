@@ -24,7 +24,7 @@ open_questions: []
 | Person | Slice job | Spark fuel |
 |--------|-----------|------------|
 | **Protagonist** | Decision center | Who backs, refuses, argues, sidesteps |
-| **Arn** | Emotional anchor / healer | Practical calm; rare refuse; oldest friend |
+| **Arn** | Emotional anchor / healer | Peer beside Ravn by choice; can disagree; stays and helps |
 | **Fen** | Alive company / Eld tell | Frequent talk → EldSense (spider-sense alert) on Eld-wrong; sidesteps bad orders |
 | **Bram** | Warm formal fighter | Caramon-first + Sturm underlayer; oath refuse; Voryn-as-already-in. **Joins mid-fight at Gate — not starting roster** |
 | **Voryn** | Quiet danger / Eld brain | Dry when safe; predicts + briefs; argues the board |
@@ -38,9 +38,9 @@ Equal weird duo. Fen fills space; Dag **grumbles and plays along**. Outsiders se
 **Spark:** Chatter vs complaint-that-is-participation. Fen EldSense should make Dag’s grumble stop or sharpen — readable without exposition.
 
 ### Protagonist ↔ Arn
-Oldest-friend shorthand. Arn defaults to backing; **rare refuse** for civilians/company, then stays in the mess. No divine tells.
+Ravn leads, as Aragorn and Tanis do. Arn stands beside him as a peer, as Legolas and Sturm do, because Arn chooses to. They can disagree. Arn stays and still helps. Oldest-friend shorthand. Humor is one spare line between equals, not a routine. No divine tells. Do not write the scene lines here.
 
-**Spark:** Practical disagreement under trust — not loyalty theater.
+**Spark:** Disagreement between equals under trust. Arn does not leave the problem.
 
 ### Bram ↔ Voryn
 Bram: steady inclusion (already in). Voryn: soft returns (dry line, nod) when safe. No “fix Voryn” campaign.
@@ -85,7 +85,7 @@ Shared language of holding positions. Respect without ceremony.
 |-----|-----------------|
 | Bram / Fen | False wipe stings because they were *easy to be around* / alive company |
 | Voryn | Still fighting; competence, not comfort speech |
-| Arn | Private goodbye; load-bearing friendship |
+| Arn | One private line; load-bearing friendship. The old Drift-colored last-words rule is replaced. |
 | Dag | Camp after: solemn — will never forget Arn |
 
 Do not steal the goodbye with a party huddle. Dag’s grief lands **at camp**, not in the shrine.
@@ -96,7 +96,7 @@ Do not steal the goodbye with a party huddle. Dag’s grief lands **at camp**, n
 |-----|----------------|
 | Fen | High (until EldSense fires — then tight/alert, not mute) |
 | Bram | Medium-high (warm jokes; formal edge always on) |
-| Arn | Low-medium (short when bad; dry rare) |
+| Arn | One spare line between equals, not a routine |
 | Voryn | Low in crisis; dry commentary when **safe** |
 | Dag | Low except with Fen (grumble-play) and craft talk |
 

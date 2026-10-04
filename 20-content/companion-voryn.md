@@ -89,7 +89,7 @@ Three things:
 
 1. **Forn is back.** Vela could do what she did because the balance was broken — Forn absent, the dark pole unopposed. Voryn holds the domain under a restored balance. The structural check exists again.
 
-2. **He never wanted what she wanted.** Vela wanted total dominion — gods, world, existence settled under her will. Voryn's wants have always been finite. Dark, but bounded. You cannot follow someone's footsteps if you never wanted to go where they were going.
+2. **He never wanted what she wanted.** Vela wants to rule Eldr. Voryn's wants have always been finite. Dark, but bounded. You cannot follow someone's footsteps if you never wanted to go where they were going.
 
 3. **The thread.** He knows what it costs the people on the other end. She never did.
 
