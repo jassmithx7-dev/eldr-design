@@ -145,23 +145,51 @@ The family does not come out. The levy stay in the room. They do not come into t
 
 Arn stays beside Ravn. He does not say Ravn was wrong. He does not say he will leave.
 
-#### The later fire
+#### The fire again
 
-The company sits at a fire after the court. This can be the same fire as Stub 1. It does not replace Fen and Dag.
+**When:** After the lower court. The company is back at Dag's fire.  
+**Who:** Ravn is the player. Arn stands beside him. Fen and Dag are the ones talking. Bram and Voryn are in the room.  
+**Flag:** The one fact from the court. The adult who can still work got out, or Ravn barred the way.
 
-Dag is there either way. He still does the real repairs.
+The company comes back to the back room. The fire is going. This is the same room as Stub 1. It does not replace that sitting. Fen and Dag are still the ones a person hears first.
 
-**If Ravn went through:** the adult who can still work is at the fire. The children who walked out are with that adult. The adult can put one ordinary thing in Ravn's hand — food, a little oil, or a spare strap. One thing. It is not gear that matters.
+Fen is on his feet.
 
-**If Ravn dropped the bar:** their place at the fire is empty. Arn says who will ask. He still does not threaten to leave.
+**Fen:** Ravn. Dag kept your end of the bench. I told him you'd be back.
 
-**Arn:** Their sister went ahead with the carts. She will ask for them.
+**Dag:** I kept the bench clear. Sit down.
 
-The hall they came from is empty behind them. Someone can see that, or say it. Bram can say it.
+Fen sits. He does not stop talking.
+
+**Fen:** You see, Dag? Ravn's back.
+
+**Dag:** I see him. Let me work.
+
+Dag stays at the bench. He still does the real repairs. The court does not change that.
+
+Arn stands beside Ravn. Bram is in the room. Voryn is in the room. They do not take the talk from Fen and Dag.
+
+**If the adult who can still work got out**
+
+That adult is at the fire. The children who walked out are with them.
+
+The adult puts one ordinary thing in Ravn's hand. Food, or a little oil, or a spare strap. One thing.
+
+Arn sees it. He does not make a speech about it.
+
+**If Ravn barred the way**
+
+Their place at the fire is empty.
+
+Arn does not grade Ravn. He does not say he will leave.
+
+**Arn:** Ravn. Their sister is already through with the carts. She will ask for them.
+
+Bram can say what the door did.
 
 **Bram:** Ravn. The door held. Nothing followed us up.
 
-Nothing is handed over for dropping the bar.
+No one hands Ravn anything.
 
 #### Act 2 camp
 
@@ -191,7 +219,7 @@ That same fact is still the only one later: if the adult lives, that same person
 | Stub | Quest beat |
 |------|------------|
 | 0, 4a | Opening / Hold the Gate |
-| Lower court | After the gatehouse chapel; the fire after it |
+| Lower court, the fire again | After the gatehouse chapel; then back at Dag's fire |
 | 1, 2, 3 | Between Gate and Shrine (camp / Keep) |
 | 5 | Reach the Shrine → before Confront |
 | 4b, (trap, goodbye) | Confront the Source |
