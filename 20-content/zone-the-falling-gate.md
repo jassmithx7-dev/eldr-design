@@ -24,6 +24,9 @@ This zone is where the player first experiences the scale of the resistance's ex
 
 - A collapsing outer gatehouse with limited defensive positions.
 - A chapel or shrine that has become a site of strange power.
+- The lower court, the stone yard under the gatehouse.
+- The back room, where Dag's fire is.
+- The stair from the back room down toward the old shrine.
 - Narrow interior routes that make the battle feel urgent and spatially constrained.
 - A final descent into the old undercroft where the party confronts the first true sign of Vela's influence.
 

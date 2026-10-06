@@ -3,13 +3,14 @@ type: quest
 status: draft
 depends_on: ["[[zone-the-falling-gate]]", "[[companion-arn]]", "[[game-premise]]", "[[enemy-roster-ashfall]]", "[[relic-the-anchor]]", "[[party-web-ashfall]]", "[[opening-scene-outline]]"]
 ue5_scope: M
+inspired_by: ["opening-scene", "scene-construction-process", "symphonic-dialogue", "story-dialogue", "moral-dialogue", "values-in-conflict-scene", "man-made-spaces-in-story"]
 open_questions:
   - "The notes do not say the breath Arn is gone, or whether Forn speaks. This scene uses the smallest version: the private line is the last thing Arn says, the body stays up, and Forn does not speak. Is that the moment?"
 ---
 
 # The Last Line
 
-*The vertical-slice questline.*
+*The vertical-slice questline. Act 1 is one sequence.*
 
 ## Premise
 
@@ -24,13 +25,13 @@ The resistance has one final chance to hold the Falling Gate at Ashfall Keep lon
    - **Gate wave clear** — the authored Hold-the-Gate encounter(s) are won (enemies eliminated / routed per [[combat-core]]).
    - **Evac meter full** — enough civilians reach the safe staging / exit count (Quest Machine counter; tune in playtest).
 
-   Either alone does **not** advance. Clearing waves without evac = you held ground but people didn't get out. Evac without a real hold = soft-fail of combat proof. When both complete → objective **Reach the Shrine** activates; keep interior opens.
+   Either alone does **not** advance. Clearing waves without evac = you held ground but people didn't get out. Evac without a real hold = soft-fail of combat proof. When both complete, objective **Reach the Shrine** activates and the keep interior opens. The next scene is Dag's fire. The chapel is not next. The second fire is not next.
 
 2. **Reach the Shrine**  
    The player pushes through the keep and learns that Vela's influence is not only military; it is ritual and spiritual. The shrine beneath the gate has been used to maintain the [[relic-the-anchor]] — a sealed vessel that is the true mechanism of Forn's thirty-year suppression. The shrine is not a discovery to be solved; it is evidence of something the player does not yet have the context to read.
 
 3. **Confront the Source**  
-   **End of Act 1 — the Soulwright.** Soul-trap: **Bram** and **Fen** caught (false wipe). **Voryn stays up and fighting** with player + Arn. Arn's stress breaks Forn's suppression; Forn shatters the trap once; Bram and Fen return. **Arn speaks a final conversation with the player**, then his soul passes and Forn holds the body. Full beat order locked in [[game-premise]]; boss kit in [[enemy-roster-ashfall]].
+   **End of Act 1 — the Soulwright.** Soul-trap: **Bram** and **Fen** caught (false wipe). **Voryn stays up and fighting** with player + Arn. Arn's stress breaks Forn's suppression; Forn shatters the trap once; Bram and Fen return. The private line is "On your left." Then his soul passes and Forn holds the body. That line is the goodbye. It is not a Drift-colored conversation. Beat order is in [[game-premise]]. Boss kit is in [[enemy-roster-ashfall]]. The death moment is the goodbye scene below.
 
 ## Emotional Function
 
@@ -38,44 +39,120 @@ This quest should feel like a final stand that turns into sudden personal loss. 
 
 ---
 
-## Party-web scene stubs
+## Act 1, in order
 
-*Short placement stubs for [[party-web-ashfall]] checklist. Not full dialogue. Implement as Conversation / encounter hooks in [[slice-ashfall-unity-map]].*
+Speech is plain. People say what they mean. Each scene has one next step.
 
-### Stub 0 — Bram mid-fight join (Hold the Gate)
-**When:** During the opening Gate combat, after the fight has started (not session-start roster).  
-**What:** Bram arrives from the **Ironhold line** (delayed). Warm formal reunion beat — one line naming the delay, no lore dump, no long speech mid-fight. He becomes controllable after join trigger.  
-**Also:** [[opening-scene-outline]] beat 4.
+### War prologue
 
-### Stub 1 — Fen ↔ Dag camp (grumble-play)
-**When:** First camp / rest between Gate hold and Keep push (or immediately after Gate hybrid complete).  
-**What:** Fen fills space; Dag complains while clearly playing along. Equal weird duo — neither in charge. Outsiders would only hear shell; company reads care.  
-**Job:** Make camp feel inhabited before the keep gets worse.
+No gods. No Eld.
 
-### Stub 2 — Bram includes Voryn
-**When:** Downtime after Gate or early Keep corridor (safe enough for a dry line).  
-**What:** Bram treats Voryn as already in (no fix campaign). Voryn soft return — nod or one dry line.  
-**Job:** Plant inclusion before the Soulwright three-up (player + Arn + Voryn).
+The title is the word Eldr and a way to begin. Beginning does not open a character sheet. One short screen, then the yard.
 
-### Stub 3 — Voryn argues the board
-**When:** Gate or Keep decision beat (evac route, which corridor, whether to press shrine).  
-**What:** Voryn predicts early and/or lays out options/costs until a better call or the player shuts it down. High-IQ competence, not “I’m smart” speech.  
-**Job:** Decision friction that feels adult.
+The war has gone against the free lands for years. Vela's armies keep taking ground. Varnstead has broken, and its people are falling back on Ashfall Keep. Ravn is already there with his company. The gate is still open.
 
-### Stub 4a — Fen EldSense (gatehouse shrine)
-**When:** Opening contaminated gatehouse shrine — [[opening-scene-outline]] beat 5. The gate fight is over.  
-**Who:** Ravn, Arn, Fen, Voryn, Bram. Dag is not in the gatehouse.  
-**What:** Pose + “Wait.” / “Something’s wrong.” + portrait pulse (`Fen_EldSense`). No Eld lecture. No Arn hint.  
+Next is the yard.
+
+### The yard
+
+*Before any steel. Bram is not here. Dag is not here. No dialogue menu.*
+
+Smoke. Broken timber. **Varnstead** is still coming through the gate with whatever they could carry. The last knot of them is still outside. Fen is talking, because the quiet makes this worse. Those people are already his.
+
+**Fen:** Ravn. They're still outside. Give them a moment.
+
+**Voryn:** If we wait, we close the gate on the people already coming through.
+
+Arn is with the person nearest him who cannot run. He does not take a side. He says what that person needs, and he looks at Ravn.
+
+**Arn:** They can't run. Get them on the cart.
+
+<!-- ASSUMPTION: Ravn sends the cart through, then the gate closes. He does not leave it open. The call is authored. The player is not offered a menu. Fen goes with the cart and comes back in before the gate is shut. -->
+
+**Ravn:** Get the cart through the gate. Fen, go with it. Then we close the gate.
+
+Fen shuts up and moves. He takes the cart through. Voryn stays. He is already watching the gate. Arn goes back to the person on the ground.
+
+**Arn:** Bram is still on the Ironhold line.
+
+**Voryn:** Dag is still packing the gear. He's not in the yard.
+
+Nothing else about either of them. You do not hear how anyone met.
+
+The yard can be walked while the gate is still open. A cart. A bundle someone turned around for. A face looks at Ravn, because he has survived long enough to be the one who answers.
+
+**Ravn:** Go through the gate. Stay with the cart.
+
+That is the last line. Fen comes back in. Then they close the gate. Fen is inside. No steel.
+
+Next is the hold.
+
+### The hold
+
+The gate fight. This note does not write the fight.
+
+**Stub 0 — Bram mid-fight join.** During the opening Gate combat, after the fight has started. Not on the session-start roster. Bram arrives from the **Ironhold line**, delayed. One line naming the delay. No lore dump. No long speech mid-fight. He becomes controllable after the join. See [[opening-scene-outline]] beat 4.
+
+When the hold is done, the next scene is Dag's fire. Not the chapel. Not the second fire.
+
+### Dag's fire, first rest
+
+**When:** After the hold. This is the next thing after the fight.  
+**Who:** Ravn is the player. He stands. Arn is a step off. Fen is inside, on his feet. Dag is at the bench. Bram and Voryn are at the table.  
+**What:** Fen fills the quiet. Dag complains and does the work. Arn says one line and does not finish it. No one answers. Stub 2 is the bowl, in this same room, after Arn stops.  
+**Not this scene:** The chapel. The second fire. A seat for Ravn.
+
+The hold is over. The company is in the back room. This is the next thing.
+
+Some of them sit. Fen does not. He has not sat down. He is talking about a strap on Ravn's kit that squeaked the whole way in. Dag is already fixing that strap. He tells Fen to sit and hold it. Fen does not sit.
+
+The room: a fire, Dag's bench, bedrolls, the wounded along one wall, a table someone eats at. Crowded. The war is off. A back room, not a tavern and not a war room. Ravn stands in it. The bench has no place kept for him. Nothing asks him to choose.
+
+<!-- ASSUMPTION: The one worry Arn does not finish is that Fen still has not settled. Fen is inside. Civilians still moving is not this rest. -->
+
+Fen is inside. He is by the bench, still talking. He has not sat down.
+
+**Fen:** Ravn. The strap on your kit was loose the whole way back.
+
+Dag has that strap on the bench. He does not look up. He complains, and he is already fixing it.
+
+**Dag:** Sit down and hold it. I'll fix it.
+
+Fen does not sit. He stays on his feet. He has not settled.
+
+Dag sets one rivet. The strap is fixed. He does not make a speech about it.
+
+Arn is a step off, close enough that only Ravn is meant to hear.
+
+**Arn:** Ravn. Fen still hasn't settled down.
+
+Arn stops. He does not add a plan. No one answers. Fen has not sat down.
+
+Bram is at the table. A bowl is already at the empty end. This is Stub 2, the same rest.
+
+**Bram:** Voryn. There's a bowl for you at the end of the table.
+
+**Voryn:** I'll sit.
+
+Voryn sits. He does not move the bowl, and he does not thank Bram. That is the last line of this rest. Dag is still at the bench. Fen is still on his feet. The room keeps going.
+
+No fight. No Charisma gate. No dialogue menu. No EldSense. Companions say Ravn. Fen is he.
+
+Next is the gatehouse chapel.
+
+### Gatehouse shrine
+
+**When:** After the first fire. The gate fight is already behind that fire. This chapel is not the next thing after the fight.  
+**Who:** Ravn, Arn, Fen, Voryn, Bram. Fen is inside. Dag is not in the gatehouse.  
+**What:** Pose + "Wait." / "Something's wrong." + portrait pulse (`Fen_EldSense`). No Eld lecture. No Arn hint.  
 **Job:** First teach of the tell (1 of 2 Ashfall uses).  
 **Not this room:** The old shrine under the keep (Reach the Shrine / the Anchor) is later. Passing this chapel does not complete that objective.
 
-#### Scene
-
-The gate fight is over. Ravn, Arn, Fen, Voryn, and Bram walk the gatehouse. Dag is not with them.
+They leave the fire. Ravn, Arn, Fen, Voryn, and Bram walk the gatehouse. Fen is inside. Dag is not with them.
 
 The passage is narrow stone. A chapel door stands open off it. Inside: a bench, a lamp still burning, an altar slab.
 
-A soldier can see what is wrong. The lamp throws the slab’s shadow on the back wall, the way a lamp should. On the slab there is another dark — a film, thick, sitting against that light instead of with it. It is not soot. It does not flake. It is not a mark from the fight they just finished.
+A soldier can see what is wrong. The lamp throws the slab's shadow on the back wall, the way a lamp should. On the slab there is another dark — a film, thick, sitting against that light instead of with it. It is not soot. It does not flake. It is not a mark from the fight they already finished.
 
 Fen has been talking.
 
@@ -96,7 +173,7 @@ If Ravn looks to Arn, Arn looks at the slab, then at Ravn. He does not name the 
 If Ravn presses Fen:
 
 **Ravn:** Fen.
-**Fen:** Something’s wrong.
+**Fen:** Something's wrong.
 
 That is the same beat, not a lecture. Nothing after it.
 
@@ -104,17 +181,18 @@ Voryn looks at the film once. He does not brief. Bram sees Fen coiled. He does n
 
 **Bram:** With you, Ravn.
 
-They go on. The chapel stays behind them.
+They leave the chapel.
 
 <!-- ASSUMPTION: The film on the slab is the visible contamination from [[opening-scene-outline]] beat 5 (shadow or residue a soldier can see). It is not named in dialogue. -->
 
-### Lower court — the stuck family
+Next is the lower court.
+
+### Stuck family
+
 **When:** After the gatehouse chapel. The company is in the lower court.  
-**Who:** Ravn leads. Arn stands with him by choice. Fen is in the hall; he does not stop them here. Voryn and Bram are with them. Dag is not in the court.  
+**Who:** Ravn leads. Arn stands with him by choice. Fen is in the hall. He does not stop them here. Voryn and Bram are with them. Dag is not in the court.  
 **Choice:** Physical. Ravn drops the bar, or he goes through the doorway. No talk menu.  
 **Remembered fact (one):** the adult who can still work lives, or does not. No second flag.
-
-#### Scene
 
 The chapel is behind them. The lower court is the stone yard under the gatehouse. A hall runs across it. A room stands open off that hall. The bar is up in its brackets, not dropped.
 
@@ -146,21 +224,28 @@ The family does not come out. The levy stay in the room. They do not come into t
 
 Arn stays beside Ravn. He does not say Ravn was wrong. He does not say he will leave.
 
-#### The fire again
+Next is Dag's fire again. Not the hold. Not the chapel.
 
-**When:** After the lower court. The company is back at Dag's fire.  
-**Who:** Ravn is the player. Arn stands beside him. Fen and Dag are the ones talking. Bram and Voryn are in the room.  
+<!-- ASSUMPTION: The soldiers in the room are Settled Levy already on the Ashfall roster. How many is not set here. The through path is this short fight, not a second hard-walk version. -->
+<!-- ASSUMPTION: On the through path, the adult who cannot move does not leave the room. Only the adult who can still work, and the children who can walk, get out. The person Arn says will ask is unnamed — the sister already through with the carts. She is named only if Ravn barred the way. -->
+
+### Dag's fire after that choice
+
+**When:** After the lower court. The company is back at Dag's fire. This is not the rest after the fight.  
+**Who:** Ravn is the player. He stands. Arn stands beside him. Fen and Dag are the ones talking. Fen is inside. Bram and Voryn are in the room.  
 **Flag:** The one fact from the court. The adult who can still work got out, or Ravn barred the way.
 
-The company comes back to the back room. The fire is going. This is the same room as Stub 1. It does not replace that sitting. Fen and Dag are still the ones a person hears first.
+The company comes back to the back room. The fire is going. This is the same room as the first fire. It does not replace that rest. Fen and Dag are still the ones a person hears first.
 
-Fen is on his feet.
+Ravn stands. The first fire did not keep a seat for him. This fire does not give him one.
 
-**Fen:** Ravn. Dag kept your end of the bench. I told him you'd be back.
+Fen is inside. He is on his feet. He has not sat down.
 
-**Dag:** I kept the bench clear. Sit down.
+**Fen:** Ravn. I told Dag you'd be back.
 
-Fen sits. He does not stop talking.
+**Dag:** The fire's still going.
+
+Fen does not sit. He does not stop talking.
 
 **Fen:** You see, Dag? Ravn's back.
 
@@ -192,27 +277,21 @@ Bram can say what the door did.
 
 No one hands Ravn anything.
 
-#### Act 2 camp
+The sister is only on this path. She is not in the yard, the first fire, or the chapel.
 
-That same fact is still the only one later: if the adult lives, that same person is at the Act 2 camp selling ordinary supplies; if the adult does not live, that seller is not there. No shop, no prices, no inventory. Dag still does the real repairs either way. Missing this person does not lock Ravn out of gear that matters.
+#### Later
 
-<!-- ASSUMPTION: The soldiers in the room are Settled Levy already on the Ashfall roster. How many is not set here. The through path is this short fight, not a second hard-walk version. -->
-<!-- ASSUMPTION: On the through path, the adult who cannot move does not leave the room. Only the adult who can still work, and the children who can walk, get out. The person Arn says will ask is unnamed — the sister already through with the carts. -->
-<!-- ASSUMPTION: "The lower court" is the yard just after the gatehouse chapel. [[zone-the-falling-gate]] does not name that yard yet. -->
+That same fact is still the only one in Act 2: if the adult lives, that same person is at the Act 2 camp selling ordinary supplies; if the adult does not live, that seller is not there. No shop, no prices, no inventory. Dag still does the real repairs either way. Missing this person does not lock Ravn out of gear that matters.
 
-### Stub 4b — Fen EldSense (Soulwright rite start)
-**When:** Soulwright Phase 1→2 (rite / meter about to fire trap).  
-**What:** Same EldSense package. Second Ashfall use (game budget 3–4 total).  
-**Job:** Alarm before false wipe — field wrongness, not destiny talk.
+Next is the way down.
 
-### Stub 5 — the way down
+### The way down
+
 **When:** After the second fire. The company leaves Dag's fire and walks toward the old shrine under the keep. Before the boss room.  
 **Who:** Ravn leads. Arn stands beside him by choice. Fen, Bram, and Voryn walk with them. Dag stays at the fire.  
 **What:** The next hour. Who still needs covering on the way down. Arn disagrees once. He still comes.  
 **Not this walk:** The Soulwright fight. Arn's goodbye. The lower court. The family.  
 **Job:** Make Arn feel load-bearing so the goodbye hurts.
-
-#### Scene
 
 The fire is behind them. Dag stays at the bench. He does not come.
 
@@ -241,13 +320,15 @@ Arn comes. He does not say it again. He takes his place beside Ravn.
 
 They keep walking.
 
-<!-- ASSUMPTION: The way down is the keep stair from Dag's fire toward the old undercroft shrine. [[zone-the-falling-gate]] names the descent and does not name this stair. -->
+<!-- ASSUMPTION: The way down is the keep stair from Dag's fire toward the old undercroft shrine. The zone names this stair. -->
 
-### Arn's goodbye
+Next is the old shrine, and the Soulwright there. Stub 4b fires in that fight. This note does not write the fight.
+
+### Arn's goodbye and the quiet after
 
 **When:** End of Act 1, under the keep, after the Soulwright is destroyed.  
 **Who:** Arn and Ravn. Voryn and Bram are in the room. They do not take the goodbye. Fen is in the quiet. Dag is still at the fire.  
-**Not this scene:** The fight. Class or combat rules. Anyone explaining the gods. Any hint that Arn comes back.
+**Not this scene:** The fight. Class or combat rules. Anyone explaining the gods. Any hint that Arn comes back. A Drift-colored conversation.
 
 #### Scene
 
@@ -276,20 +357,42 @@ No one answers it.
 Voryn and Bram stay in the room. They do not fill the quiet. Dag is still at the fire.
 
 <!-- ASSUMPTION: The notes lock the order — the trap breaks, Arn speaks, then his soul is not in the body and Forn holds it — and do not lock the breath it happens on, or whether Forn speaks. Smallest version: the private line is the last thing Arn says; the body stays up; Forn does not speak and no one names him. -->
-<!-- ASSUMPTION: The unanswered line is the one Arn does not finish at Dag's fire: "Ravn. Fen still hasn't settled down." That sitting is not in this branch's earlier scenes. Dag stays at the fire, as on the way down, so he is not in this room. -->
+<!-- ASSUMPTION: The unanswered line is the one Arn does not finish at the first fire: "Ravn. Fen still hasn't settled down." Fen has not sat down. No one answers it here. Dag stays at the fire, as on the way down, so he is not in this room. -->
+
+Next is the camp after this. Stub 6. It is not this room.
+
+---
+
+## Stubs that are not those scenes
+
+### Stub 3 — Voryn argues the board
+
+**When:** A Gate or Keep decision, if one is staged. Not a second next step after the hold, the chapel, or either fire.  
+**What:** Voryn predicts early and lays out options and costs until a better call, or until the player shuts it down. High-IQ competence. Not an "I'm smart" speech.  
+**Job:** Decision friction that feels adult.
+
+### Stub 4b — Fen EldSense (Soulwright rite start)
+
+**When:** Soulwright Phase 1→2 (rite / meter about to fire trap). Inside the fight this note does not write.  
+**What:** Same EldSense package. Second Ashfall use (game budget 3–4 total).  
+**Job:** Alarm before false wipe — field wrongness, not destiny talk.
 
 ### Stub 6 — Dag never forgets Arn (post-climax camp)
-**When:** Camp after Soulwright / Arn beat — party returns without Arn (Forn in the body is a separate problem; this stub is Dag’s grief).  
-**What:** Solemn, short: he will never forget Arn. Not a eulogy reel; armor can return after.  
-**Job:** Land grief at camp, not in the shrine. Do not steal the private Arn↔player goodbye.
+
+**When:** The camp after the goodbye. The party returns without Arn. Forn in the body is a separate problem. This stub is Dag's grief.  
+**What:** Solemn, short: he will never forget Arn. Not a eulogy reel. Armor can return after.  
+**Job:** Land grief at camp, not in the shrine. Do not steal the private line.
 
 ### Stub placement map
 
-| Stub | Quest beat |
-|------|------------|
-| 0, 4a | Opening / Hold the Gate |
-| Lower court, the fire again | After the gatehouse chapel; then back at Dag's fire |
-| 1, 2, 3 | Between Gate and Shrine (camp / Keep) |
-| 5 — the way down | After the second fire, before Confront |
-| 4b, Arn's goodbye | Confront the Source |
-| 6 | After Confront — camp |
+| Stub | Where it sits |
+|------|----------------|
+| War prologue, the yard | Before any steel |
+| 0 | During the hold |
+| 1, 2 | Dag's fire, the first rest, after the hold |
+| 4a | Gatehouse chapel, after that fire |
+| Lower court, the fire again | After the chapel, then back at the same fire |
+| 5 — the way down | After the second fire, before the Soulwright |
+| 4b, Arn's goodbye | Confront the Source. The private line is "On your left." |
+| 3 | Not a step in this order |
+| 6 | Camp after the quiet |

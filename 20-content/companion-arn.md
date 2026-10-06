@@ -71,7 +71,7 @@ Arn is outside the Eld system entirely. He does not have Eld sensitivity in any 
 
 ## Party Tenure
 
-Arn is in the party from Act 1. At the **end of Act 1** boss, the unmasking beat plays (Bram/Fen soul-trap; Voryn still fighting; Forn breaks the trap once → Arn's final conversation with the player → Arn's soul passes; Forn holds the body). Solen joins at the start of Act 2. The gap between losing Arn and gaining Solen should be felt. Act 1 content must make Arn load-bearing so the loss hurts.
+Arn is in the party from Act 1. At the **end of Act 1** boss, the unmasking beat plays (Bram/Fen soul-trap; Voryn still fighting; Forn breaks the trap once → Arn's private line to the player, "On your left." → Arn's soul passes; Forn holds the body). Solen joins at the start of Act 2. The gap between losing Arn and gaining Solen should be felt. Act 1 content must make Arn load-bearing so the loss hurts.
 
 ## Story Use
 
