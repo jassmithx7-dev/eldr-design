@@ -54,10 +54,10 @@ Authored sequence — interactive CRPG verbs where possible; not a miracle monta
 2. **Bram** and **Fen** are **caught** — they read as erased / gone. They are not permanently deleted from the roster; this is a false wipe.
 3. Still standing: **player, Arn, and Voryn**. The party appears about to lose completely.
 4. The stress on Arn — terror for Bram, Fen, and the people he loves — breaks the suppression. **Forn** surfaces long enough to shatter the soul-trap and the immediate threat **once**. Bram and Fen return shaken.
-5. A brief window remains where **Arn is still Arn.** He has a final conversation with the **player** (private beat — Voryn may be present in the space but the exchange is Arn↔player). He does not understand that he is (or was bound to) a god. He understands that he is leaving / that something is ending.
+5. A brief window remains where **Arn is still Arn.** The private beat is one line to the player: "On your left." It is not a Drift-colored conversation. He does not understand that he is (or was bound to) a god. He understands that he is leaving / that something is ending.
 6. Arn's soul passes to **Lumen**. **Forn** holds the body. The friend does not come back.
 
-**Drift-colored goodbye:** The Arn conversation varies by the player caster's Drift position. Structure is the same; last words reflect who the player has been becoming. This is the only point where the single ending branches inside the slice — one exchange, three variants.
+The goodbye does not vary by Drift. There are not three last words. The line is "On your left."
 
 <!-- ASSUMPTION: Forn's shatter-act is a single authored interruption, not an ongoing controllable Forn combat kit. -->
 

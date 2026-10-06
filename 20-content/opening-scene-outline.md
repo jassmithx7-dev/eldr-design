@@ -20,7 +20,7 @@ The opening should establish three things immediately:
 
 ## Scene Summary
 
-The player arrives at the Falling Gate mid-retreat. The resistance is already falling back, covering the final evacuation of **Varnstead**. The outer walls are damaged, the streets crowded with frightened civilians. The party's job is not to win — it is to hold long enough for the retreat not to collapse into panic.
+The player is already in the Falling Gate courtyard, mid-retreat. The war prologue and the yard are drafted in [[quest-the-last-line]]. The resistance is already falling back, covering the final evacuation of **Varnstead**. The outer walls are damaged, the yard crowded with frightened civilians. The party's job is not to win — it is to hold long enough for the retreat not to collapse into panic.
 
 ## Key Beats
 

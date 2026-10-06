@@ -9,7 +9,7 @@ open_questions:
 
 # Protagonist
 
-*The person the player builds. The Captain the party already knows.*
+*The person the player builds. The company already knows him as Ravn.*
 
 ---
 
@@ -38,25 +38,25 @@ These are the character creation decisions. Classic CRPG structure.
 
 ## The Three Classes — What They Mean for the Story
 
-All three classes experience Drift. The Drift Counter, the thresholds, the environmental cues, Arn's last words at the end — all of it applies regardless of class. The class changes what form the declaration takes.
+All three classes experience Drift. The Drift Counter, the thresholds, and the environmental cues apply regardless of class. The class changes what form those choices take in play. Arn's last line does not change with class or with Drift. It is "On your left."
 
 The world is saturated with Eld. Everyone has some sensitivity to it. Fighters and Thieves cannot cast spells, but they can channel Eld into a small set of class-specific combat abilities. Each ability is pole-flavored — using it moves the Drift Counter. See [[combat-core]] for the full ability lists.
 
 ### Fighter
 
-The Captain who held the line through physical discipline and tactical competence. Twenty years of leading dangerous people through dangerous situations. He has earned his position by being the most effective person in a fight and knowing how to put others in the right places.
+Ravn held the line through physical discipline and tactical competence. Twenty years of leading dangerous people through dangerous situations. He has earned his position by being the most effective person in a fight and knowing how to put others in the right places.
 
 His Eld pool is small (6, flat). His abilities are not spells — they are instinctive Eld use, the kind that a veteran develops without studying it. Holding a position so an ally doesn't take the hit (Forn). Finishing a wounded enemy before they can recover (Vela). Every use is a declaration.
 
 ### Thief
 
-The Captain who survived twenty years by knowing how to move unseen and how to read a room before anyone else. The resistance has needed this as much as it has needed fighters.
+Ravn survived twenty years by knowing how to move unseen and how to read a room before anyone else. The resistance has needed this as much as it has needed fighters.
 
 His Eld pool is small (6, flat). His abilities are about positioning and exploitation — disappearing from an enemy's attention (Forn) or finding the crack in someone's guard (Vela). Fen's Eld sensitivity creates a specific dynamic: two people who move through the same dark spaces, one of whom feels the Eld consciously and one of whom uses it without quite naming it.
 
 ### Caster
 
-The Eld practitioner. The Captain who studied and paid the physical cost for it. His casting hand may show it.
+The Eld practitioner. Ravn studied and paid the physical cost for it. His casting hand may show it.
 
 His pool is large and scales with INT and level. He has access to all nine schools and the full spell list. He also experiences Drift most immediately — every school he reaches for is a choice about what he is becoming, and the choices come faster and more consequentially than they do for a Fighter or Thief. His Drift runs alongside Voryn's authored descent. The ending lands with particular weight when the player has been making the same kind of decisions the whole way through.
 
