@@ -204,10 +204,43 @@ That same fact is still the only one later: if the adult lives, that same person
 **What:** Same EldSense package. Second Ashfall use (game budget 3–4 total).  
 **Job:** Alarm before false wipe — field wrongness, not destiny talk.
 
-### Stub 5 — Arn load-bearing (pre-Soulwright)
-**When:** Keep approach or undercroft threshold — before boss room.  
-**What:** Practical beat with the protagonist: civilians/company, next hour, who still needs covering. He can disagree; rare refuse only if order abandons people. Oldest-friend shorthand. **No** divine drip / survival uncanny.  
+### Stub 5 — the way down
+**When:** After the second fire. The company leaves Dag's fire and walks toward the old shrine under the keep. Before the boss room.  
+**Who:** Ravn leads. Arn stands beside him by choice. Fen, Bram, and Voryn walk with them. Dag stays at the fire.  
+**What:** The next hour. Who still needs covering on the way down. Arn disagrees once. He still comes.  
+**Not this walk:** The Soulwright fight. Arn's goodbye. The lower court. The family.  
 **Job:** Make Arn feel load-bearing so the goodbye hurts.
+
+#### Scene
+
+The fire is behind them. Dag stays at the bench. He does not come.
+
+**Dag:** Go on. I'll keep the fire.
+
+The stair is stone. It is narrow. It goes down toward the old shrine under the keep.
+
+Ravn leads. Arn walks beside him. Fen, Bram, and Voryn are on the stair with them.
+
+**Fen:** Ravn, I've got the back.
+
+He takes the rear.
+
+**Bram:** Ravn. I'll hold the turn.
+
+**Voryn:** Ravn. I'll call the corners.
+
+**Arn:** Ravn. Leave one of us here. Dag is alone at the fire.
+
+**Ravn:** No. Five of us go down. Dag holds the fire.
+
+Arn comes. He does not say it again. He takes his place beside Ravn.
+
+**Ravn:** Same stair back up.
+**Arn:** On your left.
+
+They keep walking.
+
+<!-- ASSUMPTION: The way down is the keep stair from Dag's fire toward the old undercroft shrine. [[zone-the-falling-gate]] names the descent and does not name this stair. -->
 
 ### Stub 6 — Dag never forgets Arn (post-climax camp)
 **When:** Camp after Soulwright / Arn beat — party returns without Arn (Forn in the body is a separate problem; this stub is Dag’s grief).  
@@ -221,6 +254,6 @@ That same fact is still the only one later: if the adult lives, that same person
 | 0, 4a | Opening / Hold the Gate |
 | Lower court, the fire again | After the gatehouse chapel; then back at Dag's fire |
 | 1, 2, 3 | Between Gate and Shrine (camp / Keep) |
-| 5 | Reach the Shrine → before Confront |
+| 5 — the way down | After the second fire, before Confront |
 | 4b, (trap, goodbye) | Confront the Source |
 | 6 | After Confront — camp |
