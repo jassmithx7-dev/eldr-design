@@ -107,6 +107,70 @@ They go on. The chapel stays behind them.
 
 <!-- ASSUMPTION: The film on the slab is the visible contamination from [[opening-scene-outline]] beat 5 (shadow or residue a soldier can see). It is not named in dialogue. -->
 
+### Lower court — the stuck family
+**When:** After the gatehouse chapel. The company is in the lower court.  
+**Who:** Ravn leads. Arn stands with him by choice. Fen is in the hall; he does not stop them here. Voryn and Bram are with them. Dag is not in the court.  
+**Choice:** Physical. Ravn drops the bar, or he goes through the doorway. No talk menu.  
+**Remembered fact (one):** the adult who can still work lives, or does not. No second flag.
+
+#### Scene
+
+The chapel is behind them. The lower court is the stone yard under the gatehouse. A hall runs across it. A room stands open off that hall. The bar is up in its brackets, not dropped.
+
+A family is in the room. They cannot get out. One adult cannot move. One adult can still work. Children are in there with them. Settled Levy are in the room too — the same living soldiers from [[enemy-roster-ashfall]], not a new kind. They stand between the family and the door.
+
+Ravn can see what the open door costs. If he leaves it open, those levy come out into the hall behind the company. If he drops the bar, what is in that room stays behind the bar. It does not come out into the hall. He does not spend the company on this room before the way down. The company stays intact. The hall stays clear.
+
+Going through gets the family out of that room. It also means taking the fight.
+
+Arn wants them out because they are stuck. He does not grade Ravn.
+
+**Arn:** Ravn. They're stuck. Leave the bar up.
+
+**If Ravn goes through**
+
+Ravn goes through the doorway to them. He does not drop the bar.
+
+The room is a short fight with the Settled Levy inside it. No numbers are set here.
+
+Arn is with the adult who cannot move. That adult cannot be brought through the door. They do not come out. When the fight is done, the adult who can still work comes out, and the children who can walk come out with that adult. Arn comes out with Ravn.
+
+The company has taken the fight. The people who could leave are with them.
+
+**If Ravn drops the bar**
+
+Ravn takes the bar and drops it into the brackets. The door shuts. The way is sealed.
+
+The family does not come out. The levy stay in the room. They do not come into the hall behind the company. The company does not fight this room. The hall behind them is clear.
+
+Arn stays beside Ravn. He does not say Ravn was wrong. He does not say he will leave.
+
+#### The later fire
+
+The company sits at a fire after the court. This can be the same fire as Stub 1. It does not replace Fen and Dag.
+
+Dag is there either way. He still does the real repairs.
+
+**If Ravn went through:** the adult who can still work is at the fire. The children who walked out are with that adult. The adult can put one ordinary thing in Ravn's hand — food, a little oil, or a spare strap. One thing. It is not gear that matters.
+
+**If Ravn dropped the bar:** their place at the fire is empty. Arn says who will ask. He still does not threaten to leave.
+
+**Arn:** Their sister went ahead with the carts. She will ask for them.
+
+The hall they came from is empty behind them. Someone can see that, or say it. Bram can say it.
+
+**Bram:** Ravn. The door held. Nothing followed us up.
+
+Nothing is handed over for dropping the bar.
+
+#### Act 2 camp
+
+That same fact is still the only one later: if the adult lives, that same person is at the Act 2 camp selling ordinary supplies; if the adult does not live, that seller is not there. No shop, no prices, no inventory. Dag still does the real repairs either way. Missing this person does not lock Ravn out of gear that matters.
+
+<!-- ASSUMPTION: The soldiers in the room are Settled Levy already on the Ashfall roster. How many is not set here. The through path is this short fight, not a second hard-walk version. -->
+<!-- ASSUMPTION: On the through path, the adult who cannot move does not leave the room. Only the adult who can still work, and the children who can walk, get out. The person Arn says will ask is unnamed — the sister already through with the carts. -->
+<!-- ASSUMPTION: "The lower court" is the yard just after the gatehouse chapel. [[zone-the-falling-gate]] does not name that yard yet. -->
+
 ### Stub 4b — Fen EldSense (Soulwright rite start)
 **When:** Soulwright Phase 1→2 (rite / meter about to fire trap).  
 **What:** Same EldSense package. Second Ashfall use (game budget 3–4 total).  
@@ -127,6 +191,7 @@ They go on. The chapel stays behind them.
 | Stub | Quest beat |
 |------|------------|
 | 0, 4a | Opening / Hold the Gate |
+| Lower court | After the gatehouse chapel; the fire after it |
 | 1, 2, 3 | Between Gate and Shrine (camp / Keep) |
 | 5 | Reach the Shrine → before Confront |
 | 4b, (trap, goodbye) | Confront the Source |
