@@ -3,7 +3,8 @@ type: quest
 status: draft
 depends_on: ["[[zone-the-falling-gate]]", "[[companion-arn]]", "[[game-premise]]", "[[enemy-roster-ashfall]]", "[[relic-the-anchor]]", "[[party-web-ashfall]]", "[[opening-scene-outline]]"]
 ue5_scope: M
-open_questions: []
+open_questions:
+  - "The notes do not say the breath Arn is gone, or whether Forn speaks. This scene uses the smallest version: the private line is the last thing Arn says, the body stays up, and Forn does not speak. Is that the moment?"
 ---
 
 # The Last Line
@@ -242,6 +243,41 @@ They keep walking.
 
 <!-- ASSUMPTION: The way down is the keep stair from Dag's fire toward the old undercroft shrine. [[zone-the-falling-gate]] names the descent and does not name this stair. -->
 
+### Arn's goodbye
+
+**When:** End of Act 1, under the keep, after the Soulwright is destroyed.  
+**Who:** Arn and Ravn. Voryn and Bram are in the room. They do not take the goodbye. Fen is in the quiet. Dag is still at the fire.  
+**Not this scene:** The fight. Class or combat rules. Anyone explaining the gods. Any hint that Arn comes back.
+
+#### Scene
+
+The Soulwright is destroyed. That trap is ended. What it held can pass. The war is not over. No one says this.
+
+Bram is back on his feet. Fen is back on his feet. Voryn is with them. They do not come into the goodbye.
+
+Arn is still beside Ravn. He is still Arn.
+
+**Arn:** Ravn. Get them up the stair.
+
+**Arn:** On your left.
+
+The second line is for Ravn. The others do not take it.
+
+Then Arn is gone. The body stays on its feet. Arn's soul is not in it. Forn has the body. Forn does not speak. No one names him.
+
+Fen is on his feet. He has not sat down.
+
+The line from the fire is still open.
+
+Ravn. Fen still hasn't settled down.
+
+No one answers it.
+
+Voryn and Bram stay in the room. They do not fill the quiet. Dag is still at the fire.
+
+<!-- ASSUMPTION: The notes lock the order — the trap breaks, Arn speaks, then his soul is not in the body and Forn holds it — and do not lock the breath it happens on, or whether Forn speaks. Smallest version: the private line is the last thing Arn says; the body stays up; Forn does not speak and no one names him. -->
+<!-- ASSUMPTION: The unanswered line is the one Arn does not finish at Dag's fire: "Ravn. Fen still hasn't settled down." That sitting is not in this branch's earlier scenes. Dag stays at the fire, as on the way down, so he is not in this room. -->
+
 ### Stub 6 — Dag never forgets Arn (post-climax camp)
 **When:** Camp after Soulwright / Arn beat — party returns without Arn (Forn in the body is a separate problem; this stub is Dag’s grief).  
 **What:** Solemn, short: he will never forget Arn. Not a eulogy reel; armor can return after.  
@@ -255,5 +291,5 @@ They keep walking.
 | Lower court, the fire again | After the gatehouse chapel; then back at Dag's fire |
 | 1, 2, 3 | Between Gate and Shrine (camp / Keep) |
 | 5 — the way down | After the second fire, before Confront |
-| 4b, (trap, goodbye) | Confront the Source |
+| 4b, Arn's goodbye | Confront the Source |
 | 6 | After Confront — camp |
