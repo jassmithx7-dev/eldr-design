@@ -6,6 +6,8 @@ ue5_scope: M
 inspired_by: ["opening-scene", "scene-construction-process", "symphonic-dialogue", "story-dialogue", "moral-dialogue", "values-in-conflict-scene", "man-made-spaces-in-story"]
 open_questions:
   - "The notes do not say the breath Arn is gone, or whether Forn speaks. This scene uses the smallest version: the private line is the last thing Arn says, the body stays up, and Forn does not speak. Is that the moment?"
+  - "The town on the road, the holding place, and the town before the keep have no proper names. None were invented here. Do they need names?"
+  - "On the road the company already includes Bram and Dag. The yard, left as written, still says Bram is on the Ironhold line and Dag is not in the yard. Those lines were not changed. Which roster is true when the gate starts?"
 ---
 
 # The Last Line
@@ -17,6 +19,8 @@ open_questions:
 The resistance has one final chance to hold the Falling Gate at Ashfall Keep long enough for the civilians to escape. The player must lead the defense, secure the interior routes, and descend into the old shrine beneath the keep to stop the corruption from spreading.
 
 ## Quest Structure
+
+Before the gate, the company is already together. They cross the road, the broken ground, the town on the road, the holding place, and the town before the keep. Then the gate is still open, and the three steps below take over as already written.
 
 1. **Hold the Gate**  
    The party fights to keep the outer defenses from collapsing while civilians evacuate from **Varnstead**.
@@ -43,13 +47,221 @@ This quest should feel like a final stand that turns into sudden personal loss. 
 
 Speech is plain. People say what they mean. Each scene has one next step.
 
+Before the yard, the company is already together. From the yard on, the scenes already written stand.
+
 ### War prologue
 
 No gods. No Eld.
 
-The title is the word Eldr and a way to begin. Beginning does not open a character sheet. One short screen, then the yard.
+The title is the word Eldr and a way to begin. Beginning does not open a character sheet. One short screen, then the road.
 
-The war has gone against the free lands for years. Vela's armies keep taking ground. Varnstead has broken, and its people are falling back on Ashfall Keep. Ravn is already there with his company. The gate is still open.
+The war has gone against the free lands for years. Vela's armies keep taking ground. Varnstead has broken, and its people are falling back toward Ashfall Keep. Ravn is not at the gate yet. He is on the road with his company.
+
+Next is the road.
+
+### The road
+
+**When:** After the title. Before any town. Before any fight.
+**Who:** Ravn leads. He is the player. Arn stands beside him. Fen is with them. Bram is with them. Voryn is with them. Dag is with them, on the gear.
+**What:** They learn a little. The war is going badly. Varnstead has broken. People are falling back toward Ashfall Keep.
+**Not this scene:** A god lecture. Any word that Forn is inside Arn. How anyone met. The yard.
+
+The road is a mountain road. Smoke is ahead. People walk the same way, toward the keep, with what they can carry. They are not the company. The company is already a company.
+
+No one says how long they have known each other.
+
+Fen talks, because the quiet is worse. A cart on the road has a bad wheel. Dag is already looking at it.
+
+**Fen:** Ravn. That wheel won't last.
+
+**Dag:** I'll get it. Keep walking.
+
+**Arn:** Ravn. They're heading for the keep. So are we.
+
+**Voryn:** Varnstead is gone. The next roofs will be full.
+
+**Bram:** Ravn. I'm with you.
+
+A man on the same road does not stop.
+
+**Man:** Varnstead broke. We're for the keep.
+
+That is all they get. The war is going badly. The keep is ahead. The company was already together before this road.
+
+Next is the broken ground.
+
+### The broken ground
+
+**When:** After the road. Before the first town.
+**Who:** The player moves Ravn. Arn stays beside him. Fen, Bram, and Voryn stay loosely with him. Dag stays with the gear. Dag is not in these fights.
+**What:** A few fights. Walking stops when a fight starts. The menu comes up in the same place. A quick action happens when it is picked. A heavy cast waits on the turn list, and a hit can break it.
+**Not this scene:** A new combat rule. A new spell name. A new enemy kind. A town. The gate.
+
+The ground is open. A ditch. A broken wall. No roofs yet.
+
+A few Settled Levy are in the ditch. Same soldiers the keep already uses. Not a new kind. No numbers are set here.
+
+The player moves Ravn with WASD. Arn stays near him. Fen, Bram, and Voryn stay loosely with him. They do not need an order to keep up. Dag stays back with the gear.
+
+Three short fights.
+
+The first fight starts. Ravn was walking. The walking stops. The menu comes up. It comes up in that same place the next time.
+
+The player picks a quick action. It happens when it is picked.
+
+The fight ends. Walking starts again.
+
+The second fight. Voryn starts a heavy cast. No spell is named. The cast waits on the turn list. It does not happen when it is picked. A hit lands on Voryn. The cast breaks.
+
+The third fight is the same ground. One quick action. One heavy cast. A hit can break the cast. Then the ditch is clear.
+
+**Fen:** Ravn. They stopped when we did.
+
+**Arn:** Stay close.
+
+Next is the town on the road.
+
+<!-- ASSUMPTION: These four facts are the teach, and nothing past them. Walking stops. The menu is in one place. A quick action happens when picked. A heavy cast waits on the turn list and a hit can break it. No new rule, number, or spell name. The enemies are Settled Levy. -->
+
+### The town on the road
+
+**When:** After the broken ground.
+**Who:** Ravn leads. Arn stands beside him. Fen, Bram, and Voryn walk it with him. Dag sets the gear down and fixes what the road broke.
+**What:** They can walk the town. A few things in it, in pieces. The dead are not moving on. People do not agree about Forn.
+**Not this scene:** Forn inside Arn. Arn learning anything about himself. A god lecture. A machine under the keep. The EldSense tell. The yard.
+
+This town has no name in this note. It is not Varnstead. Varnstead has already broken. Some of its people are here, and they are going on toward Ashfall Keep when they can.
+
+Roofs. A well. A street. A shrine. Doors. Ravn can walk it. Arn, Fen, Bram, and Voryn stay loosely with him, the same as on the broken ground. Dag is at the cart. He has the bad wheel.
+
+**Dag:** Leave it. I'll have the wheel done.
+
+#### The square
+
+Three people. Not a meeting. The company walks through and hears them one at a time.
+
+A man by the well:
+
+**Man:** Forn left. Look at Varnstead. He was supposed to stay, and he didn't.
+
+An older woman at a stall:
+
+**Woman:** He didn't leave. The war is bad. That's not the same as a god walking out.
+
+A younger man with a pack, faced toward the armies and not toward the keep:
+
+**Younger man:** Vela's armies are offering peace if we put the weapons down. I'm done running for a keep.
+
+They do not agree. No one asks Ravn to settle it. Arn does not take a side. He does not learn a secret.
+
+**Arn:** Ravn. They're scared. We keep moving.
+
+**Bram:** Ravn. Let him go. We stay.
+
+Voryn says nothing in the square.
+
+#### The house
+
+A woman stops Ravn because he is armed and he stopped. She does not know his name.
+
+**Woman:** My father died in the night. He's still in the house.
+
+Ravn can walk in. The father is there. He is dead. He has not gone. He does not speak.
+
+Arn stands beside Ravn.
+
+**Arn:** Ravn. He's dead. He hasn't gone.
+
+They cannot make him pass. No one names a cause. He is still in the house when they leave.
+
+**Woman:** The others are at the old shrine-house. Outside town.
+
+#### The shrine
+
+A small shrine off the street. A lamp. A slab. People have left cups.
+
+Fen has been talking. He goes quiet. He looks at the shrine. He does not explain.
+
+If Ravn says his name:
+
+**Ravn:** Fen.
+**Fen:** Dag'll want this strap. It's splitting.
+
+That is all. He does not say why he stopped. When the company moves, he moves. He does not go back to the shrine.
+
+<!-- ASSUMPTION: This quiet is not Fen_EldSense. No pose, no "Wait.", no portrait pulse. The gatehouse chapel, later, is still the first teach of that tell. -->
+
+Next is the holding place.
+
+### The holding place
+
+**When:** After the town. Tied to it. Before the second town.
+**Who:** Ravn leads. Arn stands beside him. Fen, Bram, and Voryn go with him. Dag stays in the town with the gear.
+**What:** The stuck dead, clearer. A bad shrine. A holding place. No machine is named.
+**Not this scene:** Why the dead are held. Any name for a machine. The yard.
+
+The company walks to the old shrine-house outside the town. It is stone. One door. The town puts the dead in it now. They are not passing. People do not want them in the houses.
+
+Inside, there is more than one. They are dead. They have not gone. They are where they were put.
+
+A keeper is at the door.
+
+**Keeper:** We put them here so they'd go. They don't. The shrine's gone bad. It's a holding place now.
+
+One of them comes at the door. Slow. It does not break and run the way the levy did. A short fight. No numbers are set here.
+
+The rest stay where they were put. They are held. They do not pass.
+
+**Voryn:** They're held. Not buried.
+
+**Arn:** Ravn. We can't make them go.
+
+**Fen:** Ravn. Watch the door.
+
+They leave. The dead are still in the shrine-house. Dag is still in the town, at the cart. He comes on with the gear when they take the road again.
+
+Next is the town before the keep.
+
+<!-- ASSUMPTION: The one that moves is an Unpassed already on the Ashfall roster. No new enemy. People in the scene do not use that name. -->
+
+### The town before the keep
+
+**When:** After the holding place. Before the gate.
+**Who:** Ravn leads. Arn stands beside him. Fen, Bram, and Voryn walk it with him. Dag is at the edge with the gear. The wheel is on his bench.
+**What:** They can walk this town too. One more look at the stuck dead. The same split about Forn, still in pieces. Varnstead's people are thick here.
+**Not this scene:** The yard. The gate fight. Any name for a machine.
+
+This town has no name in this note. It is the last roofs before Ashfall Keep. The retreat has piled up. Carts. People from Varnstead who got this far and stopped.
+
+A shrine yard. The shrine is shut. A woman sits with a dead man. He is her brother. She brought him here so he would pass. He is still with her. She has been here since yesterday.
+
+**Woman:** I brought him to the shrine. He should have gone. He's still here.
+
+Arn stands beside Ravn.
+
+**Arn:** Ravn. She won't leave him. We can't make the shrine take him.
+
+No one makes the brother pass. He is still with her when they go.
+
+A man near the carts:
+
+**Man:** Vela's armies are off that way. They call it peace if you put the weapons down. I'm thinking about it.
+
+An old man, not to the company, to the air:
+
+**Old man:** Forn hasn't left. People leave. That's different.
+
+Arn does not answer either of them. Nothing in it is about him. He does not learn a secret.
+
+**Fen:** Ravn. The keep's that way. I can see the smoke.
+
+Next is the gate.
+
+### The gate is still open
+
+The road leaves that town and comes up to Ashfall Keep. The gate is still open. The scenes already written take over from the yard. They are not rewritten here.
+
+<!-- ASSUMPTION: The yard still says Bram is not there, and that Dag is packing and not in the yard. This opening does not change those lines. On the road, both are already with the company. That clash is an open question, not a fix. -->
 
 Next is the yard.
 
@@ -387,7 +599,9 @@ Next is the camp after this. Stub 6. It is not this room.
 
 | Stub | Where it sits |
 |------|----------------|
-| War prologue, the yard | Before any steel |
+| War prologue, the road, the broken ground | Before any town |
+| The town on the road, the holding place, the town before the keep | Before the gate |
+| The gate is still open, the yard | The written gate scenes take over |
 | 0 | During the hold |
 | 1, 2 | Dag's fire, the first rest, after the hold |
 | 4a | Gatehouse chapel, after that fire |
