@@ -42,3 +42,11 @@ This is not a record of shame. It is a decision audit trail. When something goes
 **Skeptic verdict:** [CONCERN] NECESSITY (soft TONE) — silence-as-alarm was the individuating war-adult twist on Tas chatter; full spider-sense bark + pulse risks generic scout-tingle. Cheaper alt: keep silence identity, pulse + body language, optional one-word "Wait."
 **Human reason:** Explicit `override`. Silence did not feel right; wants spider-sense readability (A+D package).
 **Four-test result:** CANON [pass] | TONE [concern — override] | SCOPE [pass — retitle existing HUD work] | NECESSITY [concern — override]
+
+---
+
+## Override — 2026-10-07
+**Request:** Act 1 is not a short keep sequence. It starts with the party already together, a tutorial area with enemies, a town or two, and a few quests that uncover what is going on, including a gradual sense that the gods are part of it. More exploration. Do not limit the act for solo-dev scope. Do not put a length or hour count on it. The Ashfall gate, fires, trapped family, stair, and Soulwright stay at the end.
+**Skeptic verdict:** [OBJECT] SCOPE — keep Act 1 to one region and three places so a solo developer could finish it inside a few hours.
+**Human reason:** Explicit `override`. He wants the act he envisioned, with exploration, and he explicitly rejected the solo-dev and time limits.
+**Four-test result:** CANON [pass — scope only; locked Anchor climax and Soulwright fight unchanged] | TONE [pass — grim, adult, no chosen one; gods through what people live with, not a lecture] | SCOPE [fail — old solo/time test failed on purpose; human waived] | NECESSITY [pass — the keep-only line was the ending, not the act]
