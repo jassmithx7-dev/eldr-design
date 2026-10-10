@@ -42,3 +42,11 @@ This is not a record of shame. It is a decision audit trail. When something goes
 **Skeptic verdict:** [CONCERN] NECESSITY (soft TONE) — silence-as-alarm was the individuating war-adult twist on Tas chatter; full spider-sense bark + pulse risks generic scout-tingle. Cheaper alt: keep silence identity, pulse + body language, optional one-word "Wait."
 **Human reason:** Explicit `override`. Silence did not feel right; wants spider-sense readability (A+D package).
 **Four-test result:** CANON [pass] | TONE [concern — override] | SCOPE [pass — retitle existing HUD work] | NECESSITY [concern — override]
+
+---
+
+## Foundational Decision — 2026-10-10
+**Decision:** Lock the world as 2D pixel art with height and light (Sea of Stars as construction, grim palette). People are pictures. Spells and abilities stay complex in the rules and on the turn list, and stay cheap as pictures. Not full 3D. Easiest road to the finish given that combat.
+**Type:** Not a Skeptic override — the human said "lock that in," not the trigger word. Logged here because the standing premise was a 3D isometric CRPG and this replaces the presentation.
+**Four-test result:** CANON [pass — presentation change; Anchor climax and Soulwright fight unchanged] | TONE [pass — grim pixel world, not the bright mood of the reference game] | SCOPE [pass — finish-line test the human asked for; the 2026-10-07 override still waives solo/time caps on the act's length] | NECESSITY [pass — full 3D would add a second production beside rules that do not use 3D space]
+**Reasoning:** On 2026-10-10 the human said "lock that in," after being told 2D was the better finish because combat complexity is in the rules, not in modeled bodies.
