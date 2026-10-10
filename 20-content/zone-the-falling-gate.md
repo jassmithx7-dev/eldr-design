@@ -18,7 +18,7 @@ The Falling Gate is the outer gate of **Ashfall Keep**, a ruined frontier keep o
 
 ## Purpose in the Story
 
-This zone is where the player first experiences the scale of the resistance's exhaustion. The settlement is not glamorous; it is battered, frightened, and running out of time. The player must keep the gate standing long enough for civilians to evacuate and for the party to reach the old shrine beneath the keep.
+This zone is where the player first experiences the scale of the Line's exhaustion. The settlement is not glamorous; it is battered, frightened, and running out of time. The player must keep the gate standing long enough for civilians to evacuate and for the party to reach the old shrine beneath the keep.
 
 ## Key Features
 

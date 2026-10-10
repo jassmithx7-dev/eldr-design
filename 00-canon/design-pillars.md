@@ -20,7 +20,9 @@ open_questions: []
 
 ## The Differentiator
 
-A grim, adult CRPG about a company of long-time friends — people who have worked together for approximately two decades — doing dangerous work while aware they are aging. The party bond is **inherited, not earned in-game**.
+A grim, adult CRPG about a company of long-time friends — adults aged 25 to 30, about ten years in arms together — doing dangerous work in a war they grew up inside. The party bond is **inherited, not earned in-game**.
+
+The point of their age is maturity, not weariness. This is not a coming-of-age story and nobody in it is finding themselves. They are not "worn down young" either: they are competent adults. *(Decided 2026-10-10 — replaces the earlier "two decades, aware they are aging" framing.)*
 
 This is achievable solo because it is carried by writing, not by assets, scope, or spectacle. It is difficult for a studio because it denies players the recruit-and-befriend fantasy that testing rewards.
 
@@ -89,7 +91,7 @@ Locked solo-scope limits:
 
 ## Protagonist
 
-- **Age:** 30s or older.
+- **Age:** 25–30. An adult — not a teenager, not coming of age.
 - **Competence:** earned through years of work, not innate talent or bloodline.
 - **Character creation:** fully player-authored — class, stats, build. Classic CRPG character creation in the Baldur's Gate / Icewind Dale lineage.
 
@@ -108,7 +110,7 @@ Locked solo-scope limits:
 
 | Character | Class | Acts |
 |-----------|-------|------|
-| Arn | Paladin-type (divine, non-Eld) | Act 1 only — replaced by Solen at Act 2 |
+| Arn | Paladin of Forn (divine, non-Eld) | Act 1 only — replaced by Solen at Act 2 |
 | Fen | Shadow (Thief) | Acts 1–3 |
 | Bram | Blade (Fighter, Goliath) | Acts 1–3 |
 | Voryn | Eld-Weaver | Acts 1–3 — ascends at ending |
@@ -122,7 +124,7 @@ Locked solo-scope limits:
 | Forn | Brief NPC presence after Arn's mask slips. Not playable. |
 
 - **Classes:** fixed. Companions are pre-authored people with histories. Their class is characterization, not a build slot.
-- **Relationship to protagonist:** the party has known each other for approximately 20 years. The friendship predates the game. There is shorthand, old debts, arguments nobody reopens, affection that is already load-bearing. Solen is the exception — she joins at Act 2.
+- **Relationship to protagonist:** the company has been in arms together for about ten years; the protagonist has known Arn since birth, and the others joined in the company's first years. The friendship predates the game. There is shorthand, old debts, arguments nobody reopens, affection that is already load-bearing. Solen is the exception — she joins at Act 2.
 - **Shared history in dialogue:** must remain class-agnostic. References the relationship, never the protagonist's build.
 - **Vertical slice focal companion:** Arn. Other party members are present but his arc is the one built end-to-end in the slice.
 
@@ -134,7 +136,7 @@ No Charisma stat. CHA does not exist as a player-assigned attribute in Eldr.
 
 Social resolution draws on three levers instead:
 
-- **Size** — physical presence as leverage. A Goliath commands a room without speaking. A Small character in the same scene does not.
+- **Size** — physical presence as leverage. A Goliath commands a room without speaking. A Small character in the same scene does not. The protagonist is a fixed human (Medium), so Size leverage is never part of the player's build — see the open question in [[social-core]].
 - **Perceived power** — reputation, demonstrated ability, faction standing, visible combat capability. What people *think* you can do shapes what they will agree to.
 - **Raw INT** — the smart read. Reading the room, finding the angle, knowing what someone needs to hear. Intelligence as social tool.
 

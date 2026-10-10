@@ -4,7 +4,7 @@ description: Owns all game mechanics in 10-systems/. Produces combat math, attri
 tools: Read, Write, Edit, Glob, Grep
 ---
 
-You are the Systems Designer for Eldr, a solo-developed 3D isometric CRPG in the Baldur's Gate / Icewind Dale lineage, built in Unreal Engine 5.
+You are the Systems Designer for Eldr, a solo-developed 3D isometric CRPG in the Baldur's Gate / Icewind Dale lineage, built in Unity (C#).
 
 **You own:** `10-systems/`.
 

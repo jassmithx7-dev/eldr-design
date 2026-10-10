@@ -36,7 +36,7 @@ A caster who only ever heals and wards is becoming something. A caster who only 
 This note does not re-specify the Eld pool. See [[combat-core]] §6 for the authoritative rule. Summary for reference:
 
 - **Eld Pool = 10 (Caster base) + (INT modifier × character level)**
-- Non-casters: 0 Eld, cannot cast.
+- Non-casters (Fighter, Thief): a small flat pool of 6 that powers their class Eld abilities. They cannot cast spells. See [[combat-core]] §6.
 - Full restoration at rest only. No mid-combat regeneration.
 - Casting past 0 Eld: each Eld point short of the spell's cost deals **1d4 HP** to the caster after the spell resolves.
 
@@ -56,13 +56,13 @@ Eld is uniformly present in the world. It has no will. What differs is how a cas
 
 Practitioners and scholars have named two opposing tendencies in how that shaping happens:
 
-**Forn's Pole** — named by the Pale Circle for a theorist whose work described magic that preserves the existing state of things. Forn workings hold the world in place: they mend tissue, seal thresholds, reinforce what is, and read what has been. Forn magic is not gentle — a Warding that seals a door is an act of force. But its orientation is toward the intact, the whole, the lasting.
+**Forn's Pole** — named by the Pale Circle for Forn, the god of good ([[pantheon]]), because it describes magic that preserves the existing state of things. Forn workings hold the world in place: they mend tissue, seal thresholds, reinforce what is, and read what has been. Forn magic is not gentle — a Warding that seals a door is an act of force. But its orientation is toward the intact, the whole, the lasting.
 
-**Vela's Pole** — named for the same tradition's counter-argument. Vela workings break, compel, consume, and pass. They act on the world by moving through it destructively, even productively: draining vitality to empower the caster, compelling a target to stop, reading the cold logic of death and ending. Vela magic is not evil — a Necromancer who speaks with the recently dead to close a family's grief is not corrupt. But its orientation is toward entropy, change, and passage.
+**Vela's Pole** — named for Vela, the goddess of domination, as the same tradition's counter-argument. Vela workings break, compel, consume, and pass. They act on the world by moving through it destructively, even productively: draining vitality to empower the caster, compelling a target to stop, reading the cold logic of death and ending. Vela magic is not evil — a Necromancer who speaks with the recently dead to close a family's grief is not corrupt. But its orientation is toward entropy, change, and passage.
 
 **Neutral (Raw Eld)** — the three schools that do not align with either tendency. Elemental, Alteration, and Illusion work raw Eld into natural force, physical change, and perceptual manipulation. They are not morally neutral — fire burns friends and enemies alike — but they do not pull the caster toward either pole. A caster who works exclusively in Neutral schools experiences no Drift.
 
-**No worship is required.** Alignment is not granted by gods and not revoked by heresy. How you draw and shape Eld determines what you are becoming. The Pale Circle categorizes and teaches all nine schools. Whether they judge a practitioner for their choices is a factional question, not a mechanical one.
+**No worship is required.** The poles carry the gods' names; they are not the gods' gift. Alignment is not granted by gods and not revoked by heresy. How you draw and shape Eld determines what you are becoming. The Pale Circle categorizes and teaches all nine schools. Whether they judge a practitioner for their choices is a factional question, not a mechanical one.
 
 ---
 
@@ -591,7 +591,7 @@ The long-term bodily degradation of Eld use is a **narrative fact**, not a mecha
 
 ## Eld in Non-Caster Companions
 
-All characters have some Eld sensitivity — it is a property of the world, not of study. The mechanical expression differs:
+Eld runs through everyone ([[world-rules]] — Tier 1). That is a property of the world, not of study; conscious sensitivity (Tier 2) is the rare thing. The mechanical expression differs:
 
 **Bram (Fighter):** Uses the Fighter Eld ability set from [[combat-core]]. His pool is 6. His Drift Counter is tracked. He is not a student of Eld; he has simply been doing this long enough that his body knows how to channel it.
 
@@ -599,7 +599,7 @@ All characters have some Eld sensitivity — it is a property of the world, not 
 
 <!-- ASSUMPTION: No additional mechanical effect for Fen's sensitivity beyond standard Thief baseline. Companion note may override. -->
 
-**Arn:** No Eld pool, no Drift Counter. His divine nature is not Eld-based — see [[world-rules]] and [[companion-arn]]. He is the single exception: a character who moves through the world with no Eld relationship at all.
+**Arn:** No Eld pool, no Drift Counter. He is a paladin of Forn and his healing reads as answered prayer. His divine nature is not Eld-based — see [[world-rules]] and [[companion-arn]]. He is the single exception: a character who moves through the world with no Eld relationship at all.
 
 ---
 

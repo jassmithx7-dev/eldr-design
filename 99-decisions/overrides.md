@@ -42,3 +42,30 @@ This is not a record of shame. It is a decision audit trail. When something goes
 **Skeptic verdict:** [CONCERN] NECESSITY (soft TONE) — silence-as-alarm was the individuating war-adult twist on Tas chatter; full spider-sense bark + pulse risks generic scout-tingle. Cheaper alt: keep silence identity, pulse + body language, optional one-word "Wait."
 **Human reason:** Explicit `override`. Silence did not feel right; wants spider-sense readability (A+D package).
 **Four-test result:** CANON [pass] | TONE [concern — override] | SCOPE [pass — retitle existing HUD work] | NECESSITY [concern — override]
+
+---
+
+## Foundational Decisions — 2026-10-10
+**Type:** Not Skeptic overrides — human decisions from a canon interview, made to resolve contradictions blocking the lock of `world-rules`, `design-pillars`, `game-premise`, `factions` and `timeline`. Logged here because they rewrite earlier draft canon and the paper trail matters. No note changed status; everything touched is still `draft`.
+
+| # | Topic | Decision |
+|---|-------|----------|
+| 1 | Ages | The company is 25–30. The intent is adults, not coming-of-age; "worn down young" is rejected. Arn is 30, so "thirty years ago" stands. Replaces "two decades, aware they are aging". |
+| 2 | Eld sensitivity | Two tiers: Eld runs through everyone; only a rare few perceive it consciously and can study spells. |
+| 3 | Forn | A known god who has gone silent. Not forgotten. |
+| 4 | Race and sex stat ceilings | World fact, no mechanical system. |
+| 5 | Company tenure | About ten years in arms. Arn since birth. |
+| 6 | Dialogue | Fully linear. The player never selects lines. |
+| 7 | Gods on screen | Gods walk the land, bounded to the three neutrals (Valdrek, Mordrek, Morrven), once each, Acts 2–3. |
+| 8 | Arn | A paladin of Forn. |
+| 9 | Forn's other faithful | Their prayers still work, weakly. Arn is one paladin among many. |
+| 10 | The resistance | One organized army with a command structure. |
+| 11 | War length | 15 to 20 years. |
+| 12 | Command at Ashfall | The protagonist is the ranking officer. |
+| 13 | Army name | The Line. |
+
+**Concerns raised before the human decided (logged, not blocking):**
+- #7 — TONE / SCOPE [concern]: on-screen gods pull against the FRAMING RISK in [[game-premise]] and the human-scale stakes line in [[world-rules]]. Human bounded it to three scenes.
+- #8 — CANON [concern]: answered prayers to a silent god conflict with "no divine drip". Resolved by #9. Residual risk: the player hears "Forn" beside "Arn" all through Act 1.
+
+**Left open by the human:** the single figure for the war's length; whether Arn may return at the ending; the era and the ancient event; what answers Forn's faithful; the Pale Circle's stance; whether a Size gate passes on Bram's presence.

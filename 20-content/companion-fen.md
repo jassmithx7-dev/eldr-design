@@ -51,7 +51,7 @@ open_questions:
 
 ## Role in the Story
 
-Fen has been with the protagonist for approximately twenty years. He arrived with Dag. He stays because he has never considered leaving.
+Fen has been with the protagonist for about ten years. He arrived with Dag. He stays because he has never considered leaving.
 
 ## Character Hook
 

@@ -39,7 +39,7 @@ open_questions: []
 
 1. **CANON** — Does this contradict anything in `00-canon/`?
 2. **TONE** — Does this fit grim, adult, not coming-of-age; friendship in the face of death; no chosen-one?
-3. **SCOPE** — What does this cost to implement solo? Does it fit three acts, three biomes, party of four?
+3. **SCOPE** — What does this cost to implement solo? Does it fit three acts, three biomes, party of five?
 4. **NECESSITY** — What does this add that isn't already covered? Is there a cheaper way to get the same effect?
 
 ### Override Protocol

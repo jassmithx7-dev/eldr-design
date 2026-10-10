@@ -33,9 +33,9 @@ The command runs these steps in sequence. Each step must complete before the nex
 - For each combat or traversal encounter in the quest, writes an encounter note to `20-content/encounters/<slug>-<encounter-name>.md`
 - Each encounter specifies: arena footprint, enemy roster + counts, terrain features, win/loss conditions, tactic taught/punished
 
-### Step 4 — Technical Designer: UE5 mapping + sign-off
+### Step 4 — Technical Designer: Unity mapping + sign-off
 - For each new note (quest, system, encounter), writes a technical mapping note to `30-technical/`
-- Names actual UE5 constructs; updates the complexity ledger
+- Names actual Unity constructs; updates the complexity ledger
 - Signs off on each note by adding `tech_signoff: [[technical-note]]` to its frontmatter
 - Notes that cannot be signed off are flagged with `ue5_scope: BLOCKED` and a blocking reason
 

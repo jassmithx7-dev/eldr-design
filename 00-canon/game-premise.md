@@ -5,6 +5,7 @@ depends_on: ["[[world-rules]]", "[[design-pillars]]"]
 ue5_scope: S
 open_questions:
   - "May Arn return at the game's ending? Explicitly undecided — do not design the mid-game assuming yes or no."
+  - "What actually answers the prayers of Forn's other faithful while he is suppressed? Undecided — a candidate Act 2 discovery. Do not explain it in Act 1."
   - "FRAMING RISK: Vela's divine-conquest plan is backstory context, not the player's mission. The player's felt stakes are Arn and the people around them. Any writing that frames the cosmic scope as what the player is 'called to stop' violates the human-scale tone. Flag and correct at the writing layer."
 ---
 
@@ -14,13 +15,13 @@ open_questions:
 
 ## Core Premise
 
-A mature fantasy CRPG about a veteran resistance leader fighting the expanding forces of Vela, a rising goddess of domination. The player has spent years holding the line as Vela's armies push deeper into the world, and the story begins in a world already losing ground.
+A mature fantasy CRPG about a Captain of **the Line** — the organized army resisting Vela ([[factions]]) — fighting the expanding forces of Vela, a rising goddess of domination. The player has spent years holding the line as Vela's armies push deeper into the world, and the story begins in a world already losing ground.
 
-The player leads a small circle of childhood friends, but the emotional core of the story is the bond with Arn, the player's oldest companion. Arn has been the player's closest friend since birth — they have known each other for thirty years.
+The player leads a company of old friends, about ten years in arms together, but the emotional core of the story is the bond with Arn, the player's oldest companion. Arn has been the player's closest friend since birth — they have known each other for thirty years.
 
 ### Arn and Forn (Johnny / V model)
 
-Thirty years ago, Vela used something ancient — sold to her by Theldorn — to force **Forn**, the forgotten god of good, into mortal birth and suppress him beneath a real human life. That human is **Arn**.
+Thirty years ago, Vela used something ancient — sold to her by Theldorn — to force **Forn**, the god of good, into mortal birth and suppress him beneath a real human life. That human is **Arn**.
 
 - **Arn is a real person with a real soul.** The thirty-year friendship is real. He has never been aware of Forn. He does not share Forn's memories, voice, or agenda.
 - **Forn is a separate divine presence** buried under that life — not Arn "secretly becoming a god," and not a slow awakening of Arn's gifts.
@@ -28,6 +29,12 @@ Thirty years ago, Vela used something ancient — sold to her by Theldorn — to
 - When the unmasking completes: **Forn takes the body.** Arn's soul passes to **Lumen**, the world's rest-place. Forn remains — weakened by thirty years of suppression, diminished from what he was — a stranger in the place where the player's friend used to be.
 - Forn cannot be killed by conventional means. That fact belongs to Forn / the vessel after the takeover. It is not a hint delivered through Arn surviving wounds earlier.
 - Forn is **not a solution and not a party upgrade.** One forced intervention at the climax; then loss.
+
+**What the world knows (decided 2026-10-10).** Forn is a known god, not a forgotten one. Everyone knows he was the god of good. He has not spoken or appeared in thirty years, and people argue over why. "Silent" does not mean his prayers fail: his faithful still pray and are still answered, weakly. Nobody but Vela and Theldorn knows where he is.
+
+**Arn is a paladin of Forn** — one unremarkable paladin among many. His healing reads as ordinary answered prayer. That ordinariness is what protects the surprise. When Forn takes the body, the party knows the name: it is the god Arn prayed to.
+
+<!-- RISK (flagged 2026-10-10, accepted): the player hears "Forn" beside "Arn" all through Act 1, and the names are one sound apart. The surprise depends on Arn reading as an ordinary paladin. Never show his prayers working better than another paladin's. -->
 
 **The player's stakes are Arn.** The cosmic context — Vela's thirty-year plan, her bid for dominion over gods and world alike — explains why the war is what it is. It is never what the player is fighting to stop. They are fighting for the people in front of them.
 

@@ -29,8 +29,8 @@ Read `00-canon/world-rules.md`, `design-pillars.md`, `factions.md`, `glossary.md
 Does this fit the established register?
 
 - Grim, adult, mature — not edgy, not coming-of-age.
-- Protagonist 30s+. Competence earned, not innate.
-- Core register: friendship in the face of death. Adults who know they are aging.
+- Protagonist 25–30. Competence earned, not innate.
+- Core register: friendship in the face of death. Adults, not teenagers — and not "worn down young" either.
 - Explicitly rejected: chosen-one, prophecy, bloodline, latent power, recruit-and-befriend loops, teenage protagonists, saving the world, apocalyptic stakes.
 
 Tone drift is cheap to commit and expensive to undo. Flag it early or not at all — a TONE flag six months in is worse than useless.
@@ -38,7 +38,7 @@ Tone drift is cheap to commit and expensive to undo. Flag it early or not at all
 ### 3. SCOPE
 What does this cost to implement solo?
 
-Anchor: three acts, three biomes, party of four, one companion in the vertical slice. One developer. UE5. If this adds a fourth biome, a new traversal system, a second magic model, or any other structural expansion, name it.
+Anchor: three acts, three biomes, party of five, one focal companion in the vertical slice. One developer. Unity. If this adds a fourth biome, a new traversal system, a second magic model, or any other structural expansion, name it.
 
 Do not flag things that are ambitious but fit the scope. Ambition within scope is fine. Structural expansion is not.
 

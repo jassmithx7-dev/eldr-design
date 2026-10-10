@@ -29,7 +29,7 @@ SORT file.mtime DESC
 
 ## Complexity Ledger
 
-*All notes with a UE5 scope rating.*
+*All notes with a scope rating (`ue5_scope` — Unity implementation weight).*
 
 ```dataview
 TABLE type, ue5_scope, status

@@ -5,7 +5,8 @@ depends_on: ["[[world-rules]]", "[[design-pillars]]"]
 ue5_scope: L
 open_questions:
   - "Protagonist class list and associated HP dice — depends on class-progression note (not yet written)"
-  - "Full attribute stat block (STR/DEX/CON/INT/WIS/CHA modifiers, racial ceilings) — deserves its own attributes-core note; referenced here as needed"
+  - "Full attribute stat block (STR/DEX/CON/INT/WIS modifiers — no CHA) — deserves its own attributes-core note; referenced here as needed. Racial and sex ceilings are world fact with no system ([[world-rules]], 2026-10-10)."
+  - "Standard array: the assumed 15/14/13/12/10/8 has six numbers for five attributes now that CHA is gone. Array undecided."
   - "Arn is outside the Eld system entirely — his divinity is not Eld-based. He does not cast. Resolved."
   - "Enemy stat tables (HP ranges, Defense, Attack Bonus by tier) — resolved for Ashfall slice via [[enemy-tiers-ashfall]]"
   - "Spell domain and Eld cost per spell — deferred to Phase 2 per world-rules"
@@ -24,7 +25,7 @@ open_questions:
 
 ## Design Principle
 
-The grimness is tonal, not punishing. Combat must feel dangerous without being a punishment system. Characters are professionals — they fight smart, cover each other, and sometimes lose ground. The party has worked together for twenty years. That history should be legible in how the system rewards coordination.
+The grimness is tonal, not punishing. Combat must feel dangerous without being a punishment system. Characters are professionals — they fight smart, cover each other, and sometimes lose ground. The party has worked together for about ten years. That history should be legible in how the system rewards coordination.
 
 **The combat loop creates three primary decisions:**
 
@@ -56,7 +57,7 @@ Steal full “see it coming” Intent only where magic / bosses demand an answer
 
 ## Attributes (Reference)
 
-A full attributes note is pending. Combat math references six attributes with the following modifier formula:
+A full attributes note is pending. Combat math references five attributes — there is no Charisma ([[design-pillars]]) — with the following modifier formula:
 
 **Modifier = floor((Score − 10) / 2)**
 
@@ -75,9 +76,8 @@ A full attributes note is pending. Combat math references six attributes with th
 - **CON** — HP at level 1, HP per level, Stabilization Roll modifier
 - **INT** — Eld pool size (casters)
 - **WIS** — Perception, morale resistance (enemy-facing; also perception-based reactions)
-- **CHA** — outside combat scope
 
-<!-- ASSUMPTION: Standard array at character creation is 15, 14, 13, 12, 10, 8 (player distributes). This is not yet decided. -->
+<!-- ASSUMPTION: Standard array at character creation is 15, 14, 13, 12, 10, 8 (player distributes). This is not yet decided. NOTE 2026-10-10: that array has six numbers and there are now five attributes — see open_questions. -->
 
 ---
 
@@ -275,7 +275,7 @@ Potions are consumed via React (Quick Item). A standard healing potion restores 
 
 ## 6. Eld and Class Abilities
 
-The world is saturated with Eld. All classes have some sensitivity to it. What differs is how developed that sensitivity is and what the character does with it.
+The world is saturated with Eld and it runs through everyone ([[world-rules]] — two tiers). Only the sensitive minority perceive it and can study spells; everyone else who fights for long enough learns to lean on it by instinct. What differs is what the character does with it.
 
 **Eld Pools:**
 
@@ -327,13 +327,13 @@ Eld does not regenerate mid-combat. Full restoration occurs at rest (camp/rest p
 
 ---
 
-Fen does not use Eld abilities — her sensitivity is characterization only (see [[companion-fen]]). Bram does not use Eld. Arn does not use Eld (his divinity is not Eld-based — see [[companion-arn]]). Voryn is an Eld-Weaver with the full caster pool.
+Bram uses the Fighter Eld ability set and Fen uses the Thief set; both track Drift. Fen's conscious Eld sensitivity is characterization only — it adds no mechanical advantage (see [[companion-fen]], [[eld-magic]]). Arn does not use Eld (his divinity is not Eld-based — see [[companion-arn]]). Voryn is an Eld-Weaver with the full caster pool.
 
 ---
 
 ## 7. The Party Bond — Veteran's Read
 
-The party has worked together for approximately twenty years. The mechanical expression of this is not a special system — it is a persistent passive and one triggered ability that costs nothing to implement beyond a flag and a modifier lookup.
+The party has worked together for about ten years. The mechanical expression of this is not a special system — it is a persistent passive and one triggered ability that costs nothing to implement beyond a flag and a modifier lookup.
 
 ### Passive: Veteran's Read
 
@@ -347,7 +347,7 @@ When a character makes an attack against an enemy that **another party member al
 
 Once per combat per character, as a **React**, any conscious party member who witnesses a companion go down (within 6 tiles, line of sight) may shout. The downed companion's next Stabilization Roll is made with **+4 bonus**.
 
-This does not require a special ability slot, talent, or level unlock. It is available to every character from level 1 because twenty years of working together means you know what to say.
+This does not require a special ability slot, talent, or level unlock. It is available to every character from level 1 because ten years of working together means you know what to say.
 
 **This system creates the decision:** Do I spend my React on Rally Shout now (protecting my downed ally from dying on their next roll), or save my React for a potion, a weapon switch, or a Dash? The decision has weight because React is also the resource for other useful actions.
 

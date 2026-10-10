@@ -12,7 +12,7 @@ open_questions: []
 
 ## Premise
 
-The resistance has one final chance to hold the Falling Gate at Ashfall Keep long enough for the civilians to escape. The player must lead the defense, secure the interior routes, and descend into the old shrine beneath the keep to stop the corruption from spreading.
+The Line has one final chance to hold the Falling Gate at Ashfall Keep long enough for the civilians to escape. The player must lead the defense, secure the interior routes, and descend into the old shrine beneath the keep to stop the corruption from spreading.
 
 ## Quest Structure
 
@@ -58,7 +58,7 @@ This quest should feel like a final stand that turns into sudden personal loss. 
 
 ### Stub 3 — Voryn argues the board
 **When:** Gate or Keep decision beat (evac route, which corridor, whether to press shrine).  
-**What:** Voryn predicts early and/or lays out options/costs until a better call or the player shuts it down. High-IQ competence, not “I’m smart” speech.  
+**What:** Voryn predicts early and/or lays out options/costs until a better call or the protagonist shuts it down (authored — no line selection). High-IQ competence, not “I’m smart” speech.  
 **Job:** Decision friction that feels adult.
 
 ### Stub 4a — Fen EldSense (gatehouse shrine)
