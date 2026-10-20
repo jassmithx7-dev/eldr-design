@@ -235,6 +235,11 @@ How combat looks is the first priority. These rules exist so it looks good *and*
 
 **Cheaper than the old version:** no grid pathfinding, flanking geometry, movement, Large footprints or Reaction Window state machine.
 
+**Prototype baseline (decided 2026-10-20).** The Unity prototype in the `eldr-unity` project (`Assets/EldrTest/Battle`) is the baseline for how combat looks and flows: fights start where the party meets the enemy, sides line up facing each other, melee attackers run in, swing, turn and run back, with hit-stop and battle lighting. Its *rules* are not canon. They are replaced with this note's rules one at a time: timeline (done 2026-10-20), Eld pool (replaces TP), rows, bond meter (replaces Coordination and Rally), telegraphs and interrupts, instant restart on defeat, minor actions.
+
+- In the prototype, a unit's Speed stands in for the DEX modifier in the delay formula: delay × (1 − (Speed − 8) × 0.04). <!-- ASSUMPTION: Speed 8 = no modifier, until attributes exist. -->
+- The run-in and run-back are staging, not movement; position on the field still has no rules effect. They must fit the §9 budgets — the basic-attack budget (≤ 1.5 s) has not yet been measured against the run-in.
+
 ---
 
 ## 11. Named-Item Abilities

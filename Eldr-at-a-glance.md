@@ -1,6 +1,6 @@
 # Eldr at a Glance
 
-*One page of what's decided. Details live in the linked notes. Updated 2026-10-19 (evening).*
+*One page of what's decided. Details live in the linked notes. Updated 2026-10-20.*
 
 ## Priorities
 1. **How combat looks** — animation, spell and Eld effects. Grounded, never cartoonish.
@@ -44,6 +44,7 @@ Engine: **Unity** (locked). Summer was only tested, not adopted. → [[design-pi
 - **Full HP and Eld restore after every fight.** Eld is a fixed pool per fight.
 - **Downed, not dead.** Lose a fight → it restarts instantly.
 - Enemies can flee when beaten down (morale).
+- **Look and flow baseline:** the Unity prototype (`eldr-unity`, Bram and Arn vs raiders) — fights in place, run in, swing, run back. Its rules are being swapped for these one at a time; the timeline is done (2026-10-20).
 
 ## Eld (magic) → [[eld-magic]], [[world-rules]]
 - Eld runs through everyone. Fighters and thieves use it by instinct; only a rare few can study spells.
@@ -65,7 +66,8 @@ Engine: **Unity** (locked). Summer was only tested, not adopted. → [[design-pi
 - Whether melee Eld abilities get visible effects (proposed rules in [[design-pillars]]).
 
 ## Next Up
-1. **Combat look test in Unity** (kit delivered 2026-10-19): Bram — one attack, one Eld strike, one spell. Judge the animation and effects.
-2. Decide how to source animation, based on the test.
-3. Class-progression note (party stats by level) — the party numbers are placeholders until then.
-4. Voryn's Act 1 spell list.
+1. Put the Unity project on GitHub (`eldr-unity`) and clear out the old grid projects.
+2. Prototype: replace TP with the fixed Eld pool, then rows, bond meter, telegraphs.
+3. Decide how to source animation.
+4. Class-progression note (party stats by level) — the party numbers are placeholders until then.
+5. Voryn's Act 1 spell list.
