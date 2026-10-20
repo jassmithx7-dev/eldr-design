@@ -8,9 +8,7 @@ open_questions:
   - "Hold the Gate: Bram joins mid-fight while protagonist, Arn, Fen and Voryn are already fighting. Does he make a fifth for that fight (story exception), or replace someone? Proposed: story exception — five for that fight."
   - "Bond finisher list: which pairs, and how many in the slice? Proposed slice set: protagonist + Arn, Bram + Fen, Bram + Voryn. Finishers may be removed entirely after playtest (human, 2026-10-19)."
   - "All numbers in this note are first-pass tuning values, marked TUNE. They need a playtest, not a debate."
-  - "[[enemy-tiers-ashfall]] still uses d20 attack bonuses and Defense. It must be rewritten against this note (damage reduction, timeline speed, telegraph timing)."
-  - "[[eld-magic]] Spell Check: damage spells now always land (no misses). Status spells keep a resistance roll. eld-magic needs the matching edit."
-  - "Arn's combat kit (paladin of Forn, Act 1 healer) is not written."
+  - "Class-progression note (party HP, armor and attributes by level) is not written; party numbers in [[enemy-tiers-ashfall]] and [[party-kits-act1]] are placeholders."
 ---
 
 # Combat Core
@@ -36,7 +34,7 @@ open_questions:
 | Finishers | **Authored pairs** with shared history. |
 | Party size | **4 active** of the 5-person company, chosen at camp or rest points. Story fights may fix the party; the Soulwright climax fights with all five. |
 
-**Kept from the old version:** Downed instead of death; no permadeath; enemy morale; class Eld abilities and Drift ([[eld-magic]]); casting past 0 Eld costs HP; the Soulwright ritual meter and objective fights like Hold the Gate.
+**Kept from the old version (converted in section 12):** class Eld abilities. **Also kept:** Downed instead of death; no permadeath; enemy morale; class Eld abilities and Drift ([[eld-magic]]); casting past 0 Eld costs HP; the Soulwright ritual meter and objective fights like Hold the Gate.
 
 **Dropped:** the grid, flanking, range bands, movement speed, Large 2×2 footprints, Veteran's Read (folded into the bond meter), Rally Shout (folded into the bond meter), the off-turn Reaction Window, d20 to-hit.
 
@@ -107,6 +105,31 @@ Attacks always land.
 | WIS | Status resistance, enemy morale |
 
 There is no Charisma ([[design-pillars]]).
+
+**Weapon bases** (TUNE — the average of the old dice, so enemy HP from the old notes still roughly holds):
+
+| Weapon | Base | Weight | Notes |
+|---|---|---|---|
+| Dagger | 3 + STR or DEX | Quick | |
+| Short sword | 4 + STR or DEX | Quick | |
+| Longsword | 5 + STR | Normal | |
+| War hammer | 5 + STR | Normal | +2 vs Heavy armor |
+| Spear | 5 + STR | Normal | Full damage from the back row |
+| Greatsword | 6 + STR | Heavy | |
+| Short bow | 4 + DEX | Normal | Ranged — row doesn't matter |
+| Crossbow | 5 + DEX | Heavy | Ranged |
+
+The attribute bonus is the modifier: floor((score − 10) / 2).
+
+**Armor** (damage subtracted from each hit, TUNE):
+
+| Armor | Reduction | Delay effect |
+|---|---|---|
+| None | 0 | Quick actions 10% faster |
+| Light | 1 | — |
+| Medium | 2 | — |
+| Heavy | 3 | All delays +10% |
+| Shield | +1 | — |
 
 **Status effects** (Fear, Command, Enfeeble and similar) can be resisted: **resist chance = target WIS-based value vs. caster INT-based value** (formula TUNE). Damage spells always land.
 
@@ -222,3 +245,31 @@ How combat looks is the first priority. These rules exist so it looks good *and*
 - **Weapons give an active ability**, paid from the Eld pool, pole-flavoured, moving Drift like any Eld use. It is a showcase beat (≤ 3 s, section 9) with its own hand-made effect.
 - **Armor gives a triggered effect**, not a menu option: it fires on a condition (first time the wearer drops below half HP, when guarding an ally, when interrupted). No extra menu entries, still a visible moment.
 - **Limit by effects work, not rules:** each named item needs its own animation and effect, so the real cap is the effects budget. 1–2 named items per character per act.
+
+---
+
+## 12. Class Eld Abilities (converted 2026-10-19)
+
+Fighters and Thieves spend their small Eld pool (6 per fight) on these. Every use moves Drift ([[eld-magic]]). Converted from the grid version: "Defense" became damage reduction, "to hit" became damage, movement became rows. Visible effects follow the proposed rules in [[design-pillars]] Combat Presentation.
+
+### Fighter
+
+| Ability | Pole | Eld | Type | Effect |
+|---|---|---|---|---|
+| **Bulwark** | Forn | 2 | Action, quick | Guard one ally until your next turn: hits aimed at them hit you instead, and you take 2 less from each. Fills bond when it triggers. |
+| **Stand Firm** | Forn | 3 | Minor | Until your next turn: you can't be pushed out of the front row, and you take 2 less from each hit. |
+| **Break** | Vela | 2 | Action, normal, **Interrupt** | Heavy strike: normal damage, target's armor −2 for 2 of its turns. Interrupts a telegraphed move. |
+| **Execute** | Vela | 3 | Action, heavy | If the target is below half HP, double damage. |
+
+### Thief
+
+| Ability | Pole | Eld | Type | Effect |
+|---|---|---|---|---|
+| **Fade** | Forn | 2 | Minor | Enemies can't target you until your next turn, unless every other party member is Downed. |
+| **Mark** | Forn | 3 | Action, quick | Your attacks against this target deal +2 for the rest of the fight. |
+| **Expose** | Vela | 2 | Minor | Until the target's next turn, the whole party deals +2 to it. |
+| **Exploit** | Vela | 3 | Action, normal, **Interrupt** | An attack that ignores armor. Interrupts a telegraphed move. |
+
+**The decision these create:** Forn abilities protect and prepare; Vela abilities end things faster. Which you reach for is who you are becoming.
+
+**Who uses them:** Bram (Fighter set), Fen (Thief set), and a Fighter or Thief protagonist. Voryn and a Caster protagonist use spells ([[eld-magic]]). Arn has his own kit with no Eld ([[party-kits-act1]]).

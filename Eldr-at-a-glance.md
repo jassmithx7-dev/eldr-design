@@ -1,6 +1,6 @@
 # Eldr at a Glance
 
-*One page of what's decided. Details live in the linked notes. Updated 2026-10-19.*
+*One page of what's decided. Details live in the linked notes. Updated 2026-10-19 (evening).*
 
 ## Priorities
 1. **How combat looks** — animation, spell and Eld effects. Grounded, never cartoonish.
@@ -48,6 +48,8 @@ Engine: **Unity** (locked). Summer was only tested, not adopted. → [[design-pi
 ## Eld (magic) → [[eld-magic]], [[world-rules]]
 - Eld runs through everyone. Fighters and thieves use it by instinct; only a rare few can study spells.
 - Two poles: **Forn** (preserve, heal, ward) and **Vela** (break, compel, drain). Using either moves your hidden **Drift**, which the world reacts to. No meter on screen.
+- Fighters and thieves have 4 Eld abilities each (e.g. Bram's Bulwark and Break); casters use spells. → [[combat-core]] §12
+- Arn has no Eld: his prayers (heal, revive, guard) are limited per fight. → [[party-kits-act1]]
 - Proposed: melee Eld abilities get visible, grounded effects — amber for Forn, silver-blue for Vela.
 
 ## Named Items → [[combat-core]] §11
@@ -63,7 +65,7 @@ Engine: **Unity** (locked). Summer was only tested, not adopted. → [[design-pi
 - Whether melee Eld abilities get visible effects (proposed rules in [[design-pillars]]).
 
 ## Next Up
-1. Rewrite [[enemy-tiers-ashfall]] for the new combat.
-2. Update [[eld-magic]] spell checks.
-3. Write Arn's combat kit.
-4. Combat look test in Unity: Bram — one attack, one Eld strike, one spell.
+1. **Combat look test in Unity** (kit delivered 2026-10-19): Bram — one attack, one Eld strike, one spell. Judge the animation and effects.
+2. Decide how to source animation, based on the test.
+3. Class-progression note (party stats by level) — the party numbers are placeholders until then.
+4. Voryn's Act 1 spell list.
