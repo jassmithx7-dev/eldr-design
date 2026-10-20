@@ -7,8 +7,6 @@ inspired_by: ["turn-based-dead-air", "turn-economy-design", "design-doc-turn-bas
 open_questions:
   - "Active party size: 4 or 5. Human is leaning toward 4 (not locked, 2026-10-19). If 4, how is the fifth chosen, and how are story fights that need specific characters (the Soulwright climax) handled?"
   - "Bond finisher list: which pairs, and how many in the slice? Proposed slice set: protagonist + Arn, Bram + Fen, Bram + Voryn. Finishers may be removed entirely after playtest (human, 2026-10-19)."
-  - "If finishers cost both characters' next turns, is the bond meter still needed as a gate, or does the turn cost alone limit them? Decide after playtest."
-  - "Named items: proposed a separate item-ability slot (see section 11). Not yet decided."
   - "All numbers in this note are first-pass tuning values, marked TUNE. They need a playtest, not a debate."
   - "[[enemy-tiers-ashfall]] still uses d20 attack bonuses and Defense. It must be rewritten against this note (damage reduction, timeline speed, telegraph timing)."
   - "[[eld-magic]] Spell Check: damage spells now always land (no misses). Status spells keep a resistance roll. eld-magic needs the matching edit."
@@ -140,7 +138,7 @@ One shared meter, 0–100. It is the mechanical form of a ten-year friendship.
 
 **Spent on pair finishers.** A finisher costs **100** (TUNE) and needs both members of the pair active and conscious.
 
-**A finisher uses both characters' next turns** (decided 2026-10-19). It fires on the turn of whichever partner acts first; the other partner's next turn is consumed. Tune as we go — finishers may be cut entirely after playtest.
+It uses the turn of whichever partner acts first; the other partner keeps their turn. The meter is the limit. Finishers may be cut entirely after playtest.
 
 **Finishers are authored pairs** with history behind them — each is a hand-made showcase animation. The pair list is open (see open_questions); the slice needs few.
 
@@ -215,11 +213,11 @@ How combat looks is the first priority. These rules exist so it looks good *and*
 
 ---
 
-## 11. Named-Item Abilities (proposed, not decided)
+## 11. Named-Item Abilities
 
-Named weapons — and possibly armor — carry an ability ([[design-pillars]] Itemization). Proposed rules:
+*(Decided 2026-10-19.)* Named weapons and armor carry abilities ([[design-pillars]] Itemization).
 
 - **A separate item slot.** Each character's menu has their class skills (4–6) plus **one item-ability slot**, filled by their equipped named weapon. Equipping a named item never costs a class skill, and the menu stays the same size.
 - **Weapons give an active ability**, paid from the Eld pool, pole-flavoured, moving Drift like any Eld use. It is a showcase beat (≤ 3 s, section 9) with its own hand-made effect.
 - **Armor gives a triggered effect**, not a menu option: it fires on a condition (first time the wearer drops below half HP, when guarding an ally, when interrupted). No extra menu entries, still a visible moment.
-- **Limit by effects work, not rules:** each named item needs its own animation and effect, so the real cap is the effects budget. Proposed: 1–2 named items per character per act.
+- **Limit by effects work, not rules:** each named item needs its own animation and effect, so the real cap is the effects budget. 1–2 named items per character per act.

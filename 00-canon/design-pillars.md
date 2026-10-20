@@ -5,8 +5,6 @@ depends_on: ["[[world-rules]]"]
 ue5_scope: S
 open_questions:
   - "Animation sourcing: Mixamo will not reach the quality bar set in Priorities. Which route — bought mocap packs, Cascadeur, video mocap, or a contract animator — and at what budget?"
-  - "Named items: armor as well as weapons, or weapons only?"
-  - "Named items: how many per character per act, and does an item replace a skill or add one? Proposed: 1–2 per character per act; each replaces or adds exactly one skill."
   - "Eld on melee characters: confirm that Fighter and Thief Eld abilities carry visible effects (proposed rules under Combat Presentation)."
 ---
 
@@ -55,7 +53,7 @@ When two goals compete, the higher one wins:
 **Decided:**
 - Combat visuals are judged first — see Priorities.
 - Effects are grounded, not cartoonish.
-- Named weapons — and possibly armor — carry special abilities or spells. See Itemization below.
+- Named weapons and armor carry abilities. See Itemization below.
 
 **Proposed (not yet decided — see open_questions):**
 - Fighter and Thief Eld abilities are visible. Eld runs through everyone and veterans use it by instinct ([[world-rules]]), so a melee Eld strike shows it.
@@ -191,8 +189,13 @@ Full mechanics in `10-systems/social-core.md`.
 
 *(Decided 2026-10-19.)*
 
-- **Named items carry abilities.** Specific named weapons — and potentially armor — grant a special ability or spell when equipped.
-- Limits and slotting are open — see open_questions. Named items should fit the existing loot-tier design in `game-codex` (Set / Ancient) rather than start a second system.
+- **Named items carry abilities.** Specific named weapons and armor grant an ability when equipped.
+- **One item-ability slot per character**, beside their 4–6 class skills. Equipping a named item never costs a class skill, and the menu stays the same size.
+- **Weapons give an active ability**: costs Eld, carries a pole, moves Drift, plays as a showcase beat with its own effect.
+- **Armor gives a triggered effect**, not a menu option (e.g. first time the wearer drops below half HP, or when guarding an ally).
+- **About 1–2 named items per character per act** — the effects budget is the real limit.
+- Named items should fit the existing loot-tier design in `game-codex` (Set / Ancient) rather than start a second system.
+- Full rules: [[combat-core]] section 11.
 
 ---
 
