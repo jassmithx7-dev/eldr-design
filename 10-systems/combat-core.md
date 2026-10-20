@@ -6,9 +6,9 @@ ue5_scope: L
 inspired_by: ["turn-based-dead-air", "turn-economy-design", "design-doc-turn-based-combat"]
 open_questions:
   - "Active party size: 4 or 5. Human is leaning toward 4 (not locked, 2026-10-19). If 4, how is the fifth chosen, and how are story fights that need specific characters (the Soulwright climax) handled?"
-  - "Defeat: instant retry of the fight, or return to the last rest point? Proposed: instant retry (full restore makes the old penalty meaningless)."
-  - "Bond finisher list: which pairs, and how many in the slice? Proposed slice set: protagonist + Arn, Bram + Fen, Bram + Voryn."
-  - "Named items: does an item's ability take a skill slot or add one? See [[design-pillars]] Itemization."
+  - "Bond finisher list: which pairs, and how many in the slice? Proposed slice set: protagonist + Arn, Bram + Fen, Bram + Voryn. Finishers may be removed entirely after playtest (human, 2026-10-19)."
+  - "If finishers cost both characters' next turns, is the bond meter still needed as a gate, or does the turn cost alone limit them? Decide after playtest."
+  - "Named items: proposed a separate item-ability slot (see section 11). Not yet decided."
   - "All numbers in this note are first-pass tuning values, marked TUNE. They need a playtest, not a debate."
   - "[[enemy-tiers-ashfall]] still uses d20 attack bonuses and Defense. It must be rewritten against this note (damage reduction, timeline speed, telegraph timing)."
   - "[[eld-magic]] Spell Check: damage spells now always land (no misses). Status spells keep a resistance roll. eld-magic needs the matching edit."
@@ -138,7 +138,9 @@ One shared meter, 0–100. It is the mechanical form of a ten-year friendship.
 | An ally goes Downed (the company rallies) | +10 |
 | Finishing an enemy an ally set up (debuffed or staggered) | +10 |
 
-**Spent on pair finishers.** A finisher costs **100** and needs both members of the pair active and conscious. It uses the turn of whichever partner acts first.
+**Spent on pair finishers.** A finisher costs **100** (TUNE) and needs both members of the pair active and conscious.
+
+**A finisher uses both characters' next turns** (decided 2026-10-19). It fires on the turn of whichever partner acts first; the other partner's next turn is consumed. Tune as we go — finishers may be cut entirely after playtest.
 
 **Finishers are authored pairs** with history behind them — each is a hand-made showcase animation. The pair list is open (see open_questions); the slice needs few.
 
@@ -166,7 +168,7 @@ The Soulwright ritual meter works the same way: successful interrupts on its rit
 - At 0 HP a character is **Downed**: no turns, still targetable by revive effects.
 - **Revive:** a skill or item brings them back at 25% HP (TUNE).
 - Characters cannot die from combat. Death is a story event only ([[design-pillars]]).
-- **Defeat:** all active party members Downed. What happens next is open (see open_questions).
+- **Defeat:** all active party members Downed. **The fight restarts instantly** from its first turn with the party at full strength (decided 2026-10-19). An option to return to the last rest point is offered on the same screen.
 - **Victory** comes when all enemies are defeated, routed or surrendered, or when the fight's own objective is met (survive N turns, protect a point, fill the evac counter).
 - **Morale:** humanoid enemies below 25% HP may flee on their turn. Beasts and the Bound never do.
 - After every fight: **full HP and Eld restore**. There is nothing to grind and nothing to ration between fights.
@@ -210,3 +212,14 @@ How combat looks is the first priority. These rules exist so it looks good *and*
 **Estimate:** about 4–5 weeks for the system and UI, before animation and effects content. Animation and effects are the larger cost and are budgeted separately (see [[design-pillars]] open questions).
 
 **Cheaper than the old version:** no grid pathfinding, flanking geometry, movement, Large footprints or Reaction Window state machine.
+
+---
+
+## 11. Named-Item Abilities (proposed, not decided)
+
+Named weapons — and possibly armor — carry an ability ([[design-pillars]] Itemization). Proposed rules:
+
+- **A separate item slot.** Each character's menu has their class skills (4–6) plus **one item-ability slot**, filled by their equipped named weapon. Equipping a named item never costs a class skill, and the menu stays the same size.
+- **Weapons give an active ability**, paid from the Eld pool, pole-flavoured, moving Drift like any Eld use. It is a showcase beat (≤ 3 s, section 9) with its own hand-made effect.
+- **Armor gives a triggered effect**, not a menu option: it fires on a condition (first time the wearer drops below half HP, when guarding an ally, when interrupted). No extra menu entries, still a visible moment.
+- **Limit by effects work, not rules:** each named item needs its own animation and effect, so the real cap is the effects budget. Proposed: 1–2 named items per character per act.
