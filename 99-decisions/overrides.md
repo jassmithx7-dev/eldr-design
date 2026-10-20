@@ -69,3 +69,11 @@ This is not a record of shame. It is a decision audit trail. When something goes
 - #8 — CANON [concern]: answered prayers to a silent god conflict with "no divine drip". Resolved by #9. Residual risk: the player hears "Forn" beside "Arn" all through Act 1.
 
 **Left open by the human:** the single figure for the war's length; whether Arn may return at the ending; the era and the ancient event; what answers Forn's faithful; the Pale Circle's stance; whether a Size gate passes on Bram's presence.
+
+---
+
+## Override — 2026-10-19
+**Request:** Reorder the project's priorities: (1) how combat looks — animation, spell and Eld effects — above all else; (2) story, a distant second; (3) systems. Combat visuals grounded, never cartoonish. Possibly make Eld visible on melee characters. Add named weapons (and potentially armor) with special abilities or spells.
+**Skeptic verdict:** [OBJECT] CANON / SCOPE — reverses the founding differentiator in [[design-pillars]] ("achievable solo because it is carried by writing, not by assets, scope, or spectacle"). Animation and VFX are the most expensive, most specialist work for a solo developer; making them first priority raises cost and changes the engine evaluation (favours real-time 3D with a deep VFX asset supply; weakest for pre-rendered sprites).
+**Human reason:** Explicit `override`. After watching a lot of gameplay from comparable RPGs, concluded that the way combat looks is the number-one thing to get right.
+**Four-test result:** CANON [override — differentiator rewritten] | TONE [pass — grounded, not cartoonish] | SCOPE [object — override] | NECESSITY [pass — sets the quality bar]

@@ -3,7 +3,11 @@ type: canon
 status: draft
 depends_on: ["[[world-rules]]"]
 ue5_scope: S
-open_questions: []
+open_questions:
+  - "Animation sourcing: Mixamo will not reach the quality bar set in Priorities. Which route — bought mocap packs, Cascadeur, video mocap, or a contract animator — and at what budget?"
+  - "Named items: armor as well as weapons, or weapons only?"
+  - "Named items: how many per character per act, and does an item replace a skill or add one? Proposed: 1–2 per character per act; each replaces or adds exactly one skill."
+  - "Eld on melee characters: confirm that Fighter and Thief Eld abilities carry visible effects (proposed rules under Combat Presentation)."
 ---
 
 # Design Pillars
@@ -24,7 +28,42 @@ A grim, adult CRPG about a company of long-time friends — adults aged 25 to 30
 
 The point of their age is maturity, not weariness. This is not a coming-of-age story and nobody in it is finding themselves. They are not "worn down young" either: they are competent adults. *(Decided 2026-10-10 — replaces the earlier "two decades, aware they are aging" framing.)*
 
-This is achievable solo because it is carried by writing, not by assets, scope, or spectacle. It is difficult for a studio because it denies players the recruit-and-befriend fantasy that testing rewards.
+It is difficult for a studio because it denies players the recruit-and-befriend fantasy that testing rewards.
+
+*(Removed 2026-10-19 by override: "This is achievable solo because it is carried by writing, not by assets, scope, or spectacle." See Priorities and [[overrides]].)*
+
+---
+
+## Priorities
+
+*(Decided 2026-10-19 — human override. Replaces the writing-first premise.)*
+
+When two goals compete, the higher one wins:
+
+1. **How combat looks.** Animation, spell effects and Eld effects. Above everything else.
+2. **Story.** A distant second.
+3. **Systems.** Numbers and mechanics serve the first two.
+
+**Tone of combat visuals: grounded, never cartoonish.**
+
+**Cost, stated plainly:** animation and visual effects are the most expensive and specialist work in the game, and they are now its first priority. Budget for them (money or time) before anything else. Mixamo clips and stock particles are a placeholder, not the bar.
+
+---
+
+## Combat Presentation
+
+**Decided:**
+- Combat visuals are judged first — see Priorities.
+- Effects are grounded, not cartoonish.
+- Named weapons — and possibly armor — carry special abilities or spells. See Itemization below.
+
+**Proposed (not yet decided — see open_questions):**
+- Fighter and Thief Eld abilities are visible. Eld runs through everyone and veterans use it by instinct ([[world-rules]]), so a melee Eld strike shows it.
+- Effects come out of the world, not on top of it: dust and grit driven out by a strike, heat shimmer, embers, a ring of displaced ash, a brief dim glow along an edge.
+- Short and restrained: under a second; no floating symbols, outline glows or rainbow trails.
+- Colour carries the pole: warm amber for Forn-pole abilities, cold silver-blue for Vela-pole ([[eld-magic]]).
+- Effects drive light and sound: a strike briefly lights nearby surfaces rather than glowing on its own.
+- Each action plays as a short authored beat — camera push-in, impact frame, hit-stop — which turn-based combat makes affordable.
 
 ---
 
@@ -145,6 +184,15 @@ The intent: every character build has a social mode. A high-INT caster negotiate
 **Dialogue is authored and linear — Final Fantasy style, not CRPG branching.** The player does not select from dialogue menus. Social gates appear at specific beats (interrogations, negotiations, information gathering) where the player's build creates leverage. Passing a gate gives the clean path; failing costs something (time, a resource, a harder route) but never locks content. Emotional scenes — the Arn reveal, Voryn's ascension — play straight with no gates.
 
 Full mechanics in `10-systems/social-core.md`.
+
+---
+
+## Itemization
+
+*(Decided 2026-10-19.)*
+
+- **Named items carry abilities.** Specific named weapons — and potentially armor — grant a special ability or spell when equipped.
+- Limits and slotting are open — see open_questions. Named items should fit the existing loot-tier design in `game-codex` (Set / Ancient) rather than start a second system.
 
 ---
 
