@@ -1,5 +1,7 @@
 # Eldr — Control Panel
 
+**Start here:** [[Eldr-at-a-glance]] — one page of everything decided.
+
 ---
 
 ## Status Board

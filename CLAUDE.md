@@ -128,6 +128,12 @@ Commits are the audit trail of who generated what. The Continuity Editor uses `g
 
 ---
 
+## At-a-Glance Page
+
+`Eldr-at-a-glance.md` is the human's one-page summary of everything decided. **Any change that records a human decision must update it in the same commit.** Plain language, decided items only; proposals are labelled as proposed. Keep it to about one page.
+
+---
+
 ## Standing Instruction
 
 Never invent an answer to a design question the human has not decided. Log it to `open_questions` in frontmatter and flag it inline. Volume is not the goal. Buildability is.
