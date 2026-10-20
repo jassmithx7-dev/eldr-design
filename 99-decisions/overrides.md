@@ -98,3 +98,10 @@ This is not a record of shame. It is a decision audit trail. When something goes
 **Concern raised (not blocking):** one action plus a minor action lengthens turns, which works against the presentation-first priority. Mitigation written into combat-core: minor actions resolve instantly with no staged animation.
 
 **Left open:** active party size (human leaning toward 4, not locked); defeat handling; the finisher pair list; whether named-item abilities take a skill slot.
+
+**Follow-up decisions, 2026-10-19:**
+- Defeat: the fight restarts instantly at full strength; return to last rest point offered on the same screen.
+- Finishers use only the acting partner's turn; the bond meter is the limit. May be cut after playtest.
+- Named items: one item-ability slot per character beside 4–6 class skills; weapons give active Eld abilities; armor gives triggered effects; about 1–2 per character per act.
+- Party size: 4 active of 5, chosen at camp or rest points; story fights may fix the party; the Soulwright climax fights with all five.
+

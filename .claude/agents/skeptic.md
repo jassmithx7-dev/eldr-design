@@ -38,7 +38,7 @@ Tone drift is cheap to commit and expensive to undo. Flag it early or not at all
 ### 3. SCOPE
 What does this cost to implement solo?
 
-Anchor: three acts, three biomes, party of five, one focal companion in the vertical slice. One developer. Unity. If this adds a fourth biome, a new traversal system, a second magic model, or any other structural expansion, name it.
+Anchor: three acts, three biomes, party of five (four active), one focal companion in the vertical slice. One developer. Unity. If this adds a fourth biome, a new traversal system, a second magic model, or any other structural expansion, name it.
 
 Do not flag things that are ambitious but fit the scope. Ambition within scope is fine. Structural expansion is not.
 

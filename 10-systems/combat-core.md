@@ -5,7 +5,7 @@ depends_on: ["[[world-rules]]", "[[design-pillars]]", "[[eld-magic]]"]
 ue5_scope: L
 inspired_by: ["turn-based-dead-air", "turn-economy-design", "design-doc-turn-based-combat"]
 open_questions:
-  - "Active party size: 4 or 5. Human is leaning toward 4 (not locked, 2026-10-19). If 4, how is the fifth chosen, and how are story fights that need specific characters (the Soulwright climax) handled?"
+  - "Hold the Gate: Bram joins mid-fight while protagonist, Arn, Fen and Voryn are already fighting. Does he make a fifth for that fight (story exception), or replace someone? Proposed: story exception — five for that fight."
   - "Bond finisher list: which pairs, and how many in the slice? Proposed slice set: protagonist + Arn, Bram + Fen, Bram + Voryn. Finishers may be removed entirely after playtest (human, 2026-10-19)."
   - "All numbers in this note are first-pass tuning values, marked TUNE. They need a playtest, not a debate."
   - "[[enemy-tiers-ashfall]] still uses d20 attack bonuses and Defense. It must be rewritten against this note (damage reduction, timeline speed, telegraph timing)."
@@ -34,6 +34,7 @@ open_questions:
 | Turn actions | **One action plus one minor action.** |
 | Answering telegraphs | **Interrupt skills**, used on your own turn before the telegraphed move fires. |
 | Finishers | **Authored pairs** with shared history. |
+| Party size | **4 active** of the 5-person company, chosen at camp or rest points. Story fights may fix the party; the Soulwright climax fights with all five. |
 
 **Kept from the old version:** Downed instead of death; no permadeath; enemy morale; class Eld abilities and Drift ([[eld-magic]]); casting past 0 Eld costs HP; the Soulwright ritual meter and objective fights like Hold the Gate.
 

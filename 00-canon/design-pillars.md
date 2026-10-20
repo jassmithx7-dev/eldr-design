@@ -136,7 +136,10 @@ Locked solo-scope limits:
 
 ## Party Structure
 
-- **Party size:** 5 controllable characters (protagonist + 4 companions).
+- **Party size:** 5 characters in the company (protagonist + 4 companions); **4 fight at a time** (decided 2026-10-19).
+- The active four are chosen **at camp or rest points** only. The benched companion stays present in cutscenes and camp scenes.
+- **Story fights may fix the party.** The Soulwright climax is the one fight where all five fight (the false wipe then removes Bram and Fen).
+<!-- ASSUMPTION: benched companions progress with the party (fixed progression, no grinding), so swapping never leaves anyone behind. -->
 - **Combat paradigm:** turn-based. Locked.
 
 ---
