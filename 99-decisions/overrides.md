@@ -77,3 +77,24 @@ This is not a record of shame. It is a decision audit trail. When something goes
 **Skeptic verdict:** [OBJECT] CANON / SCOPE — reverses the founding differentiator in [[design-pillars]] ("achievable solo because it is carried by writing, not by assets, scope, or spectacle"). Animation and VFX are the most expensive, most specialist work for a solo developer; making them first priority raises cost and changes the engine evaluation (favours real-time 3D with a deep VFX asset supply; weakest for pre-rendered sprites).
 **Human reason:** Explicit `override`. After watching a lot of gameplay from comparable RPGs, concluded that the way combat looks is the number-one thing to get right.
 **Four-test result:** CANON [override — differentiator rewritten] | TONE [pass — grounded, not cartoonish] | SCOPE [object — override] | NECESSITY [pass — sets the quality bar]
+
+---
+
+## Foundational Decisions — 2026-10-19 (combat loop)
+**Type:** Not Skeptic overrides — human decisions from a combat-loop interview. Logged because they replace the grid-tactics [[combat-core]].
+
+| Topic | Decision |
+|---|---|
+| Combat form | Menu-driven, turn-based; no grid |
+| Turn order | Visible timeline |
+| Party meter | Company bond, spent on finishers |
+| Resources | Full restore after every fight; Eld is a fixed pool per fight |
+| Position | Front and back rows |
+| Hit resolution | No misses; armor reduces damage |
+| Turn actions | One action plus one minor action |
+| Telegraphs | Answered with interrupt skills on the player's own turn |
+| Finishers | Authored pairs |
+
+**Concern raised (not blocking):** one action plus a minor action lengthens turns, which works against the presentation-first priority. Mitigation written into combat-core: minor actions resolve instantly with no staged animation.
+
+**Left open:** active party size (human leaning toward 4, not locked); defeat handling; the finisher pair list; whether named-item abilities take a skill slot.
