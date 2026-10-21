@@ -10,7 +10,7 @@ Build a **role-based AI design system inside Obsidian + Claude Code** that produ
 
 The deliverable is **game design content**, not a software platform. There is no orchestration server, no web UI, no custom API layer. The tooling is Claude Code's native subagent system operating on a Markdown vault.
 
-**Definition of done:** a vertical-slice design package (one zone, one questline, one companion, one combat encounter) that is internally consistent, canon-locked, and specific enough that a solo developer can begin Unity implementation without further design decisions.
+**Definition of done:** a vertical-slice design package (one zone, one questline, one companion, a handful of short fights plus the Soulwright) that is internally consistent, canon-locked, and specific enough that a solo developer can begin Unity implementation without further design decisions.
 
 ---
 
