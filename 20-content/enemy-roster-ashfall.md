@@ -50,7 +50,7 @@ Few. Expensive to author and animate. Use as punctuation, not spam.
 
 ## Encounter Diet (how to use them)
 
-1. **Hold the Gate** — Levy + Cinderbow; one Chain Sergeant as spike; one Gatebreaker if the wall "breaks."
+1. **Hold the Gate** — Levy + Cinderbow; one Chain Sergeant as spike; one Gatebreaker if the wall "breaks." Full wave / tile / hybrid spec: [[encounter-hold-the-gate]].
 2. **Through the Keep** — mix Levy remnants with Unpassed; introduce Binder Acolyte once.
 3. **Undercroft approach** — Binder Acolyte + Unpassed as the lead-in fight(s). Ash-Hound optional earlier, not in the boss room.
 4. **Soulwright** — Large solo. No adds in the boss fight. Soul-trap beat plays here.
