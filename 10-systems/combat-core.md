@@ -5,6 +5,7 @@ depends_on: ["[[world-rules]]", "[[design-pillars]]", "[[eld-magic]]"]
 ue5_scope: L
 inspired_by: ["turn-based-dead-air", "turn-economy-design", "design-doc-turn-based-combat"]
 open_questions:
+  - "Can overdrawing Eld Down the user? Prototype assumes no: HP stops at 1."
   - "Hold the Gate: Bram joins mid-fight while protagonist, Arn, Fen and Voryn are already fighting. Does he make a fifth for that fight (story exception), or replace someone? Proposed: story exception — five for that fight."
   - "Bond finisher list: which pairs, and how many in the slice? Proposed slice set: protagonist + Arn, Bram + Fen, Bram + Voryn. Finishers may be removed entirely after playtest (human, 2026-10-19)."
   - "All numbers in this note are first-pass tuning values, marked TUNE. They need a playtest, not a debate."
@@ -235,9 +236,11 @@ How combat looks is the first priority. These rules exist so it looks good *and*
 
 **Cheaper than the old version:** no grid pathfinding, flanking geometry, movement, Large footprints or Reaction Window state machine.
 
-**Prototype baseline (decided 2026-10-20).** The Unity prototype in the `eldr-unity` project (`Assets/EldrTest/Battle`) is the baseline for how combat looks and flows: fights start where the party meets the enemy, sides line up facing each other, melee attackers run in, swing, turn and run back, with hit-stop and battle lighting. Its *rules* are not canon. They are replaced with this note's rules one at a time: timeline (done 2026-10-20), Eld pool (replaces TP), rows, bond meter (replaces Coordination and Rally), telegraphs and interrupts, instant restart on defeat, minor actions.
+**Prototype baseline (decided 2026-10-20).** The Unity prototype in the `eldr-unity` project (`Assets/EldrTest/Battle`) is the baseline for how combat looks and flows: fights start where the party meets the enemy, sides line up facing each other, melee attackers run in, swing, turn and run back, with hit-stop and battle lighting. Its *rules* are not canon. They are replaced with this note's rules one at a time: timeline, Eld pool (replaces TP) with Bram's §12 Fighter abilities and Arn's prayers, minor actions (all done 2026-10-20), then rows, bond meter (replaces Coordination and Rally), telegraphs and interrupts, instant restart on defeat.
 
 - In the prototype, a unit's Speed stands in for the DEX modifier in the delay formula: delay × (1 − (Speed − 8) × 0.04). <!-- ASSUMPTION: Speed 8 = no modifier, until attributes exist. -->
+- Overdrawing Eld costs 1d4 HP per missing point but can't drop the user below 1 HP. <!-- ASSUMPTION: §5 doesn't say whether overdraw can Down you. -->
+- Damage and heal amounts in the prototype use its own scale (Attack × power) until the class-progression note sets real stats; flat values (2 less per hit, armor −2) are this note's.
 - The run-in and run-back are staging, not movement; position on the field still has no rules effect. They must fit the §9 budgets — the basic-attack budget (≤ 1.5 s) has not yet been measured against the run-in.
 
 ---
