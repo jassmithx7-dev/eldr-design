@@ -39,7 +39,7 @@ open_questions: []
 
 1. **CANON** — Does this contradict anything in `00-canon/`?
 2. **TONE** — Does this fit grim, adult, not coming-of-age; friendship in the face of death; no chosen-one?
-3. **SCOPE** — What does this cost to implement solo? Does it fit three acts, three biomes, party of four?
+3. **SCOPE** — What does this cost to implement solo? Does it fit three acts, three biomes, party of five, four active?
 4. **NECESSITY** — What does this add that isn't already covered? Is there a cheaper way to get the same effect?
 
 ### Override Protocol
@@ -125,6 +125,12 @@ Commits are the audit trail of who generated what. The Continuity Editor uses `g
 4. **ATTRIBUTED WHEN USED.** If a design note draws on it, record the source in frontmatter as `inspired_by: [note-name]`.
 5. **THE CONTINUITY EDITOR IGNORES IT.** It is not part of the canon audit surface. A conflict between Eldr canon and Second Brain is not a contradiction — Eldr wins, silently.
 6. **DESIGN-FIRST CONSULTATION.** Before beginning any story or technical design work — relics, characters, mechanics, quests, zones, encounters — agents must consult the Second Brain for inspiration before drawing on general knowledge or training. This is the default, not the exception. It is not swept into every task (Q&A, edits, gate checks do not require it), but any generative design decision starts here.
+
+---
+
+## At-a-Glance Page
+
+`Eldr-at-a-glance.md` is the human's one-page summary of everything decided. **Any change that records a human decision must update it in the same commit.** Plain language, decided items only; proposals are labelled as proposed. Keep it to about one page.
 
 ---
 

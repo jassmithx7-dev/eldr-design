@@ -6,15 +6,16 @@ ue5_scope: M
 open_questions:
   - "Voryn's authored Drift schedule (starting counter value, per-act increment) — flagged inline; confirm in companion note."
   - "Spell acquisition mechanism — does the protagonist caster begin with all 18 vertical-slice spells, or unlock them through level-up / found texts / Pale Circle access? Depends on class-progression note (not yet written)."
-  - "Enemy stat blocks must include WIS modifier for Spell Defense. Defer to encounter-design note."
+  - "Enemy stat blocks carry WIS for status resistance ([[enemy-tiers-ashfall]])."
   - "Are Divination spells available at character creation for a Forn-affinity caster, or are they taught by an NPC contact? They have no combat value and must be introduced at a narratively appropriate moment."
   - "Does Fen's Eld sensitivity give any mechanical advantage specifically against Illusion spells? Characterization question — deferred to companion note. Current ruling: no mechanical effect."
-  - "Range extension on select spells (Elemental school) for acts 2–3. All spells currently capped at Short range (2–6 tiles) as vertical-slice constraint. Review after playtest."
+  - "Status resistance formula (caster INT vs target WIS) is a first pass — TUNE in playtest."
+  - "Converted to menu combat 2026-10-19 (no grid, no misses, rows, timeline). Spell effects are first-pass conversions of the grid versions — TUNE."
 ---
 
 # Eld Magic
 
-*The mechanical specification for all Eld-based spellcasting in Eldr. Covers the two-pole structure, the nine schools, the full vertical-slice spell list, casting procedure in combat, affinity at creation, the Drift mechanic, and the bodily cost. The Eld resource skeleton (pool formula, overdraw rule, rest restoration) is established in [[combat-core]] §6 and is not duplicated here.*
+*The mechanical specification for all Eld-based spellcasting in Eldr. Covers the two-pole structure, the eight schools, the full vertical-slice spell list, casting procedure in combat, affinity at creation, the Drift mechanic, and the bodily cost. The Eld resource skeleton (pool formula, overdraw rule, rest restoration) is established in [[combat-core]] §6 and is not duplicated here.*
 
 ---
 
@@ -36,7 +37,7 @@ A caster who only ever heals and wards is becoming something. A caster who only 
 This note does not re-specify the Eld pool. See [[combat-core]] §6 for the authoritative rule. Summary for reference:
 
 - **Eld Pool = 10 (Caster base) + (INT modifier × character level)**
-- Non-casters: 0 Eld, cannot cast.
+- Non-casters (Fighter, Thief): a small flat pool of 6 that powers their class Eld abilities. They cannot cast spells. See [[combat-core]] §6.
 - Full restoration at rest only. No mid-combat regeneration.
 - Casting past 0 Eld: each Eld point short of the spell's cost deals **1d4 HP** to the caster after the spell resolves.
 
@@ -56,70 +57,43 @@ Eld is uniformly present in the world. It has no will. What differs is how a cas
 
 Practitioners and scholars have named two opposing tendencies in how that shaping happens:
 
-**Forn's Pole** — named by the Pale Circle for a theorist whose work described magic that preserves the existing state of things. Forn workings hold the world in place: they mend tissue, seal thresholds, reinforce what is, and read what has been. Forn magic is not gentle — a Warding that seals a door is an act of force. But its orientation is toward the intact, the whole, the lasting.
+**Forn's Pole** — named by the Pale Circle for Forn, the god of good ([[pantheon]]), because it describes magic that preserves the existing state of things. Forn workings hold the world in place: they mend tissue, seal thresholds, reinforce what is, and read what has been. Forn magic is not gentle — a Warding that seals a door is an act of force. But its orientation is toward the intact, the whole, the lasting.
 
-**Vela's Pole** — named for the same tradition's counter-argument. Vela workings break, compel, consume, and pass. They act on the world by moving through it destructively, even productively: draining vitality to empower the caster, compelling a target to stop, reading the cold logic of death and ending. Vela magic is not evil — a Necromancer who speaks with the recently dead to close a family's grief is not corrupt. But its orientation is toward entropy, change, and passage.
+**Vela's Pole** — named for Vela, the goddess of domination, as the same tradition's counter-argument. Vela workings break, compel, consume, and pass. They act on the world by moving through it destructively, even productively: draining vitality to empower the caster, compelling a target to stop, reading the cold logic of death and ending. Vela magic is not evil — a Necromancer who speaks with the recently dead to close a family's grief is not corrupt. But its orientation is toward entropy, change, and passage.
 
 **Neutral (Raw Eld)** — the three schools that do not align with either tendency. Elemental, Alteration, and Illusion work raw Eld into natural force, physical change, and perceptual manipulation. They are not morally neutral — fire burns friends and enemies alike — but they do not pull the caster toward either pole. A caster who works exclusively in Neutral schools experiences no Drift.
 
-**No worship is required.** Alignment is not granted by gods and not revoked by heresy. How you draw and shape Eld determines what you are becoming. The Pale Circle categorizes and teaches all nine schools. Whether they judge a practitioner for their choices is a factional question, not a mechanical one.
+**No worship is required.** The poles carry the gods' names; they are not the gods' gift. Alignment is not granted by gods and not revoked by heresy. How you draw and shape Eld determines what you are becoming. The Pale Circle categorizes and teaches all nine schools. Whether they judge a practitioner for their choices is a factional question, not a mechanical one.
 
 ---
 
 ## Casting in Combat
 
+*Converted 2026-10-19 to menu combat ([[combat-core]]): no grid, no misses, front and back rows, a visible timeline.*
+
 ### Action and Cost
 
-Casting a spell spends the caster's **Act** action. It costs the listed Eld. The caster may move before or after casting. Eld is paid whether the spell hits or misses.
+Casting is the caster's **action** for the turn, normal weight unless the spell says otherwise. It costs the listed Eld, paid whether or not a status effect is resisted. Spells reach any row; position only matters for the melee damage the caster takes.
 
-### Targeting
+### Targeting and Resolution
 
-| Target Type | Resolution | Examples |
-|-------------|-----------|---------|
-| **Targeted — enemy** | Requires a Spell Check | Fear, Chain Lightning, Vampiric Touch |
-| **Targeted — area** | Automatic — no roll; effect applies to all creatures in radius | Thunderwave, Glyph of Warding |
-| **Targeted — self or ally** | Automatic — no roll | Shield, Cure Wounds, Blur |
+| Spell type | Resolution | Examples |
+|---|---|---|
+| **Damage** | Always lands | Fireball, Chain Lightning, Vampiric Touch |
+| **Status on an enemy** | The target may resist | Fear, Command, Counterspell, Phantasmal Force |
+| **Self, ally or area** | Automatic | Shield, Cure Wounds, Thunderwave |
 
-Line of sight is required for all spells. Casting through total darkness or solid walls is not possible.
+**Resistance** (status spells only, TUNE): resist chance = 25% + 5% × (target WIS modifier − caster INT modifier), clamped to 5–60%. Affinity spells add −10% to the target's chance. A resisted spell still costs its Eld.
 
-All spells in the vertical slice have **Short range: 2–6 tiles.** The caster must be within 6 tiles of the target or the center point of an area effect.
+**Spell damage** follows [[combat-core]] section 4. Damage spells listed as "bypasses armor" ignore armor; the others are reduced by it.
 
-### Spell Check
+**Criticals** are the general 5% from [[combat-core]]; there is no fumble.
 
-For spells that target an enemy, roll:
-
-**1d20 + INT modifier vs. Spell Defense (10 + target WIS modifier)**
-
-| Result | Outcome |
-|--------|---------|
-| Roll ≥ Spell Defense | Hit — apply spell effect in full |
-| Roll < Spell Defense | Miss — spell fizzles; Eld cost is still paid |
-| Natural 20 | Critical — apply effect and deal an additional 1d6 damage if the spell deals damage; non-damage control spells extend duration by 1 round |
-| Natural 1 | Fumble — spell fails; Eld cost paid; caster loses React on their next turn |
-
-**Why Spell Defense uses WIS:** Mental fortitude and self-awareness determine how well a target resists magical disruption. Armor does not protect against compulsion or vitality drain — evasion and willpower do.
-
-**Representative Spell Defense values:**
-
-| WIS Score | Spell Defense |
-|-----------|--------------|
-| 8         | 9            |
-| 10        | 10           |
-| 12        | 11           |
-| 14        | 12           |
-| 16        | 13           |
-
-At level 1, a caster with INT 16 (+3) hits SD 10 on a 7+: 70% chance. SD 12 on a 9+: 60% chance.
-
-### Casting While Adjacent to an Enemy
-
-A caster adjacent to a conscious enemy may cast, but suffers **−2 to Spell Check rolls.** Area spells and ally/self-targeted spells are unaffected — those do not require a roll.
-
-**This system creates the decision:** Do I cast from my current position (−2, risky) or spend my Move to disengage first (costs tiles, may not be possible)?
+**This system creates the decision:** a guaranteed damage spell, or a control spell that may be resisted but can take an enemy's turn away.
 
 ---
 
-## The Nine Schools
+## The Eight Schools
 
 ### FORN'S POLE — Preserves, Mends, Holds
 
@@ -136,25 +110,22 @@ A caster adjacent to a conscious enemy may cast, but suffers **−2 to Spell Che
 **Cure Wounds**
 - **Eld cost:** 4 (affinity: 3)
 - **Target:** Single conscious ally (automatic)
-- **Range:** Short (2–6 tiles)
 - Accelerate tissue repair in a living ally. Restore **2d4 + 2 HP** (average 7). Cannot be used on a Downed (0 HP) target — use Spare the Dying instead. Cannot restore above maximum HP.
-- *Decision created:* Spend 4 Eld to remotely heal an ally (no adjacency, no potion consumed, uses caster's Act), or let the target use their own React to drink a potion (same HP, different action economy)? Cure Wounds is strictly better when the target is out of potions or needs their React for something else.
+- *Decision created:* Spend the caster's action and 4 Eld to heal, or let the wounded ally drink a potion as their minor action and keep the caster's turn for damage.
 
 ---
 
 **Spare the Dying**
 - **Eld cost:** 3 (affinity: 2)
 - **Target:** Single Downed ally (automatic)
-- **Range:** Short (2–6 tiles)
-- Stabilize a Downed ally at range without physical contact. The target passes their next Stabilization Roll automatically: they stabilize, stop accumulating failures, and regain consciousness at 1 HP at end of combat. Does **not** restore HP or return the ally to combat readiness. Compare with physical revival (adjacent, Act): that restores 1 HP + CON modifier and returns the ally to their next initiative turn.
-- *Decision created:* Use Spare the Dying (3 Eld, no adjacency, stops the failure clock, ally stays down) or close distance and spend the Act to physically revive them (ally returns to combat but requires movement to reach)?
+- Revive a Downed ally at **25% HP**. They act again on their next timeline turn.
+- *Decision created:* Spend the turn bringing someone back, or keep pressing while the rest of the party holds.
 
 ---
 
 **Lesser Restoration**
 - **Eld cost:** 5 (affinity: 4)
 - **Target:** Single conscious ally (automatic)
-- **Range:** Short (2–6 tiles)
 - Remove one active negative status effect from the target (Fear, Command, Ray of Enfeeblement's STR reduction, Burning, any poison applied between encounters). In combat, additionally restores **1d4 HP** as the body rebounds from the cleared condition. Between encounters: removes disease and long-duration afflictions. Cannot restore wounds — use Cure Wounds for HP restoration.
 - *Decision created:* Spend 5 Eld to remove a status that is costing an ally their actions or accuracy — worth it if the ally was Commanded or Frightened; overkill if they only had a minor debuff.
 
@@ -171,28 +142,25 @@ A caster adjacent to a conscious enemy may cast, but suffers **−2 to Spell Che
 **Shield**
 - **Eld cost:** 2 (affinity: 1)
 - **Target:** Self or single ally (automatic)
-- **Range:** Short (2–6 tiles) for ally; Self if targeting self
-- Harden an Eld barrier around the target. Gain **+4 Defense** and **immunity to forced movement** (knockback, displacement) until the start of the caster's next turn.
-- *Decision created:* Spend 2 Eld on the cheapest defensive option to survive a turn in heavy fire — or use that Eld offensively and trust Defense to hold?
+- Harden an Eld barrier around the target. Until the caster's next turn the target takes **3 less from each hit** and can't be pushed out of their row.
+- *Decision created:* Spend 2 Eld on the cheapest defensive option to survive a turn in heavy fire — or use that Eld offensively and trust armor to hold?
 
 ---
 
 **Counterspell**
 - **Eld cost:** 4 (affinity: 3)
-- **Target:** Single enemy (Spell Check)
-- **Range:** Short (2–6 tiles)
-- On a hit: the target cannot use any magical ability, spell, or Eld-based effect on their next turn. They retain Move and physical attacks. On their next turn, the block expires automatically.
-- *Decision created:* Spend 4 Eld to remove a dangerous enemy caster from the magical board for one turn, or deal damage instead? Counterspell has zero value against non-casting enemies — it is a targeted counter, not a general-purpose option.
+- **Target:** Single enemy (may resist)
+- **Interrupt.** Cancels a telegraphed spell or rite (pushes a boss's rite back on the timeline). If the target is not casting, it can't use magical abilities on its next turn.
+- *Decision created:* Spend 4 Eld to stop a dangerous cast now, or deal damage and take it. Useless against enemies that don't cast.
 
 ---
 
 **Glyph of Warding**
 - **Eld cost:** 3 (affinity: 2)
-- **Target:** Ground point (automatic, no Spell Check required to place)
-- **Range:** Short (2–6 tiles from target center point)
-- Inscribe a Warding glyph on the ground at the target tile. The glyph is invisible to enemies with WIS 10 or below; enemies with WIS 12+ may notice it (no mechanical effect — they can still walk into it). The first enemy to enter the glyph tile takes **−2 to all rolls** for 2 rounds. The glyph expires after triggering once or at end of combat.
+- **Target:** The enemy front row (automatic)
+- A glyph under the enemy front row. The first enemy to act from that row deals **30% less damage for 2 of its turns**. The glyph then fades. It lasts until triggered or the fight ends.
 - *Out-of-combat use:* Leave at a chokepoint before a rest; if the area is disturbed while the party sleeps, the disturbing creature takes the debuff and the noise may alert the party (implementation: scripted trigger, not passive detection roll).
-- *Decision created:* Spend 3 Eld now to set a trap that pays off later — gamble on enemy routing or predictable pathing, or save it for certain-value combat spending?
+- *Decision created:* Spend 3 Eld now on a delayed payoff, or spend it on certain damage.
 
 ---
 
@@ -232,9 +200,9 @@ All Divination spells are **out-of-combat only.** They have no combat applicatio
 - **Eld cost:** 4 (affinity: 3)
 - **Target:** Single NPC (out-of-combat, narrative context only)
 - **Range:** Direct eye contact — effectively adjacent
-- Spell Check required: 1d20 + INT modifier vs. Spell Defense (10 + target WIS modifier). On a hit: the caster reads whether the target is concealing something and what emotional category it falls into — shame, fear, grief, anger, or determination. Returns the category, not the secret. "They're hiding something out of fear" is a Discern Lies result. "They killed the merchant" is not.
+- The target may resist (same resistance rule as combat). If not resisted: the caster reads whether the target is concealing something and what emotional category it falls into — shame, fear, grief, anger, or determination. Returns the category, not the secret. "They're hiding something out of fear" is a Discern Lies result. "They killed the merchant" is not.
 - **Hard prohibition:** Discern Lies does not bypass social interaction. It adds information to a conversation; it does not replace the conversation. A frightened person concealing something still needs to be persuaded, pressured, or trusted into disclosure. Magic cannot solve a problem the player could solve by being a better person. This is a [[world-rules]] rule and a design pillar for the Enchantment school as well — stated here because Discern Lies is the closest Forn equivalent.
-- *Decision created:* Spend 4 Eld and an out-of-combat Spell Check to narrow your read on an NPC before a high-stakes conversation — useful when you genuinely cannot tell if someone is lying or merely scared.
+- *Decision created:* Spend 4 Eld and an out-of-combat cast to narrow your read on an NPC before a high-stakes conversation — useful when you genuinely cannot tell if someone is lying or merely scared.
 
 ---
 
@@ -256,27 +224,24 @@ All Divination spells are **out-of-combat only.** They have no combat applicatio
 
 **Fear**
 - **Eld cost:** 3 (affinity: 2)
-- **Target:** Single enemy (Spell Check)
-- **Range:** Short (2–6 tiles)
-- On a hit: the target is **Frightened** for 1 round. A Frightened target suffers **−2 to attack rolls** and cannot willingly move closer to the caster. They can still attack from range, defend themselves, or retreat. The status expires at the start of the target's next turn.
+- **Target:** Single enemy (may resist)
+- Unless resisted, the target is **Frightened** until after its next turn: it deals **30% less damage** and can't make melee attacks.
 - *Decision created:* Push a dangerous melee threat out of close range for one round — but if it misses, 3 Eld is gone for nothing. Worth more against a single powerful melee enemy than against a group.
 
 ---
 
 **Command**
 - **Eld cost:** 5 (affinity: 4)
-- **Target:** Single enemy (Spell Check)
-- **Range:** Short (2–6 tiles)
-- **Combat only.** On a hit: the target loses their **Act action** on their next turn. They retain Move and React. The compulsion is involuntary muscular arrest — not mind control. The target knows what happened. On the target's next turn, the effect ends automatically.
-- *Decision created:* Spend 5 Eld to remove the most dangerous action from an enemy's next turn. Is this target's Act worth 5 Eld? The answer scales with how lethal the denied action would have been.
+- **Target:** Single enemy (may resist)
+- **Combat only.** Unless resisted, the target **loses its next action** (it still takes its turn on the timeline). The compulsion is involuntary muscular arrest — not mind control. The target knows what happened. On the target's next turn, the effect ends automatically.
+- *Decision created:* Spend 5 Eld to remove the most dangerous action from an enemy's next turn. Is this target's next action worth 5 Eld? The answer scales with how lethal the denied action would have been.
 
 ---
 
 **Dispel Magic**
 - **Eld cost:** 4 (affinity: 3)
-- **Target:** Single enemy caster (Spell Check)
-- **Range:** Short (2–6 tiles)
-- **Only useful against enemies with Eld pools.** On a hit: the target's next spell costs **+4 Eld** above its normal cost. If they lack the Eld, they cannot cast (or can overdraw at the usual HP cost). The disruption expires after their next attempted cast or at end of their turn, whichever comes first.
+- **Target:** Single enemy caster (may resist)
+- **Only useful against enemies with Eld pools.** Unless resisted: the target's next spell costs **+4 Eld** above its normal cost. If they lack the Eld, they cannot cast (or can overdraw at the usual HP cost). The disruption expires after their next attempted cast or at end of their turn, whichever comes first.
 - *Decision created:* Spend 4 Eld to potentially brick a dangerous enemy caster's next spell — but only if you know they're about to cast. Wasted against a non-caster or a caster who decides to move instead.
 
 ---
@@ -294,8 +259,7 @@ All Divination spells are **out-of-combat only.** They have no combat applicatio
 
 **Vampiric Touch**
 - **Eld cost:** 4 (affinity: 3)
-- **Target:** Single enemy (Spell Check)
-- **Range:** Short (2–6 tiles)
+- **Target:** Single enemy (may resist)
 - Drain vitality from a living target, dealing **1d6 + INT modifier necrotic damage** (bypasses armor damage reduction — the drain is biological, not physical). The caster recovers **HP equal to half the damage dealt** (round down, minimum 1 HP recovered). Does not restore Eld.
 - *Decision created:* Vampiric Touch functions as the only offensive spell that also heals the caster. It is weaker in raw damage than Fireball or Chain Lightning. Worth casting when the caster is at low HP and a kill is not the priority — spend 4 Eld, deal 5–8 damage, and recover 2–4 HP. The trade is worse than Cure Wounds for healing but comes from the caster's own action rather than needing an ally's.
 
@@ -312,8 +276,7 @@ All Divination spells are **out-of-combat only.** They have no combat applicatio
 
 **Ray of Enfeeblement**
 - **Eld cost:** 3 (affinity: 2)
-- **Target:** Single enemy (Spell Check)
-- **Range:** Short (2–6 tiles)
+- **Target:** Single enemy (may resist)
 - Briefly age living tissue at the target site. Deals **1d4 necrotic damage** (bypasses armor DR) and reduces the target's **STR by 2** for 2 rounds. An Enfeebled enemy with STR 12 temporarily has STR 10, reducing their melee damage output by the difference in modifier (in this case, from +1 to 0 — a −1 damage penalty per hit).
 - *Decision created:* Low direct damage, but STR reduction debuffs the hardest-hitting melee enemies precisely when they're dangerous. Ray of Enfeeblement a boss-tier enemy before they reach the party's frontline.
 
@@ -333,29 +296,25 @@ All Divination spells are **out-of-combat only.** They have no combat applicatio
 
 **Fireball**
 - **Eld cost:** 4
-- **Target:** Single enemy (Spell Check)
-- **Range:** Short (2–6 tiles)
-- Strike a target with concentrated fire. Deals **2d6 fire damage**. If the Spell Check hits, the target is **Burning**: takes **1d4 fire damage** at the start of their next turn (one tick, then extinguishes).
+- **Target:** Single enemy (may resist)
+- Strike a target with concentrated fire. Deals **7 fire damage** (TUNE). The target is **Burning**: takes **1d4 fire damage** at the start of their next turn (one tick, then extinguishes).
 - *Decision created:* Spend 4 Eld for 2d6 + potential follow-up burn (strong single-target damage output) or split the Eld across cheaper options? Fireball is the reliable damage spell for a single threatening enemy.
 
 ---
 
 **Thunderwave**
 - **Eld cost:** 3
-- **Target:** Area — ground point (automatic, no Spell Check)
-- **Range:** Short (target center point 2–6 tiles)
-- **Radius:** 3 tiles from center point
-- A burst of force knocks all creatures in the radius **2 tiles directly away** from the center point. Deals no damage. Extinguishes all Burning effects on creatures in the radius (including allies — this can be useful). Allies are affected by the knockback equally; aim carefully.
-- *Decision created:* Spend 3 Eld for guaranteed displacement with no roll — repositions enemies and allies alike. High skill-expression tool: used well, it breaks enemy formations; used carelessly, it sends an ally into worse ground.
+- **Target:** The enemy front row (automatic)
+- A burst of force pushes **every enemy in the front row to the back row**. No damage. Puts out Burning on them. Large enemies can't be moved.
+- *Decision created:* Spend 3 Eld to pull the threat off your front line for a turn — but pushed enemies with ranged attacks can still shoot.
 
 ---
 
 **Chain Lightning**
 - **Eld cost:** 5
-- **Target:** Single primary enemy (Spell Check)
-- **Range:** Short (2–6 tiles)
-- Strike the primary target with lightning for **1d8 lightning damage**. If the primary hit succeeds, lightning chains automatically to the nearest other creature within 2 tiles of the primary target — ally or enemy — for **1d4 lightning damage** (no Spell Check for the chain; it is automatic). If no creature is within 2 tiles, the chain does not fire.
-- *Decision created:* Spend 5 Eld for the highest-damage single-target spell in the list — but only if the primary target is isolated. If an ally is within 2 tiles of the target, Chain Lightning will chain to them. Positioning the party correctly before casting is a genuine tactical requirement.
+- **Target:** Single enemy (always lands)
+- **8 lightning damage** (TUNE) to the target, then **4** to one other enemy in the same row, if there is one.
+- *Decision created:* The best damage per Eld when the target's row is crowded; weak against a lone enemy.
 
 ---
 
@@ -370,8 +329,7 @@ All Divination spells are **out-of-combat only.** They have no combat applicatio
 **Magic Weapon**
 - **Eld cost:** 2
 - **Target:** Single ally (including self) carrying a melee or ranged weapon (automatic)
-- **Range:** Short (2–6 tiles) for ally; Self if targeting self
-- Charge the target's weapon with Eld energy. The **next attack** made with that weapon deals **+1d6 bonus damage** regardless of whether the hit roll confirms (the Eld charge discharges on the next swing, hit or miss). Expires after 1 attack or end of combat, whichever comes first.
+- Charge the target's weapon with Eld energy. Their **next attack** deals **+4 damage** (TUNE). Expires after 1 attack or end of combat, whichever comes first.
 - *Decision created:* Spend 2 Eld to boost a high-damage ally's next hit — efficient when Bram is about to swing against a near-dead enemy, or when a crit-fishing build needs that extra die.
 
 ---
@@ -380,17 +338,16 @@ All Divination spells are **out-of-combat only.** They have no combat applicatio
 - **Eld cost:** 3
 - **Target:** Self (automatic)
 - **Range:** Self only
-- The caster's skin and muscle densify against incoming force. Gain **damage reduction 3** (reduce all incoming physical damage by 3, minimum 1 damage per hit) until the start of the caster's next turn. Does not require a Spell Check. Can be cast while adjacent to an enemy — it is auto-targeted and does not trigger the −2 melee casting penalty.
-- *Decision created:* A caster caught in melee can spend 3 Eld to absorb multiple hits this round (DR 3 is significant against 1d6 enemies), buying time to disengage next turn — or they can cast an attack spell at −2 to Spell Check and try to end the problem.
+- The caster's skin and muscle densify against incoming force. Until the caster's next turn, take **3 less from each physical hit**.
+- *Decision created:* A caster stuck in the front row can spend 3 Eld to absorb a round of hits, then step back with a minor action next turn — or gamble on ending the threat.
 
 ---
 
 **Haste**
 - **Eld cost:** 4
 - **Target:** Single ally (automatic)
-- **Range:** Short (2–6 tiles)
-- Target gains **+4 Speed tiles** and **+1 to attack rolls** for 1 round. The speed bonus applies to their next Move action; the attack bonus applies to any attacks made on their current or next turn (whichever is relevant depending on initiative order).
-- *Decision created:* Spend 4 Eld to make a melee ally faster and more accurate for one round — high value when Bram needs to cross difficult terrain to engage a priority target, but wasteful if the ally was already in position.
+- The target's **next action has −40 delay** (they act again sooner) and deals **+2 damage**.
+- *Decision created:* Spend 4 Eld to pull an ally's next turn forward — strongest right before a telegraphed move fires.
 
 ---
 
@@ -408,59 +365,57 @@ All Divination spells are **out-of-combat only.** They have no combat applicatio
 - **Eld cost:** 3
 - **Target:** Self (automatic)
 - **Range:** Self only
-- The caster becomes visually indistinct — shapes and edges blur, color reads ambiguously. Attackers targeting the caster suffer **−3 to attack rolls** until the start of the caster's next turn. In combat, this does not make the caster invisible — the penalty applies to aimed strikes, not to area effects. Out of combat: while moving at half speed, the caster is treated as **Hidden** for stealth approach purposes (does not negate sound; does not work in open, well-lit ground without other cover).
-- *Decision created:* Spend 3 Eld to make the caster significantly harder to hit for one round — or spend those Eld on offense and accept the low Defense of an unarmored mage? Blur is the "I'm about to be hit a lot and cannot disengage" button.
+- The caster becomes visually indistinct — shapes and edges blur, color reads ambiguously. Until the caster's next turn, single-target attacks on them deal **40% less damage**. Area effects are unaffected. Out of combat: while moving at half speed, the caster is treated as **Hidden** for stealth approach purposes (does not negate sound; does not work in open, well-lit ground without other cover).
+- *Decision created:* Spend 3 Eld to protect an unarmored caster for a round, or spend it on offense? Blur is the "I'm about to be hit a lot and cannot disengage" button.
 
 ---
 
 **Minor Illusion**
 - **Eld cost:** 2
 - **Target:** Ground point (automatic)
-- **Range:** Short (2–6 tiles)
-- Generate a convincing sound impression at the target location — footsteps, a voice, a weapon clash, a door opening. In combat: enemy units that have not yet confirmed a target spend their Move redirecting toward the illusion point for 1 round. Enemy units already engaged ignore it. Out of combat: draw a guard patrol, break a sentry's attention, create an opening to move.
-- *Decision created:* Cheapest manipulation option in the Illusion school. Highly situational — wasted against already-engaged enemies, but potent against unalerted enemies or in stealth approaches.
+- Generate a convincing sound impression at the target location — footsteps, a voice, a weapon clash, a door opening. In combat: the **next non-boss enemy to act** attacks the sound instead of a party member, wasting its action. Out of combat: draw a guard patrol, break a sentry's attention, create an opening to move.
+- *Decision created:* Cheapest manipulation option in the Illusion school. Situational — useless against bosses, strong in stealth approaches.
 
 ---
 
 **Phantasmal Force**
 - **Eld cost:** 4
-- **Target:** Single enemy (Spell Check)
-- **Range:** Short (2–6 tiles)
-- On a hit: the target perceives a threatening figure immediately adjacent to them (an illusion drawn from the target's own fear, not a specific shape the caster chooses). The target wastes their **Act** striking at the illusion on their next turn. At the end of that turn, they see through it automatically — the effect is one round only. On a miss, the target sees through the illusion immediately and the Eld is spent for nothing.
-- *Decision created:* Spend 4 Eld and a Spell Check to remove a high-threat enemy's Act from the next round — same effect category as Command (5 Eld), but cheaper and going through INT vs WIS rather than through the Vela-pole cost of Command. The trade: Phantasmal Force has no other effect and requires a hit. Command guarantees a harder result at higher Eld cost and advances Drift toward Vela. *Using Phantasmal Force instead of Command against a frightening enemy is itself a Drift decision.*
+- **Target:** Single enemy (may resist)
+- Unless resisted, the target perceives a threatening figure immediately adjacent to them (an illusion drawn from the target's own fear, not a specific shape the caster chooses). The target wastes its **next action** striking at the illusion. At the end of that turn, they see through it automatically — the effect is one round only. If resisted, the target sees through the illusion immediately and the Eld is spent for nothing.
+- *Decision created:* Spend 4 Eld to take a high-threat enemy's next action — same effect as Command (5 Eld), cheaper and without the Vela-pole cost. The trade: it does nothing else. Command guarantees a harder result at higher Eld cost and advances Drift toward Vela. *Using Phantasmal Force instead of Command against a frightening enemy is itself a Drift decision.*
 
 ---
 
 ## Spell Reference Table
 
-| Spell | School | Pole | Eld (base / affinity) | Target | Roll? | Effect Summary |
+| Spell | School | Pole | Eld (base / affinity) | Target | Resolution | Effect Summary |
 |-------|--------|------|-----------------------|--------|-------|----------------|
 | Cure Wounds | Healing | Forn | 4 / 3 | Ally | Auto | 2d4+2 HP; conscious targets only |
-| Spare the Dying | Healing | Forn | 3 / 2 | Downed ally | Auto | Remote stabilize; stops failure clock |
+| Spare the Dying | Healing | Forn | 3 / 2 | Downed ally | Auto | Revive at 25% HP |
 | Lesser Restoration | Healing | Forn | 5 / 4 | Ally | Auto | Remove 1 status; +1d4 HP in combat |
-| Shield | Warding | Forn | 2 / 1 | Self or ally | Auto | +4 Defense; knockback immunity; 1 round |
-| Counterspell | Warding | Forn | 4 / 3 | Enemy caster | Spell Check | Block magical abilities for 1 round |
-| Glyph of Warding | Warding | Forn | 3 / 2 | Ground point | Auto (place) | Trap tile: −2 all rolls for 2 rounds on first trigger |
+| Shield | Warding | Forn | 2 / 1 | Self or ally | Auto | −3 per hit; can't be pushed; 1 turn |
+| Counterspell | Warding | Forn | 4 / 3 | Enemy | May resist | Interrupt a cast; else blocks magic 1 turn |
+| Glyph of Warding | Warding | Forn | 3 / 2 | Enemy front row | Auto | First to act: −30% damage, 2 turns |
 | Psychometry | Divination | Forn | 2 / 1 | Location/object | Auto | Emotional residue; 7-day window; out of combat |
 | Past Sight | Divination | Forn | 3 / 2 | Location/object | Auto | Fragmented visual impression; 30-day window; out of combat |
-| Discern Lies | Divination | Forn | 4 / 3 | NPC | Spell Check | Emotional category of concealment; out of combat |
-| Fear | Enchantment | Vela | 3 / 2 | Enemy | Spell Check | Frightened: −2 attacks, cannot close; 1 round |
-| Command | Enchantment | Vela | 5 / 4 | Enemy | Spell Check | Lose Act next turn; combat only |
-| Dispel Magic | Enchantment | Vela | 4 / 3 | Enemy caster | Spell Check | +4 Eld cost on target's next spell |
-| Vampiric Touch | Necromancy | Vela | 4 / 3 | Enemy | Spell Check | 1d6+INT necrotic (bypasses DR); caster recovers half as HP |
+| Discern Lies | Divination | Forn | 4 / 3 | NPC | May resist | Emotional category of concealment; out of combat |
+| Fear | Enchantment | Vela | 3 / 2 | Enemy | May resist | −30% damage, no melee; 1 turn |
+| Command | Enchantment | Vela | 5 / 4 | Enemy | May resist | Loses next action; combat only |
+| Dispel Magic | Enchantment | Vela | 4 / 3 | Enemy caster | May resist | +4 Eld cost on target's next spell |
+| Vampiric Touch | Necromancy | Vela | 4 / 3 | Enemy | Always lands | 1d6+INT necrotic (bypasses DR); caster recovers half as HP |
 | Speak with Dead | Necromancy | Vela | 2 / 1 | Corpse (≤24h) | Auto | 3-question conversation; out of combat |
-| Ray of Enfeeblement | Necromancy | Vela | 3 / 2 | Enemy | Spell Check | 1d4 necrotic (bypasses DR); STR −2 for 2 rounds |
-| Fireball | Elemental | Neutral | 4 | Enemy | Spell Check | 2d6 fire; Burning: 1d4 next turn |
-| Thunderwave | Elemental | Neutral | 3 | Area | Auto | Knockback 2 tiles, 3-tile radius; extinguishes Burning |
-| Chain Lightning | Elemental | Neutral | 5 | Enemy | Spell Check | 1d8 lightning; auto-chains 1d4 to nearest creature within 2 tiles |
-| Magic Weapon | Alteration | Neutral | 2 | Ally weapon | Auto | Next attack +1d6 damage (discharges on swing) |
-| Stoneskin | Alteration | Neutral | 3 | Self | Auto | DR 3 vs physical; 1 round; castable in melee |
-| Haste | Alteration | Neutral | 4 | Ally | Auto | +4 Speed tiles, +1 attack rolls; 1 round |
-| Blur | Illusion | Neutral | 3 | Self | Auto | Attackers −3 to hit; Hidden out of combat at half speed |
-| Minor Illusion | Illusion | Neutral | 2 | Ground point | Auto | Sound decoy; redirect unengaged enemies 1 round |
-| Phantasmal Force | Illusion | Neutral | 4 | Enemy | Spell Check | Target wastes Act on illusion; 1 round |
+| Ray of Enfeeblement | Necromancy | Vela | 3 / 2 | Enemy | Always lands | 1d4 necrotic (bypasses armor); STR −2 for 2 turns |
+| Fireball | Elemental | Neutral | 4 | Enemy | Always lands | 7 fire; Burning: 1d4 next turn |
+| Thunderwave | Elemental | Neutral | 3 | Enemy front row | Auto | Push front row to back; puts out Burning |
+| Chain Lightning | Elemental | Neutral | 5 | Enemy | Always lands | 8 lightning; 4 to another enemy in the row |
+| Magic Weapon | Alteration | Neutral | 2 | Ally weapon | Auto | Next attack +4 damage |
+| Stoneskin | Alteration | Neutral | 3 | Self | Auto | −3 per physical hit; 1 turn |
+| Haste | Alteration | Neutral | 4 | Ally | Auto | Next action −40 delay, +2 damage |
+| Blur | Illusion | Neutral | 3 | Self | Auto | −40% single-target damage taken; Hidden out of combat |
+| Minor Illusion | Illusion | Neutral | 2 | — | Auto | Next non-boss enemy wastes its action |
+| Phantasmal Force | Illusion | Neutral | 4 | Enemy | May resist | Target wastes its next action |
 
-**Total spells: 24.** Vertical-slice implementation target: **18 spells** (all combat spells + Minor Illusion for stealth + Speak with Dead for narrative; defer Past Sight, Psychometry, and Discern Lies until act 2 content requires them).
+**Total spells: 24.** Vertical-slice implementation target: **21 spells** (corrected 2026-10-19; the old figure of 18 was a miscount of the list below) (all combat spells + Minor Illusion for stealth + Speak with Dead for narrative; defer Past Sight, Psychometry, and Discern Lies until act 2 content requires them).
 
 ---
 
@@ -475,20 +430,20 @@ At character creation, a caster picks one of three affinities: **Forn**, **Vela*
 | Benefit | Value |
 |---------|-------|
 | Eld cost reduction | −1 Eld per spell (minimum 1) |
-| Spell Check bonus | +2 to Spell Check rolls |
+| Resistance | Targets get −10% to resist |
 
 **Opposite-pole schools** (schools belonging to the pole you did not choose):
 
 | Penalty | Value |
 |---------|-------|
 | Eld cost increase | +1 Eld per spell |
-| Spell Check bonus | none (no bonus, no penalty beyond cost) |
+| Resistance | no change |
 
-**Neutral affinity** receives cost reduction and +2 Spell Check for Elemental, Alteration, and Illusion. No cost change applies to Forn or Vela schools for a Neutral-affinity caster. Neutral affinity also confers **Drift resistance**: the Neutral caster's Drift Counter changes at half the normal rate (each Forn/Vela cast contributes ±0.5, rounded to nearest integer at the end of each encounter).
+**Neutral affinity** receives the cost reduction (and the resistance edge, where relevant) for Elemental, Alteration, and Illusion. No cost change applies to Forn or Vela schools for a Neutral-affinity caster. Neutral affinity also confers **Drift resistance**: the Neutral caster's Drift Counter changes at half the normal rate (each Forn/Vela cast contributes ±0.5, rounded to nearest integer at the end of each encounter).
 
-**Affinity is not a hard ceiling.** A Forn-affinity caster can learn Necromancy and pay +1 Eld per cast with no Spell Check penalty beyond the base. The cost is resource and, over time, alignment.
+**Affinity is not a hard ceiling.** A Forn-affinity caster can learn Necromancy and pay +1 Eld per cast with no penalty beyond the cost. The cost is resource and, over time, alignment.
 
-**Example:** A Forn-affinity caster with INT 16 (+3) casting Cure Wounds costs 3 Eld (affinity discount). The same caster casting Counterspell against an enemy: 1d20 +3 +2 (affinity) = 1d20+5 vs SD. The same caster casting Command: costs 6 Eld (base 5 + opposite-pole +1), no Spell Check bonus, and advances the Drift Counter by +1.
+**Example:** A Forn-affinity caster casting Cure Wounds pays 3 Eld (affinity discount). Casting Counterspell, the target's resist chance is 10% lower. Casting Command costs 6 Eld (base 5 + opposite pole +1), gets no resistance edge, and moves Drift +1.
 
 ---
 
@@ -591,7 +546,7 @@ The long-term bodily degradation of Eld use is a **narrative fact**, not a mecha
 
 ## Eld in Non-Caster Companions
 
-All characters have some Eld sensitivity — it is a property of the world, not of study. The mechanical expression differs:
+Eld runs through everyone ([[world-rules]] — Tier 1). That is a property of the world, not of study; conscious sensitivity (Tier 2) is the rare thing. The mechanical expression differs:
 
 **Bram (Fighter):** Uses the Fighter Eld ability set from [[combat-core]]. His pool is 6. His Drift Counter is tracked. He is not a student of Eld; he has simply been doing this long enough that his body knows how to channel it.
 
@@ -599,25 +554,25 @@ All characters have some Eld sensitivity — it is a property of the world, not 
 
 <!-- ASSUMPTION: No additional mechanical effect for Fen's sensitivity beyond standard Thief baseline. Companion note may override. -->
 
-**Arn:** No Eld pool, no Drift Counter. His divine nature is not Eld-based — see [[world-rules]] and [[companion-arn]]. He is the single exception: a character who moves through the world with no Eld relationship at all.
+**Arn:** No Eld pool, no Drift Counter. He is a paladin of Forn and his healing reads as answered prayer. His divine nature is not Eld-based — see [[world-rules]] and [[companion-arn]]. He is the single exception: a character who moves through the world with no Eld relationship at all.
 
 ---
 
 ## Implementation Assessment
 
-**Scope: M (Medium) — estimated 2–3 weeks for an experienced Unity C# developer with the vertical-slice constraint applied (18 spells, not 24).**
+**Scope: M (Medium) — estimated 2–3 weeks for an experienced Unity C# developer with the vertical-slice constraint applied (21 spells, not 24).**
 
 ### Core Data Structure
 
 Each spell is a data record (ScriptableObject):
-- Name, school, pole, Eld cost base, Eld cost affinity, target type, range, requires Spell Check (bool), effect type, effect parameters, out-of-combat only (bool), Drift contribution (+1 / −1 / 0)
+- Name, school, pole, Eld cost base, Eld cost affinity, target type, can be resisted (bool), effect type, effect parameters, out-of-combat only (bool), Drift contribution (+1 / −1 / 0)
 
-The nine schools are a categorization enum — they drive UI organization and affinity lookup but not separate code paths. All spells use the same resolution pipeline.
+The eight schools are a categorization enum — they drive UI organization and affinity lookup but not separate code paths. All spells use the same resolution pipeline.
 
 ### Resolution Branches
 
 Two branches:
-1. **Spell Check required:** roll 1d20 + INT + affinity bonus vs SD; apply hit/miss/crit/fumble table
+1. **Resistible:** roll the target's resist chance; on a resist the effect fails (Eld still paid)
 2. **Automatic:** effect applies on cast; no roll
 
 Effect primitives:
@@ -625,7 +580,7 @@ Effect primitives:
 | Primitive | New? | Notes |
 |-----------|------|-------|
 | Deal damage (fire/lightning/necrotic/cold/kinetic) | Existing | Source type for DR bypass logic |
-| Apply stat modifier (Defense, Speed, STR, attack roll) with duration | Existing | |
+| Apply stat modifier (armor, damage, delay, STR) with duration | Existing | |
 | Apply state (Frightened, Commanded, Burning, Counterspelled, Enfeebled) | New states | Frightened, Counterspelled, Enfeebled are new; Commanded = old Stagger renamed |
 | Restore HP (ally) | Existing | |
 | HP recovery for caster (Vampiric Touch) | New | Half damage dealt, rounded down |
@@ -646,13 +601,12 @@ Effect primitives:
 
 | Component | Complexity | Notes |
 |-----------|-----------|-------|
-| Spell data structure (18–24 records) | Low | ScriptableObjects; define once |
+| Spell data structure (21–24 records) | Low | ScriptableObjects; define once |
 | Affinity lookup at cast time | Low | Flag on caster entity; modifier table |
-| Spell Check resolution | Low | Same pipeline as attack rolls |
-| Spell Defense stat (10 + WIS mod) | Low | One additional field on enemy stat block |
+| Resistance roll | Low | One percentage roll |
+| WIS on enemy stat block | Low | Already in enemy tiers |
 | Combat spell effect application (15 combat spells) | Medium | ~10 use existing primitives; 5 add new states |
 | Area effect detection (Thunderwave, Glyph of Warding) | Low | Radius query on grid; reuse existing AoE |
-| Casting melee penalty (−2 Spell Check) | Low | Adjacency check; reuse flanking detection |
 | Out-of-combat spell hooks (Psychometry, Past Sight, Discern Lies, Speak with Dead) | Medium | Scene event system; authored response text per location |
 | Drift Counter + threshold events | Low | Integer + threshold table |
 | Spell selection UI (hotbar by school) | Medium | New UI; 9 school tabs or flat list with school icons |
@@ -660,7 +614,7 @@ Effect primitives:
 
 ### Vertical-Slice Constraint
 
-**Ship 18 spells** in the vertical slice:
+**Ship 21 spells** in the vertical slice:
 - All 9 combat-applicable Forn/Vela spells (Cure Wounds, Spare the Dying, Lesser Restoration, Shield, Counterspell, Glyph of Warding, Fear, Command, Dispel Magic — minus Divination's 3 out-of-combat spells)
 - All 3 Necromancy spells (Vampiric Touch, Ray of Enfeeblement in combat; Speak with Dead for the one scripted narrative use)
 - All 9 Neutral spells (Fireball, Thunderwave, Chain Lightning, Magic Weapon, Stoneskin, Haste, Blur, Minor Illusion, Phantasmal Force)

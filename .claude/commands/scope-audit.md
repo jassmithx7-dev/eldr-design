@@ -15,7 +15,7 @@ Invokes the **Producer** to audit current scope against the vertical-slice targe
 Three sections:
 - **Creep inventory** — what crept in, named by file
 - **Cut list** — what to remove, with one-line rationale per item
-- **Total implementation weight** — sum of UE5 scope across all live notes, in estimated weeks
+- **Total implementation weight** — sum of `ue5_scope` (Unity implementation weight) across all live notes, in estimated weeks
 
 ## Usage
 

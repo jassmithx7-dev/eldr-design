@@ -6,7 +6,7 @@ ue5_scope: S
 open_questions:
   - "Mechanical expression of the Eld bodily cost — what does the Systems Designer implement? (Deferred to Phase 2)"
   - "Spell domain — what can magic physically DO? (Deferred to Phase 2 systems work)"
-  - "Does healing magic exist, and if so what does it cost? (Deferred to Phase 2)"
+  - "Does Eld-based healing exist, and if so what does it cost? PARTLY ANSWERED 2026-10-10: prayer-based healing exists — Forn's faithful and Tyra's are answered ([[pantheon]]). The Eld Healing school in [[eld-magic]] is still draft, pending the combat-weight decision."
 ---
 
 # World Rules
@@ -35,7 +35,7 @@ Each act is one biome. No sprawl. Asset discipline is a hard constraint. Side co
 
 **Core register:** Friendship in the face of death.
 
-Adults who are aware they are aging, doing dangerous work together. The grimness is tonal and narrative — it lives in the writing, not in punishing mechanics.
+Adults — aged 25 to 30, not teenagers, not coming of age — doing dangerous work together. The grimness is tonal and narrative — it lives in the writing, not in punishing mechanics.
 
 **Explicitly rejected:**
 - Chosen-one narratives
@@ -53,9 +53,15 @@ Stakes are proportionate and human-scale. The protagonist is competent because t
 
 **Eld** is the in-world term for the ambient magical force. It is present everywhere in the world, uniformly — it does not vary by location, geography, or season.
 
-### Sensitivity
+### Sensitivity — two tiers
 
-A minority of people are born able to perceive Eld. Most people cannot perceive it at all and never will. This is discovered, not developed — sensitivity is binary, not a spectrum. You either notice Eld or you never will.
+*(Decided 2026-10-10.)*
+
+**Tier 1 — everyone.** Eld runs through every living person. Nobody is cut off from it. People who do dangerous physical work for long enough learn to lean on it by instinct, without perceiving it and without naming it. This is not spellcasting and it is not taught. Mechanical expression: the small Fighter and Thief Eld pools in [[combat-core]] §6. One authored exception: Arn — see [[companion-arn]].
+
+**Tier 2 — the sensitive minority.** A minority of people are born able to *perceive* Eld consciously. Most people cannot perceive it at all and never will. This is discovered, not developed — conscious sensitivity is binary, not a spectrum. You either notice Eld or you never will. Only the sensitive can study spellcasting.
+
+"Sensitive" and "sensitivity" in every note mean Tier 2 unless stated otherwise.
 
 Sensitivity is a prerequisite, not a talent. Among those who can perceive Eld, everything after that is the learned trade. A sensitive person who never studies is nothing. A barely-sensitive person who works for twenty years can be formidable.
 
@@ -64,7 +70,7 @@ Sensitivity is a prerequisite, not a talent. Among those who can perceive Eld, e
 Magic is a craft. No innate talent. No bloodlines. No chosen ones. It is studied, practiced, and worked at over years — like any other skilled profession.
 
 **Requirements to study:**
-- Eld sensitivity (binary — you either have it or you don't)
+- Conscious Eld sensitivity — Tier 2 (binary — you either have it or you don't)
 - A base level of intelligence. Below a certain threshold, the cognitive load of learning the system is simply not achievable. Some individuals cannot learn magic regardless of sensitivity.
 - Years of dedicated study. The opportunity cost is high: time spent learning magic is time not spent developing physical skills. Mages are recognizable by what they are not — they did not spend those years training to fight.
 
@@ -75,6 +81,8 @@ Some races cannot use magic at all, either due to lacking sensitivity at the pop
 ### Stat ceilings
 
 Physical attributes (strength, speed) have racial ceilings. Gender also affects these ceilings: the average male has a higher strength and speed ceiling than the average female. This applies across all races. It is a physical fact about the world, not a social one.
+
+**World fact, not a system (decided 2026-10-10).** The racial and sex ceilings are true in the fiction and guide how NPCs and companions are written and statted by hand. There are no modifier tables and no character-creation code for them: the protagonist is a fixed human male ([[protagonist]]) and every companion is pre-authored, so the player never makes a choice these rules would affect.
 
 ### The bodily cost
 

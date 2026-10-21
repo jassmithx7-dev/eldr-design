@@ -47,7 +47,7 @@ open_questions:
 
 ## Role in the Story
 
-Dag has been with the protagonist for approximately twenty years. He is the oldest fighting member of the company in temperament if not in years. He does not talk about what he was before, or who he lost. The party has never asked. They already know the answer would not come.
+Dag has been with the protagonist for about ten years. He is the oldest fighting member of the company in temperament if not in years. He does not talk about what he was before, or who he lost. The party has never asked. They already know the answer would not come.
 
 ## Character Hook
 

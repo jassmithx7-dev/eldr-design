@@ -28,7 +28,7 @@ open_questions: []
 - Be useful presence: fighter kit, body in the gap, warmth that steadies without stealing Arn’s focal role.
 
 **How he treats people:**
-- **Protagonist:** Loyal friend of ~twenty years. Default backs the call. **Can refuse** when the order fights his oath or costs civilians / Hold people unforgivably — rare, weighty, never ego. After a refuse he stays in the problem; he does not sulk or lecture.
+- **Protagonist:** Loyal friend of ~ten years. Default backs the call. **Can refuse** when the order fights his oath or costs civilians / Hold people unforgivably — rare, weighty, never ego. After a refuse he stays in the problem; he does not sulk or lecture.
 - **Voryn:** Steady inclusion. Treats Voryn as already in. No special campaign to “fix” or crack the walls; he simply does not perform exclusion.
 - **Arn:** Shared language of holding positions; respect without ceremony.
 - **Fen:** Easy warmth; takes Fen’s chatter without condescension; notices when Fen goes coiled/alert (EldSense).
@@ -45,7 +45,7 @@ open_questions: []
 
 ## Role in the Story
 
-Bram is in the party from Act 1, but **not on the starting roster**. The slice opens without him in the active party. He **joins during the opening Falling Gate fight** — present in the battle, not waiting at camp as a recruit. He was **delayed from the Ironhold line** (his Hold/oath front — separate place from Ashfall). He has known the protagonist for approximately twenty years. This is a late reunion into the fight, not a stranger join.
+Bram is in the party from Act 1, but **not on the starting roster**. The slice opens without him in the active party. He **joins during the opening Falling Gate fight** — present in the battle, not waiting at camp as a recruit. He was **delayed from the Ironhold line** (his Hold/oath front — separate place from Ashfall). He has known the protagonist for about ten years. This is a late reunion into the fight, not a stranger join.
 
 ## Race
 

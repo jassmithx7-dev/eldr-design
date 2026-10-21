@@ -1,577 +1,283 @@
 ---
 type: system
 status: draft
-depends_on: ["[[world-rules]]", "[[design-pillars]]"]
+depends_on: ["[[world-rules]]", "[[design-pillars]]", "[[eld-magic]]"]
 ue5_scope: L
+inspired_by: ["turn-based-dead-air", "turn-economy-design", "design-doc-turn-based-combat"]
 open_questions:
-  - "Protagonist class list and associated HP dice — depends on class-progression note (not yet written)"
-  - "Full attribute stat block (STR/DEX/CON/INT/WIS/CHA modifiers, racial ceilings) — deserves its own attributes-core note; referenced here as needed"
-  - "Arn is outside the Eld system entirely — his divinity is not Eld-based. He does not cast. Resolved."
-  - "Enemy stat tables (HP ranges, Defense, Attack Bonus by tier) — resolved for Ashfall slice via [[enemy-tiers-ashfall]]"
-  - "Spell domain and Eld cost per spell — deferred to Phase 2 per world-rules"
-  - "Does the Stabilization DC scale with enemy level or stay flat? Currently flat DC 10 — flag for playtesting"
-  - "Can a Caster use a spell as a Reaction (counterspell equivalent)? Excluded in Phase 1 — the targeting and Eld-cost edge cases require spell school rules that do not exist yet. Reserved for Phase 2 spell-interrupt design."
-  - "Does a Reaction Window open if the telegraphed cast targets a non-party entity (e.g., an enemy buffing another enemy)? Currently assumed no window opens if no party member appears in the ability's target pool. Needs confirmation once enemy ability targeting types are fully specified."
-  - "Terrain tag modifiers (elevated / choke / hazard / difficult) — numbers TBD; identity soft-locked under Combat Identity §2"
-  - "Boss-only heavy-melee Brace/Dodge tell — deferred; not in soft-lock"
+  - "Can overdrawing Eld Down the user? Prototype assumes no: HP stops at 1."
+  - "Hold the Gate: Bram joins mid-fight while protagonist, Arn, Fen and Voryn are already fighting. Does he make a fifth for that fight (story exception), or replace someone? Proposed: story exception — five for that fight."
+  - "Bond finisher list: which pairs, and how many in the slice? Proposed slice set: protagonist + Arn, Bram + Fen, Bram + Voryn. Finishers may be removed entirely after playtest (human, 2026-10-19)."
+  - "All numbers in this note are first-pass tuning values, marked TUNE. They need a playtest, not a debate."
+  - "Class-progression note (party HP, armor and attributes by level) is not written; party numbers in [[enemy-tiers-ashfall]] and [[party-kits-act1]] are placeholders."
 ---
 
 # Combat Core
 
-*The mechanical skeleton of every fight in Eldr. All other combat systems — spell domain, enemy AI, itemization — bolt onto this frame.*
+*Rewritten 2026-10-19. Replaces the grid-tactics version (d20 to-hit, flanking, movement, Reaction Windows). Decisions from the 2026-10-19 combat-loop interview.*
+
+*Priority order from [[design-pillars]]: how combat looks comes first. This system exists to give the animation and effects good moments to play — and to keep the waits between those moments short.*
 
 ---
 
-## Design Principle
+## Decided (2026-10-19)
 
-The grimness is tonal, not punishing. Combat must feel dangerous without being a punishment system. Characters are professionals — they fight smart, cover each other, and sometimes lose ground. The party has worked together for twenty years. That history should be legible in how the system rewards coordination.
+| Topic | Decision |
+|---|---|
+| Combat form | Menu-driven, turn-based. No grid, no free movement. |
+| Turn order | **Visible timeline.** Units act one at a time in speed order; the next several turns are shown. |
+| Party meter | **Company bond.** Coordinated actions fill it; it is spent on **authored pair finishers**. |
+| Resources | **Full restore after every fight.** Eld is a fixed pool per fight. |
+| Position | **Front row and back row.** |
+| Hit resolution | **No misses.** Attacks always land; armor reduces damage. Only status effects can be resisted. |
+| Turn actions | **One action plus one minor action.** |
+| Answering telegraphs | **Interrupt skills**, used on your own turn before the telegraphed move fires. |
+| Finishers | **Authored pairs** with shared history. |
+| Party size | **4 active** of the 5-person company, chosen at camp or rest points. Story fights may fix the party; the Soulwright climax fights with all five. |
 
-**The combat loop creates three primary decisions:**
+**Kept from the old version (converted in section 12):** class Eld abilities. **Also kept:** Downed instead of death; no permadeath; enemy morale; class Eld abilities and Drift ([[eld-magic]]); casting past 0 Eld costs HP; the Soulwright ritual meter and objective fights like Hold the Gate.
 
-1. **Positioning:** Where do I stand? Flanking, range bands, and AoE exposure all depend on placement. Moving costs your React if you spend it to attack.
-2. **Action allocation:** Do I attack (deal damage now), use an ability (deal damage later or enable the party), or revive a downed ally (forfeit offense for survivability)?
-3. **Threat prioritization:** Who do I hit? The Veteran's Read bonus rewards disciplined target focus. Enemies have morale thresholds. Killing the leader before morale breaks ends the fight faster.
-
----
-
-## Combat Identity (soft-locked 2026-07-29)
-
-Three layers. Do not replace the spine with a second combat fantasy mid-slice.
-
-### 1. Spine — Company Doctrine
-This note’s existing frame: turn-based grid, Act / React / Move, flanking, Veteran’s Read, morale, Rally Shout, Reaction Windows on telegraphed casts. Friendship reads as **coordination**, not combo cutscenes.
-
-### 2. Ashfall taste — Hold the Line
-Slice encounters should often feel like **buying time**, not only kill-all: dual-win Gate (clear wave **and** evac meter — already locked in quest/zone), choke points, reinforcement pressure. **Terrain tags** (elevated / choke / hazard / difficult) are an encounter layer on the grid — exact modifiers TBD; not a new action economy. **Momentum Track** (fight-wide win/lose dial) is **out** — HP, morale, and objectives already signal pressure.
-
-### 3. Intent layer — casters + bosses
-Steal full “see it coming” Intent only where magic / bosses demand an answer:
-- **Soft-locked:** Cast telegraphs + Reaction Windows on **meaningful enemy casters** and **all bosses**. Ashfall minimum: **Binder Acolyte** + **Soulwright**.
-- **Not soft-locked yet:** Heavy-melee Brace/Dodge tells (boss-only Intent spice — decide later).
-- **Player casters:** Stay equal via Eld pool, Act-to-cast, Spell Check risk, Drift — enemy telegraphs do **not** buff player mages. Phase 1: no spell-as-Reaction (Counterspell reserved Phase 2).
-
-**Balance intent:** Enemy magic is powerful but **answerable**. Fighters’ React matters as much as a Binder’s cast. Player casters match fighters on a good round; they do not clear packs alone for free.
+**Dropped:** the grid, flanking, range bands, movement speed, Large 2×2 footprints, Veteran's Read (folded into the bond meter), Rally Shout (folded into the bond meter), the off-turn Reaction Window, d20 to-hit.
 
 ---
 
-## Attributes (Reference)
+## 1. The Timeline
 
-A full attributes note is pending. Combat math references six attributes with the following modifier formula:
+Every combatant has a marker on a timeline track. When a marker reaches the end, that unit acts. The track shows the next **6 turns** in order, including enemies.
 
-**Modifier = floor((Score − 10) / 2)**
+**Speed.** Each action has a **delay** that sets how soon the unit acts again:
 
-| Score | Modifier |
-|-------|----------|
-| 8     | −1       |
-| 10    | 0        |
-| 12    | +1       |
-| 14    | +2       |
-| 16    | +3       |
-| 18    | +4       |
+| Action weight | Delay (TUNE) | Examples |
+|---|---|---|
+| Quick | 70 | Light attack, minor skills, Guard |
+| Normal | 100 | Standard attack, most skills and spells |
+| Heavy | 140 | Big skills, finishers, heavy weapons |
 
-**Relevant to combat:**
-- **STR** — melee attack bonus, melee damage bonus, carry capacity
-- **DEX** — ranged attack bonus, ranged damage bonus, initiative, Defense cap (armor-dependent)
-- **CON** — HP at level 1, HP per level, Stabilization Roll modifier
-- **INT** — Eld pool size (casters)
-- **WIS** — Perception, morale resistance (enemy-facing; also perception-based reactions)
-- **CHA** — outside combat scope
+A unit's DEX shortens all its delays: **delay × (1 − DEX modifier × 0.04)** (TUNE). Turn order at the start of a fight comes from DEX, with a small random spread so fights don't open identically.
 
-<!-- ASSUMPTION: Standard array at character creation is 15, 14, 13, 12, 10, 8 (player distributes). This is not yet decided. -->
+**The decision it creates:** a fast weak move now, or a slow strong one that lets enemies act first.
+
+**Telegraphs live on the timeline.** When an enemy begins a telegraphed move, its marker shows the move's icon and the turn it will fire. The player can see what is coming and how many party turns remain to answer it.
 
 ---
 
-## 1. Turn Order and Initiative
+## 2. A Turn
 
-Combat is turn-based. At the start of each encounter, every participant (all party members and all enemies) rolls initiative simultaneously.
+On its turn a character gets:
 
-**Initiative Roll: 1d20 + DEX modifier**
+- **One action:** attack, skill, spell, item, or Defend.
+- **One minor action:** change row, use a quick item, or a minor skill marked *minor*.
 
-The initiative track is displayed as a persistent UI strip (horizontal, left-to-right, icons in order). Characters act highest-to-lowest. The track updates if characters are added mid-combat (summoned enemies, ambush reinforcements).
+**Presentation rule for minor actions:** they resolve **instantly with no staged animation** — a short gesture at most. Only the main action gets a staged beat. This keeps "action plus minor" from doubling the wait. *(Concern noted 2026-10-19: two actions per turn means longer turns. This rule is the mitigation.)*
 
-**Tiebreaking (in order):**
-1. Higher DEX score wins
-2. If DEX scores are equal: party members beat enemies
-3. If two party members tie: player chooses order
-
-**Design note:** Tiebreaking in the party's favor is a small readability gift, not a balance lever. It ensures predictable sequencing without extra UI complexity.
-
-**Initiative is rolled once per encounter.** It does not re-roll each round. This keeps the track stable and readable, which is important for solo dev UI implementation.
+**Defend:** take 50% less damage until your next turn (TUNE); quick delay.
 
 ---
 
-## 2. Action Economy
+## 3. Rows
 
-Each character gets the following on their turn:
+Each side has a **front row** and a **back row**.
 
-| Resource | Name | Description |
-|----------|------|-------------|
-| 1 | **Act** | The primary action: Attack, Use Ability, Cast Spell, Use Item (non-quick), Revive Ally, Interact (lever, lock, chest) |
-| 1 | **React** | The secondary action: Use Quick Item (potion, grenade), Draw or Sheathe weapon, Dash (extra movement equal to Speed), or execute a Veteran's Shout (see Section 7) |
-| 1 | **Move** | Move up to Speed tiles (see Section 3). Movement does not require spending Act or React. |
+| Row | Deals melee | Takes melee | Notes |
+|---|---|---|---|
+| Front | Full | Full | Can be targeted by everything. |
+| Back | Melee attacks from the back row deal 50% (TUNE) | 50% (TUNE) | Ranged attacks and spells are unaffected by row. |
 
-**Spend order:** Move, Act, and React can be used in any order on a character's turn. A character may split their movement (move, then attack, then move again using remaining tiles).
+- If a side's front row is empty, the back row becomes the front row.
+- Changing row is a minor action.
+- Bram and Arn are built to stand forward; Voryn and a caster protagonist to stand back.
 
-**Characters may choose to hold their Act** by selecting "Wait." They drop to the end of the current round's initiative track and can interrupt before the start of the next round with their held action. This is not a full reaction system — it is a tactical delay, not an interrupt.
-
-**Characters who are Downed do not take turns.** They make Stabilization Rolls on their initiative tick instead (see Section 5).
-
----
-
-## 3. Movement and Positioning
-
-**Grid:** Square, 1.5 m per tile. Characters occupy 1 tile (1.5 m × 1.5 m). Large enemies occupy a 2×2 tile footprint (3.0 m × 3.0 m).
-
-<!-- ASSUMPTION: 1.5 m tile size. This fits a human-scale character model at typical isometric camera angles without overcrowding a corridor or making an open field feel like a parking lot. Adjust in playtesting. -->
-
-**Speed (tiles per Move action) by armor type:**
-
-| Armor Class | Tiles | Example |
-|-------------|-------|---------|
-| Unarmored | 8 | Fen (Thief default) |
-| Light (leather, padded) | 6 | Standard |
-| Medium (chainmail, scale) | 5 | — |
-| Heavy (plate, splint) | 4 | Bram (Fighter default) |
-
-Speed can be modified by abilities, encumbrance, or terrain (difficult terrain costs 2 tiles of movement per tile entered).
-
-**Flanking:** When two party members occupy tiles on opposite sides of the same enemy (180° ± 45°), both receive **+2 to attack rolls** against that enemy for the duration of that positioning. Flanking is broken as soon as either character moves.
-
-**This system creates the decision:** Do I spend my Move to reach flanking position (costing tiles, possibly entering melee with a second enemy), or attack from a safe angle and forgo the bonus?
-
-**Range bands:**
-
-| Band | Distance | Notes |
-|------|----------|-------|
-| Melee | 1 tile (adjacent, including diagonal) | Melee weapons only |
-| Short | 2–6 tiles | Bows, thrown weapons, short-range spells |
-| Long | 7–16 tiles | Bows at disadvantage beyond Short; crossbows full damage |
-
-Ranged attacks into melee (targeting an enemy who is adjacent to an ally) incur **−2 to attack roll** (friendly fire risk, not mechanical damage — the penalty models the careful shot, not an accident system).
+**The decision it creates:** who stands in front this fight, and when to pull someone back.
 
 ---
 
-## 4. Attack Resolution
+## 4. Damage
 
-### To-Hit
+Attacks always land.
 
-**Roll: 1d20 + Attack Bonus vs. Target Defense**
+**Damage = (weapon or skill base + attribute bonus) × variance (0.9–1.1) − target armor**, minimum 1 (TUNE).
 
-| Result | Outcome |
-|--------|---------|
-| Roll ≥ Defense | Hit — deal weapon damage |
-| Roll < Defense | Miss — no damage |
-| Natural 20 (unmodified d20 = 20) | Critical Hit — roll weapon damage die twice, add modifiers once |
-| Natural 1 (unmodified d20 = 1) | Critical Miss — attack fails; attacker loses their React action next turn |
+| Attribute | Used for |
+|---|---|
+| STR | Melee damage |
+| DEX | Ranged damage, timeline speed |
+| CON | HP |
+| INT | Eld pool, spell power |
+| WIS | Status resistance, enemy morale |
 
-**Attack Bonus = Base Attack Bonus (by level and class) + Attribute Modifier + Weapon Bonus**
+There is no Charisma ([[design-pillars]]).
 
-- Melee attacks: attribute modifier is **STR**
-- Ranged attacks: attribute modifier is **DEX**
-- Finesse weapons (daggers, rapiers): attacker may use **STR or DEX**, whichever is higher
+**Weapon bases** (TUNE — the average of the old dice, so enemy HP from the old notes still roughly holds):
 
-**Base Attack Bonus by class and level:**
+| Weapon | Base | Weight | Notes |
+|---|---|---|---|
+| Dagger | 3 + STR or DEX | Quick | |
+| Short sword | 4 + STR or DEX | Quick | |
+| Longsword | 5 + STR | Normal | |
+| War hammer | 5 + STR | Normal | +2 vs Heavy armor |
+| Spear | 5 + STR | Normal | Full damage from the back row |
+| Greatsword | 6 + STR | Heavy | |
+| Short bow | 4 + DEX | Normal | Ranged — row doesn't matter |
+| Crossbow | 5 + DEX | Heavy | Ranged |
 
-| Level | Fighter | Thief | Caster |
-|-------|---------|-------|--------|
-| 1 | +1 | +1 | +0 |
-| 2 | +2 | +2 | +1 |
-| 3 | +3 | +3 | +1 |
-| 4 | +4 | +3 | +2 |
-| 5 | +5 | +4 | +2 |
-| 6 | +6 | +5 | +3 |
-| 7 | +7 | +5 | +3 |
-| 8 | +8 | +6 | +4 |
-| 9 | +9 | +6 | +4 |
-| 10 | +10 | +7 | +5 |
+The attribute bonus is the modifier: floor((score − 10) / 2).
 
-<!-- ASSUMPTION: Protagonist class list is not yet finalized. The table above uses three archetypes as placeholders; a class-progression note will detail protagonist build options. -->
+**Armor** (damage subtracted from each hit, TUNE):
 
-### Defense
+| Armor | Reduction | Delay effect |
+|---|---|---|
+| None | 0 | Quick actions 10% faster |
+| Light | 1 | — |
+| Medium | 2 | — |
+| Heavy | 3 | All delays +10% |
+| Shield | +1 | — |
 
-**Defense = 10 + Armor Bonus + DEX modifier (capped by armor type)**
+**Status effects** (Fear, Command, Enfeeble and similar) can be resisted: **resist chance = target WIS-based value vs. caster INT-based value** (formula TUNE). Damage spells always land.
 
-| Armor Type | Armor Bonus | DEX Cap | Defense Range (DEX −1 to +4) |
-|------------|-------------|---------|-------------------------------|
-| Unarmored | +0 | No cap | 9–14 |
-| Light | +3 | +5 | 12–18 |
-| Medium | +5 | +2 | 14–17 |
-| Heavy | +8 | 0 | 18 |
-
-Shields add **+2 Defense** and occupy the off-hand. A character holding a shield cannot use two-handed weapons.
-
-### Weapon Damage Reference
-
-| Weapon | Damage | Notes |
-|--------|--------|-------|
-| Dagger | 1d4 + DEX or STR | Finesse, concealable |
-| Short sword | 1d6 + STR or DEX | Finesse |
-| Longsword | 1d8 + STR | One-handed |
-| Greatsword | 1d10 + STR | Two-handed; −2 Defense while equipped (guard is committed to offense) |
-| Hand axe | 1d6 + STR | Can be thrown (Short range band) |
-| War hammer | 1d8 + STR | +2 damage vs. Heavy armor (crush vs. rigid plate) |
-| Short bow | 1d6 + DEX | Short and Long range |
-| Crossbow | 1d8 + DEX | Long range full damage, no disadvantage beyond Short; reload costs React |
-| Spear | 1d8 + STR | Reach: can attack from 2 tiles without moving into melee |
-
-Dag's gear modification system can extend these baselines (e.g., +1 weapon bonus, added damage type, Eld-infused edge). Those enhancements are external to this note.
-
-### Damage Reduction
-
-Heavy armor provides **2 points of physical damage reduction** in addition to its Defense bonus. This applies after a hit is confirmed, reducing the damage roll by 2 (minimum 1 damage per hit).
-
-No other armor tier provides damage reduction. The distinction makes heavy armor genuinely protective against many small hits, at the cost of speed and DEX bonus.
+**Criticals:** a 5% chance (TUNE) for 1.5× damage, shown with a distinct impact frame.
 
 ---
 
-## 5. HP Model and the Downed State
+## 5. Eld in Combat
 
-### HP at Character Creation (Level 1)
-
-**HP = Class Base + CON modifier (minimum 1)**
-
-| Class | Base HP |
-|-------|---------|
-| Fighter | 12 |
-| Thief | 8 |
-| Caster | 6 |
-
-**HP gained per level = Class Growth + CON modifier (minimum 1)**
-
-| Class | Per-Level Growth |
-|-------|-----------------|
-| Fighter | 7 |
-| Thief | 5 |
-| Caster | 4 |
-
-**Example:** Bram (Fighter, CON 14, modifier +2) at Level 1: 14 HP. At Level 5: 14 + (4 × 9) = 50 HP.
-
-<!-- ASSUMPTION: Fixed HP growth (no roll). Solo dev: deterministic progression is easier to balance and eliminates a whole category of "my rolls were bad" complaints. -->
-
-### Going Down
-
-At 0 HP, a character is **Downed.** They are incapacitated: they cannot move, act, or react. They are not dead.
-
-**Stabilization Roll:** On the downed character's initiative tick each round, they roll **1d20 + CON modifier vs. DC 10.**
-
-| Outcome | Effect |
-|---------|--------|
-| Roll ≥ 10 (success) | Character **stabilizes** — stops rolling, remains unconscious at 1 HP. Will regain consciousness at end of combat. |
-| Roll < 10 (failure) | Accumulate 1 failure. At **3 cumulative failures**, the character is **out for the encounter** — unconscious and unrevivable until combat ends. They survive. |
-
-Characters do not die from combat failure. Death occurs only when the story demands it — authored in specific narrative moments, not generated by the stabilization system. A party member who reaches 3 failures wakes after the fight, shaken but present.
-
-**Reviving Mid-Combat:** An adjacent conscious ally spends their **Act** to revive a downed or stabilized character. The revived character wakes with **1 HP + CON modifier** (minimum 1) and can act on their next initiative turn.
-
-**This system creates the decision:** Do I spend my Act to revive an ally now (giving up my attack, potentially preventing 3 more failures), or do I trust they'll stabilize and press the offensive? The wrong call in both directions costs the party.
-
-### Healing in Combat
-
-Potions are consumed via React (Quick Item). A standard healing potion restores **2d4 + 2 HP** (average 7). Potions cannot restore a downed character above 0 HP if they are used remotely — a character must be adjacent and conscious to administer a potion to someone at 0 HP (uses Act, not React, in that case).
-
-<!-- ASSUMPTION: Healing magic exists in some form per the Phase 2 spell domain. Whether it restores HP or only stabilizes is deferred. world-rules flags this as an open question. -->
+- Each character has an **Eld pool for the fight**. It does not refill during the fight and is full again at the start of the next.
+- Casters have a large pool; Fighters and Thieves a small one for their class abilities ([[eld-magic]], [[world-rules]] — two tiers).
+- **Casting past 0 Eld** is still allowed: each missing point costs 1d4 HP (kept from the old version).
+- Every Eld use moves the Drift Counter as in [[eld-magic]].
 
 ---
 
-## 6. Eld and Class Abilities
+## 6. The Company Bond Meter
 
-The world is saturated with Eld. All classes have some sensitivity to it. What differs is how developed that sensitivity is and what the character does with it.
+One shared meter, 0–100. It is the mechanical form of a ten-year friendship.
 
-**Eld Pools:**
+**Fills from coordination** (all TUNE):
 
-| Class | Eld Pool | Formula |
-|-------|----------|---------|
-| Caster | Large, scales with INT | 10 + (INT modifier × character level) |
-| Fighter | Small, flat | 6 |
-| Thief | Small, flat | 6 |
+| Event | Bond |
+|---|---|
+| Attacking a target an ally hit since your last turn | +8 |
+| Taking or blocking a hit meant for an ally (Guard, Bulwark) | +12 |
+| Interrupting a telegraphed move | +20 |
+| An ally goes Downed (the company rallies) | +10 |
+| Finishing an enemy an ally set up (debuffed or staggered) | +10 |
 
-Eld does not regenerate mid-combat. Full restoration occurs at rest (camp/rest point).
+**Spent on pair finishers.** A finisher costs **100** (TUNE) and needs both members of the pair active and conscious.
 
-**Casters:** Access to the full spell list across all nine schools. See [[eld-magic]] for casting rules, Spell Check, and school detail.
+It uses the turn of whichever partner acts first; the other partner keeps their turn. The meter is the limit. Finishers may be cut entirely after playtest.
 
-**Casting past 0 Eld (Casters only):** A caster who is at 0 Eld may still attempt to cast. Each Eld point short of the spell's cost deals **1d4 HP damage to the caster**. This is a hard choice, not an automatic failure.
+**Finishers are authored pairs** with history behind them — each is a hand-made showcase animation. The pair list is open (see open_questions); the slice needs few.
 
-**Fighters and Thieves:** Cannot cast spells. Their small Eld pool powers a set of class-specific combat abilities — instinctive Eld use developed through years of fieldwork rather than study. These abilities do not require a Spell Check. Eld is spent and the effect activates. Subsequent attack rolls still apply normally where relevant.
-
-**All classes experience Drift.** Every Eld ability is pole-flavored. Using it moves the Drift Counter by +1 (Vela-pole) or −1 (Forn-pole), identical to spellcasting. The same thresholds, the same environmental cues, the same ending. See [[eld-magic]] — Drift mechanic.
-
----
-
-### Fighter Eld Abilities
-
-*Physical and instinctive. These are not spells — they are what a veteran learns to do with Eld without ever studying it.*
-
-| Ability | Pole | Eld | Trigger | Effect |
-|---------|------|-----|---------|--------|
-| **Bulwark** | Forn | 2 | Your turn (Act) | An adjacent ally gains +3 Defense until the start of your next turn. You put yourself between them and the threat. |
-| **Stand Firm** | Forn | 3 | Your turn (React) | Until the start of your next turn, you cannot be moved, knocked back, or knocked prone. You hold the position regardless of what hits you. |
-| **Break** | Vela | 2 | Your turn; resolves on next melee hit | Your next melee hit reduces the target's Defense by 2 for 2 rounds. Something in their guard, their armor, or their footing gives. |
-| **Execute** | Vela | 3 | Your turn; resolves on next melee hit | If the target is below half HP, your next attack this turn deals double weapon damage dice. You find the opening when they're already losing. |
-
-*Decision created:* A Fighter's 6 Eld covers 2–3 ability uses per encounter. Bulwark and Stand Firm keep allies alive and positions held — Forn decisions, the work of someone who protects. Break and Execute end fights faster — Vela decisions, the work of someone who finishes things. Which you reach for more often is who you are becoming.
+**The decision it creates:** play for coordination to build the meter, or for raw damage now.
 
 ---
 
-### Thief Eld Abilities
+## 7. Answering Telegraphs — Interrupt Skills
 
-*About movement and exploitation. The Thief uses Eld without naming it — it is just what their body learned to do after long enough in the dark.*
+Some skills carry the **Interrupt** tag (for example a shield bash, a quick shot, Counterspell). Used on a target that has a telegraphed move pending, an interrupt:
 
-| Ability | Pole | Eld | Trigger | Effect |
-|---------|------|-----|---------|--------|
-| **Fade** | Forn | 2 | Your turn (Move or React) | Move up to your Speed without provoking attacks of opportunity. You slip from the enemy's immediate awareness. They must spend their Act on their next turn to reacquire you; until then, they cannot target you. |
-| **Mark** | Forn | 3 | Your turn (Act) | You read the target carefully. Until end of combat, your attacks against this target gain +1 to hit without requiring Veteran's Read. You have learned them. |
-| **Expose** | Vela | 2 | Your turn (React) | You demonstrate a weakness in the target's position. Until the end of the target's next turn, all party members gain +1 to hit against them. |
-| **Exploit** | Vela | 3 | Your turn; resolves on next attack | Your next attack this turn bypasses the target's armor damage reduction and any Defense bonus from a Shield. You find the crack and use it. |
+- **cancels** the move if the target is a regular enemy, or
+- **pushes it back** on the timeline (+50 delay, TUNE) and weakens it if the target is a boss or elite.
 
-*Decision created:* Fade and Mark are about patience — learning, preserving options, protecting the ability to act (Forn). Expose and Exploit are about taking — extracting advantage, using what you found against someone (Vela). A Thief who consistently Exploits is declaring something different from one who consistently Marks.
+Interrupts are used on the character's own turn, before the move fires. The timeline shows how many turns remain. There is no off-turn reaction prompt.
 
----
+**The decision it creates:** spend this turn stopping the threat, or deal damage and take the hit.
 
-Fen does not use Eld abilities — her sensitivity is characterization only (see [[companion-fen]]). Bram does not use Eld. Arn does not use Eld (his divinity is not Eld-based — see [[companion-arn]]). Voryn is an Eld-Weaver with the full caster pool.
+The Soulwright ritual meter works the same way: successful interrupts on its rites slow the meter ([[enemy-roster-ashfall]]).
 
 ---
 
-## 7. The Party Bond — Veteran's Read
+## 8. Downed, Defeat, Morale
 
-The party has worked together for approximately twenty years. The mechanical expression of this is not a special system — it is a persistent passive and one triggered ability that costs nothing to implement beyond a flag and a modifier lookup.
-
-### Passive: Veteran's Read
-
-When a character makes an attack against an enemy that **another party member also attacked during the previous round**, the attacking character gains **+1 to hit** on that attack.
-
-*Implementation note: track last-attacker-ID per enemy entity. If any party member ≠ current attacker hit this enemy in round N−1, set +1 to-hit flag for current attacker this round.*
-
-"We've run this pattern a hundred times." The bonus is small enough that it rewards discipline without mandating it, and it expires each round, so it requires repeated coordination rather than a one-time setup.
-
-### Triggered: Rally Shout
-
-Once per combat per character, as a **React**, any conscious party member who witnesses a companion go down (within 6 tiles, line of sight) may shout. The downed companion's next Stabilization Roll is made with **+4 bonus**.
-
-This does not require a special ability slot, talent, or level unlock. It is available to every character from level 1 because twenty years of working together means you know what to say.
-
-**This system creates the decision:** Do I spend my React on Rally Shout now (protecting my downed ally from dying on their next roll), or save my React for a potion, a weapon switch, or a Dash? The decision has weight because React is also the resource for other useful actions.
+- At 0 HP a character is **Downed**: no turns, still targetable by revive effects.
+- **Revive:** a skill or item brings them back at 25% HP (TUNE).
+- Characters cannot die from combat. Death is a story event only ([[design-pillars]]).
+- **Defeat:** all active party members Downed. **The fight restarts instantly** from its first turn with the party at full strength (decided 2026-10-19). An option to return to the last rest point is offered on the same screen.
+- **Victory** comes when all enemies are defeated, routed or surrendered, or when the fight's own objective is met (survive N turns, protect a point, fill the evac counter).
+- **Morale:** humanoid enemies below 25% HP may flee on their turn. Beasts and the Bound never do.
+- After every fight: **full HP and Eld restore**. There is nothing to grind and nothing to ration between fights.
 
 ---
 
-## 8. Dag's Gear and the Party
+## 9. Presentation Rules
 
-Dag is not a playable party member — he is the camp craftsman, an NPC. He does not enter combat.
+How combat looks is the first priority. These rules exist so it looks good *and* stays quick ([[design-pillars]]; Atlas: turn-based dead air).
 
-**One mechanical consequence worth designing:** Gear modifications that Dag applies may carry a condition: if the modified character is Downed, high-maintenance enhancements deactivate until the character recovers. The reasoning is that the modification requires upkeep — which an unconscious character cannot perform. This is a mild texture, not a punishment system. Deferred to the gear-modification system note when that note is written.
+| Beat | Time budget (TUNE) | Staging |
+|---|---|---|
+| Menu input | Instant | Menus never wait on animation. The player can choose the next command while the previous action finishes. |
+| Basic attack | ≤ 1.5 s | Animation and impact; no camera move. |
+| Skill / spell / Eld ability | ≤ 2.5 s | Short camera push-in, effect, impact, brief hit-stop. |
+| Named-item ability | ≤ 3 s | As above, with the item's own effect. |
+| Pair finisher | ≤ 6 s | Full authored sequence. The showcase moment. |
+| Enemy basic action | ≤ 1.5 s | No camera move. |
+| Minor action | ≤ 0.5 s | Gesture only. |
 
----
-
-## 9. Encounter End Conditions
-
-### Victory
-
-The encounter ends in **victory** when all enemies are eliminated (dead, routed, or surrendered).
-
-**Enemy Morale:** Humanoid enemies who fall below **25% of their starting HP** make a Morale Check on their next turn: **1d20 + WIS modifier vs. DC 12 + party level.** On a failure, the enemy routes (flees the encounter area; counts as eliminated for victory purposes). Beasts and undead do not check morale.
-
-*The morale threshold creates a decision: focus fire on one enemy to kill it quickly, or spread damage across multiple enemies to trigger multiple simultaneous morale checks?*
-
-### Defeat
-
-All five party members are simultaneously Downed or out for the encounter. The encounter ends in defeat.
-
-**Consequence of defeat:** The game returns to the last rest point. No permadeath. No persistent injury. No character can die from combat mechanics — death is a story event, authored deliberately, never generated by a stabilization roll. Loss has weight through writing: the party's dialogue after a close call, the acknowledgment of what almost happened. The grimness lives there.
-
-### Special Conditions
-
-Some encounters end on a condition that is not "kill everything": protect a location, survive N rounds, reach a trigger zone, eliminate a named leader. These are per-encounter overlays on the core loop, not changes to the loop itself. They are authored in encounter notes, not here.
+- **Overlap:** damage numbers, HP changes and status icons play *during* the animation, never after it.
+- **No text that repeats what the animation just showed.**
+- **Settings:** battle speed (1×, 1.5×, 2×) and a toggle to shorten repeat finishers. A patch, not the design — the budgets above are the design.
+- Eld effects follow the proposed rules in [[design-pillars]] Combat Presentation (grounded, short, colour by pole).
 
 ---
 
-## 10. Worked Combat Example (Level 2)
-
-**Setup:** Bram (Fighter/Blade, L2, STR 14, CON 14, heavy armor) and Fen (Thief, L2, DEX 16, light armor) vs. two Ashfall Mercenaries (Defense 14, HP 20, Attack +2, 1d6+1 damage).
-
-**Initiative:**
-- Fen rolls 1d20+3 = 15 (acts first)
-- Mercenary A rolls 1d20 = 12
-- Bram rolls 1d20+0 = 9
-- Mercenary B rolls 1d20 = 7
-
-**Round 1:**
-- *Fen's turn:* Moves 2 tiles (flanking position on Mercenary A alongside Bram). Attacks Mercenary A: 1d20 + 1 (level) + 3 (DEX) = 1d20+4 vs Defense 14. Rolls 11+4 = 15. **Hit.** Damage: 1d6+3 = 5. Mercenary A at 15/20 HP.
-- *Mercenary A:* Attacks Bram: 1d20+2 vs Defense 18 (heavy plate). Rolls 8+2 = 10. **Miss.**
-- *Bram's turn:* Flanking bonus applies (+2) because Fen is on opposite side. Attacks Mercenary A: 1d20 + 2 (level) + 2 (STR) + 2 (flanking) = 1d20+6 vs Defense 14. Rolls 7+6 = 13. **Miss.** (needs 14+, bad luck). Bram has not used React. Uses React to Dash toward Mercenary B (3 tiles, positioning for Round 2).
-- *Mercenary B:* Attacks Fen: 1d20+2 vs Defense 16 (light armor, DEX +3). Rolls 14+2 = 16. **Hit.** Damage: 1d6+1 = 5. Fen at 12/17 HP.
-
-**Round 2:** Veteran's Read kicks in — Fen attacked Mercenary A last round, so Bram gets +1 to hit vs. Mercenary A this round as well. Mercenary A is at 75% HP — above morale threshold. The fight continues.
-
----
-
-## 11. Complexity Assessment
-
-**Estimated implementation scope: Large (L)**
-
-Core components and rough Unity task breakdown:
+## 10. Implementation (Unity)
 
 | Component | Complexity | Notes |
-|-----------|------------|-------|
-| Grid manager (1.5m tiles, occupancy, pathfinding) | High | A* on square grid; Unity has nav mesh alternatives but grid is more predictable for CRPG |
-| Initiative tracker + UI strip | Medium | Sort on combat start; update on change |
-| Action economy state machine (Act/React/Move tracking per turn) | Medium | Per-character state; straightforward FSM |
-| Attack resolution (d20, hit/miss, damage, critical) | Low | Pure math; simplest component here |
-| HP + Downed state + Stabilization Roll | Medium | Per-character state, death tracker |
-| Flanking detection | Low | Tile adjacency check, 180° calculation |
-| Veteran's Read (last-attacker-per-enemy flag) | Low | One int per enemy entity |
-| Rally Shout (React expenditure + Stabilization modifier) | Low | Flag + modifier; once-per-combat constraint |
-| Morale checks (HP threshold, WIS roll) | Low | Triggered on damage; exit behavior is flee pathfinding |
-| Eld pool + casting-past-zero | Low | Resource bar; damage on overdraw |
-| Dag's gear offline on downed | Low | Boolean flag per modified item |
-| Enemy AI (action selection, target priority) | High | Largest unknown; basic priority AI is achievable; tactical AI is not |
-| Reactions — `REACTION_WINDOW` FSM state | Medium | One new TurnManager state; on/off React tracking per character per round; sequential party prompt loop with event callbacks; cast ring decal + CASTING banner VFX + initiative strip highlight; no new resource, draws on existing React bool |
-
-**The enemy AI is the risk.** Everything else is bounded. A basic priority-based AI (attack nearest target, use abilities at threshold HP, morale check on low HP) is implementable in 1–2 weeks. A sophisticated tactical AI is not. **Recommendation:** ship with deterministic priority AI for the vertical slice; post-launch behavior tree if the game ships.
-
-**Total estimate for vertical slice implementation (one zone, one encounter type): 4–6 weeks** for an experienced Unity/C# solo developer. This is over the 2-week per-system guideline.
-
-**Simpler alternative:** Reduce to a pure point-and-click ARPG (no grid, no turns). **Rejected.** Turn-based + grid is locked per [[design-pillars]], and it is the correct call — real-time ARPG requires enemy AI that is tactically interesting at all times, which is harder, not easier. The grid and turns mean enemy AI only needs to produce one decision per turn, which is achievable solo.
-
-**Phased implementation path to stay in budget:**
-- **Phase 1A (2 weeks):** Grid manager, initiative, action economy, attack resolution, HP/downed. Playable skeleton — two fighters punching each other. No abilities, no spells, no morale.
-- **Phase 1B (1 week):** Flanking, Veteran's Read, Rally Shout, morale checks, Dag's gear flag. Full party bond mechanics.
-- **Phase 1C (1 week):** Eld pool, potion React, basic enemy AI. Encounter-complete.
-- **Phase 1D (1 week):** Reaction Window (`REACTION_WINDOW` FSM state, cast ring VFX, initiative strip highlight, off-turn React expenditure). Requires Phase 1A FSM as prerequisite. Soulwright tutorial encounter gates this phase.
-- **Phase 2:** Spell domain, enemy ability set, encounter-specific overlays, caster spell-as-Reaction (counterspell design).
-
----
-
-## 12. Reactions
-
-*An off-turn interruption system. Narrow by design. One trigger. Binary choice. The Soulwright teaches it.*
-
-**This system creates the decision:** When an enemy begins casting, do you spend your React now — disrupting, damaging, or shielding — and forfeit the React you would use on your own turn? Or do you hold it and let the cast land?
-
----
-
-### 12.1 Trigger — Telegraphed Cast
-
-A **telegraphed cast** is an enemy ability whose data asset (`EnemyAbilityDataSO`) carries the designer-set flag `bTelegraphsCast = true`. This flag is authored at design time, not computed at runtime. The same ability asset shared across multiple enemy types propagates the flag to all of them.
-
-Only abilities with `bTelegraphsCast = true` pause the enemy turn and open the Reaction Window. The following are explicitly excluded:
-
-| Action type | Telegraph? | Reason |
 |---|---|---|
-| Standard melee attack | No | Intent is legible; no design value in pausing |
-| Ranged attack (non-cast) | No | Same as above |
-| Movement | No | Pausing for movement creates too many repositioning edge cases |
-| Passive aura activation | No | Not a discrete action; no decision point |
-| Telegraphed cast (`bTelegraphsCast = true`) | **Yes** | Opens Reaction Window |
+| Timeline + turn manager | Medium | Ordered list by remaining delay; projected next 6 turns for the UI. |
+| Action resolution (damage, status, revive) | Low | No grid, no to-hit roll. |
+| Rows | Low | Two lists per side and a multiplier. |
+| Bond meter + finisher triggers | Low | One shared value; pair availability check. |
+| Interrupts + telegraph markers | Medium | Pending-move state per enemy; cancel or delay. |
+| Enemy AI | Medium | One decision per turn from a priority list; bosses scripted. |
+| Combat UI (timeline bar, menus, rows) | Medium | Main UI cost of the system. |
+| Presentation sequencer (camera beats, hit-stop, overlap) | Medium–High | Where most of the polish time goes; matches priority 1. |
 
-**Isometric UI — three simultaneous layers:**
+**Estimate:** about 4–5 weeks for the system and UI, before animation and effects content. Animation and effects are the larger cost and are budgeted separately (see [[design-pillars]] open questions).
 
-1. **Cast Ring.** A pulsing circular ground decal appears around the casting enemy. Color: amber (#E8A020). Radius: equal to the ability's effect area for AoE; 1 tile for single-target abilities. Pulse: 1 full pulse per 0.6 seconds. If the ability is targeted (single-target or directed AoE), a directional arrow indicator extends from the caster toward the intended target. The ring persists for the entire Reaction Window and disappears when the window closes.
+**Cheaper than the old version:** no grid pathfinding, flanking geometry, movement, Large footprints or Reaction Window state machine.
 
-2. **CASTING banner.** A floating text label reading "CASTING" appears above the casting enemy's model and on their initiative strip portrait. Uses the same font and scale as the combat log. Duration: entire Reaction Window.
+**Prototype baseline (decided 2026-10-20).** The Unity prototype in the `eldr-unity` project (`Assets/EldrTest/Battle`) is the baseline for how combat looks and flows: fights start where the party meets the enemy, sides line up facing each other, melee attackers run in, swing, turn and run back, with hit-stop and battle lighting. Its *rules* are not canon. They are replaced with this note's rules one at a time: timeline, Eld pool (replaces TP) with Bram's §12 Fighter abilities and Arn's prayers, minor actions (all done 2026-10-20), then rows, bond meter (replaces Coordination and Rally), telegraphs and interrupts, instant restart on defeat.
 
-3. **Initiative strip highlight.** All party member portraits with `bReactionAvailable == true` gain a 2 px yellow border (#FFD700). Portraits with `bReactionAvailable == false` drop to 50% opacity. This communicates at a glance who can still act.
-
----
-
-### 12.2 Window — Duration, Order, and Closure
-
-The Reaction Window is a **complete pause** of the enemy's turn. Real-world time is unlimited — this is a turn-based CRPG and the player may deliberate freely.
-
-**Sequencing within the window:**
-
-Party members are prompted in **initiative order, highest to lowest**, but only if `bReactionAvailable == true`. Each prompted character makes a single binary choice:
-
-- **Spend Reaction** → select a valid Reaction action from §12.3 and resolve it immediately before the next character is prompted.
-- **Pass** → no action taken; `bReactionAvailable` is not consumed (the player chose not to spend it, not that they couldn't).
-
-Characters with `bReactionAvailable == false` are skipped automatically with no prompt.
-
-**Closure:** When every eligible party member has responded (Spend or Pass), the window closes. The `bInReactionWindow` flag on `TurnManager` clears to `false`. The enemy's telegraphed cast then resolves in full, applying its normal effect.
-
-**If no party members have `bReactionAvailable == true`:** The window does not open. The cast ring and banner appear for 0.4 seconds as visual feedback, then the cast resolves immediately. No pause occurs.
-
-**No Reaction-on-Reaction:** If any Reaction action triggers an effect that would itself carry `bTelegraphsCast = true`, that inner telegraph is suppressed for the duration of the window. The `TurnManager` checks `bInReactionWindow` before evaluating any cast telegraph flag. This check costs one boolean read. No Reaction Window can nest inside another Reaction Window.
+- In the prototype, a unit's Speed stands in for the DEX modifier in the delay formula: delay × (1 − (Speed − 8) × 0.04). <!-- ASSUMPTION: Speed 8 = no modifier, until attributes exist. -->
+- Overdrawing Eld costs 1d4 HP per missing point but can't drop the user below 1 HP. <!-- ASSUMPTION: §5 doesn't say whether overdraw can Down you. -->
+- Damage and heal amounts in the prototype use its own scale (Attack × power) until the class-progression note sets real stats; flat values (2 less per hit, armor −2) are this note's.
+- The run-in and run-back are staging, not movement; position on the field still has no rules effect. They must fit the §9 budgets — the basic-attack budget (≤ 1.5 s) has not yet been measured against the run-in.
 
 ---
 
-### 12.3 Valid Reaction Actions
+## 11. Named-Item Abilities
 
-Conservative list. Complexity is the enemy of a solo dev shipping anything.
+*(Decided 2026-10-19.)* Named weapons and armor carry abilities ([[design-pillars]] Itemization).
 
-| Reaction action | Details | Range constraint |
-|---|---|---|
-| **Standard Attack** | One weapon attack (melee or ranged) against any valid target within the equipped weapon's current range band. Normal to-hit and damage resolution. No flanking bonus — flanking requires a Move action, and Move is not available as a Reaction. | Equipped weapon range band |
-| **Eld Ability (React-typed only)** | Any class Eld ability whose Trigger column in §6 lists "React." Current qualifying abilities: Fighter — **Stand Firm**; Thief — **Fade**, **Expose**. Casters have no React-typed Eld abilities in the current list. Eld cost applies normally. Drift counter moves normally. | Per ability definition |
-| **Quick Item** | Use a potion or throwable on self or an adjacent ally (1 tile adjacent). Identical rules to Quick Item on own turn. | Self or 1-tile adjacent |
-
-**Not valid as a Reaction:**
-
-| Action | Excluded reason |
-|---|---|
-| Move | Repositioning before a cast resolves requires re-evaluating AoE targeting geometry mid-window — a disproportionate FSM complexity cost for Phase 1 |
-| Act-typed Eld abilities (Bulwark, Break, Execute, Mark, Exploit) | These are Act actions; their economy belongs on the character's own turn |
-| Spell (full cast list) | Casters spend Act to cast; Phase 2 will design a caster interrupt (counterspell equivalent) once spell school targeting rules exist |
-| Revive Ally | Requires adjacency check, HP restoration, and FSM interaction with the downed state — too many edge cases for off-turn execution |
-| Interact (lever, lock, chest) | Not combat-relevant in this context |
-
-<!-- ASSUMPTION: Casters are excluded from using their spell list as a Reaction. This is the highest-value exclusion — a counterspell/interrupt-cast ability is the natural Phase 2 extension, but it requires spell school targeting rules that do not yet exist. Logged to open_questions. -->
+- **A separate item slot.** Each character's menu has their class skills (4–6) plus **one item-ability slot**, filled by their equipped named weapon. Equipping a named item never costs a class skill, and the menu stays the same size.
+- **Weapons give an active ability**, paid from the Eld pool, pole-flavoured, moving Drift like any Eld use. It is a showcase beat (≤ 3 s, section 9) with its own hand-made effect.
+- **Armor gives a triggered effect**, not a menu option: it fires on a condition (first time the wearer drops below half HP, when guarding an ally, when interrupted). No extra menu entries, still a visible moment.
+- **Limit by effects work, not rules:** each named item needs its own animation and effect, so the real cap is the effects budget. 1–2 named items per character per act.
 
 ---
 
-### 12.4 Economy — Reactions Draw on the Existing React Resource
+## 12. Class Eld Abilities (converted 2026-10-19)
 
-The Reaction is **not a new resource.** There is no separate Reaction token, counter, or pool. The existing `React` resource (§2) is the sole economy.
+Fighters and Thieves spend their small Eld pool (6 per fight) on these. Every use moves Drift ([[eld-magic]]). Converted from the grid version: "Defense" became damage reduction, "to hit" became damage, movement became rows. Visible effects follow the proposed rules in [[design-pillars]] Combat Presentation.
 
-**Core rule:** Each character has 1 React per round. That single React covers both their off-turn Reaction Window use and their on-turn React actions. They are the same resource.
+### Fighter
 
-**Consumption rules:**
+| Ability | Pole | Eld | Type | Effect |
+|---|---|---|---|---|
+| **Bulwark** | Forn | 2 | Action, quick | Guard one ally until your next turn: hits aimed at them hit you instead, and you take 2 less from each. Fills bond when it triggers. |
+| **Stand Firm** | Forn | 3 | Minor | Until your next turn: you can't be pushed out of the front row, and you take 2 less from each hit. |
+| **Break** | Vela | 2 | Action, normal, **Interrupt** | Heavy strike: normal damage, target's armor −2 for 2 of its turns. Interrupts a telegraphed move. |
+| **Execute** | Vela | 3 | Action, heavy | If the target is below half HP, double damage. |
 
-| Situation | Result |
-|---|---|
-| You spend your React on your own turn (potion, weapon draw, Dash, Rally Shout, Stand Firm via own turn) | `bReactionAvailable == false`. You cannot respond if a Reaction Window opens later this round. |
-| You spend your Reaction in a cast window | React is consumed. When your own turn arrives this round, you have no React. |
-| You Pass in a cast window | React is preserved. You may still spend it on your own turn. |
-| You have not taken your turn yet and a window opens | You may spend your Reaction in the window, consuming your React before your turn arrives. |
+### Thief
 
-**Refresh:** React restores at the start of each new round, when the initiative tracker loops. It does not restore mid-round when a character's individual tick completes.
+| Ability | Pole | Eld | Type | Effect |
+|---|---|---|---|---|
+| **Fade** | Forn | 2 | Minor | Enemies can't target you until your next turn, unless every other party member is Downed. |
+| **Mark** | Forn | 3 | Action, quick | Your attacks against this target deal +2 for the rest of the fight. |
+| **Expose** | Vela | 2 | Minor | Until the target's next turn, the whole party deals +2 to it. |
+| **Exploit** | Vela | 3 | Action, normal, **Interrupt** | An attack that ignores armor. Interrupts a telegraphed move. |
 
-**Interaction with Wait:** A character who has used Wait (held Act, dropped to end of round) retains their Reaction independently. Spending their Reaction in a cast window does not cancel or consume their held Act. The held Act resolves normally on their deferred initiative tick.
+**The decision these create:** Forn abilities protect and prepare; Vela abilities end things faster. Which you reach for is who you are becoming.
 
-**No double-spend:** A character may spend their Reaction only once per Reaction Window. A window contains exactly one telegraphed cast (the condition that opened it), so there is no scenario where two Reaction spends would be solicited from the same character in one window.
-
----
-
-### 12.5 Enemy Participation
-
-An enemy entity participates in the Reaction system if and only if at least one entry in its `EnemyAbilityDataSO` array has `bTelegraphsCast = true`. The flag lives on the **ability asset**, not on the enemy entity. One ability asset with the flag propagates it to every enemy that holds a reference to that asset. No runtime computation determines participation.
-
-**Enemy types and the flag:**
-
-- **Cast-capable humanoids** (mages, channelers, summoners, ritual specialists): All abilities that are magical in nature receive `bTelegraphsCast = true`. Standard melee or ranged attacks on the same enemy do not.
-- **Beasts:** No abilities expected to carry the flag in Act 1. Flag remains available for future creature design.
-- **Standard soldiers / mercenaries:** No casting; flag not applicable.
-- **Bosses:** At least one ability per boss encounter that carries `bTelegraphsCast = true` — the Reaction system must be exercised in every boss fight.
-
-**Soulwright (Act 1 Boss):** The Soulwright is the designed tutorial for this system. At minimum two of the Soulwright's abilities carry `bTelegraphsCast = true`. The encounter is authored to guarantee a Reaction Window fires within the first two rounds of combat, allowing the player to learn the mechanic before it delivers full damage. Tutorial scripting — including first-time UI callouts and the guaranteed early window — is deferred to [[encounter-soulwright]]. This note specifies the mechanic; the encounter note specifies the pedagogy.
-
----
-
-### 12.6 TurnManager FSM — State: REACTION_WINDOW
-
-The `TurnManager` finite state machine gains one new state: **`REACTION_WINDOW`**.
-
-**Branch description:** While in `ENEMY_ACTING`, if the enemy's selected ability resolves `bTelegraphsCast == true` and `bInReactionWindow == false`, `TurnManager` transitions to `REACTION_WINDOW` before executing the ability. On entry, it sets `bInReactionWindow = true` and iterates over all `CombatantController` entries in descending initiative order. For each entry where `bReactionAvailable == true` and `IsPlayerControlled == true`, the manager raises `OnReactionWindowPrompt(CombatantController)` and suspends the iterator, awaiting `OnReactionResponseReceived(CombatantController, ReactionChoice)`. `ReactionChoice` is a two-variant discriminated union: `Spend(ActionData)` or `Pass`. On `Spend`, the manager immediately invokes the normal action resolution pipeline for the chosen `ActionData`, then advances the iterator. On `Pass`, the iterator advances without consuming React. When the iterator is exhausted, `TurnManager` sets `bInReactionWindow = false`, transitions back to `ENEMY_ACTING`, and the telegraphed ability executes. The `bInReactionWindow` guard prevents any nested `REACTION_WINDOW` entry for the duration. The Technical Designer owns all implementation details; this paragraph names the architecture.
-
----
-
-### 12.7 Relationship to Wait
-
-Wait (§2) and Reactions are independent systems that share the React resource but do not otherwise interact.
-
-| Axis | Wait | Reaction |
-|---|---|---|
-| What it holds | Act (primary action) | React (secondary action) |
-| When it triggers | Player-initiated, own turn | System-initiated, enemy's turn |
-| Condition | Player chooses to delay | Enemy uses `bTelegraphsCast` ability |
-| Interaction | A character on Wait still has their Reaction unless already spent | Spending a Reaction does not cancel a held Act |
-
-The §2 note "This is not a full reaction system — it is a tactical delay, not an interrupt" remains accurate. Wait is a turn-delay. Reactions are off-turn interrupts. They are not the same thing and do not conflict.
+**Who uses them:** Bram (Fighter set), Fen (Thief set), and a Fighter or Thief protagonist. Voryn and a Caster protagonist use spells ([[eld-magic]]). Arn has his own kit with no Eld ([[party-kits-act1]]).

@@ -17,7 +17,7 @@ open_questions:
 
 Solen joins the party at the start of Act 2, immediately after the Arn/Forn displacement. She is a Devotee — a practitioner of prayer-based healing in the Tyra tradition. She takes the field role Arn left. She cannot fill what Arn was. She does not try.
 
-She is the only woman in the party. She is also the only stranger — everyone else has twenty years of shared history. The gap is real and nobody pretends otherwise. What closes it, if it closes, happens through Acts 2 and 3.
+She is the only woman in the party. She is also the only stranger — everyone else has about ten years of shared history. The gap is real and nobody pretends otherwise. What closes it, if it closes, happens through Acts 2 and 3.
 
 ## Class
 
@@ -43,7 +43,7 @@ She is not soft. Healers who survive a war this long are not soft. She is direct
 
 She is also the most functional person in the party at the start of Act 2, because she did not lose Arn. She arrived after. She is grieving the war, not the man. That functional difference creates distance she cannot close through effort — only through time and shared experience.
 
-What the party gives her, eventually, is the thing a healer who has worked alone does not have: people who stay. She has been with companies that broke up, relocated, disbanded. This party has been together for twenty years. Whatever she thinks of them in the first weeks, she can see what that permanence looks like, and she has not had it.
+What the party gives her, eventually, is the thing a healer who has worked alone does not have: people who stay. She has been with companies that broke up, relocated, disbanded. This party has been together for about ten years. Whatever she thinks of them in the first weeks, she can see what that permanence looks like, and she has not had it.
 
 ## Rhyme with Bram
 

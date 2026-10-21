@@ -6,6 +6,7 @@ ue5_scope: S
 open_questions:
   - "How does Perceived Power update — passive from combat outcomes observed by NPCs, active from quest resolution, or both? Needs trigger-point list when first social scene is written."
   - "Faction standing as a distinct sub-tracker of Perceived Power — worth separating, or does one score per NPC/group cover it?"
+  - "Size lever: the protagonist is a fixed Medium human, so Size can only come from a Large party member (Bram). Confirm that a Size gate passes on Bram being present — otherwise the lever is dead and should be cut."
 ---
 
 # Social Core
@@ -32,7 +33,7 @@ Every character build has a social mode. No player should reach a story beat and
 
 Physical presence creates leverage before a word is spoken.
 
-Size is a property of race. The check is yes/no: does the player meet the size requirement? A Goliath protagonist physically blocking a doorway is not a roll — the informant looks at the exit and makes a practical decision.
+Size is a property of race. The protagonist is always a Medium human ([[protagonist]]), so the check is yes/no on the party: is a Large member — Bram — in the scene? Bram physically blocking a doorway is not a roll — the informant looks at the exit and makes a practical decision.
 
 Size gates appear in scenes where physical presence is the operative fact: a character who cannot leave, a room that communicates danger by what entered it, a situation where the wrong answer has obvious physical consequences.
 
@@ -79,7 +80,8 @@ The same INT modifier that governs Eld pools and spell checks governs this. No s
 *An occupied-territory informant. Won't talk.*
 
 - **INT gate (DC 13):** Player reads that the informant is afraid of being identified as a collaborator. Names it correctly. The informant cooperates — gives the location in exchange for acknowledgment that they helped.
-- **Size gate:** Goliath protagonist. The informant looks at the doorway. Makes a practical decision.
+- **Size gate:** Bram is in the room. The informant looks at the doorway. Makes a practical decision.
+<!-- ASSUMPTION: a Size gate passes on Bram's presence in the active party. Not yet decided — see open_questions. -->
 - **Perceived Power gate:** The informant already knows who you are. The "won't talk" beat is skipped — they were waiting for someone worth talking to.
 - **No gate met:** The informant refuses. The party finds the location another way — costs a camp rest, or burns a faction favor with a different contact. Same destination, higher cost.
 

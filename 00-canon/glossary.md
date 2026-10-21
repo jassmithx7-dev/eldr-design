@@ -17,15 +17,15 @@ open_questions: []
 
 **Eldr** — The name of the world. Also the project title. Do not explain or etymologize the name in-fiction. First appeared in: [[design-pillars]].
 
-**Eld** — The ambient magical force present everywhere in the world. The in-world term for what functions mechanically as mana. Perceived only by a sensitive minority; worked with only by those who have also studied. First appeared in: [[world-rules]].
+**Eld** — The ambient magical force present everywhere in the world. The in-world term for what functions mechanically as mana. Runs through everyone; consciously perceived only by a sensitive minority, and shaped into spells only by those of that minority who have also studied. First appeared in: [[world-rules]].
 
 **Ashfall Keep** — The frontier stronghold that anchors the vertical slice. Half-ruined, half-defended; last line before the blighted advance. Contains the Falling Gate and the old shrine beneath. First appeared in: [[game-premise]].
 
 **Falling Gate** — The outer gate / crisis zone of Ashfall Keep; the player's first battlefield and evacuation choke point. First appeared in: [[zone-the-falling-gate]].
 
-**Arn** — The player's oldest friend; Act 1 companion. A real mortal soul; never aware that Forn is suppressed beneath his life. At the slice climax his soul passes to Lumen when Forn takes the body. First appeared in: [[game-premise]].
+**Arn** — The player's oldest friend; Act 1 companion; a paladin of Forn. A real mortal soul; never aware that Forn is suppressed beneath his life. At the slice climax his soul passes to Lumen when Forn takes the body. First appeared in: [[game-premise]].
 
-**Forn** — Forgotten god of good. Forced into mortal suppression under Arn by Vela. Separate from Arn's soul. After the unmasking, holds Arn's body as a stranger — not a party upgrade. First appeared in: [[pantheon]].
+**Forn** — God of good. Known to everyone; silent for thirty years — he no longer speaks or appears, though his faithful are still weakly answered. Forced into mortal suppression under Arn by Vela, which only Vela and Theldorn know. Separate from Arn's soul. After the unmasking, holds Arn's body as a stranger — not a party upgrade. First appeared in: [[pantheon]].
 
 **Lumen** — The rest-place of Eldr; where mortal souls go when passage completes. Arn goes here when Forn takes the body. Not a triumph — a finished life. First appeared in: [[game-premise]].
 
@@ -49,7 +49,9 @@ open_questions: []
 
 **Varnstead** — The civilian settlement adjacent to Ashfall Keep; the population being evacuated through the Falling Gate at the start of the vertical slice. First appeared in: [[opening-scene-outline]].
 
-**Ravn** — The protagonist's canon default name. Human male, 30s+, veteran resistance leader. Player-editable at character creation; companions address him as "Captain" in VO. First appeared in: [[protagonist]].
+**Ravn** — The protagonist's canon default name. Human male, 25–30, a Captain of the Line. Player-editable at character creation; companions address him as "Captain" in VO. First appeared in: [[protagonist]].
+
+**the Line** — The organized army resisting Vela. One army with a command structure; the protagonist holds the rank of Captain in it. At Ashfall Keep he is the ranking officer. First appeared in: [[factions]].
 
 **Bram** — Goliath; Blade (Fighter). Party member Acts 1–3. Friend of the player. First appeared in: [[design-pillars]].
 

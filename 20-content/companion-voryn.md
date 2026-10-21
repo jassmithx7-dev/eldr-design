@@ -46,7 +46,7 @@ open_questions:
 
 **Slice job:** Be the quiet dangerous competence that makes the company feel adult and capable — and that makes his later cost land as *someone you already relied on*, not a late recruit.
 
-<!-- ASSUMPTION: "Argues the board" is authored dialogue branches / companion reactions, not a separate disagreement meter system. -->
+<!-- ASSUMPTION: "Argues the board" is authored linear dialogue and companion reactions — the player never selects lines ([[design-pillars]]) — not a separate disagreement meter system. -->
 <!-- ASSUMPTION: ~200 IQ is writer intent for cognition speed/depth; never stated as a number in-game. -->
 
 ## Role in the Story

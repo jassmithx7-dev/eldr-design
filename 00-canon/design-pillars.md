@@ -3,7 +3,9 @@ type: canon
 status: draft
 depends_on: ["[[world-rules]]"]
 ue5_scope: S
-open_questions: []
+open_questions:
+  - "Animation sourcing: Mixamo will not reach the quality bar set in Priorities. Which route — bought mocap packs, Cascadeur, video mocap, or a contract animator — and at what budget?"
+  - "Eld on melee characters: confirm that Fighter and Thief Eld abilities carry visible effects (proposed rules under Combat Presentation)."
 ---
 
 # Design Pillars
@@ -20,9 +22,46 @@ open_questions: []
 
 ## The Differentiator
 
-A grim, adult CRPG about a company of long-time friends — people who have worked together for approximately two decades — doing dangerous work while aware they are aging. The party bond is **inherited, not earned in-game**.
+A grim, adult CRPG about a company of long-time friends — adults aged 25 to 30, about ten years in arms together — doing dangerous work in a war they grew up inside. The party bond is **inherited, not earned in-game**.
 
-This is achievable solo because it is carried by writing, not by assets, scope, or spectacle. It is difficult for a studio because it denies players the recruit-and-befriend fantasy that testing rewards.
+The point of their age is maturity, not weariness. This is not a coming-of-age story and nobody in it is finding themselves. They are not "worn down young" either: they are competent adults. *(Decided 2026-10-10 — replaces the earlier "two decades, aware they are aging" framing.)*
+
+It is difficult for a studio because it denies players the recruit-and-befriend fantasy that testing rewards.
+
+*(Removed 2026-10-19 by override: "This is achievable solo because it is carried by writing, not by assets, scope, or spectacle." See Priorities and [[overrides]].)*
+
+---
+
+## Priorities
+
+*(Decided 2026-10-19 — human override. Replaces the writing-first premise.)*
+
+When two goals compete, the higher one wins:
+
+1. **How combat looks.** Animation, spell effects and Eld effects. Above everything else.
+2. **Story.** A distant second.
+3. **Systems.** Numbers and mechanics serve the first two.
+
+**Tone of combat visuals: grounded, never cartoonish.**
+
+**Cost, stated plainly:** animation and visual effects are the most expensive and specialist work in the game, and they are now its first priority. Budget for them (money or time) before anything else. Mixamo clips and stock particles are a placeholder, not the bar.
+
+---
+
+## Combat Presentation
+
+**Decided:**
+- Combat visuals are judged first — see Priorities.
+- Effects are grounded, not cartoonish.
+- Named weapons and armor carry abilities. See Itemization below.
+
+**Proposed (not yet decided — see open_questions):**
+- Fighter and Thief Eld abilities are visible. Eld runs through everyone and veterans use it by instinct ([[world-rules]]), so a melee Eld strike shows it.
+- Effects come out of the world, not on top of it: dust and grit driven out by a strike, heat shimmer, embers, a ring of displaced ash, a brief dim glow along an edge.
+- Short and restrained: under a second; no floating symbols, outline glows or rainbow trails.
+- Colour carries the pole: warm amber for Forn-pole abilities, cold silver-blue for Vela-pole ([[eld-magic]]).
+- Effects drive light and sound: a strike briefly lights nearby surfaces rather than glowing on its own.
+- Each action plays as a short authored beat — camera push-in, impact frame, hit-stop — which turn-based combat makes affordable.
 
 ---
 
@@ -89,7 +128,7 @@ Locked solo-scope limits:
 
 ## Protagonist
 
-- **Age:** 30s or older.
+- **Age:** 25–30. An adult — not a teenager, not coming of age.
 - **Competence:** earned through years of work, not innate talent or bloodline.
 - **Character creation:** fully player-authored — class, stats, build. Classic CRPG character creation in the Baldur's Gate / Icewind Dale lineage.
 
@@ -97,7 +136,10 @@ Locked solo-scope limits:
 
 ## Party Structure
 
-- **Party size:** 5 controllable characters (protagonist + 4 companions).
+- **Party size:** 5 characters in the company (protagonist + 4 companions); **4 fight at a time** (decided 2026-10-19).
+- The active four are chosen **at camp or rest points** only. The benched companion stays present in cutscenes and camp scenes.
+- **Story fights may fix the party.** The Soulwright climax is the one fight where all five fight (the false wipe then removes Bram and Fen).
+<!-- ASSUMPTION: benched companions progress with the party (fixed progression, no grinding), so swapping never leaves anyone behind. -->
 - **Combat paradigm:** turn-based. Locked.
 
 ---
@@ -108,7 +150,7 @@ Locked solo-scope limits:
 
 | Character | Class | Acts |
 |-----------|-------|------|
-| Arn | Paladin-type (divine, non-Eld) | Act 1 only — replaced by Solen at Act 2 |
+| Arn | Paladin of Forn (divine, non-Eld) | Act 1 only — replaced by Solen at Act 2 |
 | Fen | Shadow (Thief) | Acts 1–3 |
 | Bram | Blade (Fighter, Goliath) | Acts 1–3 |
 | Voryn | Eld-Weaver | Acts 1–3 — ascends at ending |
@@ -122,7 +164,7 @@ Locked solo-scope limits:
 | Forn | Brief NPC presence after Arn's mask slips. Not playable. |
 
 - **Classes:** fixed. Companions are pre-authored people with histories. Their class is characterization, not a build slot.
-- **Relationship to protagonist:** the party has known each other for approximately 20 years. The friendship predates the game. There is shorthand, old debts, arguments nobody reopens, affection that is already load-bearing. Solen is the exception — she joins at Act 2.
+- **Relationship to protagonist:** the company has been in arms together for about ten years; the protagonist has known Arn since birth, and the others joined in the company's first years. The friendship predates the game. There is shorthand, old debts, arguments nobody reopens, affection that is already load-bearing. Solen is the exception — she joins at Act 2.
 - **Shared history in dialogue:** must remain class-agnostic. References the relationship, never the protagonist's build.
 - **Vertical slice focal companion:** Arn. Other party members are present but his arc is the one built end-to-end in the slice.
 
@@ -134,7 +176,7 @@ No Charisma stat. CHA does not exist as a player-assigned attribute in Eldr.
 
 Social resolution draws on three levers instead:
 
-- **Size** — physical presence as leverage. A Goliath commands a room without speaking. A Small character in the same scene does not.
+- **Size** — physical presence as leverage. A Goliath commands a room without speaking. A Small character in the same scene does not. The protagonist is a fixed human (Medium), so Size leverage is never part of the player's build — see the open question in [[social-core]].
 - **Perceived power** — reputation, demonstrated ability, faction standing, visible combat capability. What people *think* you can do shapes what they will agree to.
 - **Raw INT** — the smart read. Reading the room, finding the angle, knowing what someone needs to hear. Intelligence as social tool.
 
@@ -143,6 +185,20 @@ The intent: every character build has a social mode. A high-INT caster negotiate
 **Dialogue is authored and linear — Final Fantasy style, not CRPG branching.** The player does not select from dialogue menus. Social gates appear at specific beats (interrogations, negotiations, information gathering) where the player's build creates leverage. Passing a gate gives the clean path; failing costs something (time, a resource, a harder route) but never locks content. Emotional scenes — the Arn reveal, Voryn's ascension — play straight with no gates.
 
 Full mechanics in `10-systems/social-core.md`.
+
+---
+
+## Itemization
+
+*(Decided 2026-10-19.)*
+
+- **Named items carry abilities.** Specific named weapons and armor grant an ability when equipped.
+- **One item-ability slot per character**, beside their 4–6 class skills. Equipping a named item never costs a class skill, and the menu stays the same size.
+- **Weapons give an active ability**: costs Eld, carries a pole, moves Drift, plays as a showcase beat with its own effect.
+- **Armor gives a triggered effect**, not a menu option (e.g. first time the wearer drops below half HP, or when guarding an ally).
+- **About 1–2 named items per character per act** — the effects budget is the real limit.
+- Named items should fit the existing loot-tier design in `game-codex` (Set / Ancient) rather than start a second system.
+- Full rules: [[combat-core]] section 11.
 
 ---
 

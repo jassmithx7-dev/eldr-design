@@ -25,7 +25,7 @@ open_questions: []
 **What he wants at Ashfall:**
 - Keep people alive through the Falling Gate — civilians first, then the company.
 - Hold the protagonist together without making it a speech. He has done this for thirty years.
-- Get through the next hour. He is not thinking about gods, destiny, or meaning. He is thinking about the wall, the wounded, and who is still outside.
+- Get through the next hour. He is not thinking about destiny or meaning. He is thinking about the wall, the wounded, and who is still outside.
 
 **How he treats people:**
 - **Protagonist:** Equal, not subordinate. Oldest friend energy — shorthand, unfinished sentences, trust that does not need proving every scene. He will say the hard practical thing. He will not theatricalize love. **Default:** he backs his best friend. He *can* refuse an order when the cost to civilians or the company is unforgivable — rare, weighty, never petty. After a refusal he does not gloat; he stays in the problem with them.
@@ -57,11 +57,11 @@ Arn serves three purposes at once:
 
 ## Hidden Truth
 
-Forn, the forgotten god of good, is suppressed beneath Arn's life. Arn is a real soul and has never been aware of Forn (Johnny/V model — see [[game-premise]]). Do not drip divine hints. The player should be surprised at the unmasking beat.
+Forn, the god of good — known to everyone, silent for thirty years — is suppressed beneath Arn's life. Arn is a real soul and has never been aware of Forn (Johnny/V model — see [[game-premise]]). Do not drip divine hints. The player should be surprised at the unmasking beat.
 
 ## Class
 
-Arn is a **paladin-type**: a fighter with a secondary healing function. Designer truth: the healing is leakage from suppressed Forn, not Eld. Player-facing: he is simply the party's steadier healer — never framed as uncanny, miraculous, or "he should be dead." No survival tells.
+Arn is a **paladin of Forn**: a fighter with a secondary healing function. Designer truth: the healing is leakage from suppressed Forn, not Eld. Player-facing: he prays to Forn and is answered the way Forn's other faithful still are — weakly, ordinarily. He is one paladin among many and simply the party's steadier healer — never framed as uncanny, miraculous, unusually favored, or "he should be dead." No survival tells.
 
 He is the party's healer in Act 1. When he leaves at the end of Act 1 and Solen joins in Act 2, Solen covers the healing role through different means.
 

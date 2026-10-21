@@ -3,265 +3,163 @@ type: system
 status: draft
 depends_on: ["[[combat-core]]", "[[enemy-roster-ashfall]]"]
 ue5_scope: M
-inspired_by: ["challenge-skill-balance"]
+inspired_by: ["challenge-skill-balance", "turn-economy-design"]
 open_questions:
-  - "Playtest: Settled Levy pack size before gate fights feel like busywork (boredom) rather than war pressure"
-  - "Playtest: Chain Sergeant aura radius (3 tiles) vs. isometric readability — tighten to 2 if players miss the link"
-  - "Playtest: Unpassed HP 36 may over-sponge at party Level 2; if average clear >5 rounds solo, drop to 30"
-  - "Playtest: Ritual N = 6 interrupt windows before meter completion under baseline pacing — confirm Phase 1 length 8–12 rounds"
-  - "Playtest: Soulwright HP 180 vs. meter clock — if party routinely 0-HPs him before meter ~70, raise HP or lower meter gain"
-  - "Binder Acolyte morale: assumed none (Bound-touched). Confirm with Loremaster if Host body should still check morale"
+  - "Playtest: Settled Levy pack size before gate fights feel like busywork rather than war pressure."
+  - "Playtest: Unpassed HP 36 may over-sponge at party level 2. If an average clear takes more than 5 party turns on it alone, drop to 30."
+  - "Playtest: Soulwright HP 180 vs the ritual meter. If the party routinely reaches 0 HP before the meter passes about 70, raise HP or lower meter gain."
+  - "Binder Acolyte morale: assumed none (Bound-touched). Confirm with Loremaster if a Host body should still flee."
+  - "Party stats (HP, armor, attributes per level) depend on the class-progression note, not yet written. The party reference below is a placeholder."
 ---
 
 # Enemy Tiers — Ashfall Keep (Act 1 Slice)
 
-*Concrete combat stats for the eight roster enemies in [[enemy-roster-ashfall]]. Resolution uses [[combat-core]]: **1d20 + Attack Bonus vs Defense**.*
+*Rewritten 2026-10-19 for menu combat ([[combat-core]]): no misses, armor reduces damage, a visible timeline, front and back rows, interrupt skills. Replaces the d20 version (attack bonus, Defense, grid size, terrain).*
 
-<!-- ASSUMPTION: Party is roughly Level 2–3 for the vertical slice; Bram/Fen example stats in combat-core §10. -->
+**All numbers are first-pass values (TUNE).**
 
-**Baseline anchor:** Ashfall Mercenaries worked example = Settled Levy → Defense 14, HP 20, Attack +2, 1d6+1.
+---
 
-**Party reference (L2, from [[combat-core]] §10):**
-- Bram: Defense 18 (heavy), Attack ~+4 (+6 flanked), HP ~23
-- Fen: Defense 16 (light), Attack ~+5, HP 17
+## Party Reference (placeholder, level 2)
 
-Hit chance vs Levy Defense 14: Fen ~60%, Bram flanked ~65%. Pack fights stay in the flow channel — readable pressure, not brick walls — then escalate complexity (aura, interrupt, Large footprint) without inventing new resolution rules.
+| Character | Hit with | Damage per hit vs armor 0 | Armor | HP |
+|---|---|---|---|---|
+| Bram | Longsword 5 + STR 2 | 7 | Heavy + shield: 4 | ~24 |
+| Fen | Short sword 4 + DEX 3 | 7 | Light: 1 | ~17 |
+| Arn | Longsword 5 + STR 1 | 6 | Medium + shield: 3 | ~22 |
+| Voryn | Spells (see [[eld-magic]]) | 5–9 | None: 0 | ~12 |
+
+A Settled Levy (armor 2) takes about 5 per hit, so 4 hits to drop. A pack of four Levies is roughly two rounds of party turns.
 
 ---
 
 ## Quick Table
 
-| Enemy | Tier | Size | HP | Def | Atk | Damage | Spd | WIS | Morale |
-|-------|------|------|----|-----|-----|--------|-----|-----|--------|
-| Settled Levy | Trash | Med | 20 | 14 | +2 | 1d6+1 | 5 | +0 | Yes |
-| Cinderbow | Skirmisher | Med | 14 | 13 | +3 | 1d6+2 | 6 | +0 | Yes |
-| Chain Sergeant | Elite | Med | 32 | 16 | +4 | 1d8+2 | 5 | +1 | Alone only |
-| Unpassed | Bound | Med | 36 | 13 | +2 | 1d8+1 | 3 | — | No |
-| Binder Acolyte | Ritualist | Med | 18 | 12 | +1 | 1d4+1 / casts | 5 | — | No |
-| Gatebreaker | Siege | Large 2×2 | 55 | 15 | +4 | 2d6+2 | 4 | — | No (beast) |
-| Ash-Hound | Hunter | Large 2×2 | 40 | 14 | +5 | 1d8+3 | 7 | — | No |
-| Soulwright | Boss | Large 2×2 | 180 | 16 | +5 | 1d10+3 / rites | 4 | — | No |
+| Enemy | Tier | Row | HP | Armor | Damage | Speed | WIS | Morale |
+|---|---|---|---|---|---|---|---|---|
+| Settled Levy | Trash | Front | 20 | 2 | 5 | Normal | +0 | Yes |
+| Cinderbow | Skirmisher | Back | 14 | 1 | 6 (ranged) | Quick | +0 | Yes |
+| Chain Sergeant | Elite | Front | 32 | 3 | 7 | Normal | +1 | Only if alone |
+| Unpassed | Bound | Front | 36 | 1 | 6 | Slow | — | No |
+| Binder Acolyte | Ritualist | Back | 18 | 0 | 3 / casts | Normal | — | No |
+| Gatebreaker | Siege, Large | Front only | 55 | 3 | 10 | Heavy | — | No |
+| Ash-Hound | Hunter, Large | Front only | 40 | 2 | 8 | Quick | — | No |
+| Soulwright | Boss, Large | Front only | 180 | 3 | 9 / rites | Normal | — | No |
+
+**Speed** sets the delay of each enemy's normal action on the timeline: Quick 70, Normal 100, Slow 120, Heavy 140.
+
+**Damage** is the hit before the target's armor. Enemy hits always land.
+
+**Large** enemies stand only in the front row, can't be moved between rows, and fill the frame. They are expensive to model and animate; use them as punctuation.
+
+**Morale:** a humanoid with morale below 25% HP flees on its turn with a 40% chance (TUNE). Fleeing counts as defeated.
 
 ---
 
-## 1. Settled Levy — Tier: Trash
+## 1. Settled Levy — Trash
 
-| Stat | Value |
-|------|-------|
-| Size | Medium (1×1) |
-| HP | 20 |
-| Defense | 14 |
-| Attack Bonus | +2 |
-| Damage | 1d6+1 (spear; avg 4.5) |
-| Speed | 5 tiles |
-| WIS | +0 (score 10) |
-| Morale | Yes — check at ≤5 HP (25% of 20). DC = 12 + party level ([[combat-core]] §9) |
+- Spear and shield. Front row.
+- **Decision created:** finish one Levy, or spread damage to push several under 25% so more of them break and flee.
 
-**Special:** Spear reach optional in later polish (attack from 2 tiles). Slice ships as adjacent melee. Shield baked into Defense 14 (not a separate +2 stack).
+## 2. Cinderbow — Skirmisher
 
-**Decision created:** Focus-fire one Levy to corpse vs. spread damage to trip multiple morale checks at once.
+- Short bow from the back row. Quick, so it acts often.
+- Prefers the softest target it can see (lowest armor).
+- **Decision created:** spend actions reaching the back row (ranged attacks, spells), or tank the chip damage while you clear the front.
 
----
+## 3. Chain Sergeant — Elite
 
-## 2. Cinderbow — Tier: Skirmisher
+- **Command aura:** while alive, every Settled Levy deals +1 damage. Ends the instant he falls or flees.
+- Flees only if no Levy or Cinderbow is left and he is below 25% HP.
+- **Decision created:** kill the sergeant to weaken the whole pack, or clear Levies first and take the extra damage.
 
-| Stat | Value |
-|------|-------|
-| Size | Medium (1×1) |
-| HP | 14 |
-| Defense | 13 |
-| Attack Bonus | +3 |
-| Damage | 1d6+2 (short bow; avg 5.5) |
-| Speed | 6 tiles |
-| WIS | +0 |
-| Morale | Yes — check at ≤3 HP (25% of 14, floor 3) |
+## 4. Unpassed — Bound
 
-**Special:** Prefers Short/Long range bands. Attacks into melee (ally adjacent to target) take the normal −2 ([[combat-core]] §3). Elevation is encounter staging, not a flat +to-hit in Phase 1.
+- Slow, durable, never flees. Hollowed strike.
+- First appearance gets a short horror beat (staging, not a mechanic).
+- **Decision created:** commit damage into a target that won't break, or deal with the faster threats first and let it lumber.
 
-**Decision created:** Spend Move/Dash to collapse range on the bow line now, or tank chip damage while finishing melee packs.
+## 5. Binder Acolyte — Ritualist
 
----
+Back row. Teaches telegraphs and interrupts before the Soulwright.
 
-## 3. Chain Sergeant — Tier: Elite
+| Ability | Telegraphed | Fires | Effect |
+|---|---|---|---|
+| **Soften** | Yes | Its next turn | One party member's armor −2 for 2 of their turns. |
+| **Rite Feed** | Yes | Its next turn | 6 Eld-burn damage, ignores armor. In undercroft fights that share a ritual prop, +2 to the ritual meter. |
+| Prod | No | — | 3 damage. |
 
-| Stat | Value |
-|------|-------|
-| Size | Medium (1×1) |
-| HP | 32 |
-| Defense | 16 |
-| Attack Bonus | +4 |
-| Damage | 1d8+2 (longsword; avg 6.5) |
-| Speed | 5 tiles |
-| WIS | +1 (score 12) |
-| Morale | Only if **alone** (no living Settled Levy or Cinderbow in the encounter) **and** ≤8 HP (25% of 32). Otherwise holds. |
+- **Decision created:** use this turn to interrupt (Break, Exploit, Counterspell, Arn's Shield Bash), or press damage and take the debuff.
 
-**Special — Command Aura:** While the Chain Sergeant is alive, all Settled Levy within **3 tiles** gain **+1 Attack Bonus**. Aura ends instantly on death/route. Does not buff Cinderbows, Bound, or beasts.
+## 6. Gatebreaker — Siege (Large)
 
-**Decision created:** Kill the sergeant to collapse pack accuracy, or clear Levies first and eat the +1 while you do it.
+- Living warbeast. Heavy, slow, hits hard.
+- **Breach:** each hit on a front-row character pushes them to the back row. They can step forward again with a minor action. Stand Firm prevents it.
+- 0–1 per gate fight.
+- **Decision created:** keep your fighters forward (Stand Firm, re-stepping) or accept a reshuffled line.
 
----
+## 7. Ash-Hound — Hunter (Large)
 
-## 4. Unpassed — Tier: Bound
+- Fast. **Leaps:** ignores rows and always attacks the conscious party member with the lowest current HP.
+- Optional encounter spice; never in the Soulwright fight.
+- **Decision created:** guard the soft target (Bulwark, Arn's Stand Between), or race to kill the hound.
 
-| Stat | Value |
-|------|-------|
-| Size | Medium (1×1) |
-| HP | 36 |
-| Defense | 13 |
-| Attack Bonus | +2 |
-| Damage | 1d8+1 (hollowed strike; avg 5.5) |
-| Speed | 3 tiles |
-| WIS | — (no morale) |
-| Morale | No (Bound) |
+## 8. Soulwright — Boss (Large, solo)
 
-**Special:** Slow sponge. On its Act, if it moved this turn, it may only attack (no React Dash). Visual soul-horror telegraph on first engagement (staging — not a Reaction Window unless Encounter Designer flags a specific ability `bTelegraphsCast`).
+- **HP 180** is the skill channel. **The ritual meter is the clock** ([[enemy-roster-ashfall]]).
+- **Outcome lock:** reaching 0 HP before the trap forces Phase 2; it never gives a victory ([[enemy-roster-ashfall]]).
 
-**Decision created:** Commit focus fire through a high-HP target that will not route, or kite/slow-walk it while removing soft threats.
-
----
-
-## 5. Binder Acolyte — Tier: Ritualist
-
-| Stat | Value |
-|------|-------|
-| Size | Medium (1×1) |
-| HP | 18 |
-| Defense | 12 |
-| Attack Bonus | +1 (melee fallback) |
-| Damage | Melee 1d4+1 (avg 3.5); primary threat is casts |
-| Speed | 5 tiles |
-| WIS | — |
-| Morale | No |
-
-<!-- ASSUMPTION: Binder Acolyte is Bound-touched enough to skip morale checks. If Loremaster rules Host body → morale applies, use WIS +0 and 25% threshold (≤4 HP). -->
-
-**Special — kit (Phase 1 numbers):**
-
-| Ability | Telegraph? | Effect |
-|---------|------------|--------|
-| **Soften** | Yes (`bTelegraphsCast`) | One party member: **−2 Defense** until end of that target's next turn |
-| **Rite Feed** | Yes (`bTelegraphsCast`) | 1d6 Eld-burn damage (avg 3.5) to one party member in Short range; if used in Undercroft lead-in fights that share a ritual prop, **+2** to any active ritual meter (0 if none) |
-| Melee prod | No | 1d4+1 |
-
-Teaches the Reaction Window before Soulwright ([[combat-core]] §12).
-
-**Decision created:** Spend React to interrupt Soften/Rite Feed now, or hold React for potions/Dash and accept the debuff.
-
----
-
-## 6. Gatebreaker — Tier: Siege
-
-| Stat | Value |
-|------|-------|
-| Size | **Large (2×2)** |
-| HP | 55 |
-| Defense | 15 |
-| Attack Bonus | +4 |
-| Damage | 2d6+2 (avg 9) |
-| Speed | 4 tiles |
-| WIS | — |
-| Morale | No (beast) |
-
-**Special:** Occupies 2×2. **Breach:** on a confirmed melee hit against a Medium or smaller target, knock that target **1 tile** directly away (blocked tiles = no knockback, still full damage). Rare: 0–1 per gate encounter.
-
-**Decision created:** Spread formation / leave escape tiles vs. cluster for focus fire and eat knockback into bad ground.
-
----
-
-## 7. Ash-Hound — Tier: Hunter
-
-| Stat | Value |
-|------|-------|
-| Size | **Large (2×2)** |
-| HP | 40 |
-| Defense | 14 |
-| Attack Bonus | +5 |
-| Damage | 1d8+3 (avg 7.5) |
-| Speed | 7 tiles |
-| WIS | — |
-| Morale | No (beast / Bound-touched) |
-
-**Special:** Occupies 2×2. **Hunt AI:** priority target = conscious party member with lowest current HP; ties favor Unarmored/Light over Heavy. Optional spice — not required every fight; never in Soulwright room.
-
-**Decision created:** Body-block / Bulwark the soft target the hound wants, or leave Fen/casters exposed to delete the hound faster.
-
----
-
-## 8. Soulwright — Tier: Boss
-
-| Stat | Value |
-|------|-------|
-| Size | **Large (2×2) solo** (no adds) |
-| HP | 180 |
-| Defense | 16 |
-| Attack Bonus | +5 |
-| Damage | Melee 1d10+3 (avg 8.5); rites below |
-| Speed | 4 tiles |
-| WIS | — |
-| Morale | No |
-
-**HP role:** High enough that Phase 1 lasts a real fight (~8–12 rounds of party DPS at L2–3) without routinely racing to 0 HP first. **The ritual meter is the real clock** — HP is the skill channel; the meter is the authored pressure ([[enemy-roster-ashfall]] Phase 1–2).
-
-**Outcome lock:** 0 HP before trap → force Phase 2; does not grant EncounterVictory (roster rule). Stats here do not override that.
-
-### Ritual meter (soft escalate)
+### Ritual meter
 
 | Parameter | Value |
-|-----------|-------|
-| Meter max | 100 → fire Phase 2 (soul-trap) |
-| Base gain | **+8** at end of each Soulwright turn |
-| Turtle punish | **+4** additional if **no** party member spent a Reaction in a Soulwright telegraph this round |
-| Successful interrupt | Party Reaction that **hits** the Soulwright during a telegraph: **−12** meter (floor 0) |
-| Telegraph cadence | Rite Pulse or Claim every **1–2** rounds (guaranteed window by round 2 — [[combat-core]] §12.5) |
+|---|---|
+| Meter max | 100 → Phase 2 (the soul-trap fires) |
+| Gain per Soulwright turn | +8 |
+| Turtle punish | +4 more if no rite was interrupted since its last turn |
+| Successful interrupt on a rite | −12 (floor 0) and the rite is pushed back on the timeline |
+| Telegraph cadence | A rite every 1–2 of its turns; the first by its second turn |
 
-Under baseline play (mix of hits and passes), meter completes in roughly **8–11 Soulwright turns**.
+Under normal play the meter fills in about 8–11 Soulwright turns.
 
-### Ritual N
+<!-- ASSUMPTION: Under the old rules an interrupt (−12) outpaced gain (+8) and could stall the meter forever. Now that interrupts are skills that cost the actor's turn and Eld, a party that interrupts every rite deals far less damage and burns its Eld pool. Check in playtest that the meter can't be stalled indefinitely; if it can, cap interrupts per rite or lower the interrupt reduction to −8. -->
 
-<!-- ASSUMPTION: Ritual N = 6 — design target for telegraphed interrupt windows that open during Phase 1 before the meter completes under baseline pacing. Playtest: if Phase 1 feels short, raise N toward 8 and/or lower base gain to +6; if long/boring, drop N toward 4 and/or raise base gain to +10. -->
+### Kit
 
-**Ritual N = 6** (starting interrupt-window count for slice tuning).
+| Move | Telegraphed | Fires | Effect |
+|---|---|---|---|
+| **Rite Pulse** | Yes | 1 turn after shown | 7 damage to every front-row party member, ignores armor. |
+| **Claim** | Yes | Its next turn | Marks one party member for 2 of its turns: the Soulwright's hits on them deal +4. Cleared by Lesser Restoration or an item. |
+| **Settle the Floor** | No | Instant | The front row's next actions are delayed +20 (the floor drags at them). |
+| Strike | No | — | 9 damage. |
 
-### Boss kit (combat numbers; pedagogy in encounter note)
-
-| Move | Telegraph? | Effect |
-|------|------------|--------|
-| **Rite Pulse** | Yes | AoE, radius 2 tiles from Soulwright: 2d6 (avg 7) to each party member in area; Reaction Window opens |
-| **Claim** | Yes | Mark one PC for 2 rounds: Soulwright attacks against that PC gain **+2** to hit; cleanse = existing item/Eld answers only (no new cleanse system) |
-| **Settle the Floor** | No (aura/terrain) | On Act, choose 3 tiles within 4: those tiles become difficult terrain (2 Move per tile) for 2 rounds |
-| Melee | No | 1d10+3 |
-
-**Decision created:** Spend React on rite interrupts (slow the meter) vs. hold React for survival tools — knowing the meter, not HP, decides when Phase 2 fires.
+- **Decision created:** spend turns interrupting rites to slow the clock, or deal damage — knowing the meter, not HP, decides when Phase 2 fires.
 
 ---
 
-## Tier → Player Choice Map
+## Tier → Player Choice
 
-| Tier | Enemy | What you choose differently |
-|------|-------|-----------------------------|
-| Trash | Settled Levy | Kill vs. morale-break packing |
-| Skirmisher | Cinderbow | Collapse range vs. eat chip |
-| Elite | Chain Sergeant | Sergeant first vs. trash first |
-| Bound | Unpassed | Commit sponge vs. kite around it |
-| Ritualist | Binder Acolyte | Interrupt now vs. save React |
-| Siege | Gatebreaker | Spread for space vs. cluster for DPS |
-| Hunter | Ash-Hound | Protect soft targets vs. race the kill |
-| Boss | Soulwright | Interrupt the rite clock vs. raw DPS |
+| Tier | Enemy | What you choose |
+|---|---|---|
+| Trash | Settled Levy | Kill one, or break several |
+| Skirmisher | Cinderbow | Reach the back row, or take the chip damage |
+| Elite | Chain Sergeant | Sergeant first, or trash first |
+| Bound | Unpassed | Commit to the sponge, or kite around it |
+| Ritualist | Binder Acolyte | Interrupt now, or press damage |
+| Siege | Gatebreaker | Hold the line, or accept the reshuffle |
+| Hunter | Ash-Hound | Guard the weak, or race it |
+| Boss | Soulwright | Slow the clock, or deal damage |
 
 ---
 
-## Complexity Assessment
-
-**ue5_scope: M** — eight stat blocks + one aura + one knockback + ritual meter config. No new resolution math beyond [[combat-core]].
+## Complexity
 
 | Piece | Estimate | Notes |
-|-------|----------|-------|
-| Stat blocks on existing enemy data assets | 2–3 days | Numbers only |
-| Sergeant aura + Levy query | 1 day | Radius check |
-| Gatebreaker knockback | 1 day | Grid push |
-| Ritual meter controller | 2–3 days | Already scoped under roster/boss tech |
-| Hunt AI priority | 0.5 day | Lowest-HP sort |
+|---|---|---|
+| Stat blocks on enemy data assets | 2 days | Numbers only |
+| Sergeant aura | 0.5 day | Flag check |
+| Gatebreaker Breach (row push) | 0.5 day | Row change |
+| Ash-Hound leap targeting | 0.5 day | Lowest-HP sort |
+| Telegraph + interrupt hooks per enemy | 2 days | Uses the combat-core telegraph system |
+| Ritual meter | 2 days | Already scoped under the boss controller |
 
-**Simpler alternative:** Flat HP/Damage only, no aura/knockback/meter escalate. **Rejected for slice** — aura and interrupt are the teach→test spine into Soulwright; cutting them collapses Act 1 into generic trash fights.
-
-**Total for this note's mechanics on top of combat-core:** ~1–1.5 weeks — inside the solo budget if combat-core Phase 1A–1D already exists.
+About 1–1.5 weeks on top of [[combat-core]].

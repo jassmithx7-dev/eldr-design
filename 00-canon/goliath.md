@@ -20,7 +20,7 @@ open_questions:
 
 Goliaths are **Large**. In game terms this means:
 
-- **Combat footprint:** 2×2 tiles (per [[combat-core]] §3 — large enemies already use this footprint; Goliath player characters use the same)
+- **Combat footprint:** 2×2 tiles (per [[combat-core]] §3 — large enemies already use this footprint; a Goliath party member — Bram — uses the same. The protagonist is always human.)
 - **Melee reach:** 2 tiles (can attack from adjacent or one tile gap without moving into contact)
 - **HP bonus:** above standard for their class — specific values deferred to attributes-core
 - **Easier to hit:** Large characters have a lower Defense cap than Medium or Small characters at equivalent armor — they present more surface area
@@ -32,9 +32,9 @@ The tradeoff is built in. A Goliath is harder to kill and harder to ignore, and 
 
 ## Stats
 
-Large size sets **high STR and CON floors and ceilings** — a Goliath's minimum starting STR and CON are higher than a Medium race's, and their maximum is higher. The exact values belong in the attributes-core note.
+Large size sets **high STR and CON floors and ceilings** — a Goliath's minimum starting STR and CON are higher than a Medium race's, and their maximum is higher. These are world facts that guide hand-authored stats — no racial modifier system is built ([[world-rules]], decided 2026-10-10).
 
-**Sex modifier applies** per [[world-rules]]: male Goliaths have higher STR and DEX floors and ceilings than female Goliaths.
+**Sex modifier applies** per [[world-rules]]: male Goliaths have higher STR and DEX floors and ceilings than female Goliaths. World fact only — no modifier tables.
 
 Goliaths do **not** have a special relationship to Eld. They are not more or less likely to have sensitivity than other races. Magic is not their domain.
 
@@ -83,4 +83,4 @@ Bram is a Goliath. His companion note has not yet been written, but his characte
 
 **The narrow-door animation** is a deliberate design choice, not a convenience. A Goliath moving through a standard-scale interior should acknowledge the scale difference — crouch, turn sideways, press through — with a short transitional animation. This is a solo-dev art commitment, not an engineering one. It should be scoped when Bram's companion note and the first interior zone are in active development.
 
-**Grid footprint:** The 2×2 tile system for large enemies already exists in [[combat-core]]. Extending it to a player character requires the UI and camera systems to handle a player-controlled large unit — pathfinding, selection highlight, and follow-cam adjustments. This is the main engineering delta over the existing enemy implementation.
+**Grid footprint:** The 2×2 tile system for large enemies already exists in [[combat-core]]. Extending it to a player-controlled party member (Bram) requires the UI and camera systems to handle a player-controlled large unit — pathfinding, selection highlight, and follow-cam adjustments. This is the main engineering delta over the existing enemy implementation.

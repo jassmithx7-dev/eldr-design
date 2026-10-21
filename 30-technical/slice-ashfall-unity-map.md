@@ -56,7 +56,7 @@ open_questions:
 - `PartyController` (C#) — roster order, active formation, join/activate API
 - Child slots: `PC_Protagonist`, `PC_Arn`, `PC_Fen`, `PC_Voryn`, `PC_Bram`
 - **Session start (active):** Protagonist, Arn, Fen, Voryn. **Dag = camp NPC only** — not a `PartyRoot` combat slot.
-- **`PC_Bram`:** slot may exist on `PartyRoot` but **inactive / not spawned** at session start. Bram is **not** on the starting active roster. He joins mid-fight during the opening Falling Gate encounter (reunion, ~20 years known — not stranger recruit). Activate via join trigger (below).
+- **`PC_Bram`:** slot may exist on `PartyRoot` but **inactive / not spawned** at session start. Bram is **not** on the starting active roster. He joins mid-fight during the opening Falling Gate encounter (reunion, ~10 years known — not stranger recruit). Activate via join trigger (below).
 - Each **active** party member child:
   - `CombatantController` — HP runtime, Act/React/Move flags, `bReactionAvailable`, Downed/Stabilization
   - `CharacterDefinition` ref (ScriptableObject) — class, attributes (no HP invented here)
